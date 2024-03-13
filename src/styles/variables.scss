@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  --btn-lr-pad: 1.6rem;
+  --btn-tb-pad: .8rem;
+
+  --section-tb-pad: 7.7rem;
+
+  --font-family: "Poppins", "sans-serif";
+
+  --primary-clr: #0D47A1;
+  --primary-clr-100: #E3F2FD;
+
+
+  --hero-bg-liner-grad: linear-gradient(104deg, #0061FF 30.47%, #60EFFF 108.71%);
+  --text-liner-grad: linear-gradient(93deg, #0D47A1 49.87%, #2E93CA 85.58%);
+
+  --ip-border-clr: #69666636;
+  --ip-placeHolder-txt-clr: #94A3B8;
+
+  --landing-page-main-info-width: 90%;
+  --spotlight-img-bg:#D9D9D9;
+}
