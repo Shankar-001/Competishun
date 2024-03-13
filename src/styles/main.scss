@@ -1,0 +1,12 @@
+@import './mixin/layout.scss';
+@import './variables.scss';
+@import './mixin/headingNText.scss';
+@import './root.scss';
+@import './mixin/btnsNTags.scss';
+@import './mixin/animation.scss';
+
+// component
+@import "./components/Navbar/Navbar.scss";
+
+// Pages
+@import "./pages/About.scss";

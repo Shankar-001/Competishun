@@ -1,0 +1,6 @@
+@mixin transition($duration: .2s) {
+  transition: all $duration;
+}
+@mixin transition2($duration: .2s) {
+  transition: all $duration;
+}
