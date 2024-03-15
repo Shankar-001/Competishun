@@ -23,10 +23,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1.8rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-  color: var(--darkest-bg-color);
 }
 
 html {
@@ -76,34 +72,100 @@ button {
   cursor: pointer;
 }
 
-h1 {
-  font-size: 6rem;
-  font-weight: 700;
+.Navbar-main-container {
+  font-size: 1.6rem;
+  font-weight: 400;
   font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  background-color: var(--ip-border-clr);
+  padding: 1.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Navbar-main-container .element {
+  width: var(--landing-page-main-info-width);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navbar-main-container .element .navbar-heading {
+  line-height: 200%;
+  gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.Navbar-main-container .element .navbar-heading li {
+  list-style-type: none;
+  text-decoration: none;
+}
+.Navbar-main-container .element .navbar-heading li .navlink {
+  text-decoration: none;
+  color: var(--lightest-bg-color);
+}
+.Navbar-main-container .element .navbar-heading li .active {
+  color: var(--primary-color);
+}
+.Navbar-main-container .image {
+  width: 22%;
 }
 
-h2 {
-  font-size: 4.8rem;
+.NewOffer-main-container {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  background-color: #df4759;
+  padding: 0.2%;
+  line-height: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.NewOffer-main-container .width {
+  width: var(--landing-page-main-info-width);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.NewOffer-main-container .width .content {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--lightest-bg-color);
+}
+.NewOffer-main-container .width .content .content-sub {
+  color: #fad776 !important;
+}
+.NewOffer-main-container .width .button {
+  text-decoration: none;
+  background-color: var(--light-bg-color);
+  border-radius: 4px;
+  padding: 0.1% 0.3%;
+  color: #df4759;
+}
+.NewOffer-main-container .cross {
+  text-decoration: none;
+  font-size: 2rem;
   font-weight: 600;
   font-family: var(--font-family);
+  color: var(--lightest-bg-color);
+  color: white;
 }
-
-h3 {
-  font-size: 3.2rem;
-  font-weight: 500;
-  font-family: var(--font-family);
+.NewOffer-main-container .cross:hover {
+  color: black;
 }
-
-h4 {
-  font-size: 2.4rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-}
-
-h5 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  font-family: var(--font-family);
+.NewOffer-main-container .NewOffer-hidden {
+  display: none;
 }
 
 .Home {
@@ -144,7 +206,7 @@ h5 {
   color: var(--secondary-color);
 }
 .Home .highlight .overlay .content p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
