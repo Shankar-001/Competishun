@@ -200,6 +200,9 @@ button {
   margin-top: 8rem;
 }
 .Home .highlight .overlay .content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: var(--font-family);
   color: var(--lightest-bg-color);
 }
 .Home .highlight .overlay .content h1 span {

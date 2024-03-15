@@ -1,4 +1,4 @@
-import Highlight from '../../components/Home/highlight';
+import Highlight from '../../components/Home/Highlight';
 
 const Home = () => {
   return (
