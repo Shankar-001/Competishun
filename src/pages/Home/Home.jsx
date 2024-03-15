@@ -1,9 +1,10 @@
-import Highlight from '../../components/Home/Highlight';
+import HighlightSection from "../../components/Home/HighlightSection";
+
 
 const Home = () => {
   return (
     <div className="Home">
-      <Highlight />
+    <HighlightSection />
     </div>
   );
 };
