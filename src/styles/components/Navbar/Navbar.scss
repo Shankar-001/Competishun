@@ -1,8 +1,10 @@
 .Navbar-main-container {
   @include bodyText;
-  background-color: var(--ip-border-clr);
+  // background-color: var(--ip-border-clr);
   padding: 1.5%;
   @include flex-cc;
+  position: absolute;
+  z-index: 10;
   .element {
     width: var(--landing-page-main-info-width);
     @include flex-sbc;

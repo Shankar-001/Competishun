@@ -1,8 +1,9 @@
 .highlight {
-    height: 80vh;
+    height: 90vh;
     width: 100%;
 
-    background-image: url(https://www.mathongo.com/public/brand/mathongo/assets/img/hero-bg-3.jpg);
+    // background-image: url(https://www.mathongo.com/public/brand/mathongo/assets/img/hero-bg-3.jpg);
+    background-image: url('src/assets/highlight-background.jpg');
 
     // give a bottom border with very large ragius so that is looks like a curve
     border-bottom-left-radius: 50% 20%;
@@ -21,7 +22,7 @@
 
         .content{
             width: var(--landing-page-main-info-width);
-            margin-top: 8rem;
+            margin-top: 12rem;
 
             h1{
                 @include h1;

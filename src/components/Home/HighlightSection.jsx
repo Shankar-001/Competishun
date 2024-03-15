@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const Highlight = () => {
+const HighlightSection = () => {
   // write the code to change the text from array ["easy","scoring","fun"] every 2 seconds and it should look like it is being typed and then backspaced and then retyped with the new word.
 
   const [i, seti] = useState(0);
@@ -74,4 +74,4 @@ const Highlight = () => {
   );
 };
 
-export default Highlight;
+export default HighlightSection;
