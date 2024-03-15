@@ -10,6 +10,7 @@ html {
   --dark-bg-color: #657786;
   --darkest-bg-color: #14171A;
   --primary-color: #1DA1F2;
+  --secondary-color: #fad776;
   --hero-bg-liner-grad: linear-gradient(104deg, #0061FF 30.47%, #60EFFF 108.71%);
   --text-liner-grad: linear-gradient(93deg, #0D47A1 49.87%, #2E93CA 85.58%);
   --ip-border-clr: #243a50;
@@ -103,6 +104,51 @@ h5 {
   font-size: 1.8rem;
   font-weight: 400;
   font-family: var(--font-family);
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Home .highlight {
+  height: 80vh;
+  width: 100%;
+  background-image: url(https://www.mathongo.com/public/brand/mathongo/assets/img/hero-bg-3.jpg);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+.Home .highlight .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--ip-border-clr);
+  opacity: 0.9;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+.Home .highlight .overlay .content {
+  width: var(--landing-page-main-info-width);
+  margin-top: 8rem;
+}
+.Home .highlight .overlay .content h1 {
+  color: var(--lightest-bg-color);
+}
+.Home .highlight .overlay .content h1 span {
+  color: var(--secondary-color);
+}
+.Home .highlight .overlay .content p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  color: var(--lightest-bg-color);
 }
 
 /*# sourceMappingURL=index.css.map */
