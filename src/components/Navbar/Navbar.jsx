@@ -1,8 +1,14 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 const Navbar = () => {
+  const location = useLocation();
+
   return (
-    <div className="Navbar-main-container">
+    <div
+      className={`Navbar-main-container ${
+        location.pathname === '/' ? 'homeroute' : ''
+      }`}
+    >
       <div className="element">
         <Link to="/" className="image">
           <img src={logo} alt="Competishun-logo" />
