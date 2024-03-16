@@ -10,6 +10,7 @@ html {
   --dark-bg-color: #657786;
   --darkest-bg-color: #14171A;
   --primary-color: #1DA1F2;
+  --secondary-color: #fad776;
   --hero-bg-liner-grad: linear-gradient(104deg, #0061FF 30.47%, #60EFFF 108.71%);
   --text-liner-grad: linear-gradient(93deg, #0D47A1 49.87%, #2E93CA 85.58%);
   --ip-border-clr: #243a50;
@@ -114,6 +115,50 @@ button {
 }
 .Navbar-main-container .image {
   width: 22%;
+}
+
+.footer-mainContainer {
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer-mainContainer .footer-containerContent {
+  width: var(--landing-page-main-info-width);
+}
+.footer-mainContainer .develop {
+  margin-left: 70rem;
+}
+.footer-mainContainer .footer-innerContainer {
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.footer-mainContainer .footer-innerContainer .footer-logo .footer-companyIcon {
+  width: 10rem;
+  height: 10rem;
+  margin-left: 10rem;
+}
+.footer-mainContainer .footer-innerContainer .footer-logo .footer-address {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer-mainContainer .footer-innerContainer .footer-logo .footer-address .p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+}
+.footer-mainContainer .footer-innerContainer .footer-logo .footer-quickLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .NewOffer-main-container {
