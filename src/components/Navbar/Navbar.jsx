@@ -1,12 +1,25 @@
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo.png';
+import { useEffect, useState } from 'react';
 const Navbar = () => {
   const location = useLocation();
+  const [showScrollToTop, setShowScrollToTop] = useState(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setShowScrollToTop(scrollY == 0);
+    };
 
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div
       className={`Navbar-main-container ${
-        location.pathname === '/' ? 'homeroute' : ''
+        location.pathname === '/' && showScrollToTop ? 'homeroute' : ''
       }`}
     >
       <div className="element">
