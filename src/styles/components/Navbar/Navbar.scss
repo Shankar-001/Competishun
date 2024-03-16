@@ -1,10 +1,10 @@
 .Navbar-main-container {
   @include bodyText;
-  // background-color: var(--ip-border-clr);
-  padding: 1.5%;
+  background-color: var(--ip-border-clr);
+  padding-top: 1.8%;
   @include flex-cc;
-  position: absolute;
-  z-index: 10;
+  position: fixed;
+  z-index: 100;
   .element {
     width: var(--landing-page-main-info-width);
     @include flex-sbc;
@@ -32,4 +32,8 @@
   .image {
     width: 22%;
   }
+}
+
+.Navbar-main-container.homeroute {
+  background-color: transparent; /* Set background to transparent if 'homeroute' class is present */
 }

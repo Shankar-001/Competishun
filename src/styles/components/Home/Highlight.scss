@@ -1,42 +1,53 @@
 .highlight {
-    height: 90vh;
+  height: 90vh;
+  width: 100%;
+  // background-image: url('src/assets/highlight-background.mp4');
+
+  // border-bottom-left-radius: 50% 20%;
+  // border-bottom-right-radius: 50% 20%;
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .overlay {
+    @include flex-sc(column);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--ip-border-clr);
+    opacity: 0.9;
 
-    // background-image: url(https://www.mathongo.com/public/brand/mathongo/assets/img/hero-bg-3.jpg);
-    background-image: url('src/assets/highlight-background.jpg');
+    .content {
+      width: var(--landing-page-main-info-width);
+      margin-top: 14rem;
 
-    // give a bottom border with very large ragius so that is looks like a curve
-    border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
-    .overlay {
-        // position: absolute;
-        @include flex-sc(column);
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--ip-border-clr);
-        opacity: 0.9;
-        border-bottom-left-radius: 50% 20%;
-        border-bottom-right-radius: 50% 20%;
+      h1 {
+        @include h1;
+        color: var(--lightest-bg-color);
 
-        .content{
-            width: var(--landing-page-main-info-width);
-            margin-top: 12rem;
-
-            h1{
-                @include h1;
-                color: var(--lightest-bg-color);
-
-                span{
-                    color:var(--secondary-color);
-                }
-            }
-            p{
-                @include bodyText;
-                color: var(--lightest-bg-color);
-
-            }
+        span {
+          color: var(--secondary-color);
         }
+      }
+      p {
+        @include bodyText;
+        color: var(--lightest-bg-color);
+        letter-spacing: 0.1rem;
+      }
+      .btn {
+        @include btn(var(--primary-color));
+        border-radius: 0.5rem;
+        margin-top: 2rem;
+        width: fit-content;
+        color: aliceblue;
+      }
     }
+  }
 }
