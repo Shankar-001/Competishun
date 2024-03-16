@@ -129,7 +129,7 @@ button {
   color: var(--darkest-bg-color);
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 105;
   background-color: #df4759;
   padding: 0.2%;
   line-height: 95%;
