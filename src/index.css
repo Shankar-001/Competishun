@@ -22,10 +22,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1.8rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-  color: var(--darkest-bg-color);
 }
 
 html {
@@ -75,34 +71,48 @@ button {
   cursor: pointer;
 }
 
-h1 {
-  font-size: 6rem;
-  font-weight: 700;
-  font-family: var(--font-family);
+.footer-mainContainer {
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-
-h2 {
-  font-size: 4.8rem;
-  font-weight: 600;
-  font-family: var(--font-family);
+.footer-mainContainer .footer-containerContent {
+  width: var(--landing-page-main-info-width);
 }
-
-h3 {
-  font-size: 3.2rem;
-  font-weight: 500;
-  font-family: var(--font-family);
+.footer-mainContainer .develop {
+  margin-left: 70rem;
 }
-
-h4 {
-  font-size: 2.4rem;
-  font-weight: 400;
-  font-family: var(--font-family);
+.footer-mainContainer .footer-innerContainer {
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
-
-h5 {
+.footer-mainContainer .footer-innerContainer .footer-logo .footer-companyIcon {
+  width: 10rem;
+  height: 10rem;
+  margin-left: 10rem;
+}
+.footer-mainContainer .footer-innerContainer .footer-logo .footer-address {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer-mainContainer .footer-innerContainer .footer-logo .footer-address .p {
   font-size: 1.8rem;
   font-weight: 400;
   font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+}
+.footer-mainContainer .footer-innerContainer .footer-logo .footer-quickLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */
