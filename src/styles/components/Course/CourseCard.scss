@@ -1,0 +1,48 @@
+.CourseCardMainContainer {
+  @include bodyText;
+  @include flex-cc;
+  .CourseCardSubContainer {
+    @include flex-cc(column);
+    margin-top: 10rem;
+    width: var(--landing-page-main-info-width);
+    .CourseDetails {
+      @include bodyText(var(--darkest-bg-color), 4.8rem, 600);
+      margin: {
+        top: 5%;
+        bottom: 2%;
+      }
+      span {
+        color: #e14255;
+      }
+    }
+    .CourseCardComponent {
+      @include grid-sc;
+      @include grid-n-eql-col(3);
+      justify-content: space-between;
+      width: 90%;
+      flex-wrap: wrap;
+      gap: 10rem;
+      margin-bottom: 2%;
+
+      .ComponentDivision {
+        border-radius: 2rem;
+        @include flex-sc(column);
+        border: 0.1rem solid beige;
+        z-index: 5;
+        height: 30rem;
+        width: var(--landing-page-main-info-width);
+        overflow: hidden;
+        box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+        img {
+          margin-top: 0.7rem;
+          width: 90%;
+        }
+        &:hover {
+          background-color: var(--light-bg-color);
+          transform: scale(1.1);
+          @include transition(0.5s);
+        }
+      }
+    }
+  }
+}
