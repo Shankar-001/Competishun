@@ -71,48 +71,212 @@ button {
   cursor: pointer;
 }
 
-.footer-mainContainer {
-  background-color: lightgreen;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.footer-mainContainer .footer-containerContent {
-  width: var(--landing-page-main-info-width);
-}
-.footer-mainContainer .develop {
-  margin-left: 70rem;
-}
-.footer-mainContainer .footer-innerContainer {
-  background-color: lightyellow;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-.footer-mainContainer .footer-innerContainer .footer-logo .footer-companyIcon {
-  width: 10rem;
-  height: 10rem;
-  margin-left: 10rem;
-}
-.footer-mainContainer .footer-innerContainer .footer-logo .footer-address {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.footer-mainContainer .footer-innerContainer .footer-logo .footer-address .p {
-  font-size: 1.8rem;
+.Navbar-main-container {
+  font-size: 1.6rem;
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
-}
-.footer-mainContainer .footer-innerContainer .footer-logo .footer-quickLinks {
+  padding: 1.5%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  z-index: 10;
+}
+.Navbar-main-container .element {
+  width: var(--landing-page-main-info-width);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navbar-main-container .element .navbar-heading {
+  line-height: 200%;
+  gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.Navbar-main-container .element .navbar-heading li {
+  list-style-type: none;
+  text-decoration: none;
+}
+.Navbar-main-container .element .navbar-heading li .navlink {
+  text-decoration: none;
+  color: var(--lightest-bg-color);
+}
+.Navbar-main-container .element .navbar-heading li .active {
+  color: var(--primary-color);
+}
+.Navbar-main-container .image {
+  width: 22%;
+}
+
+.NewOffer-main-container {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  background-color: #df4759;
+  padding: 0.2%;
+  line-height: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.NewOffer-main-container .width {
+  width: var(--landing-page-main-info-width);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.NewOffer-main-container .width .content {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--lightest-bg-color);
+}
+.NewOffer-main-container .width .content .content-sub {
+  color: #fad776 !important;
+}
+.NewOffer-main-container .width .button {
+  text-decoration: none;
+  background-color: var(--light-bg-color);
+  border-radius: 4px;
+  padding: 0.1% 0.3%;
+  color: #df4759;
+}
+.NewOffer-main-container .cross {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: var(--lightest-bg-color);
+  color: white;
+}
+.NewOffer-main-container .cross:hover {
+  color: black;
+}
+.NewOffer-main-container .NewOffer-hidden {
+  display: none;
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Home .highlight {
+  height: 90vh;
+  width: 100%;
+  background-image: url("src/assets/highlight-background.jpg");
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+.Home .highlight .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--ip-border-clr);
+  opacity: 0.9;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+.Home .highlight .overlay .content {
+  width: var(--landing-page-main-info-width);
+  margin-top: 12rem;
+}
+.Home .highlight .overlay .content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--lightest-bg-color);
+}
+.Home .highlight .overlay .content h1 span {
+  color: var(--secondary-color);
+}
+.Home .highlight .overlay .content p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  color: var(--lightest-bg-color);
+}
+
+.CourseMainContainer .CourseCardMainContainer {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  width: var(--landing-page-main-info-width);
+}
+.CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseDetails {
+  font-size: 4.8rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseDetails span {
+  color: #e14255;
+}
+.CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseCardComponent {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+  gap: 10rem;
+  margin-bottom: 2%;
+}
+.CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseCardComponent .ComponentDivision {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 0.1rem solid beige;
+  z-index: 5;
+  height: 30rem;
+  width: var(--landing-page-main-info-width);
+  overflow: hidden;
+  box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+}
+.CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseCardComponent .ComponentDivision img {
+  margin-top: 0.7rem;
+  width: 90%;
+}
+.CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseCardComponent .ComponentDivision:hover {
+  background-color: var(--light-bg-color);
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=index.css.map */

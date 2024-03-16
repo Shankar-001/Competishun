@@ -1,0 +1,5 @@
+.Home{
+    @include flex-sc(column);
+
+    @import '../../components/Home/Highlight.scss';
+}
