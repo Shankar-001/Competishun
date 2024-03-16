@@ -123,6 +123,10 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
 }
 .footer-mainContainer .footer-containerContent {
   width: var(--landing-page-main-info-width);
@@ -147,12 +151,6 @@ button {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-}
-.footer-mainContainer .footer-innerContainer .footer-logo .footer-address .p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-  color: var(--darkest-bg-color);
 }
 .footer-mainContainer .footer-innerContainer .footer-logo .footer-quickLinks {
   display: flex;

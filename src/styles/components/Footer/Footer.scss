@@ -1,22 +1,19 @@
 .footer-mainContainer {
   background-color: lightgreen;
   @include flex-cc;
-    
-  .footer-containerContent{
+  @include bodyText;
+  .footer-containerContent {
     width: var(--landing-page-main-info-width);
   }
-  .develop{
-    margin-left:70rem;
+  .develop {
+    margin-left: 70rem;
   }
 
   .footer-innerContainer {
     background-color: lightyellow;
     @include flex-ses(row);
-    
-
 
     .footer-logo {
-
       .footer-companyIcon {
         width: 10rem;
         height: 10rem;
@@ -26,16 +23,14 @@
       .footer-address {
         @include flex-ss(row);
         
-        .p{
-            @include bodyText;
-            // font-size: 
+        .locIcon{
+          
         }
       }
-      
-      .footer-quickLinks{
+
+      .footer-quickLinks {
         @include flex-cc(row);
       }
-      
     }
   }
 }

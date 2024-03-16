@@ -23,7 +23,7 @@ const Footer = () => {
             className="footer-companyIcon"
           />
           <div className="footer-address">
-            <FaLocationDot fontSize={12} color="orange" />
+            <FaLocationDot fontSize={12} color="orange" className='locIcon' />
             <p>
               Plot number 35, Gopalpura Bypass Rd, near Riddhi Siddhi Circle,{' '}
               <br />
