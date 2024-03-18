@@ -4,6 +4,7 @@ import Contact from '../pages/Contact';
 import Result from '../pages/Result';
 import Home from '../pages/Home/Home';
 import Course from '../pages/Course/Course';
+import TestSeries from '../pages/Test Series/TestSeries';
 
 const AllRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AllRoutes = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/result" element={<Result />} />
       <Route path="/courses" element={<Course />} />
+      <Route path="/testSeries" element={<TestSeries />} />
     </Routes>
   );
 };
