@@ -1,0 +1,19 @@
+.ComponentDivision {
+  border-radius: 2rem;
+  @include flex-sc(column);
+  border: 0.1rem solid beige;
+  z-index: 5;
+  height: 30rem;
+  width: var(--landing-page-main-info-width);
+  overflow: hidden;
+  box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+  img {
+    margin-top: 0.7rem;
+    width: 90%;
+  }
+  &:hover {
+    background-color: var(--light-bg-color);
+    transform: scale(1.1);
+    @include transition(0.5s);
+  }
+}

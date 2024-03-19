@@ -1,4 +1,6 @@
 import CompanyLogo from '../../assets/loaderLogo.png';
+import googleplay from '../../assets/googleplay.png';
+import applestore from '../../assets/applestore.png';
 import { FaLocationDot } from 'react-icons/fa6';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { BiLogoGmail } from 'react-icons/bi';
@@ -6,14 +8,11 @@ import { FaFacebook } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaTelegram } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
-import { IoLogoAppleAppstore } from 'react-icons/io5';
-import { FaGooglePlay } from 'react-icons/fa';
+import { FaSquareXTwitter } from 'react-icons/fa6';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
 const Footer = () => {
-
   const location = useLocation();
 
   useEffect(() => {
@@ -56,7 +55,7 @@ const Footer = () => {
           {/*  box2 */}
           <div className="footer-quickLinks">
             <h3>QUICK LINKS</h3>
-            <br />
+            {/* <br /> */}
             <div className="element">
               <div className="footer-link">
                 <li>
@@ -99,40 +98,50 @@ const Footer = () => {
           </div>
 
           {/*  box3 */}
-          <div classname="footer-support">
+          <div className="footer-support">
             <h3>SUPPORT</h3>
-            <br />
-            <a>FAQs</a>
-            <br />
-            <a>Contact Us</a>
-            <br />
-            <a>About us</a>
+            {/* <br /> */}
+            <div className="footer-support-link">
+              <div className="point">
+                <a>FAQs</a>
+              </div>
+
+              <div className="point">
+                <a>Contact Us</a>
+              </div>
+
+              <div className="point">
+                <a>About us</a>
+              </div>
+              <div className="point">
+                <a>Refund and Cancellation</a>
+              </div>
+            </div>
           </div>
 
           {/*  box4 */}
-          <div classname="footer-joinUs">
+          <div className="footer-joinUs">
             <h3>JOIN US ON</h3>
-            <FaFacebook fontSize={25} />
-            <FaYoutube fontSize={25} />
-            <FaTwitter fontSize={25} />
-            <FaTelegram fontSize={25} />
-            <FaInstagram fontSize={25} />
 
-            <br />
+            <div className="socialMedia-logo">
+             <a href='https://www.facebook.com/mohit.tyagi.775' target='_blank'><FaFacebook fontSize={32} color="#316FF6"/></a>
+             <a href='https://www.youtube.com/@MohitTyagi' target='_blank'><FaYoutube fontSize={32} color="red" /></a>
+              <a href='https://twitter.com/mohittyagi' target='_blank'><FaSquareXTwitter fontSize={32} color="black" /></a>
+              <a href='https://t.me/competishun_official' target='_blank'><FaTelegram fontSize={32} color="#0088cc" /></a>
+              <a href='https://www.instagram.com/competishun/?hl=en' target='_blank'><FaInstagram fontSize={32} color="#bc1888 "/></a>
+            </div>
+
             <h3>DOWNLOAD OUR APP</h3>
             <p>Ebooks, Test Preparation, Video Lectures</p>
-            <FaGooglePlay fontSize={25} />
-            <IoLogoAppleAppstore fontSize={25} />
-            <br />
+            <div className="appstore">
+              <a href='https://play.google.com/store/apps/details?id=co.hodor.fcldn' target='_blank'><img src={googleplay} alt="Google-Play" className="googleplay" /></a>
+             <a><img src={applestore} alt="Apple-Store" className="applestore" /></a>
+            </div>
           </div>
         </div>
-        <h3 className="develop">Develop with ❤️</h3>
+        <h3 className="develop">Developed with ❤️</h3>
       </div>
     </div>
   );
 };
 export default Footer;
-
-{
-  /* <FaInstagram fontSize={100} className="insta" /> */
-}

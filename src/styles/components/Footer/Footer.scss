@@ -4,7 +4,7 @@
   @include bodyText;
 
   .develop {
-    margin-left: 70rem;
+    margin-left: 62rem;
     color: var(--lightest-bg-color);
   }
 
@@ -33,7 +33,7 @@
         }
 
         .footer-address {
-          @include flex-ss(row);
+          @include flex-ss;
           gap: 0.6rem;
 
           .Icon {
@@ -41,20 +41,50 @@
           }
         }
       }
-      .footer-quickLinks {
-        @include flex-cc(column);
 
+      .footer-quickLinks {
+        @include flex-ss(column);
+        gap: 2rem;
         .element {
           .footer-link {
             li {
               list-style-type: none;
               text-decoration: none;
+              margin-bottom: 0.4rem;
               .footer-navlink {
                 text-decoration: none;
                 color: var(--darkest-bg-color);
               }
             }
           }
+        }
+      }
+
+      .footer-support {
+        @include flex-ss(column);
+
+        gap: 2rem;
+
+        .footer-support-link {
+          .point {
+            margin-top: 0.4rem;
+          }
+        }
+      }
+
+      .footer-joinUs {
+        .socialMedia-logo {
+          @include flex-ss(row);
+          gap: 1.1rem;
+          margin-top: 1.2rem;
+          margin-bottom: 0.9rem;
+        }
+        p {
+          margin-top: 0.2rem;
+        }
+        .appstore {
+          @include flex-cc(row);
+          gap: 2rem;
         }
       }
     }

@@ -1,4 +1,5 @@
 import CourseData from '../../Data/CourseData';
+import CardComponent from '../CardComponent/CardComponent';
 
 const CourseCard = () => {
   return (
@@ -9,7 +10,7 @@ const CourseCard = () => {
         </div>
         <div className="CourseCardComponent">
           {CourseData.map((item, index) => (
-            <CourseCardComponent key={index} data={item} />
+            <CardComponent key={index} data={item} />
           ))}
         </div>
       </div>
@@ -17,13 +18,3 @@ const CourseCard = () => {
   );
 };
 export default CourseCard;
-
-const CourseCardComponent = ({ data }) => {
-  return (
-    <div className="ComponentDivision">
-      <img src={data.src} alt="Course" />
-      <h2>{data.title}</h2>
-      <p>{data.desc}</p>
-    </div>
-  );
-};
