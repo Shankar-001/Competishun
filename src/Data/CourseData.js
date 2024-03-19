@@ -1,41 +1,85 @@
 import logo from '../assets/Pratham.jpg';
 
-const CourseData = [
+export const JeeFullYearData = [
   {
     src: logo,
-    title: 'Home',
+    title: 'PRATHAM',
     desc: 'nav-links',
   },
   {
     src: logo,
-    title: 'About',
+    title: 'PRAKHAR',
     desc: 'nav-links',
   },
   {
     src: logo,
-    title: 'About',
+    title: 'RAKHAR INTEGRATED',
     desc: 'nav-links',
   },
   {
     src: logo,
-    title: 'About',
+    title: 'PRAKHAR INTEGRATED FAST LANE',
     desc: 'nav-links',
   },
   {
     src: logo,
-    title: 'About',
+    title: 'PRAVEEN',
     desc: 'nav-links',
   },
   {
     src: logo,
-    title: 'About',
+    title: 'PRAVEEN FAST LANE',
     desc: 'nav-links',
   },
   {
     src: logo,
-    title: 'About',
+    title: 'PRABAL',
     desc: 'nav-links',
   },
 ];
 
-export default CourseData;
+export const ShortTermData = [
+  {
+    src: logo,
+    title: 'CHAMP',
+    desc: 'nav-links',
+  },
+  {
+    src: logo,
+    title: 'CATS',
+    desc: 'nav-links',
+  },
+  {
+    src: logo,
+    title: 'CATS PLUS',
+    desc: 'nav-links',
+  },
+  {
+    src: logo,
+    title: 'C³',
+    desc: 'nav-links',
+  },
+  {
+    src: logo,
+    title: 'PRAVEEN FAST LANE (LIMITED EDITION)',
+    desc: 'nav-links',
+  },
+];
+
+export const NeetFullYearData = [
+  {
+    src: logo,
+    title: 'CHAMP',
+    desc: 'nav-links',
+  },
+  {
+    src: logo,
+    title: 'CATS',
+    desc: 'nav-links',
+  },
+  {
+    src: logo,
+    title: 'CATS PLUS',
+    desc: 'nav-links',
+  },
+]
