@@ -1,0 +1,25 @@
+.TestimonialsSection {
+  @include flex-cc;
+  @include bodyText;
+  padding: 5rem 0;
+  width: 100%;
+  background-color: var(--lightest-bg-color);
+
+  .container {
+    @include flex-cc(column);
+    width: var(--landing-page-main-info-width);
+    h1 {
+      @include h1;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+    }
+
+    .testimonials{
+        @include flex-cc;
+        width: 100%;
+        gap: 2rem;
+
+        @import './TestimonialComponent.scss';
+    }
+  }
+}
