@@ -1,38 +1,38 @@
-import logo from '../assets/Pratham.jpg';
+import PraveenOnline from '../assets/PraveenOnline.jpg';
 
 const TestData = [
   {
-    src: logo,
+    src: PraveenOnline,
     title: 'Home',
     desc: 'nav-links',
   },
   {
-    src: logo,
+    src: PraveenOnline,
     title: 'About',
     desc: 'nav-links',
   },
   {
-    src: logo,
+    src: PraveenOnline,
     title: 'About',
     desc: 'nav-links',
   },
   {
-    src: logo,
+    src: PraveenOnline,
     title: 'About',
     desc: 'nav-links',
   },
   {
-    src: logo,
+    src: PraveenOnline,
     title: 'About',
     desc: 'nav-links',
   },
   {
-    src: logo,
+    src: PraveenOnline,
     title: 'About',
     desc: 'nav-links',
   },
   {
-    src: logo,
+    src: PraveenOnline,
     title: 'About',
     desc: 'nav-links',
   },

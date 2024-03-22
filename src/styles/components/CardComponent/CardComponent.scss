@@ -8,8 +8,8 @@
   overflow: hidden;
   box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
   img {
-    margin-top: 0.7rem;
-    width: 90%;
+    width: 100%;
+    height: 100%;
   }
   &:hover {
     background-color: var(--light-bg-color);
