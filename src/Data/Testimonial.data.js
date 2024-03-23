@@ -35,6 +35,42 @@ const testimonialData = [
     email: 'jane@abc.com',
     thumbnail: 'https://i3.ytimg.com/vi/yxdtMKXOaZM/hqdefault.jpg',
   },
+  {
+    id: 3,
+    name: 'Jane Doe',
+    exam: 'NEET',
+    videoUrl: 'https://www.youtube.com/watch?v=2',
+    discription:
+      'Competishun is the best platform to learn and practice for NEET. The teachers are very supportive and the content is very well structured.',
+    title: 'CEO',
+    college: 'AIIMS Delhi',
+    email: 'jane@abc.com',
+    thumbnail: 'https://i3.ytimg.com/vi/yxdtMKXOaZM/hqdefault.jpg',
+  },
+  {
+    id: 3,
+    name: 'Jane Doe',
+    exam: 'NEET',
+    videoUrl: 'https://www.youtube.com/watch?v=2',
+    discription:
+      'Competishun is the best platform to learn and practice for NEET. The teachers are very supportive and the content is very well structured.',
+    title: 'CEO',
+    college: 'AIIMS Delhi',
+    email: 'jane@abc.com',
+    thumbnail: 'https://i3.ytimg.com/vi/yxdtMKXOaZM/hqdefault.jpg',
+  },
+  {
+    id: 3,
+    name: 'Jane Doe',
+    exam: 'NEET',
+    videoUrl: 'https://www.youtube.com/watch?v=2',
+    discription:
+      'Competishun is the best platform to learn and practice for NEET. The teachers are very supportive and the content is very well structured.',
+    title: 'CEO',
+    college: 'AIIMS Delhi',
+    email: 'jane@abc.com',
+    thumbnail: 'https://i3.ytimg.com/vi/yxdtMKXOaZM/hqdefault.jpg',
+  },
 ];
 
 export default testimonialData;

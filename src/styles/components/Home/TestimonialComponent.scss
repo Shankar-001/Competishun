@@ -1,6 +1,6 @@
 .TestimonialComponent{
     @include flex-cc(column);
-    width: 100%;
+    width: 150rem;
     gap: 2rem;
     padding: 2rem;
     background-color: var(--light-bg-color);
