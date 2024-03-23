@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Result from '../pages/Result';
@@ -13,8 +13,9 @@ const AllRoutes = () => {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/result" element={<Result />} />
-      <Route path="/courses" element={<Course />} />
+      <Route path="/courses/:path" element={<Course />} />
       <Route path="/testSeries" element={<TestSeries />} />
+      <Route path="/*" element={<Navigate to="/" />} />
     </Routes>
   );
 };
