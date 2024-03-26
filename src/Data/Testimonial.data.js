@@ -36,7 +36,7 @@ const testimonialData = [
     thumbnail: 'https://i3.ytimg.com/vi/yxdtMKXOaZM/hqdefault.jpg',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Jane Doe',
     exam: 'NEET',
     videoUrl: 'https://www.youtube.com/watch?v=2',
@@ -48,7 +48,7 @@ const testimonialData = [
     thumbnail: 'https://i3.ytimg.com/vi/yxdtMKXOaZM/hqdefault.jpg',
   },
   {
-    id: 3,
+    id: 5,
     name: 'Jane Doe',
     exam: 'NEET',
     videoUrl: 'https://www.youtube.com/watch?v=2',
@@ -60,7 +60,7 @@ const testimonialData = [
     thumbnail: 'https://i3.ytimg.com/vi/yxdtMKXOaZM/hqdefault.jpg',
   },
   {
-    id: 3,
+    id: 6,
     name: 'Jane Doe',
     exam: 'NEET',
     videoUrl: 'https://www.youtube.com/watch?v=2',
