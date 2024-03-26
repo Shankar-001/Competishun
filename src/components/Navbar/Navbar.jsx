@@ -45,6 +45,11 @@ const Navbar = () => {
               Home
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/about" className="navlink">
+              About Us
+            </NavLink>
+          </li>
           <li
             onMouseEnter={handleCoursesMouseEnter}
             onMouseLeave={handleCoursesMouseLeave}
@@ -67,18 +72,26 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className="navlink">
-              About
+            <NavLink to="/result" className="navlink">
+              Result
+            </NavLink>
+          </li>
+         
+          <li>
+            <NavLink to="/contact" className="navlink">
+             Study Free
             </NavLink>
           </li>
           <li>
             <NavLink to="/contact" className="navlink">
-              Contact Us
+            Gallery
             </NavLink>
           </li>
+
+         
           <li>
-            <NavLink to="/result" className="navlink">
-              Result
+            <NavLink to="/contact" className="navlink">
+              Contact Us
             </NavLink>
           </li>
           {/* <div>Home</div>
