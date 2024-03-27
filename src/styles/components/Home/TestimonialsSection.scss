@@ -2,7 +2,7 @@
   @include flex-cc;
   @include bodyText;
   padding: 5rem 0;
-  // width: 100%;
+  width: 100%;
   background-color: var(--lightest-bg-color);
   .containerMain {
     @include flex-cc(column);
@@ -30,7 +30,7 @@
         // @include flex-cc;
         display: flex;
         justify-content: start;
-        // width: 90vw;
+        width: 90vw;
         position: relative;
         z-index: 1;
         flex-wrap: nowrap;

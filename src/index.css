@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 html {
   --btn-lr-pad: 1.6rem;
@@ -364,6 +365,98 @@ button {
   width: fit-content;
   color: aliceblue;
 }
+.Home .resultSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  padding: 5rem 0;
+  width: 100%;
+  background-color: var(--lightest-bg-color);
+}
+.Home .resultSection .containerMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: var(--landing-page-main-info-width);
+  border-radius: 10px;
+  height: 30rem;
+}
+.Home .resultSection .containerMain h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+.Home .resultSection .container {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+.Home .resultSection .container .row {
+  --bs-gutter-x: 2.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--bs-gutter-x) / -2);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-top: calc(var(--bs-gutter-y) * -1);
+}
+.Home .resultSection .container .row .inner-row {
+  text-align: center;
+  flex: 0 0 auto;
+  width: 100%;
+}
+.Home .resultSection .container .row .inner-row .badge h6 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  background-color: rgba(223, 71, 89, 0.1);
+  color: #df4759;
+  letter-spacing: 0.08em;
+  text-transform: uppercase !important;
+  border-radius: 0.6rem;
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.25rem 0.75rem;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.Home .resultSection .container .row .inner-row h6 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  background-color: rgba(223, 71, 89, 0.1);
+  color: #df4759;
+  letter-spacing: 0.08em;
+  text-transform: uppercase !important;
+  border-radius: 0.6rem;
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.25rem 0.75rem;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.Home .resultSection .container .row .inner-row h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
 .Home .TestimonialsSection {
   display: flex;
   flex-direction: row;
@@ -374,6 +467,7 @@ button {
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
   padding: 5rem 0;
+  width: 100%;
   background-color: var(--lightest-bg-color);
 }
 .Home .TestimonialsSection .containerMain {
@@ -393,6 +487,7 @@ button {
 .Home .TestimonialsSection .containerMain .TestimonialComp {
   display: flex;
   justify-content: start;
+  width: 90vw;
   position: relative;
   z-index: 1;
   flex-wrap: nowrap;
@@ -411,9 +506,11 @@ button {
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 50rem;
+  width: 30rem;
   height: 40rem;
   scroll-snap-align: center;
+  flex: 0 0 auto;
+  margin-right:  20px;
 }
 .Home .TestimonialsSection .containerMain .TestimonialComp .TestimonialComponent .container {
   color: var(--dark-text-color);

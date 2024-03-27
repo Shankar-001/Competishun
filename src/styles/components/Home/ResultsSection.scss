@@ -1,0 +1,88 @@
+.resultSection {
+  @include flex-cc;
+  @include bodyText;
+  padding: 5rem 0;
+  width: 100%;
+  background-color: var(--lightest-bg-color);
+
+  .containerMain {
+    @include flex-cc(column);
+    width: var(--landing-page-main-info-width);
+    // box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 30rem;
+    
+    h1 {
+      @include h1;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+    }
+  }
+
+  .container{
+        padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    position: relative;
+    z-index: 1;
+
+    .row{
+        --bs-gutter-x: 2.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--bs-gutter-x) / -2);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-top: calc(var(--bs-gutter-y)* -1);
+
+    .inner-row{
+        
+        text-align: center;
+        flex: 0 0 auto;
+    width: 100%;
+
+    .badge{
+        h6{
+        @include h5;
+            background-color: rgba(223, 71, 89, .1);
+    color: #df4759;
+    letter-spacing: .08em;
+    text-transform: uppercase !important;
+
+    border-radius: .6rem;
+    display: inline-block;
+    font-size: .75em;
+    font-weight: 600;
+    line-height: 1;
+    padding: .25rem .75rem;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    }
+    }
+    h6{
+        @include h5;
+            background-color: rgba(223, 71, 89, .1);
+    color: #df4759;
+    letter-spacing: .08em;
+    text-transform: uppercase !important;
+
+    border-radius: .6rem;
+    display: inline-block;
+    font-size: .75em;
+    font-weight: 600;
+    line-height: 1;
+    padding: .25rem .75rem;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    }
+    h1{
+        @include h1;
+        color: var(--primary-color);
+        margin-bottom: 2rem;
+    }
+    }
+    }
+  }
+  
+}

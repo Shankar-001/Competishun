@@ -1,4 +1,5 @@
 import HighlightSection from '../../components/Home/HighlightSection';
+import ResultsSection from '../../components/Home/ResultsSection';
 import TestimonialsSection from '../../components/Home/TestimonialsSection';
 
 const Home = () => {
@@ -6,6 +7,8 @@ const Home = () => {
     <div className="Home">
       <HighlightSection />
 
+
+      <ResultsSection />
       <TestimonialsSection />
     </div>
   );
