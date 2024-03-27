@@ -211,7 +211,7 @@ button {
   color: var(--darkest-bg-color);
 }
 .footer-mainContainer .develop {
-  margin-left: 62rem;
+  text-align: center;
   color: var(--lightest-bg-color);
 }
 .footer-mainContainer .footer-containerContent {
@@ -363,6 +363,45 @@ button {
   margin-top: 2rem;
   width: fit-content;
   color: aliceblue;
+}
+.Home .director-card {
+  width: 70%;
+  transform: translateY(-40%);
+}
+.Home .director-card .my_card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.Home .director-card .my_card-container .inner_card {
+  background-color: var(--light-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 22.5%;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.05) !important;
+  justify-content: center;
+  align-items: center;
+}
+.Home .director-card .my_card-container .inner_card .text-content {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  align-items: center;
+  justify-content: center;
+}
+.Home .director-card .my_card-container .inner_card .text-content .name {
+  font-size: 1.6rem;
+  color: var(--darkest-bg-color);
+  padding-bottom: 5px;
+  font-weight: 550;
+}
+.Home .director-card .my_card-container .inner_card .text-content .description {
+  color: rgb(128, 128, 128);
+}
+.Home .director-card .my_card-container .inner_card .text-content .description .sub {
+  padding-top: 5%;
 }
 
 .CourseMainContainer .CourseCardMainContainer {
