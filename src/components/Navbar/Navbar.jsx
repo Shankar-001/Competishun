@@ -67,18 +67,18 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className="navlink">
-              About
+            <NavLink to="/result" className="navlink">
+              Result
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/merchandise" className="navlink">
+             Merchandise
             </NavLink>
           </li>
           <li>
             <NavLink to="/contact" className="navlink">
               Contact Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/result" className="navlink">
-              Result
             </NavLink>
           </li>
           {/* <div>Home</div>

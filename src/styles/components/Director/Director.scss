@@ -1,0 +1,42 @@
+.director-card {
+  width: 70%;
+  transform: translateY(-40%);
+  // background-color: var(--lightest-bg-color);
+  .my_card-container {
+    display: flex;
+    justify-content: space-between;
+    // gap: 3%;
+    .inner_card {
+      background-color: var(--light-bg-color);
+      @include flex-cc(column);
+      width: 22.5%;
+      padding: 1rem;
+      border-radius: 1rem;
+      // box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+      box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.05) !important;
+      // transform :.25s ease;
+      justify-content: center;
+      align-items: center;
+
+      .text-content {
+        padding-top: 5%;
+        padding-bottom: 2%;
+        align-items: center;
+        justify-content: center;
+        .name {
+          font-size: 1.6rem;
+          color: var(--darkest-bg-color);
+          padding-bottom: 5px;
+          font-weight: 550;
+        }
+        .description {
+          color: rgb(128, 128, 128);
+          .sub {
+            padding-top: 5%;
+          }
+        }
+        // gap: 2rem;
+      }
+    }
+  }
+}
