@@ -433,68 +433,87 @@ button {
   color: var(--primary-color);
   margin-bottom: 2rem;
 }
-.Home .resultSection .container {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  position: relative;
-  z-index: 1;
-}
-.Home .resultSection .container .row {
-  --bs-gutter-x: 2.5rem;
-  --bs-gutter-y: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(var(--bs-gutter-x) / -2);
-  margin-right: calc(var(--bs-gutter-x) / -2);
-  margin-top: calc(var(--bs-gutter-y) * -1);
-}
-.Home .resultSection .container .row .inner-row {
-  text-align: center;
-  flex: 0 0 auto;
+.Home .resultSection #result {
   width: 100%;
 }
-.Home .resultSection .container .row .inner-row .badge h6 {
-  font-size: 1.8rem;
+.Home .resultSection #result .container .row.mt-6 {
+  margin-top: 6rem;
+}
+.Home .resultSection #result .container .row .inner-row .badge {
+  font-size: 1.6rem;
   font-weight: 400;
   font-family: var(--font-family);
-  background-color: rgba(223, 71, 89, 0.1);
-  color: #df4759;
-  letter-spacing: 0.08em;
-  text-transform: uppercase !important;
-  border-radius: 0.6rem;
+  color: var(--darkest-bg-color);
   display: inline-block;
-  font-size: 0.75em;
-  font-weight: 600;
-  line-height: 1;
-  padding: 0.25rem 0.75rem;
-  text-align: center;
-  vertical-align: baseline;
-  white-space: nowrap;
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0d6efd;
+  border-radius: 0.375rem;
 }
-.Home .resultSection .container .row .inner-row h6 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-  background-color: rgba(223, 71, 89, 0.1);
-  color: #df4759;
-  letter-spacing: 0.08em;
-  text-transform: uppercase !important;
-  border-radius: 0.6rem;
-  display: inline-block;
-  font-size: 0.75em;
+.Home .resultSection #result .container .row .inner-row h2 {
+  font-size: 4.8rem;
   font-weight: 600;
-  line-height: 1;
-  padding: 0.25rem 0.75rem;
-  text-align: center;
-  vertical-align: baseline;
-  white-space: nowrap;
-}
-.Home .resultSection .container .row .inner-row h1 {
-  font-size: 6rem;
-  font-weight: 700;
   font-family: var(--font-family);
-  color: var(--primary-color);
-  margin-bottom: 2rem;
+}
+.Home .resultSection #result .container .row .inner-row h2.display-3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.Home .resultSection #result .container .row .inner-row h2.fw-bolder {
+  font-weight: bolder;
+}
+.Home .resultSection #result .container .row .card-group {
+  border-top: 0.3rem solid #0d6efd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.Home .resultSection #result .container .row .card-group.card-border.border-primary {
+  border-color: #0d6efd;
+}
+.Home .resultSection #result .container .row .card-group.card-border.shadow-light-lg {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+.Home .resultSection #result .container .row .card-group.card-border.lift {
+  transition: transform 0.3s ease;
+}
+.Home .resultSection #result .container .row .card-group.card-border.lift-lg:hover {
+  transform: translateY(-0.5rem);
+}
+.Home .resultSection #result .container .row .card-group .card {
+  width: 20%;
+}
+.Home .resultSection #result .container .row .card-group .card .card-body h2 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+}
+.Home .resultSection #result .container .row .card-group .card .card-body h2.fw-bolder {
+  font-weight: bold;
+}
+.Home .resultSection #result .container .row .card-group .card .card-body h2.text-center {
+  text-align: center;
+}
+.Home .resultSection #result .container .row .card-group .card .card-body h2 span.text-danger {
+  color: #dc3545;
+}
+.Home .resultSection #result .container .row .card-group .card .card-body h2 span.fw-bold {
+  font-weight: bold;
+}
+.Home .resultSection #result .container .row .card-group .card .card-body p.text-muted {
+  color: #6c757d;
+}
+.Home .resultSection #result .container .row .card-group .card .card-body p.text-center {
+  text-align: center;
+}
+.Home .resultSection #result .container .row .card-group .card .card-body p span.text-danger {
+  color: #dc3545;
+}
+.Home .resultSection #result .container .row .card-group .card .card-body p span.fw-bold {
+  font-weight: bold;
 }
 .Home .TestimonialsSection {
   display: flex;
