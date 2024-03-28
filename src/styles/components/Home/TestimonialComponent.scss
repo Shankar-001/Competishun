@@ -1,0 +1,39 @@
+.TestimonialComponent {
+  @include flex-cc(column);
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--light-bg-color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30rem;
+  height: 40rem;
+  scroll-snap-align: center;
+  flex: 0 0 auto;
+  margin-right: 20px;
+
+  .container {
+    // width: var(--landing-page-main-info-width);
+    color: var(--dark-text-color);
+
+    img {
+      // width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .content{
+      // width: 100%;
+
+      // text-wrap: wrap; 
+
+
+        h3{
+            @include h3;
+
+            // color:aqua;
+        }
+
+    }
+  }
+
+}
