@@ -1,92 +1,100 @@
-import PraveenOnline from '../assets/PraveenOnline.jpg';
-import PrakharOnline from '../assets/PRAKHARONLINE1.jpg';
-import PrathamOnline from '../assets/PrathamOnline1.jpg';
-import PrakharIntegrated from '../assets/PrakharIntegrated.jpg';
+import PrathamOnline from '../assets/Courses/PrathamOnline1.jpg';
+import PrakharOnline from '../assets/Courses/PrakharOnline1.jpg';
+import PrakharIntegrated from '../assets/Courses/PrakharIntegrated.jpg';
+import PrakharIntegratedFastLane from '../assets/Courses/PrakharIntegratedFastLane1.jpg';
+import PraveenOnline from '../assets/Courses/PraveenOnline1.jpg';
+import PraveenFastLane from '../assets/Courses/PraveenFastLane.jpg';
+import PrabalOnline from '../assets/Courses/PrabalOnline.jpg';
 
-import PrathamOffline from '../assets/PRATHAMOFFline1.jpg';
+import Champ from '../assets/Courses/Champ.jpg';
+import Cats from '../assets/Courses/Cats.jpg';
+import CatsPlus from '../assets/Courses/CatsPlus.jpg';
+import C3 from '../assets/Courses/C3.jpg';
+// PRAVEEN FAST LANE (LIMITED EDITION)
+
+import AarambhOnline from '../assets/Courses/AarambhOnline.jpg';
+import ArjunOnline from '../assets/Courses/ArjunOnline.jpg';
+import AviralOnline from '../assets/Courses/AviralOnline.jpg';
+// NEET COMPETISHUN CRASH COURSE
+
+import PrathamOffline from '../assets/Courses/PrathamOffline.jpg';
+import PrakharOffline from '../assets/Courses/PrakharOffline.jpg';
+import PraveenOffline from '../assets/Courses/PraveenOffline.jpg';
+// RANKERS OFFLINE
+// CATS OFFLINE
+
+import AarambhOffline from '../assets/Courses/AarambhOffline.jpg';
+import ArjunOffline from '../assets/Courses/ArjunOffline.jpg';
+import AviralOffline from '../assets/Courses/AviralOffline.jpg';
+// NEET CARSH COURSE OFFLINE
 
 // Jee And Neet Online Courses
 export const JeeFullYearData = [
   {
     src: PrathamOnline,
     title: 'PRATHAM',
-    desc: 'nav-links',
   },
   {
     src: PrakharOnline,
     title: 'PRAKHAR',
-    desc: 'nav-links',
   },
   {
     src: PrakharIntegrated,
-    title: 'RAKHAR INTEGRATED',
-    desc: 'nav-links',
+    title: 'PRAKHAR INTEGRATED',
   },
   {
-    src: PrakharIntegrated,
+    src: PrakharIntegratedFastLane,
     title: 'PRAKHAR INTEGRATED FAST LANE',
-    desc: 'nav-links',
   },
   {
     src: PraveenOnline,
     title: 'PRAVEEN',
-    desc: 'nav-links',
   },
   {
-    src: PraveenOnline,
+    src: PraveenFastLane,
     title: 'PRAVEEN FAST LANE',
-    desc: 'nav-links',
   },
   {
-    src: PraveenOnline,
+    src: PrabalOnline,
     title: 'PRABAL',
-    desc: 'nav-links',
   },
 ];
 
 export const JeeShortTermData = [
   {
-    src: PraveenOnline,
+    src: Champ,
     title: 'CHAMP',
-    desc: 'nav-links',
   },
   {
-    src: PraveenOnline,
+    src: Cats,
     title: 'CATS',
-    desc: 'nav-links',
   },
   {
-    src: PraveenOnline,
+    src: CatsPlus,
     title: 'CATS PLUS',
-    desc: 'nav-links',
   },
   {
-    src: PraveenOnline,
+    src: C3,
     title: 'C³',
-    desc: 'nav-links',
   },
   {
     src: PraveenOnline,
     title: 'PRAVEEN FAST LANE (LIMITED EDITION)',
-    desc: 'nav-links',
   },
 ];
 
 export const NeetFullYearData = [
   {
-    src: PraveenOnline,
-    title: 'CHAMP',
-    desc: 'nav-links',
+    src: AarambhOnline,
+    title: 'AARAMBH',
   },
   {
-    src: PraveenOnline,
-    title: 'CATS',
-    desc: 'nav-links',
+    src: ArjunOnline,
+    title: 'ARJUN',
   },
   {
-    src: PraveenOnline,
-    title: 'CATS PLUS',
-    desc: 'nav-links',
+    src: AviralOnline,
+    title: 'AVIRAL',
   },
 ];
 
@@ -94,69 +102,53 @@ export const NeetShortTermData = [
   {
     src: PraveenOnline,
     title: 'NEET COMPETISHUN CRASH COURSE',
-    desc: 'nav-links',
   },
 ];
-
-// Jee And Neet Offline Courses
-// PRATHAM OFFLINE
-// PRAKHAR OFFLINE
-// PRAKHAR OFFLINE
-// RANKERS OFFLINE
-// CATS OFFLINE
 
 export const JeeOfflineData = [
   {
     src: PrathamOffline,
     title: 'PRATHAM OFFLINE',
-    desc: 'nav-links',
   },
   {
-    src: PrathamOffline,
+    src: PrakharOffline,
     title: 'PRAKHAR OFFLINE',
-    desc: 'nav-links',
   },
   {
-    src: PrathamOffline,
+    src: PraveenOffline,
     title: 'PRAVEEN OFFLINE',
-    desc: 'nav-links',
   },
   {
     src: PrathamOffline,
     title: 'RANKERS OFFLINE',
-    desc: 'nav-links',
   },
   {
     src: PrathamOffline,
     title: 'CATS OFFLINE',
-    desc: 'nav-links',
   },
 ];
-
-// AARAMBH OFFLINE
-// ARJUN OFFLINE
-// AVIRAL OFFLINE
-// NEET CARSH COURSE OFFLINE
 
 export const NeetOfflineData = [
   {
-    src: PraveenOnline,
+    src: AarambhOffline,
     title: 'AARAMBH OFFLINE',
-    desc: 'nav-links',
   },
   {
-    src: PraveenOnline,
+    src: ArjunOffline,
     title: 'ARJUN OFFLINE',
-    desc: 'nav-links',
   },
   {
-    src: PraveenOnline,
+    src: AviralOffline,
     title: 'AVIRAL OFFLINE',
-    desc: 'nav-links',
   },
   {
     src: PraveenOnline,
-    title: 'NEET CARSH COURSE OFFLINE',
-    desc: 'nav-links',
+    title: 'NEET CARSH COURSE OFFLINE',
   },
 ];
+
+export const SingleCourseDetails = {
+  PRAKHAR: {
+    aboutUs: 'Hello main yaha hun',
+  },
+};
