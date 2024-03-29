@@ -1,40 +1,33 @@
-import PraveenOnline from '../assets/PraveenOnline.jpg';
+import PraveenOnline from '../assets/Courses/PraveenOnline1.jpg';
 
 const TestData = [
   {
     src: PraveenOnline,
     title: 'Home',
-    desc: 'nav-links',
   },
   {
     src: PraveenOnline,
     title: 'About',
-    desc: 'nav-links',
   },
   {
     src: PraveenOnline,
     title: 'About',
-    desc: 'nav-links',
   },
   {
     src: PraveenOnline,
     title: 'About',
-    desc: 'nav-links',
   },
   {
     src: PraveenOnline,
     title: 'About',
-    desc: 'nav-links',
   },
   {
     src: PraveenOnline,
     title: 'About',
-    desc: 'nav-links',
   },
   {
     src: PraveenOnline,
     title: 'About',
-    desc: 'nav-links',
   },
 ];
 
