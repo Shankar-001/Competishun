@@ -7,45 +7,53 @@
   .containerMain {
     @include flex-cc(column);
     width: var(--landing-page-main-info-width);
-  
+
     h1 {
       @include h1;
       color: var(--primary-color);
       margin-bottom: 2rem;
     }
-
-    // .testimonials{
-    //   width: 90vw;
-      // margin-top: 2rem; /* Add some space at the top */
-      // display: flex;
-      
-      // padding-bottom: 1rem; /* Add some space for scrollbar */
-      // overflow-x: auto;
-      // overflow-x: scroll;
-      // overflow-x: scroll; /* Enable horizontal scrolling */
-    // flex-wrap: nowrap; /* Keep testimonials in a single line *
-
-
-      .TestimonialComp{
-        // @include flex-cc;
+    .testimonials-container {
+      @include flex-cst;
+      width: 100%;
+      .TestimonialComp {
+        @include transition;
+        //make scrolll animation smooth
+        scroll-behavior: smooth;
         display: flex;
-        justify-content: start;
-        width: 90vw;
+        width: 90%;
         position: relative;
         z-index: 1;
-        flex-wrap: nowrap;
-        scroll-behavior: smooth;
-        overflow-x: auto;
-        // display: flex;
-        // // width: auto;
+        scroll-snap-type: x proximity;
+        overflow-x: scroll;
+        overflow-y: hidden;
         gap: 2rem;
-        // position: relative;
-        // overflow-x: auto;
-        // scroll-snap-type: x mandatory;
-        // flex-wrap: nowrap;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        
         @import './TestimonialComponent.scss';
-
       }
-    // }
+
+      .arrow {
+        @include flex-cc;
+        z-index: 2;
+        cursor: pointer;
+        width : 5rem;
+
+        img{
+          width: 100%;
+          height: 10rem;
+        }
+
+        &.left-arrow {
+          transform: rotate(180deg) translateX(50%);
+        }
+
+        &.right-arrow {
+          transform: translateX(50%);
+        }
+      }
+    }
   }
 }
