@@ -1,0 +1,61 @@
+.Navbar-main-container {
+  @include bodyText;
+  background-color: var(--ip-border-clr);
+  padding-top: 1.8%;
+  @include flex-cc;
+  position: fixed;
+  z-index: 100;
+  .element {
+    width: var(--landing-page-main-info-width);
+    @include flex-sbc;
+    // width: var(--landing-page-main-info-width);
+    .navbar-heading {
+      line-height: 200%;
+      gap: 3rem;
+      @include flex-cc;
+      font-weight: 400;
+      font-size: 1.7rem;
+      //   @include bodyText(var(--lightest-bg-color), 2rem, 700);
+      li {
+        list-style-type: none;
+        text-decoration: none;
+
+        .navlink {
+          text-decoration: none;
+          color: var(--lightest-bg-color);
+        }
+
+        .active {
+          color: var(--primary-color);
+        }
+
+        .navbar-course-details {
+          @include flex-sc;
+          color: var(--lightest-bg-color);
+          .drop-arrow {
+            margin-top: 30%;
+          }
+        }
+
+        .courses-dropdown {
+          @include flex-ss(column);
+          color: black;
+          position: absolute;
+          
+          // top: calc(100% + 10px);
+          background-color: var(--ip-border-clr);
+          border-radius: 4px;
+          padding: 10px;
+          z-index: 100;
+        }
+      }
+    }
+  }
+  .image {
+    width: 22%;
+  }
+}
+
+.Navbar-main-container.homeroute {
+  background-color: transparent; /* Set background to transparent if 'homeroute' class is present */
+}

@@ -1,0 +1,39 @@
+.NewOffer-main-container {
+  @include bodyText;
+  position: fixed;
+  width: 100%;
+  z-index: 105;
+  background-color: #df4759;
+  padding: 0.2%;
+  line-height: 95%;
+  @include flex-cc;
+  .width {
+    width: var(--landing-page-main-info-width);
+    @include flex-cc;
+    gap: 1rem;
+    .content {
+      @include bodyText(var(--lightest-bg-color), 1.4rem, 400);
+      .content-sub {
+        color: #fad776 !important;
+      }
+    }
+    .button {
+      text-decoration: none;
+      background-color: var(--light-bg-color);
+      border-radius: 4px;
+      padding: 0.1% 0.3%;
+      color: #df4759;
+    }
+  }
+  .cross {
+    text-decoration: none;
+    @include bodyText(var(--lightest-bg-color), 2rem, 600);
+    color: white;
+    &:hover {
+      color: black;
+    }
+  }
+  .NewOffer-hidden {
+    display: none;
+  }
+}

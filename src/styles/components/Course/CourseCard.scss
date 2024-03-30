@@ -1,0 +1,31 @@
+.CourseCardMainContainer {
+  @include bodyText;
+  @include flex-cc;
+  .CourseCardSubContainer {
+    @include flex-cc(column);
+    margin-top: 10rem;
+    width: var(--landing-page-main-info-width);
+    .CourseDetails {
+      @include bodyText(var(--darkest-bg-color), 3.6rem, 500);
+      width: var(--landing-page-main-info-width);
+      margin: {
+        top: 3%;
+        bottom: 3.2%;
+      }
+      span {
+        color: #e14255;
+      }
+    }
+    .CourseCardComponent {
+      @include grid-sc;
+      @include grid-n-eql-col(3);
+      justify-content: space-between;
+      width: 90%;
+      flex-wrap: wrap;
+      gap: 5rem;
+      margin-bottom: 2%;
+
+      @import '../CardComponent/CardComponent.scss';
+    }
+  }
+}

@@ -48,7 +48,13 @@
     justify-content: center;
     align-items: flex-end;
 }
-
+// center-stretch
+@mixin flex-cst($direction: row){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: stretch;
+}
 //space_between
 @mixin flex-sbc($direction: row){
     display: flex;
@@ -74,6 +80,12 @@
     justify-content: space-evenly;
     align-items: flex-start;
 }
+@mixin flex-sec($direction: row){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 // space_around
 @mixin flex-sas($direction: row){
@@ -95,6 +107,8 @@
     justify-content: space-around;
     align-items: flex-start;
 }
+
+
 
 //////////////////////////////////////////////////////////////////
 /// ///////////////////// Grid /////////////////////////////////
