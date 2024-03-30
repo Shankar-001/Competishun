@@ -785,6 +785,21 @@ button {
   transition: all 0.5s;
 }
 
+.CourseDetailsMainContainer .CourseCardMainContainer {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer {
+  margin-top: 10rem;
+  width: var(--landing-page-main-info-width);
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;

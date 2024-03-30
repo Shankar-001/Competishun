@@ -11,14 +11,14 @@ import CardComponent from '../CardComponent/CardComponent';
 import { useEffect } from 'react';
 
 const CourseCard = () => {
-  const { path } = useParams();
+  const { courseLink } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (!courseData[path]) {
+    if (!courseData[courseLink]) {
       navigate('/');
     }
-  }, [navigate, path]);
+  }, [navigate, courseLink]);
 
   const courseData = {
     'jee-online-courses': {
@@ -56,12 +56,11 @@ const CourseCard = () => {
   };
 
   const handleCardClick = (item) => {
-    navigate('/');
-    console.log(item);
+    navigate(`/courses/${courseLink}/${item.title}`);
   };
 
   const DataCourseCards = (type) => {
-    const { title, data } = courseData[path][type];
+    const { title, data } = courseData[courseLink][type];
 
     return (
       <>
@@ -83,10 +82,10 @@ const CourseCard = () => {
 
   return (
     <div className="CourseCardMainContainer">
-      {courseData[path] && (
+      {courseData[courseLink] && (
         <div className="CourseCardSubContainer">
           {DataCourseCards('fullYear')}
-          {courseData[path].shortTerm && DataCourseCards('shortTerm')}
+          {courseData[courseLink].shortTerm && DataCourseCards('shortTerm')}
         </div>
       )}
     </div>

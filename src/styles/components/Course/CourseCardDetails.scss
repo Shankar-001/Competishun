@@ -1,0 +1,8 @@
+.CourseCardMainContainer {
+  @include bodyText;
+  @include flex-cc;
+  .CourseCardSubContainer {
+    margin-top: 10rem;
+    width: var(--landing-page-main-info-width);
+  }
+}
