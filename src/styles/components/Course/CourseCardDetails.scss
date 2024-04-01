@@ -1,8 +1,22 @@
 .CourseCardMainContainer {
   @include bodyText;
   @include flex-cc;
+
   .CourseCardSubContainer {
     margin-top: 10rem;
     width: var(--landing-page-main-info-width);
+    li {
+      list-style-type: none;
+    }
+
+    .CommonCourse {
+      margin-top: 1.8%;
+      ul {
+        li {
+          margin-left: 2%;
+          list-style-type: none;
+        }
+      }
+    }
   }
 }

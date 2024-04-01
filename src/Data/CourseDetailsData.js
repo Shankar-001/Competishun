@@ -11,8 +11,9 @@ export const SingleCourseDetails = {
       '1st Instalment: Rs 16500/- (Link For Payment -https://rzp.io/l/9TzNtdj)',
       '2nd Instalment: Rs 13000/- After 45 days of Batch Commencement but Within 50 Days of Batch Commencement (Link For Payment --https://rzp.io/l/8XF3wUO)',
     ],
-    RefundPolicy: 'Refund Policy: https://bit.ly/49LLzYy',
+    RefundPolicy: 'https://bit.ly/49LLzYy',
   },
+  
   PRAKHAR: {
     Title: 'PRAKHAR (XII) – Target : IIT- JEE (MAIN+ADVANCED) – 2025',
     AboutCourse:
@@ -25,8 +26,9 @@ export const SingleCourseDetails = {
       '1st Installment: Rs 17400/- (Link For Payment-https://rzp.io/l/AKxGbgZ',
       '2nd Installment: Rs 13500/- After 45 days of Batch Commencement but Within 50 Days of Batch Commencement (Link For Payment -https://rzp.io/l/TrwSO8D6in)',
     ],
-    RefundPolicy: 'Refund Policy: https://bit.ly/49LLzYy',
+    RefundPolicy: 'https://bit.ly/49LLzYy',
   },
+
   'PRAKHAR INTEGRATED': {
     Title:
       'PRAKHAR Integrated (XI & XII) – Target: IIT- JEE (MAIN+ADVANCED) – 2025',
@@ -40,8 +42,9 @@ export const SingleCourseDetails = {
       '1st Installment : Rs 30000/- (Link For Payment --- https://pages.razorpay.com/pl_FqIphapnIPe7yb/view )',
       '2nd Installment: Rs 20000/- After 45 days of Batch Commencement but Within 50 Days of Batch Commencement ( Pay Second Installment: https://pages.razorpay.com/pl_Evlvr4aJgWc03p/view )',
     ],
-    RefundPolicy: 'Refund Policy: https://bit.ly/49LLzYy',
+    RefundPolicy: 'https://bit.ly/49LLzYy',
   },
+
   'PRAKHAR INTEGRATED FAST LANE': {
     Title:
       'PRAKHAR Integrated FAST LANE (XI & XII) – Target: IIT- JEE (MAIN+ADVANCED) – 2025',
@@ -55,8 +58,9 @@ export const SingleCourseDetails = {
       '1st Installment: Rs 25000/- (Link For Payment --- https://rzp.io/l/AOZG9jqL)',
       ' 2nd Installment: Rs 15000/- After 45 days of Batch Commencement but Within 50 Days of Batch Commencement (Pay Second Installment: https://rzp.io/l/02m5Ybppr)',
     ],
-    RefundPolicy: 'Refund Policy: https://bit.ly/49LLzYy',
+    RefundPolicy: 'https://bit.ly/49LLzYy',
   },
+
   PRAVEEN: {
     Title: 'PRAVEEN (DROPPER) – Target : IIT- JEE (MAIN+ADVANCED) – 2025',
     AboutCourse:
@@ -69,8 +73,9 @@ export const SingleCourseDetails = {
       '1st Installment: Rs 19,200/- Before Batch Commencement Payment Link-- https://rzp.io/l/4rUdqsp1d0',
       '2nd Installment: Rs 13,700/- After 45 days of Batch Commencement but Within 50 Days Payment Link--- https://rzp.io/l/y3mJA2Ew4',
     ],
-    RefundPolicy: 'Refund Policy: https://bit.ly/49LLzYy',
+    RefundPolicy: 'https://bit.ly/49LLzYy',
   },
+
   'PRAVEEN FAST LANE': {
     Title:
       'PRAVEEN Fast Lane (DROPPER) – Target : IIT- JEE (MAIN+ADVANCED) – 2025',
@@ -84,8 +89,9 @@ export const SingleCourseDetails = {
       '1st Installment: Rs 19,200/- Before Batch Commencement Payment Link-- https://rzp.io/l/4rUdqsp1d0',
       '2nd Installment: Rs 13,700/- After 45 days of Batch Commencement but Within 50 Days Payment Link--- https://rzp.io/l/y3mJA2Ew4',
     ],
-    RefundPolicy: 'Refund Policy: https://bit.ly/49LLzYy',
+    RefundPolicy: 'https://bit.ly/49LLzYy',
   },
+
   PRABAL: {
     Title: 'PRABAL (Dropper/Double Dropper) – Target:  JEE (MAIN) – 2025',
     AboutCourse:
@@ -98,7 +104,37 @@ export const SingleCourseDetails = {
       '1st Installment: Rs 12000/- Before Batch commencement (Link For Payment ---https://rzp.io/l/uWhV6a6)',
       '2nd Installment: Rs 8000/-  After 45 days of Batch Commencement but Within 50 Days of Batch Commencement   (Pay Second Installment: https://rzp.io/l/rpRv1g1XN)',
     ],
-    RefundPolicy: 'Refund Policy: https://bit.ly/49LLzYy',
+    RefundPolicy: 'https://bit.ly/49LLzYy',
+  },
+
+  AARAMBH: {
+    Title: 'AARAMBH (XI) – Target : NEET (UG)- 2026',
+    AboutCourse:
+      'AARAMBH,  Competishun’s full year course for students who are Moving from X to XI class. This Course covers the entire NEET (UG) syllabus of class XI from basic Students who will enroll in this batch will be able to complete syllabus in Systematic manner. This course is taught by TOP experienced Team Competishun faculties who makes your way to Best Medical College more easier.',
+
+    CourseDuration: '1-Full yearlong Course, Till: 30th April 2024',
+
+    FeeStructure: 'Fee Rs 11000/- (Inclusive of All Taxes)',
+  },
+
+  ARJUN: {
+    Title: 'ARJUN (XII) – Target : NEET (UG)- 2025',
+    AboutCourse:
+      'ARJUN,  Competishun’s full year course for students who are Moving from XI to XII class. This Course covers the entire NEET (UG) syllabus of class XII from basic Students who will enroll in this batch will be able to complete syllabus in Systematic manner. This course is taught by TOP experienced Team Competishun faculties who makes your way to Best Medical College more easier.',
+
+    CourseDuration: '1-Full yearlong Course, Till: NEET (UG)- 2025',
+
+    FeeStructure: 'Rs 12500/- (Inclusive of All Taxes)',
+  },
+
+  AVIRAL: {
+    Title: 'AVIRAL (DROPPER) – Target : NEET (UG)- 2025',
+    AboutCourse:
+      'AVIRAL,  Competishun’s full year course for students who are studying in XII or have Passed out . This Course covers the entire NEET (UG) syllabus NEET. Students who will enroll in this batch will be able to complete syllabus in Systematic manner. This course is taught by TOP experienced Team Competishun faculties who makes your way to Best Medical College more easier.',
+
+    CourseDuration: '1-Full yearlong Course, Till: NEET (UG)- 2025',
+
+    FeeStructure: 'Rs 14000/- (Inclusive of All Taxes)',
   },
 };
 

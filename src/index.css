@@ -799,6 +799,16 @@ button {
   margin-top: 10rem;
   width: var(--landing-page-main-info-width);
 }
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer li {
+  list-style-type: none;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse {
+  margin-top: 1.8%;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse ul li {
+  margin-left: 2%;
+  list-style-type: none;
+}
 
 .modal-overlay {
   position: fixed;
