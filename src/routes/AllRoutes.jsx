@@ -6,6 +6,7 @@ import Home from '../pages/Home/Home';
 import Course from '../pages/Course/Course';
 import TestSeries from '../pages/Test Series/TestSeries';
 import CourseDetails from '../pages/Course/CourseDetails';
+import Merchandise from '../pages/Merchandise';
 
 const AllRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AllRoutes = () => {
       <Route path="/courses/:courseLink" element={<Course />} />
       <Route path="/courses/:courseLink/:courseDetails" element={<CourseDetails />} />
       <Route path="/testSeries" element={<TestSeries />} />
+      <Route path="/merchandise" element={<Merchandise />} />
       {/* <Route path="/*" element={<Navigate to="/" />} /> */}
     </Routes>
   );

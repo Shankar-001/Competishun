@@ -673,7 +673,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 8%;
   width: var(--landing-page-main-info-width);
 }
 .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseDetails {
@@ -682,7 +682,6 @@ button {
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
   width: var(--landing-page-main-info-width);
-  margin-top: 3%;
   margin-bottom: 3.2%;
 }
 .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseDetails span {
@@ -796,18 +795,96 @@ button {
   align-items: center;
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer {
-  margin-top: 10rem;
+  margin-top: 8%;
   width: var(--landing-page-main-info-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer li {
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseTitle {
+  margin-bottom: 2rem;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseTitle h1 {
+  color: var(--primary-color);
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+  box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft {
+  width: 50%;
+  padding: 2rem;
+  border-right: 1px solid red;
+  height: 35rem;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft:focus {
+  outline: none;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft .CourseMenu h3 {
+  cursor: pointer;
+  padding: 1rem;
+  transition: background-color 250ms ease, color 250ms ease;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft .CourseMenu h3:hover {
+  background-color: var(--medium-bg-color);
+  color: #fff;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft .CourseMenu h3.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight {
+  width: 50%;
+  padding: 2rem;
+  max-height: 34rem;
+  overflow-y: auto;
+  text-align: justify;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight::-webkit-scrollbar {
+  width: 0.6rem;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .CourseCardContent h3 span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight ul li {
+  margin-top: 1.5%;
   list-style-type: none;
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse {
   margin-top: 1.8%;
 }
-.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse ul li {
-  margin-left: 2%;
-  list-style-type: none;
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse .CourseContact {
+  margin-top: 2%;
+  text-align: center;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse .CourseContact h2 {
+  margin-bottom: 1%;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseButton {
+  margin-top: 1.4%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseButton a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.6rem;
+  transition: background-color 250ms ease;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseButton a:hover {
+  background-color: #0056b3;
 }
 
 .modal-overlay {
