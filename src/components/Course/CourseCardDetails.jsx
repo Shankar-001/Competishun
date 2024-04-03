@@ -3,8 +3,7 @@ import {
   CommonCourseData,
   SingleCourseDetails,
 } from '../../Data/CourseDetailsData';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const CourseCardDetails = () => {
   const { courseDetails } = useParams();
