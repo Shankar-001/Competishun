@@ -1,7 +1,7 @@
 .TestimonialsSection {
   @include flex-cc;
   @include bodyText;
-  padding: 5rem 0;
+  padding: 3rem 0;
   width: 100%;
   background-color: var(--lightest-bg-color);
   .containerMain {
@@ -31,7 +31,7 @@
         &::-webkit-scrollbar {
           display: none;
         }
-        
+
         @import './TestimonialComponent.scss';
       }
 
@@ -39,9 +39,9 @@
         @include flex-cc;
         z-index: 2;
         cursor: pointer;
-        width : 5rem;
+        width: 5rem;
 
-        img{
+        img {
           width: 100%;
           height: 10rem;
         }

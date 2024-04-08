@@ -115,6 +115,7 @@ export const SingleCourseDetails = {
     CourseDuration: '1-Full yearlong Course, Till: 30th April 2024',
 
     FeeStructure: 'Fee Rs 11000/- (Inclusive of All Taxes)',
+    RefundPolicy: 'https://bit.ly/49LLzYy',
   },
 
   ARJUN: {
@@ -125,6 +126,7 @@ export const SingleCourseDetails = {
     CourseDuration: '1-Full yearlong Course, Till: NEET (UG)- 2025',
 
     FeeStructure: 'Rs 12500/- (Inclusive of All Taxes)',
+    RefundPolicy: 'https://bit.ly/49LLzYy',
   },
 
   AVIRAL: {
@@ -135,6 +137,7 @@ export const SingleCourseDetails = {
     CourseDuration: '1-Full yearlong Course, Till: NEET (UG)- 2025',
 
     FeeStructure: 'Rs 14000/- (Inclusive of All Taxes)',
+    RefundPolicy: 'https://bit.ly/49LLzYy',
   },
 };
 
