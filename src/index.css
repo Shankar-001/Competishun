@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 html {
   --btn-lr-pad: 1.6rem;
@@ -864,45 +863,99 @@ button {
   color: var(--primary-color);
   margin-bottom: 2rem;
 }
-.Home .TestimonialsSection .containerMain .TestimonialComp {
+.Home .TestimonialsSection .containerMain .testimonials-container {
   display: flex;
-  justify-content: start;
-  width: 90vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
+.Home .TestimonialsSection .containerMain .testimonials-container .TestimonialComp {
+  transition: all 0.2s;
+  scroll-behavior: smooth;
+  display: flex;
+  width: 90%;
   position: relative;
   z-index: 1;
-  flex-wrap: nowrap;
-  scroll-behavior: smooth;
-  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  overflow-x: scroll;
+  overflow-y: hidden;
   gap: 2rem;
 }
-.Home .TestimonialsSection .containerMain .TestimonialComp .TestimonialComponent {
+.Home .TestimonialsSection .containerMain .testimonials-container .TestimonialComp::-webkit-scrollbar {
+  display: none;
+}
+.Home .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 40rem;
+  min-height: 27.3rem;
+}
+.Home .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content {
+  padding: 0 2rem;
+}
+.Home .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item {
+  text-align: center;
+}
+.Home .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-img-block {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+.Home .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-img-block .testimonial-img {
+  display: inline-block;
+  max-width: 13.6rem;
+  height: 13.6rem;
+  vertical-align: middle;
+}
+.Home .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-img-block .testimonial-play-btn {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  max-width: 80px;
+  height: 50px;
+}
+.Home .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-desc {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--dark-text-color);
+  margin-bottom: 1.6rem;
+}
+.Home .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-name {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--dark-text-color);
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.Home .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-title {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: var(--dark-text-color);
+  font-weight: 400;
+}
+.Home .TestimonialsSection .containerMain .testimonials-container .arrow {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  padding: 2rem;
-  background-color: var(--light-bg-color);
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 30rem;
-  height: 40rem;
-  scroll-snap-align: center;
-  flex: 0 0 auto;
-  margin-right:  20px;
+  z-index: 2;
+  cursor: pointer;
+  width: 5rem;
 }
-.Home .TestimonialsSection .containerMain .TestimonialComp .TestimonialComponent .container {
-  color: var(--dark-text-color);
+.Home .TestimonialsSection .containerMain .testimonials-container .arrow img {
+  width: 100%;
+  height: 10rem;
 }
-.Home .TestimonialsSection .containerMain .TestimonialComp .TestimonialComponent .container img {
-  height: 100%;
-  object-fit: cover;
+.Home .TestimonialsSection .containerMain .testimonials-container .arrow.left-arrow {
+  transform: rotate(180deg) translateX(50%);
 }
-.Home .TestimonialsSection .containerMain .TestimonialComp .TestimonialComponent .container .content h3 {
-  font-size: 3.2rem;
-  font-weight: 500;
-  font-family: var(--font-family);
+.Home .TestimonialsSection .containerMain .testimonials-container .arrow.right-arrow {
+  transform: translateX(50%);
 }
 
 .CourseMainContainer .CourseCardMainContainer {
@@ -920,7 +973,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 8%;
   width: var(--landing-page-main-info-width);
 }
 .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseDetails {
@@ -929,7 +982,6 @@ button {
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
   width: var(--landing-page-main-info-width);
-  margin-top: 3%;
   margin-bottom: 3.2%;
 }
 .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseDetails span {
@@ -1030,6 +1082,156 @@ button {
   background-color: var(--light-bg-color);
   transform: scale(1.1);
   transition: all 0.5s;
+}
+
+.CourseDetailsMainContainer .CourseCardMainContainer {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer {
+  margin-top: 8%;
+  width: var(--landing-page-main-info-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseTitle {
+  margin-bottom: 2rem;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseTitle h1 {
+  color: var(--primary-color);
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+  box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft {
+  width: 50%;
+  padding: 2rem;
+  border-right: 1px solid red;
+  height: 35rem;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft:focus {
+  outline: none;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft .CourseMenu h3 {
+  cursor: pointer;
+  padding: 1rem;
+  transition: background-color 250ms ease, color 250ms ease;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft .CourseMenu h3:hover {
+  background-color: var(--medium-bg-color);
+  color: #fff;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft .CourseMenu h3.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight {
+  width: 50%;
+  padding: 2rem;
+  max-height: 34rem;
+  overflow-y: auto;
+  text-align: justify;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight::-webkit-scrollbar {
+  width: 0.6rem;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .CourseCardContent h3 span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight ul li {
+  margin-top: 1.5%;
+  list-style-type: none;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse {
+  margin-top: 1.8%;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse .CourseContact {
+  margin-top: 2%;
+  text-align: center;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse .CourseContact h2 {
+  margin-bottom: 1%;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseButton {
+  margin-top: 1.4%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseButton a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.6rem;
+  transition: background-color 250ms ease;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseButton a:hover {
+  background-color: #0056b3;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding-top: 2%;
+}
+.modal-overlay .modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  height: 80%;
+}
+.modal-overlay .modal .modal-close {
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  align-self: flex-end;
+  cursor: pointer;
+  color: white;
+  font-size: 4rem;
+}
+.modal-overlay .modal .video-container {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  aspect-ratio: 16/9;
+}
+.modal-overlay .modal .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

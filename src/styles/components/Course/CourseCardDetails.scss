@@ -1,0 +1,115 @@
+.CourseCardMainContainer {
+  @include bodyText;
+  @include flex-cc;
+
+  .CourseCardSubContainer {
+    margin-top: 8%;
+    width: var(--landing-page-main-info-width);
+    @include flex-cc(column);
+
+    .CourseTitle {
+      margin-bottom: 2rem;
+
+      h1 {
+        color: var(--primary-color);
+      }
+    }
+
+    .CourseMiddleContent {
+      @include flex-cc;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+
+      width: 80%;
+      box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+
+      .CourseDetailsLeft {
+        width: 50%;
+        padding: 2rem;
+        border-right: 1px solid red;
+        height: 35rem;
+
+        &:focus {
+          outline: none;
+        }
+
+        .CourseMenu {
+          h3 {
+            cursor: pointer;
+            padding: 1rem;
+            transition: background-color 250ms ease, color 250ms ease;
+
+            &:hover {
+              background-color: var(--medium-bg-color);
+              color: #fff;
+            }
+
+            &.active {
+              background-color: var(--primary-color);
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .CourseDetailsRight {
+        width: 50%;
+        padding: 2rem;
+        max-height: 34rem;
+        overflow-y: auto;
+        text-align: justify;
+
+        &::-webkit-scrollbar {
+          width: 0.6rem;
+        }
+
+        .CourseCardContent {
+          h3 {
+            span {
+              @include font-style(1.6rem);
+            }
+          }
+        }
+
+        ul {
+          li {
+            margin-top: 1.5%;
+            list-style-type: none;
+          }
+        }
+      }
+    }
+
+    .CommonCourse {
+      margin-top: 1.8%;
+      .CourseContact {
+        margin-top: 2%;
+        text-align: center;
+        h2 {
+          margin-bottom: 1%;
+        }
+      }
+    }
+
+    .CourseButton {
+      margin: {
+        top: 1.4%;
+        bottom: 2%;
+      }
+      text-align: center;
+      a {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: var(--primary-color);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 0.6rem;
+        transition: background-color 250ms ease;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}

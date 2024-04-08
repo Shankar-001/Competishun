@@ -42,6 +42,7 @@ const resultData = [
       {
         year: '2021',
         selection: '339',
+        
       },
     ],
   },
