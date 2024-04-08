@@ -100,7 +100,7 @@ const CourseCard = () => {
           year: '2026',
           data: NeetOfflineData2026,
         },
-      ],     
+      ],
     },
   };
 

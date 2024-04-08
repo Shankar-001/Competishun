@@ -32,8 +32,6 @@ import AviralOffline from '../assets/Courses/AviralOffline.jpg';
 
 export const JeeFullYearMain2025 = [
   {
-
-    
     src: PrabalOnline,
     title: 'PRABAL',
   },
