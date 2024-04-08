@@ -97,16 +97,16 @@ const DropdownMenu = () => {
   return (
     <div className="courses-dropdown">
       <NavLink to="/courses/jee-online-courses" className="navlink">
-        Jee Online
+        IIT Jee Online
       </NavLink>
       <NavLink to="/courses/jee-offline-courses" className="navlink">
-        Jee Offline
+        IIT Jee Offline
       </NavLink>
       <NavLink to="/courses/neet-online-courses" className="navlink">
-        Neet Online
+        Neet UG Online
       </NavLink>
       <NavLink to="/courses/neet-offline-courses" className="navlink">
-        Neet Offline
+        Neet UG Offline
       </NavLink>
     </div>
   );

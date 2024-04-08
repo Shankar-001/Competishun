@@ -147,8 +147,3 @@ export const NeetOfflineData = [
   },
 ];
 
-export const SingleCourseDetails = {
-  PRAKHAR: {
-    aboutUs: 'Hello main yaha hun',
-  },
-};
