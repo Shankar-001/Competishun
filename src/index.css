@@ -194,14 +194,15 @@ button {
 }
 .footer-mainContainer .footer-containerContent {
   margin-top: 5rem;
-  width: var(--landing-page-main-info-width);
+  margin-bottom: 1.5rem;
+  width: 92%;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer {
   background-color: white;
   border-radius: 1rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo {
