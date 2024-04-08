@@ -29,11 +29,24 @@ import AviralOffline from '../assets/Courses/AviralOffline.jpg';
 // NEET CARSH COURSE OFFLINE
 
 // Jee And Neet Online Courses
-export const JeeFullYearData = [
+
+export const JeeFullYearMain2025 = [
+  {
+
+    
+    src: PrabalOnline,
+    title: 'PRABAL',
+  },
+];
+
+export const JeeFullYearMainAdv2026 = [
   {
     src: PrathamOnline,
     title: 'PRATHAM',
   },
+];
+
+export const JeeFullYearMainAdv2025 = [
   {
     src: PrakharOnline,
     title: 'PRAKHAR',
@@ -54,20 +67,16 @@ export const JeeFullYearData = [
     src: PraveenFastLane,
     title: 'PRAVEEN FAST LANE',
   },
-  {
-    src: PrabalOnline,
-    title: 'PRABAL',
-  },
 ];
 
 export const JeeShortTermData = [
   {
     src: Champ,
-    title: 'CHAMP',
+    title: 'CHAMP', //done
   },
   {
     src: Cats,
-    title: 'CATS',
+    title: 'CATS', //done
   },
   {
     src: CatsPlus,
@@ -75,19 +84,15 @@ export const JeeShortTermData = [
   },
   {
     src: C3,
-    title: 'C³',
+    title: 'C³', //done
   },
   {
     src: PraveenOnline,
-    title: 'PRAVEEN FAST LANE (LIMITED EDITION)',
+    title: 'PRAVEEN FAST LANE (LIMITED EDITION)', //done
   },
 ];
 
-export const NeetFullYearData = [
-  {
-    src: AarambhOnline,
-    title: 'AARAMBH',
-  },
+export const NeetFullYearData2025 = [
   {
     src: ArjunOnline,
     title: 'ARJUN',
@@ -98,18 +103,23 @@ export const NeetFullYearData = [
   },
 ];
 
+export const NeetFullYearData2026 = [
+  {
+    src: AarambhOnline,
+    title: 'AARAMBH',
+  },
+];
+
 export const NeetShortTermData = [
   {
-    src: PraveenOnline,
+    src: AarambhOnline,
     title: 'NEET COMPETISHUN CRASH COURSE',
   },
 ];
 
-export const JeeOfflineData = [
-  {
-    src: PrathamOffline,
-    title: 'PRATHAM OFFLINE',
-  },
+// Offline Courses
+
+export const JeeOfflineData2025 = [
   {
     src: PrakharOffline,
     title: 'PRAKHAR OFFLINE',
@@ -117,6 +127,13 @@ export const JeeOfflineData = [
   {
     src: PraveenOffline,
     title: 'PRAVEEN OFFLINE',
+  },
+];
+
+export const JeeOfflineData2026 = [
+  {
+    src: PrathamOffline,
+    title: 'PRATHAM OFFLINE',
   },
   {
     src: PrathamOffline,
@@ -128,11 +145,7 @@ export const JeeOfflineData = [
   },
 ];
 
-export const NeetOfflineData = [
-  {
-    src: AarambhOffline,
-    title: 'AARAMBH OFFLINE',
-  },
+export const NeetOfflineData2025 = [
   {
     src: ArjunOffline,
     title: 'ARJUN OFFLINE',
@@ -141,9 +154,15 @@ export const NeetOfflineData = [
     src: AviralOffline,
     title: 'AVIRAL OFFLINE',
   },
+];
+
+export const NeetOfflineData2026 = [
+  {
+    src: AarambhOffline,
+    title: 'AARAMBH OFFLINE',
+  },
   {
     src: PraveenOnline,
     title: 'NEET CARSH COURSE OFFLINE',
   },
 ];
-
