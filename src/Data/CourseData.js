@@ -67,11 +67,18 @@ export const JeeFullYearMainAdv2025 = [
   },
 ];
 
-export const JeeShortTermData = [
+export const JeeShortTermMainData = [
   {
     src: Champ,
     title: 'CHAMP', //done
   },
+  {
+    src: C3,
+    title: 'C³', //done
+  },
+];
+
+export const JeeShortTermAdvData = [
   {
     src: Cats,
     title: 'CATS', //done
@@ -80,10 +87,9 @@ export const JeeShortTermData = [
     src: CatsPlus,
     title: 'CATS PLUS',
   },
-  {
-    src: C3,
-    title: 'C³', //done
-  },
+];
+
+export const JeeShortTermMainAndAdvData = [
   {
     src: PraveenOnline,
     title: 'PRAVEEN FAST LANE (LIMITED EDITION)', //done
