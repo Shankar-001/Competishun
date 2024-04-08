@@ -1,9 +1,13 @@
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import { useEffect, useState } from 'react';
+import { RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri';
+
 const Navbar = () => {
   const location = useLocation();
   const [showScrollToTop, setShowScrollToTop] = useState(true);
+  const [showCoursesDropdown, setShowCoursesDropdown] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -16,6 +20,15 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleCoursesMouseEnter = () => {
+    setShowCoursesDropdown(true);
+  };
+
+  const handleCoursesMouseLeave = () => {
+    setShowCoursesDropdown(false);
+  };
+
   return (
     <div
       className={`Navbar-main-container ${
@@ -32,10 +45,21 @@ const Navbar = () => {
               Home
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/courses" className="navlink">
-              Courses
-            </NavLink>
+          <li
+            onMouseEnter={handleCoursesMouseEnter}
+            onMouseLeave={handleCoursesMouseLeave}
+          >
+            <div className="navbar-course-details">
+              <div className="li-navlink">Courses</div>
+              <div>
+                {showCoursesDropdown ? (
+                  <RiArrowDropUpLine size={30} className="drop-arrow" />
+                ) : (
+                  <RiArrowDropDownLine size={30} className="drop-arrow" />
+                )}
+              </div>
+            </div>
+            {showCoursesDropdown && <DropdownMenu />}
           </li>
           <li>
             <NavLink to="/testSeries" className="navlink">
@@ -43,18 +67,18 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className="navlink">
-              About
+            <NavLink to="/result" className="navlink">
+              Result
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/merchandise" className="navlink">
+             Merchandise
             </NavLink>
           </li>
           <li>
             <NavLink to="/contact" className="navlink">
               Contact Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/result" className="navlink">
-              Result
             </NavLink>
           </li>
           {/* <div>Home</div>
@@ -68,3 +92,22 @@ const Navbar = () => {
   );
 };
 export default Navbar;
+
+const DropdownMenu = () => {
+  return (
+    <div className="courses-dropdown">
+      <NavLink to="/courses/jee-online-courses" className="navlink">
+        Jee Online
+      </NavLink>
+      <NavLink to="/courses/jee-offline-courses" className="navlink">
+        Jee Offline
+      </NavLink>
+      <NavLink to="/courses/neet-online-courses" className="navlink">
+        Neet Online
+      </NavLink>
+      <NavLink to="/courses/neet-offline-courses" className="navlink">
+        Neet Offline
+      </NavLink>
+    </div>
+  );
+};

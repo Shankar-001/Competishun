@@ -1,9 +1,7 @@
-const CardComponent = ({ data }) => {
+const CardComponent = ({ data, onClick }) => {
   return (
-    <div className="ComponentDivision">
+    <div className="ComponentDivision" onClick={onClick}>
       <img src={data.src} alt="Course" />
-      <h2>{data.title}</h2>
-      <p>{data.desc}</p>
     </div>
   );
 };

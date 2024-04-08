@@ -48,7 +48,13 @@
     justify-content: center;
     align-items: flex-end;
 }
-
+// center-stretch
+@mixin flex-cst($direction: row){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: stretch;
+}
 //space_between
 @mixin flex-sbc($direction: row){
     display: flex;
@@ -101,6 +107,8 @@
     justify-content: space-around;
     align-items: flex-start;
 }
+
+
 
 //////////////////////////////////////////////////////////////////
 /// ///////////////////// Grid /////////////////////////////////
