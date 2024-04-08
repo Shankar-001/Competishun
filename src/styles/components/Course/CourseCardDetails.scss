@@ -69,6 +69,21 @@
               @include font-style(1.6rem);
             }
           }
+
+          a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin-left: 35%;
+            background-color: var(--dark-bg-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0.6rem;
+            transition: background-color 250ms ease;
+
+            &:hover {
+              background-color: var(--darkest-bg-color);
+            }
+          }
         }
 
         ul {

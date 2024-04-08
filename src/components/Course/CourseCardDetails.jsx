@@ -117,8 +117,14 @@ const CourseCardDetails = () => {
                   )}
                   {selectedContent === 'RefundPolicy' && (
                     <>
-                      <h3>Refund Policy</h3>
-                      <p>{data.RefundPolicy}</p>
+                      {/* <h3>Refund Policy</h3> */}
+                      <a
+                        href={data.RefundPolicy}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Refund Policy
+                      </a>
                     </>
                   )}
                   {selectedContent === 'CourseFeatures' && (
