@@ -3,7 +3,8 @@ const testimonialData = [
     id: 1,
     name: 'John Doe',
     exam: 'JEE',
-    videoUrl: 'https://www.youtube.com/embed/EWpHl2iP5Ps',
+    // videoUrl: 'https://www.youtube.com/embed/EWpHl2iP5Ps',
+    videoUrl: 'https://www.youtube.com/embed/3MmwZSs2bwI',
     discription:
       'Competishun is the best platform to learn and practice for JEE. The teachers are very supportive and the content is very well structured.\nCompetishun is the best platform to learn and practice for JEE. The teachers are very supportive and the content is very well structured.',
     title: 'CEO',
@@ -16,7 +17,7 @@ const testimonialData = [
     id: 2,
     name: 'Jane Doe',
     exam: 'NEET',
-    videoUrl: 'https://www.youtube.com/watch?v=2',
+    videoUrl: 'https://www.youtube.com/embed/cltAEd53kTc',
     discription:
       'Competishun is the best platform to learn and practice for NEET. The teachers are very supportive and the content is very well structured.',
     title: 'CEO',
@@ -29,7 +30,7 @@ const testimonialData = [
     id: 3,
     name: 'Jane Doe',
     exam: 'NEET',
-    videoUrl: 'https://www.youtube.com/watch?v=2',
+    videoUrl: 'https://www.youtube.com/embed/pX4y73GGVAw',
     discription:
       'Competishun is the best platform to learn and practice for NEET. The teachers are very supportive and the content is very well structured.',
     title: 'CEO',
@@ -42,7 +43,7 @@ const testimonialData = [
     id: 4,
     name: 'Jane Doe',
     exam: 'NEET',
-    videoUrl: 'https://www.youtube.com/watch?v=2',
+    videoUrl: 'https://www.youtube.com/embed/3MmwZSs2bwI',
     discription:
       'Competishun is the best platform to learn and practice for NEET. The teachers are very supportive and the content is very well structured.',
     title: 'CEO',
@@ -55,7 +56,7 @@ const testimonialData = [
     id: 5,
     name: 'Jane Doe',
     exam: 'NEET',
-    videoUrl: 'https://www.youtube.com/watch?v=2',
+    videoUrl: 'https://www.youtube.com/embed/3MmwZSs2bwI',
     discription:
       'Competishun is the best platform to learn and practice for NEET. The teachers are very supportive and the content is very well structured.',
     title: 'CEO',
@@ -68,7 +69,7 @@ const testimonialData = [
     id: 6,
     name: 'Jane Doe',
     exam: 'NEET',
-    videoUrl: 'https://www.youtube.com/watch?v=2',
+    videoUrl: 'https://www.youtube.com/embed/3MmwZSs2bwI',
     discription:
       'Competishun is the best platform to learn and practice for NEET. The teachers are very supportive and the content is very well structured.',
     title: 'CEO',
