@@ -1,6 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import {
-  JeeShortTermData,
   NeetShortTermData,
   JeeFullYearMain2025,
   JeeFullYearMainAdv2026,
@@ -11,6 +10,9 @@ import {
   NeetFullYearData2026,
   NeetOfflineData2025,
   NeetOfflineData2026,
+  JeeShortTermMainData,
+  JeeShortTermAdvData,
+  JeeShortTermMainAndAdvData,
 } from '../../Data/CourseData';
 import CardComponent from '../CardComponent/CardComponent';
 import { useEffect } from 'react';
@@ -29,41 +31,51 @@ const CourseCard = () => {
     'jee-online-courses': {
       details: [
         {
-          title: 'Full Year Online Courses Target (JEE MAIN+ADV) For',
+          title: 'Full Year Online Courses Target JEE (MAIN+ADV)',
           year: '2025',
           data: JeeFullYearMainAdv2025,
         },
         {
-          title: 'Full Year Online Courses Target (JEE MAIN+ADV) For',
+          title: 'Full Year Online Course Target JEE (MAIN+ADV)',
           year: '2026',
           data: JeeFullYearMainAdv2026,
         },
         {
-          title: 'Full Year Online Courses JEE MAIN For',
+          title: 'Full Year Online Course Target JEE (MAIN)',
           year: '2025',
           data: JeeFullYearMain2025,
         },
         // {
-        //   title: 'Full Year Online Courses JEE MAIN For',
+        //   title: 'Full Year Online Courses JEE MAIN',
         //   year: '2026',
         //   data: JeeFullYearData,
         // },
         {
-          title: 'Short Term Online Courses Target (JEE MAIN+ADV) For',
-          year: '2025 & 2026',
-          data: JeeShortTermData,
+          title: 'Short Term Online Courses Target JEE (MAIN)',
+          year: '2025',
+          data: JeeShortTermMainData,
+        },
+        {
+          title: 'Short Term Online Courses Target JEE (ADV)',
+          year: '2025',
+          data: JeeShortTermAdvData,
+        },
+        {
+          title: 'Short Term Online Course Target JEE (MAIN+ADV)',
+          year: '2025',
+          data: JeeShortTermMainAndAdvData,
         },
       ],
     },
     'jee-offline-courses': {
       details: [
         {
-          title: 'Full Year Offline Courses Target (JEE MAIN+ADV) For',
+          title: 'Full Year Offline Courses Target JEE (MAIN+ADV)',
           year: '2025',
           data: JeeOfflineData2025,
         },
         {
-          title: 'Full Year Offline Courses Target (JEE MAIN+ADV) For',
+          title: 'Full Year Offline Courses Target JEE (MAIN+ADV)',
           year: '2026',
           data: JeeOfflineData2026,
         },
@@ -72,17 +84,17 @@ const CourseCard = () => {
     'neet-online-courses': {
       details: [
         {
-          title: 'Full Year Courses Target (NEET UG) For',
+          title: 'Full Year Courses Target NEET (UG)',
           year: '2025',
           data: NeetFullYearData2025,
         },
         {
-          title: 'Full Year Courses Target (NEET UG) For',
+          title: 'Full Year Course Target NEET (UG)',
           year: '2026',
           data: NeetFullYearData2026,
         },
         {
-          title: 'Short Term Online Courses Target (NEET UG) For',
+          title: 'Short Term Online Course Target NEET (UG)',
           year: '2025',
           data: NeetShortTermData,
         },
@@ -91,12 +103,12 @@ const CourseCard = () => {
     'neet-offline-courses': {
       details: [
         {
-          title: 'Full Year Offline Courses Target (NEET UG) For',
+          title: 'Full Year Offline Courses Target NEET (UG)',
           year: '2025',
           data: NeetOfflineData2025,
         },
         {
-          title: 'Full Year Offline Courses Target (NEET UG) For',
+          title: 'Full Year Offline Courses Target NEET (UG)',
           year: '2026',
           data: NeetOfflineData2026,
         },
