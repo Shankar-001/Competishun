@@ -87,6 +87,18 @@
 
           .card {
             width: 20%;
+            // background-image: url('/src/assets/crownleaf.png');
+            // background-size: 100% 100%;
+            @include flex-cc;
+            img{
+              transform: rotateZ(-15deg)  translateX(-38%) ;
+              // transform: translateX(-38%) translateY(10%);
+              // z-index:  -1;
+            }
+            .left-img{
+              transform: rotateZ(15deg) rotateY(180deg)  translateX(-38%) ;
+              // transform:  rotateY(180deg)  translateX(-38%)  translateY(10%);
+            }
             .card-body {
               @include flex-cc(column);
               .year-name {
