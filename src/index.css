@@ -1021,12 +1021,14 @@ button {
   max-width: 13.6rem;
   height: 13.6rem;
   vertical-align: middle;
+  border-radius: 50%;
 }
 .Home .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-img-block .testimonial-play-btn {
   display: block;
   position: absolute;
   right: 0;
-  bottom: 5px;
+  bottom: 0;
+  transform: translate(20%, 20%);
   max-width: 80px;
   height: 50px;
 }
@@ -1147,15 +1149,15 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 8%;
   width: var(--landing-page-main-info-width);
 }
 .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestDetails {
-  font-size: 4.8rem;
-  font-weight: 600;
+  font-size: 3.6rem;
+  font-weight: 500;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
-  margin-top: 3%;
+  width: var(--landing-page-main-info-width);
   margin-bottom: 3.2%;
 }
 .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestDetails span {
@@ -1210,8 +1212,8 @@ button {
   width: var(--landing-page-main-info-width);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseTitle {
   margin-bottom: 2rem;
@@ -1222,18 +1224,24 @@ button {
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 80%;
+  height: 50rem;
+  width: 100%;
   box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft {
-  width: 50%;
+  width: 35%;
   padding: 2rem;
   border-right: 1px solid red;
-  height: 35rem;
+  height: 100%;
+  overflow-y: auto;
+  text-align: justify;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft::-webkit-scrollbar {
+  width: 0.6rem;
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft:focus {
   outline: none;
@@ -1252,31 +1260,42 @@ button {
   color: #fff;
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight {
-  width: 50%;
+  width: 65%;
   padding: 2rem;
-  max-height: 34rem;
+  height: 100%;
   overflow-y: auto;
   text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight::-webkit-scrollbar {
   width: 0.6rem;
 }
-.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .CourseCardContent h3 span {
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight h3 span {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: var(--font-family);
 }
-.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .CourseCardContent a {
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .refundPolicy {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .refundPolicy a {
   display: inline-block;
   padding: 1rem 2rem;
-  margin-left: 35%;
   background-color: var(--dark-bg-color);
   color: #fff;
   text-decoration: none;
   border-radius: 0.6rem;
   transition: background-color 250ms ease;
 }
-.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .CourseCardContent a:hover {
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .refundPolicy a:hover {
   background-color: var(--darkest-bg-color);
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight ul li {
@@ -1285,10 +1304,10 @@ button {
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse {
   margin-top: 1.8%;
+  align-self: center;
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse .CourseContact {
   margin-top: 2%;
-  text-align: center;
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse .CourseContact h2 {
   margin-bottom: 1%;
