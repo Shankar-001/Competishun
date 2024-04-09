@@ -9,6 +9,8 @@
 @import './components/Navbar/Navbar.scss';
 @import './components/NewOffer/NewOffer.scss';
 @import './components//Footer/Footer.scss';
+@import './components/Merchandise/MerchandiseCard.scss';
+// @import './components/TiltCardComponent/TiltCardComponent.scss';
 
 // Pages
 @import './pages/About.scss';
@@ -17,6 +19,7 @@
 @import './pages/Course/Course.scss';
 @import './pages/Test\ Series/TestSeries.scss';
 @import './pages/Course/CourseDetails.scss';
+@import './pages//Merchandise.scss';
 
 // utils
 @import './utils/Modal.scss';
