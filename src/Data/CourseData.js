@@ -70,29 +70,29 @@ export const JeeFullYearMainAdv2025 = [
 export const JeeShortTermMainData = [
   {
     src: Champ,
-    title: 'CHAMP', //done
+    title: 'CHAMP',
   },
   {
     src: C3,
-    title: 'C³', //done
+    title: 'C³',
   },
 ];
 
 export const JeeShortTermAdvData = [
   {
     src: Cats,
-    title: 'CATS', //done
+    title: 'CATS',
   },
-  {
-    src: CatsPlus,
-    title: 'CATS PLUS',
-  },
+  // {
+  //   src: CatsPlus,
+  //   title: 'CATS PLUS',
+  // },
 ];
 
 export const JeeShortTermMainAndAdvData = [
   {
     src: PraveenOnline,
-    title: 'PRAVEEN FAST LANE (LIMITED EDITION)', //done
+    title: 'PRAVEEN FAST LANE (LIMITED EDITION)',
   },
 ];
 
@@ -165,8 +165,8 @@ export const NeetOfflineData2026 = [
     src: AarambhOffline,
     title: 'AARAMBH OFFLINE',
   },
-  {
-    src: PraveenOnline,
-    title: 'NEET CARSH COURSE OFFLINE',
-  },
+  // {
+  //   src: PraveenOnline,
+  //   title: 'NEET CARSH COURSE OFFLINE',
+  // },
 ];
