@@ -1,6 +1,10 @@
+import MerchandiseCard from "../components/Merchandise/MerchandiseCard"
+
 const Merchandise = () => {
   return (
-    <div>Merchandise</div>
+    <div  className="Merchandise">
+      <MerchandiseCard />
+    </div>
   )
 }
-export default Merchandise
+export default Merchandise;

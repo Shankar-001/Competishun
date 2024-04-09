@@ -139,7 +139,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <h3 className="develop">Developed with ❤️</h3>
+        {/* <h3 className="develop">Developed with ❤️</h3> */}
       </div>
     </div>
   );
