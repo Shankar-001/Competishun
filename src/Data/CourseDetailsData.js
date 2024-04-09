@@ -13,7 +13,7 @@ export const SingleCourseDetails = {
     ],
     RefundPolicy: 'https://bit.ly/49LLzYy',
   },
-  
+
   PRAKHAR: {
     Title: 'PRAKHAR (XII) – Target : IIT- JEE (MAIN+ADVANCED) – 2025',
     AboutCourse:
@@ -115,6 +115,7 @@ export const SingleCourseDetails = {
     CourseDuration: '1-Full yearlong Course, Till: 30th April 2024',
 
     FeeStructure: 'Fee Rs 11000/- (Inclusive of All Taxes)',
+    RefundPolicy: 'https://bit.ly/49LLzYy',
   },
 
   ARJUN: {
@@ -125,6 +126,7 @@ export const SingleCourseDetails = {
     CourseDuration: '1-Full yearlong Course, Till: NEET (UG)- 2025',
 
     FeeStructure: 'Rs 12500/- (Inclusive of All Taxes)',
+    RefundPolicy: 'https://bit.ly/49LLzYy',
   },
 
   AVIRAL: {
@@ -135,6 +137,7 @@ export const SingleCourseDetails = {
     CourseDuration: '1-Full yearlong Course, Till: NEET (UG)- 2025',
 
     FeeStructure: 'Rs 14000/- (Inclusive of All Taxes)',
+    RefundPolicy: 'https://bit.ly/49LLzYy',
   },
 };
 
@@ -165,6 +168,13 @@ export const CommonCourseData = {
     'Noble Intent, Genuine Advice, Social Work: Benefit from noble intentions, genuine advice, and social welfare commitment.',
   ],
 
-  choose: 'Choose Competishun - Where Excellence Meets Innovation!',
-  contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  Stages: 'https://www.youtube.com/embed/iR5ZCto7Td4',
+  OnlineVsOffline: 'https://www.youtube.com/embed/JKg9Ked2aIk',
+  KotaVsJaipurVsHome: 'https://www.youtube.com/embed/qjr3_qtdWFg',
+  GeneralQNA: 'https://www.youtube.com/embed/50hiqJY_8h0',
+  CourseFeatureVideo: 'https://www.youtube.com/embed/l2tLkv_t15k',
+  AdvantagesVideo: 'https://www.youtube.com/embed/06dJv3gJX88',
+
+  Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+  Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
 };

@@ -34,6 +34,7 @@ const CourseCardDetails = () => {
                 >
                   About Course
                 </h3>
+
                 <h3
                   onClick={() => setSelectedContent('CourseDuration')}
                   className={
@@ -58,16 +59,7 @@ const CourseCardDetails = () => {
                     Installment Details
                   </h3>
                 )}
-                {data.RefundPolicy && (
-                  <h3
-                    onClick={() => setSelectedContent('RefundPolicy')}
-                    className={
-                      selectedContent === 'RefundPolicy' ? 'active' : ''
-                    }
-                  >
-                    Refund Policy
-                  </h3>
-                )}
+
                 <h3
                   onClick={() => setSelectedContent('CourseFeatures')}
                   className={
@@ -82,12 +74,55 @@ const CourseCardDetails = () => {
                 >
                   Why Join Us? Competishun Advantage!
                 </h3>
+
+                <h3
+                  onClick={() => setSelectedContent('Stages')}
+                  className={selectedContent === 'Stages' ? 'active' : ''}
+                >
+                  Preparation Stages
+                </h3>
+
+                <h3
+                  onClick={() => setSelectedContent('GeneralQNA')}
+                  className={selectedContent === 'GeneralQNA' ? 'active' : ''}
+                >
+                  General Question
+                </h3>
+
+                <h3
+                  onClick={() => setSelectedContent('OnlineVsOffline')}
+                  className={
+                    selectedContent === 'OnlineVsOffline' ? 'active' : ''
+                  }
+                >
+                  Online Vs Offline
+                </h3>
+
+                <h3
+                  onClick={() => setSelectedContent('KotaVsJaipurVsHome')}
+                  className={
+                    selectedContent === 'KotaVsJaipurVsHome' ? 'active' : ''
+                  }
+                >
+                  Kota vs Jaipur vs Home
+                </h3>
+
+                {data.RefundPolicy && (
+                  <h3
+                    onClick={() => setSelectedContent('RefundPolicy')}
+                    className={
+                      selectedContent === 'RefundPolicy' ? 'active' : ''
+                    }
+                  >
+                    Refund Policy
+                  </h3>
+                )}
               </div>
             </div>
 
             <div className="CourseDetailsRight">
               {selectedContent && (
-                <div className="CourseCardContent">
+                <>
                   {selectedContent === 'AboutCourse' && (
                     <>
                       <h3>About Course</h3>
@@ -116,10 +151,16 @@ const CourseCardDetails = () => {
                     </div>
                   )}
                   {selectedContent === 'RefundPolicy' && (
-                    <>
-                      <h3>Refund Policy</h3>
-                      <p>{data.RefundPolicy}</p>
-                    </>
+                    <div className='refundPolicy'>
+                      {/* <h3>Refund Policy</h3> */}
+                      <a
+                        href={data.RefundPolicy}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Refund Policy
+                      </a>
+                    </div>
                   )}
                   {selectedContent === 'CourseFeatures' && (
                     <div>
@@ -143,15 +184,15 @@ const CourseCardDetails = () => {
                       </ul>
                     </div>
                   )}
-                </div>
+                </>
               )}
             </div>
           </div>
 
           <div className="CommonCourse">
             <div className="CourseContact">
-              <h2>{CommonCourseData.choose}</h2>
-              <h2>{CommonCourseData.contact}</h2>
+              <h2>{CommonCourseData.Choose}</h2>
+              <h2>{CommonCourseData.Contact}</h2>
             </div>
 
             <div className="CourseButton">

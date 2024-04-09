@@ -5,7 +5,7 @@ const ResultsSection = () => {
   return (
     <div className="resultSection">
       <div className="containerMain">
-        <h1>Results</h1>
+        {/* <h1>Results</h1> */}
 
         <section id="result">
           {resultData.map((result, index) => (
@@ -21,7 +21,7 @@ const ResultsSection = () => {
               <div className="row mt-6">
                 <div className="col-12">
                   <div className="card-group card-border card-border-lg border-primary shadow-light-lg lift lift-lg">
-                    {result.data.map((data,ind) => (
+                    {result.data.map((data, ind) => (
                       <div className="card" key={ind}>
                         <div className="card-body">
                           <div className="year-name">{data.year}</div>
@@ -40,7 +40,6 @@ const ResultsSection = () => {
               </div>
             </div>
           ))}
-          
         </section>
       </div>
     </div>
