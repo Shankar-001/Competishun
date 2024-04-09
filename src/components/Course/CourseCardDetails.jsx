@@ -4,12 +4,18 @@ import {
   SingleCourseDetails,
 } from '../../Data/CourseDetailsData';
 import { useEffect, useState } from 'react';
+import playImg from '../../assets/ic-play.svg';
+import Modal from '../../utils/Modal';
 
 const CourseCardDetails = () => {
   const { courseDetails } = useParams();
   const data = SingleCourseDetails[courseDetails];
   const navigate = useNavigate();
   const [selectedContent, setSelectedContent] = useState('AboutCourse');
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
 
   useEffect(() => {
     if (!SingleCourseDetails[courseDetails]) {
@@ -129,17 +135,20 @@ const CourseCardDetails = () => {
                       <p>{data.AboutCourse}</p>
                     </>
                   )}
+
                   {selectedContent === 'CourseDuration' && (
                     <h3>
                       Course Duration: <span>{data.CourseDuration}</span>
                     </h3>
                   )}
+
                   {selectedContent === 'FeeStructure' && (
                     <>
                       <h3>Fee Structure</h3>
                       <p>{data.FeeStructure}</p>
                     </>
                   )}
+
                   {selectedContent === 'InstallmentDetails' && (
                     <div>
                       <h3>Installment Details</h3>
@@ -150,8 +159,9 @@ const CourseCardDetails = () => {
                       </ul>
                     </div>
                   )}
+
                   {selectedContent === 'RefundPolicy' && (
-                    <div className='refundPolicy'>
+                    <div className="refundPolicy">
                       {/* <h3>Refund Policy</h3> */}
                       <a
                         href={data.RefundPolicy}
@@ -162,26 +172,164 @@ const CourseCardDetails = () => {
                       </a>
                     </div>
                   )}
-                  {selectedContent === 'CourseFeatures' && (
-                    <div>
-                      <h3>Course Features</h3>
-                      <ul>
-                        {CommonCourseData.CourseFeatures.map(
-                          (feature, index) => (
-                            <li key={index}>{`${index + 1}. ${feature}`}</li>
-                          )
-                        )}
-                      </ul>
+
+                  {selectedContent === 'Stages' && (
+                    <div className="courseDetailsVideo">
+                      <div className="CourseImgBlock" onClick={handleShowModal}>
+                        <img
+                          src={CommonCourseData.src}
+                          className="CourseImg"
+                          loading="lazy"
+                        />
+                        <img
+                          src={playImg}
+                          alt="Play"
+                          className="CoursePlayBtn"
+                          loading="lazy"
+                        />
+                      </div>
+                      <Modal
+                        show={showModal}
+                        onClose={handleCloseModal}
+                        videoUrl={CommonCourseData.Stages}
+                      />
                     </div>
                   )}
+
+                  {selectedContent === 'GeneralQNA' && (
+                    <div className="courseDetailsVideo">
+                      <div className="CourseImgBlock" onClick={handleShowModal}>
+                        <img
+                          src={CommonCourseData.src}
+                          className="CourseImg"
+                          loading="lazy"
+                        />
+                        <img
+                          src={playImg}
+                          alt="Play"
+                          className="CoursePlayBtn"
+                          loading="lazy"
+                        />
+                      </div>
+                      <Modal
+                        show={showModal}
+                        onClose={handleCloseModal}
+                        videoUrl={CommonCourseData.GeneralQNA}
+                      />
+                    </div>
+                  )}
+
+                  {selectedContent === 'OnlineVsOffline' && (
+                    <div className="courseDetailsVideo">
+                      <div className="CourseImgBlock" onClick={handleShowModal}>
+                        <img
+                          src={CommonCourseData.src}
+                          className="CourseImg"
+                          loading="lazy"
+                        />
+                        <img
+                          src={playImg}
+                          alt="Play"
+                          className="CoursePlayBtn"
+                          loading="lazy"
+                        />
+                      </div>
+                      <Modal
+                        show={showModal}
+                        onClose={handleCloseModal}
+                        videoUrl={CommonCourseData.OnlineVsOffline}
+                      />
+                    </div>
+                  )}
+
+                  {selectedContent === 'KotaVsJaipurVsHome' && (
+                    <div className="courseDetailsVideo">
+                      <div className="CourseImgBlock" onClick={handleShowModal}>
+                        <img
+                          src={CommonCourseData.src}
+                          className="CourseImg"
+                          loading="lazy"
+                        />
+                        <img
+                          src={playImg}
+                          alt="Play"
+                          className="CoursePlayBtn"
+                          loading="lazy"
+                        />
+                      </div>
+                      <Modal
+                        show={showModal}
+                        onClose={handleCloseModal}
+                        videoUrl={CommonCourseData.KotaVsJaipurVsHome}
+                      />
+                    </div>
+                  )}
+
+                  {selectedContent === 'CourseFeatures' && (
+                    <div className="courseDetailsVideo">
+                      <div className="Hello">
+                        <h3>Course Features</h3>
+                        <ul>
+                          {CommonCourseData.CourseFeatures.map(
+                            (feature, index) => (
+                              <li key={index}>{`${index + 1}. ${feature}`}</li>
+                            )
+                          )}
+                        </ul>
+                      </div>
+                      <div className="CourseImgBlock" onClick={handleShowModal}>
+                        <img
+                          src={CommonCourseData.src}
+                          className="CourseImg"
+                          loading="lazy"
+                        />
+                        <img
+                          src={playImg}
+                          alt="Play"
+                          className="CoursePlayBtn"
+                          loading="lazy"
+                        />
+                      </div>
+                      <Modal
+                        show={showModal}
+                        onClose={handleCloseModal}
+                        videoUrl={CommonCourseData.CourseFeatureVideo}
+                      />
+                    </div>
+                  )}
+
                   {selectedContent === 'Advantages' && (
-                    <div>
-                      <h3>Why Join Us? Competishun Advantage!</h3>
-                      <ul>
-                        {CommonCourseData.Advantages.map((advantage, index) => (
-                          <li key={index}>{`${index + 1}. ${advantage}`}</li>
-                        ))}
-                      </ul>
+                    <div className="courseDetailsVideo">
+                      <div className="Hello">
+                        <h3>Why Join Us? Competishun Advantage!</h3>
+                        <ul>
+                          {CommonCourseData.Advantages.map(
+                            (advantage, index) => (
+                              <li key={index}>{`${
+                                index + 1
+                              }. ${advantage}`}</li>
+                            )
+                          )}
+                        </ul>
+                      </div>
+                      <div className="CourseImgBlock" onClick={handleShowModal}>
+                        <img
+                          src={CommonCourseData.src}
+                          className="CourseImg"
+                          loading="lazy"
+                        />
+                        <img
+                          src={playImg}
+                          alt="Play"
+                          className="CoursePlayBtn"
+                          loading="lazy"
+                        />
+                      </div>
+                      <Modal
+                        show={showModal}
+                        onClose={handleCloseModal}
+                        videoUrl={CommonCourseData.AdvantagesVideo}
+                      />
                     </div>
                   )}
                 </>

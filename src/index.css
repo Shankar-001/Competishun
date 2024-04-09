@@ -1184,6 +1184,40 @@ button {
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .refundPolicy a:hover {
   background-color: var(--darkest-bg-color);
 }
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo .CourseImgBlock {
+  width: 40%;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo .CourseImgBlock .CourseImg {
+  display: inline-block;
+  max-width: 20.6rem;
+  height: 20.6rem;
+  border-radius: 10%;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo .CourseImgBlock .CoursePlayBtn {
+  display: block;
+  position: absolute;
+  max-width: 8rem;
+  height: 9rem;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo .Hello {
+  width: 60%;
+}
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight ul li {
   margin-top: 1.5%;
   list-style-type: none;

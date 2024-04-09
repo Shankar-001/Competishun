@@ -1,3 +1,5 @@
+import Champ from '../assets/Courses/Champ.jpg';
+
 export const SingleCourseDetails = {
   PRATHAM: {
     Title: 'PRATHAM (XI) – Target : IIT- JEE (MAIN+ADVANCED) – 2026',
@@ -174,6 +176,7 @@ export const CommonCourseData = {
   GeneralQNA: 'https://www.youtube.com/embed/50hiqJY_8h0',
   CourseFeatureVideo: 'https://www.youtube.com/embed/l2tLkv_t15k',
   AdvantagesVideo: 'https://www.youtube.com/embed/06dJv3gJX88',
+  src: Champ,
 
   Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
   Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
