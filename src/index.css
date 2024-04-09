@@ -200,6 +200,7 @@ button {
 }
 
 .footer-mainContainer {
+  padding-bottom: 1%;
   background-color: var(--ip-border-clr);
   display: flex;
   flex-direction: row;
@@ -297,6 +298,119 @@ button {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+.MerchandiseCardMainContainer {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: var(--landing-page-main-info-width);
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseDetails {
+  font-size: 4.8rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  margin-top: 1%;
+  margin-bottom: 3.2%;
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseDetails .MerchandiseSubDetails {
+  font-size: 2.8rem;
+  font-weight: 600;
+  padding: 2% 0%;
+  padding-bottom: 3%;
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-bottom: 2%;
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ankertag {
+  text-decoration: none;
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ComponentDivision {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 0.1rem solid beige;
+  z-index: 5;
+  height: 30rem;
+  width: var(--landing-page-main-info-width);
+  overflow: hidden;
+  box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ComponentDivision img {
+  width: 28rem;
+  height: 27.5rem;
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ComponentDivision:hover {
+  background-color: var(--light-bg-color);
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ComponentDivision .button {
+  background-color: aqua;
+  width: 100%;
+  padding: 2%;
+  text-decoration: none;
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .descComponentDivision {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 0.1rem solid beige;
+  z-index: 5;
+  height: 30rem;
+  width: var(--landing-page-main-info-width);
+  overflow: hidden;
+  box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .descComponentDivision img {
+  width: 28rem;
+  height: 25rem;
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .descComponentDivision:hover {
+  background-color: var(--light-bg-color);
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .descComponentDivision .button {
+  background-color: aqua;
+  width: 100%;
+  padding: 2%;
+  text-decoration: none;
+}
+.MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .descComponentDivision .desc {
+  padding: 1%;
+  background-color: lightcoral;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.7rem;
 }
 
 .your-custom-title-class {
@@ -1248,6 +1362,10 @@ button {
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseButton a:hover {
   background-color: #0056b3;
+}
+
+.Merchandise {
+  padding-top: 8rem;
 }
 
 .modal-overlay {
