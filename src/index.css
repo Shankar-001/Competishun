@@ -1035,15 +1035,15 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 8%;
   width: var(--landing-page-main-info-width);
 }
 .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestDetails {
-  font-size: 4.8rem;
-  font-weight: 600;
+  font-size: 3.6rem;
+  font-weight: 500;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
-  margin-top: 3%;
+  width: var(--landing-page-main-info-width);
   margin-bottom: 3.2%;
 }
 .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestDetails span {

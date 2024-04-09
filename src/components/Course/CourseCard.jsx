@@ -56,7 +56,7 @@ const CourseCard = () => {
           data: JeeShortTermMainData,
         },
         {
-          title: 'Short Term Online Courses Target JEE (ADV)',
+          title: 'Short Term Online Course Target JEE (ADV)',
           year: '2025',
           data: JeeShortTermAdvData,
         },
@@ -108,7 +108,7 @@ const CourseCard = () => {
           data: NeetOfflineData2025,
         },
         {
-          title: 'Full Year Offline Courses Target NEET (UG)',
+          title: 'Full Year Offline Course Target NEET (UG)',
           year: '2026',
           data: NeetOfflineData2026,
         },
