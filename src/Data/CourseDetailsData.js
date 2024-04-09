@@ -1,3 +1,10 @@
+import AdvantageThumbnail from '../assets/Courses/CourseDetails/CompetishunAdvantages.png';
+import CourseFeatureThumbnail from '../assets/Courses/CourseDetails/CompetishunCourseFeatures.png';
+import GeneralPointThumbnail from '../assets/Courses/CourseDetails/GenaralPoints.jpg';
+import KotaVsJaipurVsHomeThumbnail from '../assets/Courses/CourseDetails/KotaVsJaipurVsHome.jpg';
+import OnlineVsOfflineThumbnail from '../assets/Courses/CourseDetails/OnlineVsOffline.png';
+import StagesThumbnail from '../assets/Courses/CourseDetails/StagesOfJeePreparation.jpg';
+
 export const SingleCourseDetails = {
   PRATHAM: {
     Title: 'PRATHAM (XI) – Target : IIT- JEE (MAIN+ADVANCED) – 2026',
@@ -12,6 +19,47 @@ export const SingleCourseDetails = {
       '2nd Instalment: Rs 13000/- After 45 days of Batch Commencement but Within 50 Days of Batch Commencement (Link For Payment --https://rzp.io/l/8XF3wUO)',
     ],
     RefundPolicy: 'https://bit.ly/49LLzYy',
+    CourseFeatures: [
+      'Courses crafted for your needs',
+      'Recorded scheduled lectures',
+      'Graded material with text/video solutions',
+      'Regular, relevant tests with proper analysis',
+      'Guidance Session (Weekly) with Directors and Senior faculties',
+      'Daily live doubt counter (Zoom) and Telegram',
+      'Board Support, other Exam Support (BITSAT, WBJEE, UGEE, etc.)',
+      'One-stop solution for all information & authentic guidance. 24×7 on WhatsApp',
+      'Smooth functioning, course completion on time, innovative teaching, quick adjustment according to new situations. 5th cycle of running the course',
+      "Customization according to individual student's needs (C³, Fast Lane, Prabal, etc.)",
+    ],
+
+    Advantages: [
+      'Experienced Faculties: Learn from seasoned educators.',
+      '3-in-1 JEE Subjects (Physics, Chemistry, Mathematics): Master all JEE subjects under one roof.',
+      '4 Successful Online Cycles - Stability Assured: Trust our four proven online cycles.',
+      'Authentic Results: Achieve genuine, reliable results.',
+      'Student-Centric Approach (Students First): Prioritize student needs over business.',
+      'One-Stop Solution: Comprehensive solution for all academic needs.',
+      'Customization: Tailor your learning experience.',
+      'Sincere Study - No Time Wastage: Embrace focused, efficient study practices.',
+      'Leader in Innovation: Stay at the forefront of educational innovation.',
+      'Noble Intent, Genuine Advice, Social Work: Benefit from noble intentions, genuine advice, and social welfare commitment.',
+    ],
+
+    Stages: 'https://www.youtube.com/embed/iR5ZCto7Td4',
+    OnlineVsOffline: 'https://www.youtube.com/embed/JKg9Ked2aIk',
+    KotaVsJaipurVsHome: 'https://www.youtube.com/embed/qjr3_qtdWFg',
+    GeneralQNA: 'https://www.youtube.com/embed/50hiqJY_8h0',
+    CourseFeatureVideo: 'https://www.youtube.com/embed/l2tLkv_t15k',
+    AdvantagesVideo: 'https://www.youtube.com/embed/06dJv3gJX88',
+    AdvantageThumbnail: AdvantageThumbnail,
+    CourseFeatureThumbnail: CourseFeatureThumbnail,
+    GeneralPointThumbnail: GeneralPointThumbnail,
+    OnlineVsOfflineThumbnail: OnlineVsOfflineThumbnail,
+    StagesThumbnail: StagesThumbnail,
+    KotaVsJaipurVsHomeThumbnail: KotaVsJaipurVsHomeThumbnail,
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
   },
 
   PRAKHAR: {
@@ -27,6 +75,47 @@ export const SingleCourseDetails = {
       '2nd Installment: Rs 13500/- After 45 days of Batch Commencement but Within 50 Days of Batch Commencement (Link For Payment -https://rzp.io/l/TrwSO8D6in)',
     ],
     RefundPolicy: 'https://bit.ly/49LLzYy',
+    CourseFeatures: [
+      'Courses crafted for your needs',
+      'Recorded scheduled lectures',
+      'Graded material with text/video solutions',
+      'Regular, relevant tests with proper analysis',
+      'Guidance Session (Weekly) with Directors and Senior faculties',
+      'Daily live doubt counter (Zoom) and Telegram',
+      'Board Support, other Exam Support (BITSAT, WBJEE, UGEE, etc.)',
+      'One-stop solution for all information & authentic guidance. 24×7 on WhatsApp',
+      'Smooth functioning, course completion on time, innovative teaching, quick adjustment according to new situations. 5th cycle of running the course',
+      "Customization according to individual student's needs (C³, Fast Lane, Prabal, etc.)",
+    ],
+
+    Advantages: [
+      'Experienced Faculties: Learn from seasoned educators.',
+      '3-in-1 JEE Subjects (Physics, Chemistry, Mathematics): Master all JEE subjects under one roof.',
+      '4 Successful Online Cycles - Stability Assured: Trust our four proven online cycles.',
+      'Authentic Results: Achieve genuine, reliable results.',
+      'Student-Centric Approach (Students First): Prioritize student needs over business.',
+      'One-Stop Solution: Comprehensive solution for all academic needs.',
+      'Customization: Tailor your learning experience.',
+      'Sincere Study - No Time Wastage: Embrace focused, efficient study practices.',
+      'Leader in Innovation: Stay at the forefront of educational innovation.',
+      'Noble Intent, Genuine Advice, Social Work: Benefit from noble intentions, genuine advice, and social welfare commitment.',
+    ],
+
+    Stages: 'https://www.youtube.com/embed/iR5ZCto7Td4',
+    OnlineVsOffline: 'https://www.youtube.com/embed/JKg9Ked2aIk',
+    KotaVsJaipurVsHome: 'https://www.youtube.com/embed/qjr3_qtdWFg',
+    GeneralQNA: 'https://www.youtube.com/embed/50hiqJY_8h0',
+    CourseFeatureVideo: 'https://www.youtube.com/embed/l2tLkv_t15k',
+    AdvantagesVideo: 'https://www.youtube.com/embed/06dJv3gJX88',
+    AdvantageThumbnail: AdvantageThumbnail,
+    CourseFeatureThumbnail: CourseFeatureThumbnail,
+    GeneralPointThumbnail: GeneralPointThumbnail,
+    OnlineVsOfflineThumbnail: OnlineVsOfflineThumbnail,
+    StagesThumbnail: StagesThumbnail,
+    KotaVsJaipurVsHomeThumbnail: KotaVsJaipurVsHomeThumbnail,
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
   },
 
   'PRAKHAR INTEGRATED': {
@@ -43,6 +132,47 @@ export const SingleCourseDetails = {
       '2nd Installment: Rs 20000/- After 45 days of Batch Commencement but Within 50 Days of Batch Commencement ( Pay Second Installment: https://pages.razorpay.com/pl_Evlvr4aJgWc03p/view )',
     ],
     RefundPolicy: 'https://bit.ly/49LLzYy',
+    CourseFeatures: [
+      'Courses crafted for your needs',
+      'Recorded scheduled lectures',
+      'Graded material with text/video solutions',
+      'Regular, relevant tests with proper analysis',
+      'Guidance Session (Weekly) with Directors and Senior faculties',
+      'Daily live doubt counter (Zoom) and Telegram',
+      'Board Support, other Exam Support (BITSAT, WBJEE, UGEE, etc.)',
+      'One-stop solution for all information & authentic guidance. 24×7 on WhatsApp',
+      'Smooth functioning, course completion on time, innovative teaching, quick adjustment according to new situations. 5th cycle of running the course',
+      "Customization according to individual student's needs (C³, Fast Lane, Prabal, etc.)",
+    ],
+
+    Advantages: [
+      'Experienced Faculties: Learn from seasoned educators.',
+      '3-in-1 JEE Subjects (Physics, Chemistry, Mathematics): Master all JEE subjects under one roof.',
+      '4 Successful Online Cycles - Stability Assured: Trust our four proven online cycles.',
+      'Authentic Results: Achieve genuine, reliable results.',
+      'Student-Centric Approach (Students First): Prioritize student needs over business.',
+      'One-Stop Solution: Comprehensive solution for all academic needs.',
+      'Customization: Tailor your learning experience.',
+      'Sincere Study - No Time Wastage: Embrace focused, efficient study practices.',
+      'Leader in Innovation: Stay at the forefront of educational innovation.',
+      'Noble Intent, Genuine Advice, Social Work: Benefit from noble intentions, genuine advice, and social welfare commitment.',
+    ],
+
+    Stages: 'https://www.youtube.com/embed/iR5ZCto7Td4',
+    OnlineVsOffline: 'https://www.youtube.com/embed/JKg9Ked2aIk',
+    KotaVsJaipurVsHome: 'https://www.youtube.com/embed/qjr3_qtdWFg',
+    GeneralQNA: 'https://www.youtube.com/embed/50hiqJY_8h0',
+    CourseFeatureVideo: 'https://www.youtube.com/embed/l2tLkv_t15k',
+    AdvantagesVideo: 'https://www.youtube.com/embed/06dJv3gJX88',
+    AdvantageThumbnail: AdvantageThumbnail,
+    CourseFeatureThumbnail: CourseFeatureThumbnail,
+    GeneralPointThumbnail: GeneralPointThumbnail,
+    OnlineVsOfflineThumbnail: OnlineVsOfflineThumbnail,
+    StagesThumbnail: StagesThumbnail,
+    KotaVsJaipurVsHomeThumbnail: KotaVsJaipurVsHomeThumbnail,
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
   },
 
   'PRAKHAR INTEGRATED FAST LANE': {
@@ -59,6 +189,47 @@ export const SingleCourseDetails = {
       ' 2nd Installment: Rs 15000/- After 45 days of Batch Commencement but Within 50 Days of Batch Commencement (Pay Second Installment: https://rzp.io/l/02m5Ybppr)',
     ],
     RefundPolicy: 'https://bit.ly/49LLzYy',
+    CourseFeatures: [
+      'Courses crafted for your needs',
+      'Recorded scheduled lectures',
+      'Graded material with text/video solutions',
+      'Regular, relevant tests with proper analysis',
+      'Guidance Session (Weekly) with Directors and Senior faculties',
+      'Daily live doubt counter (Zoom) and Telegram',
+      'Board Support, other Exam Support (BITSAT, WBJEE, UGEE, etc.)',
+      'One-stop solution for all information & authentic guidance. 24×7 on WhatsApp',
+      'Smooth functioning, course completion on time, innovative teaching, quick adjustment according to new situations. 5th cycle of running the course',
+      "Customization according to individual student's needs (C³, Fast Lane, Prabal, etc.)",
+    ],
+
+    Advantages: [
+      'Experienced Faculties: Learn from seasoned educators.',
+      '3-in-1 JEE Subjects (Physics, Chemistry, Mathematics): Master all JEE subjects under one roof.',
+      '4 Successful Online Cycles - Stability Assured: Trust our four proven online cycles.',
+      'Authentic Results: Achieve genuine, reliable results.',
+      'Student-Centric Approach (Students First): Prioritize student needs over business.',
+      'One-Stop Solution: Comprehensive solution for all academic needs.',
+      'Customization: Tailor your learning experience.',
+      'Sincere Study - No Time Wastage: Embrace focused, efficient study practices.',
+      'Leader in Innovation: Stay at the forefront of educational innovation.',
+      'Noble Intent, Genuine Advice, Social Work: Benefit from noble intentions, genuine advice, and social welfare commitment.',
+    ],
+
+    Stages: 'https://www.youtube.com/embed/iR5ZCto7Td4',
+    OnlineVsOffline: 'https://www.youtube.com/embed/JKg9Ked2aIk',
+    KotaVsJaipurVsHome: 'https://www.youtube.com/embed/qjr3_qtdWFg',
+    GeneralQNA: 'https://www.youtube.com/embed/50hiqJY_8h0',
+    CourseFeatureVideo: 'https://www.youtube.com/embed/l2tLkv_t15k',
+    AdvantagesVideo: 'https://www.youtube.com/embed/06dJv3gJX88',
+    AdvantageThumbnail: AdvantageThumbnail,
+    CourseFeatureThumbnail: CourseFeatureThumbnail,
+    GeneralPointThumbnail: GeneralPointThumbnail,
+    OnlineVsOfflineThumbnail: OnlineVsOfflineThumbnail,
+    StagesThumbnail: StagesThumbnail,
+    KotaVsJaipurVsHomeThumbnail: KotaVsJaipurVsHomeThumbnail,
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
   },
 
   PRAVEEN: {
@@ -74,6 +245,47 @@ export const SingleCourseDetails = {
       '2nd Installment: Rs 13,700/- After 45 days of Batch Commencement but Within 50 Days Payment Link--- https://rzp.io/l/y3mJA2Ew4',
     ],
     RefundPolicy: 'https://bit.ly/49LLzYy',
+    CourseFeatures: [
+      'Courses crafted for your needs',
+      'Recorded scheduled lectures',
+      'Graded material with text/video solutions',
+      'Regular, relevant tests with proper analysis',
+      'Guidance Session (Weekly) with Directors and Senior faculties',
+      'Daily live doubt counter (Zoom) and Telegram',
+      'Board Support, other Exam Support (BITSAT, WBJEE, UGEE, etc.)',
+      'One-stop solution for all information & authentic guidance. 24×7 on WhatsApp',
+      'Smooth functioning, course completion on time, innovative teaching, quick adjustment according to new situations. 5th cycle of running the course',
+      "Customization according to individual student's needs (C³, Fast Lane, Prabal, etc.)",
+    ],
+
+    Advantages: [
+      'Experienced Faculties: Learn from seasoned educators.',
+      '3-in-1 JEE Subjects (Physics, Chemistry, Mathematics): Master all JEE subjects under one roof.',
+      '4 Successful Online Cycles - Stability Assured: Trust our four proven online cycles.',
+      'Authentic Results: Achieve genuine, reliable results.',
+      'Student-Centric Approach (Students First): Prioritize student needs over business.',
+      'One-Stop Solution: Comprehensive solution for all academic needs.',
+      'Customization: Tailor your learning experience.',
+      'Sincere Study - No Time Wastage: Embrace focused, efficient study practices.',
+      'Leader in Innovation: Stay at the forefront of educational innovation.',
+      'Noble Intent, Genuine Advice, Social Work: Benefit from noble intentions, genuine advice, and social welfare commitment.',
+    ],
+
+    Stages: 'https://www.youtube.com/embed/iR5ZCto7Td4',
+    OnlineVsOffline: 'https://www.youtube.com/embed/JKg9Ked2aIk',
+    KotaVsJaipurVsHome: 'https://www.youtube.com/embed/qjr3_qtdWFg',
+    GeneralQNA: 'https://www.youtube.com/embed/50hiqJY_8h0',
+    CourseFeatureVideo: 'https://www.youtube.com/embed/l2tLkv_t15k',
+    AdvantagesVideo: 'https://www.youtube.com/embed/06dJv3gJX88',
+    AdvantageThumbnail: AdvantageThumbnail,
+    CourseFeatureThumbnail: CourseFeatureThumbnail,
+    GeneralPointThumbnail: GeneralPointThumbnail,
+    OnlineVsOfflineThumbnail: OnlineVsOfflineThumbnail,
+    StagesThumbnail: StagesThumbnail,
+    KotaVsJaipurVsHomeThumbnail: KotaVsJaipurVsHomeThumbnail,
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
   },
 
   'PRAVEEN FAST LANE': {
@@ -90,6 +302,47 @@ export const SingleCourseDetails = {
       '2nd Installment: Rs 13,700/- After 45 days of Batch Commencement but Within 50 Days Payment Link--- https://rzp.io/l/y3mJA2Ew4',
     ],
     RefundPolicy: 'https://bit.ly/49LLzYy',
+    CourseFeatures: [
+      'Courses crafted for your needs',
+      'Recorded scheduled lectures',
+      'Graded material with text/video solutions',
+      'Regular, relevant tests with proper analysis',
+      'Guidance Session (Weekly) with Directors and Senior faculties',
+      'Daily live doubt counter (Zoom) and Telegram',
+      'Board Support, other Exam Support (BITSAT, WBJEE, UGEE, etc.)',
+      'One-stop solution for all information & authentic guidance. 24×7 on WhatsApp',
+      'Smooth functioning, course completion on time, innovative teaching, quick adjustment according to new situations. 5th cycle of running the course',
+      "Customization according to individual student's needs (C³, Fast Lane, Prabal, etc.)",
+    ],
+
+    Advantages: [
+      'Experienced Faculties: Learn from seasoned educators.',
+      '3-in-1 JEE Subjects (Physics, Chemistry, Mathematics): Master all JEE subjects under one roof.',
+      '4 Successful Online Cycles - Stability Assured: Trust our four proven online cycles.',
+      'Authentic Results: Achieve genuine, reliable results.',
+      'Student-Centric Approach (Students First): Prioritize student needs over business.',
+      'One-Stop Solution: Comprehensive solution for all academic needs.',
+      'Customization: Tailor your learning experience.',
+      'Sincere Study - No Time Wastage: Embrace focused, efficient study practices.',
+      'Leader in Innovation: Stay at the forefront of educational innovation.',
+      'Noble Intent, Genuine Advice, Social Work: Benefit from noble intentions, genuine advice, and social welfare commitment.',
+    ],
+
+    Stages: 'https://www.youtube.com/embed/iR5ZCto7Td4',
+    OnlineVsOffline: 'https://www.youtube.com/embed/JKg9Ked2aIk',
+    KotaVsJaipurVsHome: 'https://www.youtube.com/embed/qjr3_qtdWFg',
+    GeneralQNA: 'https://www.youtube.com/embed/50hiqJY_8h0',
+    CourseFeatureVideo: 'https://www.youtube.com/embed/l2tLkv_t15k',
+    AdvantagesVideo: 'https://www.youtube.com/embed/06dJv3gJX88',
+    AdvantageThumbnail: AdvantageThumbnail,
+    CourseFeatureThumbnail: CourseFeatureThumbnail,
+    GeneralPointThumbnail: GeneralPointThumbnail,
+    OnlineVsOfflineThumbnail: OnlineVsOfflineThumbnail,
+    StagesThumbnail: StagesThumbnail,
+    KotaVsJaipurVsHomeThumbnail: KotaVsJaipurVsHomeThumbnail,
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
   },
 
   PRABAL: {
@@ -105,76 +358,221 @@ export const SingleCourseDetails = {
       '2nd Installment: Rs 8000/-  After 45 days of Batch Commencement but Within 50 Days of Batch Commencement   (Pay Second Installment: https://rzp.io/l/rpRv1g1XN)',
     ],
     RefundPolicy: 'https://bit.ly/49LLzYy',
+    CourseFeatures: [
+      'Courses crafted for your needs',
+      'Recorded scheduled lectures',
+      'Graded material with text/video solutions',
+      'Regular, relevant tests with proper analysis',
+      'Guidance Session (Weekly) with Directors and Senior faculties',
+      'Daily live doubt counter (Zoom) and Telegram',
+      'Board Support, other Exam Support (BITSAT, WBJEE, UGEE, etc.)',
+      'One-stop solution for all information & authentic guidance. 24×7 on WhatsApp',
+      'Smooth functioning, course completion on time, innovative teaching, quick adjustment according to new situations. 5th cycle of running the course',
+      "Customization according to individual student's needs (C³, Fast Lane, Prabal, etc.)",
+    ],
+
+    Advantages: [
+      'Experienced Faculties: Learn from seasoned educators.',
+      '3-in-1 JEE Subjects (Physics, Chemistry, Mathematics): Master all JEE subjects under one roof.',
+      '4 Successful Online Cycles - Stability Assured: Trust our four proven online cycles.',
+      'Authentic Results: Achieve genuine, reliable results.',
+      'Student-Centric Approach (Students First): Prioritize student needs over business.',
+      'One-Stop Solution: Comprehensive solution for all academic needs.',
+      'Customization: Tailor your learning experience.',
+      'Sincere Study - No Time Wastage: Embrace focused, efficient study practices.',
+      'Leader in Innovation: Stay at the forefront of educational innovation.',
+      'Noble Intent, Genuine Advice, Social Work: Benefit from noble intentions, genuine advice, and social welfare commitment.',
+    ],
+
+    Stages: 'https://www.youtube.com/embed/iR5ZCto7Td4',
+    OnlineVsOffline: 'https://www.youtube.com/embed/JKg9Ked2aIk',
+    KotaVsJaipurVsHome: 'https://www.youtube.com/embed/qjr3_qtdWFg',
+    GeneralQNA: 'https://www.youtube.com/embed/50hiqJY_8h0',
+    CourseFeatureVideo: 'https://www.youtube.com/embed/l2tLkv_t15k',
+    AdvantagesVideo: 'https://www.youtube.com/embed/06dJv3gJX88',
+    AdvantageThumbnail: AdvantageThumbnail,
+    CourseFeatureThumbnail: CourseFeatureThumbnail,
+    GeneralPointThumbnail: GeneralPointThumbnail,
+    OnlineVsOfflineThumbnail: OnlineVsOfflineThumbnail,
+    StagesThumbnail: StagesThumbnail,
+    KotaVsJaipurVsHomeThumbnail: KotaVsJaipurVsHomeThumbnail,
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
   },
 
-  AARAMBH: {
-    Title: 'AARAMBH (XI) – Target : NEET (UG)- 2026',
+  'C³': {
+    Title: 'The Competishun Crash Course (C³)',
     AboutCourse:
-      'AARAMBH,  Competishun’s full year course for students who are Moving from X to XI class. This Course covers the entire NEET (UG) syllabus of class XI from basic Students who will enroll in this batch will be able to complete syllabus in Systematic manner. This course is taught by TOP experienced Team Competishun faculties who makes your way to Best Medical College more easier.',
+      'The Competishun Crash Course (C³) is an intensive and focused program designed to help students maximize their potential and achieve exceptional results in the JEE Main examination. Tailored to meet the unique needs of aspirants, this course offers a comprehensive and efficient approach to exam preparation.',
 
-    CourseDuration: '1-Full yearlong Course, Till: 30th April 2024',
+    LectureNumber: '150 Lectures (PCM) + 75 PYQ Session ',
 
-    FeeStructure: 'Fee Rs 11000/- (Inclusive of All Taxes)',
-    RefundPolicy: 'https://bit.ly/49LLzYy',
+    FeeStructure:
+      'Rs 3999/- (Rs 3389 Fee will be refunded if you achieve 97%tile & above in any JEE MAIN 2024 Attempt or Under 25K CRL Rank in JEE Advanced 2024)',
+
+    KeyFeature:
+      'Expert Faculty |Rigorous Curriculum| Time-Efficient |Doubt Resolution |Digital Study Materials | Motivational Support',
+    ShortCourseFeature: [
+      'Scheduled Recorded lecture',
+      'Graded, exhaustive Material (DPPs)',
+      'Text and Video Solution. (DPPs)',
+      'Doubt Solving : 24×7 (Telegram Group) & Daily Live Doubt Counter (Zoom)',
+      'Regular, Relevant Counter (Zoom) Analysis',
+      'Guidance Session (Weakly) with Directors and Senior faculties (line)',
+      'Board Support, other Exam Support (BITSAT, WBJEE and UGEE Etc.)',
+      'One stop solution for all information, & Authentic Guidance. 24×7 on W.A.',
+    ],
+    ShortTermRefundPolicy: `REFUND FOR CRASH COURSE / REVISION COURSE IS NOT APPLICABLE FOR THIS BATCH AFTER PURCHASE !! i.e. If any student  wants to take complete course refund it will not be provided.
+    
+    However, Refund will be provided on the basis of your JEE MAIN Result percentile 2024 / JEE ADVANCED - 2024  Rank as per eligibility Criteria as mentioned in Fee Structure.
+    `,
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  },
+
+  CHAMP: {
+    Title: 'The Revision Course (CHAMP)',
+    AboutCourse:
+      'Best Revision Course  which provides video lectures, revision notes, and practice tests for JEE Main preparation. Their revision course is structured to help students revise concepts effectively in a short period.',
+
+    LectureNumber:
+      '150 Lectures (PCM). 50 Lecture each subject (25 Theory Brush up and 25 Practice Session)',
+
+    FeeStructure:
+      'Course Fee: Rs 2999/- (Rs 2459 Fee will be refunded if you achieve 97%tile & above in any JEE MAIN 2024 Attempt or Under 25K CRL Rank in JEE Advanced 2024)',
+
+    KeyFeature:
+      'Expert Faculty |Rigorous Curriculum| Time-Efficient |Doubt Resolution |Digital Study Materials | Motivational Support',
+    ShortCourseFeature: [
+      'Scheduled Recorded lecture',
+      'Graded, exhaustive Material (DPPs)',
+      'Text and Video Solution. (DPPs)',
+      'Doubt Solving : 24×7 (Telegram Group) & Daily Live Doubt Counter (Zoom)',
+      'Regular, Relevant Counter (Zoom) Analysis',
+      'Guidance Session (Weakly) with Directors and Senior faculties (line)',
+      'Board Support, other Exam Support (BITSAT, WBJEE and UGEE Etc.)',
+      'One stop solution for all information, & Authentic Guidance. 24×7 on W.A.',
+    ],
+    ShortTermRefundPolicy: `REFUND FOR CRASH COURSE / REVISION COURSE IS NOT APPLICABLE FOR THIS BATCH AFTER PURCHASE !! i.e. If any student  wants to take complete course refund it will not be provided.
+    
+    However, Refund will be provided on the basis of your JEE MAIN Result percentile 2024 / JEE ADVANCED - 2024  Rank as per eligibility Criteria as mentioned in Fee Structure.
+    `,
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  },
+
+  CATS: {
+    Title: 'The Revision Course (CATS)',
+    AboutCourse: `Best Revision Course for JEE ADVANCED aspirants  which provides 75 video lectures (PCM), Revision notes, and practice tests for JEE Advanced preparation. The revision course is structured to help students revise concepts effectively in a short period. 
+    Additionally we provided In depth lectures for JEE ADVANCED as CATS PLUS (15 video lectures)`,
+
+    LectureNumber: '75 Lectures (PCM)',
+
+    FeeStructure:
+      'Course Fee: Rs 2999/- (Rs 2542 Fee will be refunded if you achieve 98%tile & above in any JEE MAIN 2024 Attempt or Under 25K CRL Rank in JEE Advanced 2024)',
+
+    KeyFeature:
+      'Expert Faculty |Rigorous Curriculum| Time-Efficient |Doubt Resolution |Digital Study Materials | Motivational Support',
+    ShortCourseFeature: [
+      'Scheduled Recorded lecture',
+      'Graded, exhaustive Material (DPPs)',
+      'Text and Video Solution. (DPPs)',
+      'Doubt Solving : 24×7 (Telegram Group) & Daily Live Doubt Counter (Zoom)',
+      'Regular, Relevant Counter (Zoom) Analysis',
+      'Guidance Session (Weakly) with Directors and Senior faculties (line)',
+      'Board Support, other Exam Support (BITSAT, WBJEE and UGEE Etc.)',
+      'One stop solution for all information, & Authentic Guidance. 24×7 on W.A.',
+    ],
+    ShortTermRefundPolicy: `REFUND FOR CRASH COURSE / REVISION COURSE IS NOT APPLICABLE FOR THIS BATCH AFTER PURCHASE !! i.e. If any student  wants to take complete course refund it will not be provided.
+    
+    However, Refund will be provided on the basis of your JEE MAIN Result percentile 2024 / JEE ADVANCED - 2024  Rank as per eligibility Criteria as mentioned in Fee Structure.
+    `,
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  },
+
+  'PRAVEEN FAST LANE (LIMITED EDITION)': {
+    Title: 'Praveen Fastlane Limited Edition',
+    AboutCourse: `This Batch is exclusively designed for those students you want to boost their preparation After their 1st attempt of JEE MAIN. Students will get the access of Praveen Fastlane Lectures in Unscheduled way and complimentary access of C³, Champ, CATS. Access to the batch will be available till JEE ADVANCED`,
+
+    LectureNumber: '406 Lectures (PCM)',
+
+    FeeStructure: 'Rs 9000/-',
+
+    KeyFeature:
+      'Expert Faculty |Rigorous Curriculum| Time-Efficient |Doubt Resolution |Digital Study Materials | Motivational Support',
+    ShortCourseFeature: [
+      'Scheduled Recorded lecture',
+      'Graded, exhaustive Material (DPPs)',
+      'Text and Video Solution. (DPPs)',
+      'Doubt Solving : 24×7 (Telegram Group) & Daily Live Doubt Counter (Zoom)',
+      'Regular, Relevant Counter (Zoom) Analysis',
+      'Guidance Session (Weakly) with Directors and Senior faculties (line)',
+      'Board Support, other Exam Support (BITSAT, WBJEE and UGEE Etc.)',
+      'One stop solution for all information, & Authentic Guidance. 24×7 on W.A.',
+    ],
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
   },
 
   ARJUN: {
-    Title: 'ARJUN (XII) – Target : NEET (UG)- 2025',
-    AboutCourse:
-      'ARJUN,  Competishun’s full year course for students who are Moving from XI to XII class. This Course covers the entire NEET (UG) syllabus of class XII from basic Students who will enroll in this batch will be able to complete syllabus in Systematic manner. This course is taught by TOP experienced Team Competishun faculties who makes your way to Best Medical College more easier.',
+    Title: 'ARJUN (XII)',
+    AboutCourse: `This Batch is ideal for XI to XII Moving Students who want to study for NEET. This Course is exclusively prepared by Competishun’s Best and Experienced Faculties for NEET (UG).`,
 
-    CourseDuration: '1-Full yearlong Course, Till: NEET (UG)- 2025',
+    LectureNumber: '330 Lectures (P.C.B)',
 
-    FeeStructure: 'Rs 12500/- (Inclusive of All Taxes)',
-    RefundPolicy: 'https://bit.ly/49LLzYy',
+    FeeStructure: 'Rs 12,500/-',
+
+    ShortCourseFeature: [
+      'Recorded Scheduled Lectures',
+      'Digital Study Material & Physical Study Material',
+      'Live Doubt Class Daily',
+      'Every 2nd Week NEET Mock Tests',
+      'Personal Guidance',
+      'Telegram Doubt Support 24×7',
+    ],
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
   },
 
   AVIRAL: {
-    Title: 'AVIRAL (DROPPER) – Target : NEET (UG)- 2025',
-    AboutCourse:
-      'AVIRAL,  Competishun’s full year course for students who are studying in XII or have Passed out . This Course covers the entire NEET (UG) syllabus NEET. Students who will enroll in this batch will be able to complete syllabus in Systematic manner. This course is taught by TOP experienced Team Competishun faculties who makes your way to Best Medical College more easier.',
+    Title: 'AVIRAL (XII)',
+    AboutCourse: `This Batch is ideal for XII Studying and Passed Students who want to study for NEET. This Course is exclusively prepared by Competishun’s Best and Experienced Faculties for NEET (UG).`,
 
-    CourseDuration: '1-Full yearlong Course, Till: NEET (UG)- 2025',
+    LectureNumber: '770 Lectures (P.C.B)',
 
-    FeeStructure: 'Rs 14000/- (Inclusive of All Taxes)',
-    RefundPolicy: 'https://bit.ly/49LLzYy',
+    FeeStructure: 'Rs 14,000/-',
+
+    ShortCourseFeature: [
+      'Recorded Scheduled Lectures',
+      'Digital Study Material & Physical Study Material',
+      'Live Doubt Class Daily',
+      'Every 2nd Week NEET Mock Tests',
+      'Personal Guidance',
+      'Telegram Doubt Support 24×7',
+    ],
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
   },
-};
 
-export const CommonCourseData = {
-  CourseFeatures: [
-    'Courses crafted for your needs',
-    'Recorded scheduled lectures',
-    'Graded material with text/video solutions',
-    'Regular, relevant tests with proper analysis',
-    'Guidance Session (Weekly) with Directors and Senior faculties',
-    'Daily live doubt counter (Zoom) and Telegram',
-    'Board Support, other Exam Support (BITSAT, WBJEE, UGEE, etc.)',
-    'One-stop solution for all information & authentic guidance. 24×7 on WhatsApp',
-    'Smooth functioning, course completion on time, innovative teaching, quick adjustment according to new situations. 5th cycle of running the course',
-    "Customization according to individual student's needs (C³, Fast Lane, Prabal, etc.)",
-  ],
+  AARAMBH: {
+    Title: 'AARAMBH (XI) ',
+    AboutCourse: `This Batch is ideal for X to XI Moving Students who want to study for NEET. This Course is exclusively prepared by Competishun’s Best and Experienced Faculties for NEET (UG). `,
 
-  Advantages: [
-    'Experienced Faculties: Learn from seasoned educators.',
-    '3-in-1 JEE Subjects (Physics, Chemistry, Mathematics): Master all JEE subjects under one roof.',
-    '4 Successful Online Cycles - Stability Assured: Trust our four proven online cycles.',
-    'Authentic Results: Achieve genuine, reliable results.',
-    'Student-Centric Approach (Students First): Prioritize student needs over business.',
-    'One-Stop Solution: Comprehensive solution for all academic needs.',
-    'Customization: Tailor your learning experience.',
-    'Sincere Study - No Time Wastage: Embrace focused, efficient study practices.',
-    'Leader in Innovation: Stay at the forefront of educational innovation.',
-    'Noble Intent, Genuine Advice, Social Work: Benefit from noble intentions, genuine advice, and social welfare commitment.',
-  ],
+    LectureNumber: '400 Lectures (P.C.B)',
 
-  Stages: 'https://www.youtube.com/embed/iR5ZCto7Td4',
-  OnlineVsOffline: 'https://www.youtube.com/embed/JKg9Ked2aIk',
-  KotaVsJaipurVsHome: 'https://www.youtube.com/embed/qjr3_qtdWFg',
-  GeneralQNA: 'https://www.youtube.com/embed/50hiqJY_8h0',
-  CourseFeatureVideo: 'https://www.youtube.com/embed/l2tLkv_t15k',
-  AdvantagesVideo: 'https://www.youtube.com/embed/06dJv3gJX88',
+    FeeStructure: 'Rs 11,000/- ',
 
-  Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
-  Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    ShortCourseFeature: [
+      'Recorded Scheduled Lectures',
+      'Digital Study Material & Physical Study Material',
+      'Live Doubt Class Daily',
+      'Every 2nd Week NEET Mock Tests',
+      'Personal Guidance',
+      'Telegram Doubt Support 24×7',
+    ],
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  },
 };

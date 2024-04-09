@@ -1403,6 +1403,52 @@ button {
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .refundPolicy a:hover {
   background-color: var(--darkest-bg-color);
 }
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .ShortTermRefundPolicy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .ShortTermRefundPolicy p strong {
+  color: red; /* Set the color to red for all <strong> elements within .refund-policy */
+  font-weight: 900;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  gap: 5rem;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo .CourseImgBlock {
+  width: 40%;
+  position: relative;
+  display: inline-block;
+  align-self: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo .CourseImgBlock .CourseImg {
+  display: inline-block;
+  height: 20.6rem;
+  aspect-ratio: 16/9;
+  border-radius: 10%;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo .CourseImgBlock .CoursePlayBtn {
+  display: block;
+  position: absolute;
+  max-width: 8rem;
+  height: 9rem;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo .CourseContentSpecial {
+  width: 60%;
+}
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight ul li {
   margin-top: 1.5%;
   list-style-type: none;
