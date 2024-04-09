@@ -816,10 +816,6 @@ button {
   margin-top: 4rem;
 }
 .Home .resultSection #result .container .row .inner-row .badge {
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-  color: var(--darkest-bg-color);
   display: inline-block;
   padding: 0.25rem 0.5rem;
   font-weight: bold;
