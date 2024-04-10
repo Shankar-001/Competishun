@@ -12,9 +12,10 @@ const ResultsSection = () => {
             <div className="container" key={index}>
               <div className="row">
                 <div className="inner-row">
-                  <h6 className="badge">{result.title}</h6>
-
-                  <h2 className="mb-0 display-3 fw-bolder">{result.heading}</h2>
+                  <h3 className='slogan'>{result.title}</h3>
+                  <h4 className='description'>{result.description}</h4>
+                  <h2 className="badge">{result.heading}</h2>
+                  <h4 className="mb-0 display-3 fw-bolder">{result.subheading}</h4>
                 </div>
               </div>
 
@@ -23,6 +24,7 @@ const ResultsSection = () => {
                   <div className="card-group card-border card-border-lg border-primary shadow-light-lg lift lift-lg">
                     {result.data.map((data, ind) => (
                       <div className="card" key={ind}>
+                        <img className='left-img' src='/src/assets/oneLeaf.png' alt='dslk'/>
                         <div className="card-body">
                           <div className="year-name">{data.year}</div>
 
@@ -33,6 +35,7 @@ const ResultsSection = () => {
                             Selections
                           </p>
                         </div>
+                        <img src='/src/assets/oneLeaf.png' alt='dslk'/>
                       </div>
                     ))}
                   </div>
