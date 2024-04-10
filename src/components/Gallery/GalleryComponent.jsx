@@ -18,7 +18,7 @@ const GalleryComponent = () => {
   return (
     <div className="gallery-container">
       <div className="gallery-section">
-        <h2 className="gallery_heading">Achievements Gallery </h2>
+        <h2 className="gallery_heading">Achievements</h2>
         <div className="gallery">
           {GalleryDataAchiev.map((image, index) => (
             <div
@@ -38,7 +38,7 @@ const GalleryComponent = () => {
         </div>
       </div>
       <div className="gallery-section">
-        <h2 className="gallery_heading">Celebration Gallery</h2>
+        <h2 className="gallery_heading">Celebration</h2>
         <div className="gallery">
           {GalleryDataCelebration.map((image, index) => (
             <div
