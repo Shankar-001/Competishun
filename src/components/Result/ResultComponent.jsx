@@ -15,7 +15,7 @@ const ResultComponent = () => {
   return (
     <div className="gallery-container">
       <div className="gallery-section">
-        <h2 className="gallery_heading">Toper's Talk</h2>
+        <h2 className="gallery_heading">Topper's Talk</h2>
         <div className="gallery">
           {NavbarResultData.map((data, index) => (
             <div
