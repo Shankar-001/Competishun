@@ -201,6 +201,7 @@ button {
 }
 
 .footer-mainContainer {
+  padding-bottom: 1%;
   background-color: var(--ip-border-clr);
   display: flex;
   flex-direction: row;
@@ -815,6 +816,18 @@ button {
 .Home .resultSection #result .container .row.mt-6 {
   margin-top: 4rem;
 }
+.Home .resultSection #result .container .row .inner-row .slogan {
+  color: var(--primary-color);
+  font-size: 6.6rem;
+  text-align: center;
+}
+.Home .resultSection #result .container .row .inner-row .description {
+  color: orange;
+  font-size: 3.2rem;
+  font-weight: 500;
+  font-family: var(--font-family);
+  text-align: center;
+}
 .Home .resultSection #result .container .row .inner-row .badge {
   display: inline-block;
   padding: 0.25rem 0.5rem;
@@ -1293,6 +1306,10 @@ button {
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseButton a:hover {
   background-color: #0056b3;
+}
+
+.Merchandise {
+  padding-top: 8rem;
 }
 
 .modal-overlay {

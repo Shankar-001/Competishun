@@ -1,6 +1,7 @@
 const resultData = [
   {
-    title: 'JEE Main 2024 (January)',
+    title: 'Our Results',
+    description:'The Toppers Ultimate Choice',
     heading: 'JEE Main Results ',
     subheading: '(all ranks are under 25,000 AIR only)',
     data: [
@@ -23,7 +24,7 @@ const resultData = [
     ],
   },
   {
-    title: 'JEE Advanced 2024 (April)',
+    title: '',
     heading: 'JEE Advanced Results',
     subheading: '(all ranks are under 10,000 AIR only)',
     data: [

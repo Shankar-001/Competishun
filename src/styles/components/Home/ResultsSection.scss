@@ -30,6 +30,17 @@
         }
 
         .inner-row {
+          .slogan{
+            color:var(--primary-color);
+            font-size: 6.6rem;
+            text-align: center;
+          }
+          .description{
+            color:orange;
+            @include h3;
+            text-align: center;
+          }
+
           .badge {
             // @include bodyText;
             display: inline-block;

@@ -12,8 +12,9 @@ const ResultsSection = () => {
             <div className="container" key={index}>
               <div className="row">
                 <div className="inner-row">
+                  <h3 className='slogan'>{result.title}</h3>
+                  <h4 className='description'>{result.description}</h4>
                   <h2 className="badge">{result.heading}</h2>
-                  
                   <h4 className="mb-0 display-3 fw-bolder">{result.subheading}</h4>
                 </div>
               </div>

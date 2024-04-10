@@ -33,7 +33,7 @@ const Footer = () => {
               <FaLocationDot fontSize={12} color="orange" className="Icon" />
 
               <p>
-                Tower-2, Plot number 35, Gopalpura Bypass Rd,
+               Competishun Tower-2, Plot number 35, Gopalpura Bypass Rd,
                 <br /> near Riddhi Siddhi Circle, 10 B Scheme, Triveni Nagar,
                 <br /> Gopal Pura Mode, Jaipur, Rajasthan 302020
               </p>
@@ -142,7 +142,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <h3 className="develop">Developed with ❤️</h3>
+        {/* <h3 className="develop">Developed with ❤️</h3> */}
       </div>
     </div>
   );
