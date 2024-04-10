@@ -8,7 +8,9 @@ import { FaFacebook } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaTelegram } from 'react-icons/fa';
+import { FaWhatsapp } from "react-icons/fa";
 import { FaSquareXTwitter } from 'react-icons/fa6';
+import { IoLogoWhatsapp } from "react-icons/io";
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
@@ -137,6 +139,7 @@ const Footer = () => {
               <a href='https://twitter.com/mohittyagi' target='_blank'><FaSquareXTwitter fontSize={32} color="black" /></a>
               <a href='https://t.me/competishun_official' target='_blank'><FaTelegram fontSize={32} color="#0088cc" /></a>
               <a href='https://www.instagram.com/competishun/?hl=en' target='_blank'><FaInstagram fontSize={32} color="#bc1888 "/></a>
+              <a href='https://wa.link/xa00yu' target='_blank'><IoLogoWhatsapp fontSize={32} color="#25D366"/></a>
             </div>
 
             <h3>DOWNLOAD OUR APP</h3>
