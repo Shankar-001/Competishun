@@ -3,7 +3,7 @@ import ContactComponent from '../components/Contact/Contact'
 
 const Contact = () => {
   return (
-    <div><ContactComponent /></div>
+    <div className='contact-main'><ContactComponent /></div>
   )
 }
 export default Contact;

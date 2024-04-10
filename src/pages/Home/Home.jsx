@@ -1,3 +1,4 @@
+import ContactComponent from '../../components/Contact/Contact';
 import { Director } from '../../components/Director/Director';
 import FreeStudy from '../../components/Home/FreeStudy';
 import HighlightSection from '../../components/Home/HighlightSection';
@@ -9,9 +10,8 @@ const Home = () => {
     <div className="Home">
       <HighlightSection />
       <Director />
-
-
       <ResultsSection />
+      <ContactComponent />
       <TestimonialsSection />
       <FreeStudy />
     </div>

@@ -2,6 +2,10 @@
 /* eslint-disable no-unused-vars */
 import Swal from 'sweetalert2';
 import React, { useState } from 'react';
+import { IoLogoWhatsapp } from 'react-icons/io';
+import { MdEmail } from 'react-icons/md';
+import { FaPhoneVolume } from 'react-icons/fa6';
+
 const ContactComponent = () => {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -96,17 +100,38 @@ const ContactComponent = () => {
         <div className="contact-details-section">
           <p>Contact Our Team</p>
           <p className="contact-details-section-two">
-            For more pricing details, Contact Our Contact team.
+            <p> Looking for support or counseling ?
+            
+              Fill out your details for personalized support !
+            </p>
           </p>
           <div className="contact-details-section-margin">
-            <p className="contact-details-section-h2">
+            {/* <p className="contact-details-section-h2">
               You can also contact us at:
+            </p> */}
+            <p className="contact-detail-section-phone">
+              <span className="phone-icon">
+                <FaPhoneVolume />
+              </span>
+              <a href="tel:+918888000021" target='blank' className="text">
+                +91 8888000021
+              </a>
             </p>
             <p className="contact-detail-section-phone">
-              <span>+91 8888000021</span>
+              <span className="mail-icon">
+                <MdEmail />
+              </span>
+              <a href="mailto:support@competishun.com" target='blank' className="text">
+               support@competishun.com
+              </a>
             </p>
             <p className="contact-detail-section-phone">
-              <span>support@competishun.com</span>
+              <span className="whatsapp-icon">
+                <IoLogoWhatsapp />
+              </span>
+              <a href="https://wa.link/xa00yu" target='blank' className="text">
+                +91 7410900901
+              </a>
             </p>
           </div>
         </div>
@@ -197,9 +222,7 @@ const ContactComponent = () => {
               <div className="error">{errors.class}</div>
             </div>
             <div>
-              <p className="form-section-heading">
-               For which stream you are ? 
-              </p>
+              <p className="form-section-heading">For which stream you are ?</p>
               <select
                 className={`form-section-select ${errors.class && 'error'}`}
                 name="class"
@@ -214,10 +237,9 @@ const ContactComponent = () => {
               <div className="error">{errors.class}</div>
             </div>
 
-
-            <h3 className="form-section-heading">
+            <p className="form-section-heading">
               Leave any doubts in the message
-            </h3>
+            </p>
             <div>
               <textarea
                 name="message"
