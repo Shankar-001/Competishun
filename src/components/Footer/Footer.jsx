@@ -63,11 +63,11 @@ const Footer = () => {
                     Home
                   </NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink to="/courses" className="footer-navlink">
                     Courses
                   </NavLink>
-                </li>
+                </li> */}
                 <li>
                   <NavLink to="/testSeries" className="footer-navlink">
                     Test Series
@@ -103,11 +103,16 @@ const Footer = () => {
             {/* <br /> */}
             <div className="footer-support-link">
               <div className="point">
-                <a>FAQs</a>
+                <a href="https://www.youtube.com/embed/50hiqJY_8h0" target="_blank" className="footer-navlink">FAQs</a>
               </div>
 
               <div className="point">
-                <a>Contact Us</a>
+                {/* <a>Contact Us</a> */}
+                
+                <NavLink to="/contact" className="footer-navlink">
+              Contact Us
+            </NavLink>
+            
               </div>
 
               <div className="point">
@@ -117,7 +122,7 @@ const Footer = () => {
                   </NavLink>
               </div>
               <div className="point">
-                <a>Refund and Cancellation</a>
+                <a href="https://bit.ly/49LLzYy" target="_blank" className="footer-navlink">Refund and Cancellation</a>
               </div>
             </div>
           </div>
