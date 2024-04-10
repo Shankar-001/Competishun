@@ -13,6 +13,8 @@ import {
   JeeShortTermMainData,
   JeeShortTermAdvData,
   JeeShortTermMainAndAdvData,
+  DLPData2025,
+  DLPData2026,
 } from '../../Data/CourseData';
 import CardComponent from '../CardComponent/CardComponent';
 import { useEffect } from 'react';
@@ -66,14 +68,14 @@ const CourseCard = () => {
           data: JeeShortTermMainAndAdvData,
         },
         {
-          title: '1 Year DLP(Distance Learning Program) Course Target JEE (Main+Adv)',
+          title: '1 Year DLP(Distance Learning Program) Courses Target JEE (Main+Adv)',
           year: '2025',
-          data: JeeShortTermMainAndAdvData,
+          data: DLPData2025,
         },
         {
           title: '1 Year DLP(Distance Learning Program) Course Target JEE (Main+Adv)',
           year: '2026',
-          data: JeeShortTermMainAndAdvData,
+          data: DLPData2026,
         },
       ],
     },
