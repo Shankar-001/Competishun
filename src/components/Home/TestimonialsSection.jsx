@@ -18,6 +18,10 @@ const TestimonialsSection = () => {
     <div className="TestimonialsSection">
       <div className="containerMain">
         <h1>Testimonials</h1>
+        <h3>
+          Across the nation, we're the <span>institute of choice</span>  for thousands of
+          students and parents
+        </h3>
         <div className="testimonials-container">
           <div className="arrow left-arrow" onClick={handleLeftSwipe}>
             <img src={rArrow} alt="left-arrow" />

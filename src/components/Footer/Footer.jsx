@@ -1,6 +1,6 @@
 import CompanyLogo from '../../assets/loaderLogo.png';
-import googleplay from '../../assets/googleplay.png';
-import applestore from '../../assets/applestore.png';
+import eduCompetishun from '../../assets/eduCompetishun.png';
+import competishunDigital from '../../assets/competishunDigital.png';
 import { FaLocationDot } from 'react-icons/fa6';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { BiLogoGmail } from 'react-icons/bi';
@@ -33,7 +33,7 @@ const Footer = () => {
               <FaLocationDot fontSize={12} color="orange" className="Icon" />
 
               <p>
-                Plot number 35, Gopalpura Bypass Rd,
+               Competishun Tower-2, Plot number 35, Gopalpura Bypass Rd,
                 <br /> near Riddhi Siddhi Circle, 10 B Scheme, Triveni Nagar,
                 <br /> Gopal Pura Mode, Jaipur, Rajasthan 302020
               </p>
@@ -111,7 +111,10 @@ const Footer = () => {
               </div>
 
               <div className="point">
-                <a>About us</a>
+                {/* <a>About us</a> */}
+                <NavLink to="/about" className="footer-navlink">
+                    About Us
+                  </NavLink>
               </div>
               <div className="point">
                 <a>Refund and Cancellation</a>
@@ -134,8 +137,8 @@ const Footer = () => {
             <h3>DOWNLOAD OUR APP</h3>
             <p>Ebooks, Test Preparation, Video Lectures</p>
             <div className="appstore">
-              <a href='https://play.google.com/store/apps/details?id=co.hodor.fcldn' target='_blank'><img src={googleplay} alt="Google-Play" className="googleplay" /></a>
-             <a><img src={applestore} alt="Apple-Store" className="applestore" /></a>
+            <a href='https://play.google.com/store/apps/details?id=co.hodor.fcldn' target='_blank'><img src={eduCompetishun} alt="Edu-Competishun-App" className="app" /></a>
+             <a href='https://play.google.com/store/apps/details?id=in.schoollog.competishun.tutorlog' target='_blank'><img src={competishunDigital} alt="Competishun-Digital" className="app" /></a>
             </div>
           </div>
         </div>

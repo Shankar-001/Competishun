@@ -11,7 +11,15 @@
     h1 {
       @include h1;
       color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+    h3{
+      @include h3;
+      color: var(--darkest-bg-color);
       margin-bottom: 2rem;
+      span{
+        color: red;
+      }
     }
     .testimonials-container {
       @include flex-cst;

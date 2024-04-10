@@ -12,7 +12,8 @@
 
   .footer-containerContent {
     margin-top: 5rem;
-    width: var(--landing-page-main-info-width);
+    margin-bottom:1.5rem;
+    width:var(--landing-page-main-info-width);
 
     .footer-innerContainer {
       background-color: white;
@@ -85,10 +86,22 @@
           margin-top: 0.2rem;
         }
         .appstore {
-          @include flex-cc(row);
+          @include flex-ss(row);
           gap: 2rem;
+          margin-top: 0.3rem;
+          .app{
+            width: 12rem;
+            height: 6rem;
+            border-radius: 1.5rem;
+          }
         }
       }
     }
   }
+  .footer-navlink {
+    text-decoration: none;
+    color: var(--darkest-bg-color);
+  }
+  
 }
+
