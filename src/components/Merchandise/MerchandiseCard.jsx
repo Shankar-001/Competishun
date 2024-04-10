@@ -30,7 +30,7 @@ const MerchandiseCard = () => {
             ))}
           </div>
           {/* jee mains pyqs */}
-          <div className="MerchandiseSubDetails">📚 Jee Main PYQ indivisible Books :</div>
+          <div className="MerchandiseSubDetails">📚 Jee Main PYQ individual Books :</div>
           <div className="MerchandiseCardComponent">
             {MerchandiseDataJeeMainPYQ.map((item, index) => (
               <a className="ankertag" target="blank" href={item.link}>
