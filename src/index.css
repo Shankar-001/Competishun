@@ -962,7 +962,7 @@ button {
   margin-bottom: 2rem;
 }
 .Home .TestimonialsSection .containerMain h3 span {
-  color: red;
+  color: orange;
 }
 .Home .TestimonialsSection .containerMain .testimonials-container {
   display: flex;
@@ -1895,6 +1895,56 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.director-info-Main-page .director-about-component {
+  height: 30rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22.6%;
+}
+.director-info-Main-page .director-about-component .container {
+  margin-top: 22%;
+  width: var(--landing-page-main-info-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.director-info-Main-page .director-about-component .container .info-and-video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.director-info-Main-page .director-about-component .container .info-and-video .info h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.director-info-Main-page .director-about-component .container .info-and-video .info p {
+  font-size: 2rem;
+}
+.director-info-Main-page .director-about-component .container .info-and-video .video iframe {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 4px 4px 14px #000;
+  -webkit-box-shadow: 4px 4px 14px #000;
+  box-shadow: 4px 4px 14px #000;
+  transition: transform 0.3s ease;
+}
+.director-info-Main-page .director-about-component .container .info-and-video .video iframe:hover {
+  transform: scale(1.05); /* Increase size on hover */
 }
 
 .gallery-modal-overlay {

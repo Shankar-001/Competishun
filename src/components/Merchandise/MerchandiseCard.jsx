@@ -20,7 +20,7 @@ const MerchandiseCard = () => {
           Book store
           {/* jee main and advanced pyqs */}
           <div className="MerchandiseSubDetails">
-            📚 Jee Main and Advanced PCM PYQ Books and Short Notes :
+            📚 JEE Main and Advanced PCM PYQ Books and Short Notes :
           </div>
           <div className="MerchandiseCardComponent">
             {MerchandiseData.map((item, index) => (
@@ -30,7 +30,7 @@ const MerchandiseCard = () => {
             ))}
           </div>
           {/* jee mains pyqs */}
-          <div className="MerchandiseSubDetails">📚 Jee Main PYQ individual Books :</div>
+          <div className="MerchandiseSubDetails">📚 JEE Main PYQ Individual Books :</div>
           <div className="MerchandiseCardComponent">
             {MerchandiseDataJeeMainPYQ.map((item, index) => (
               <a className="ankertag" target="blank" href={item.link}>
