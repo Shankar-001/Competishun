@@ -950,7 +950,17 @@ button {
   font-weight: 700;
   font-family: var(--font-family);
   color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.Home .TestimonialsSection .containerMain h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
   margin-bottom: 2rem;
+}
+.Home .TestimonialsSection .containerMain h3 span {
+  color: red;
 }
 .Home .TestimonialsSection .containerMain .testimonials-container {
   display: flex;
@@ -1127,7 +1137,7 @@ button {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .Home .freeStudy .container .material_container .material_card .single-free-study .content h5 {
@@ -1462,6 +1472,168 @@ button {
 .Merchandise {
   padding-top: 8rem;
 }
+.Merchandise .MerchandiseCardMainContainer {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: var(--landing-page-main-info-width);
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseDetails {
+  font-size: 4.8rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  margin-top: 1%;
+  margin-bottom: 3.2%;
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseDetails .MerchandiseSubDetails {
+  font-size: 2.8rem;
+  font-weight: 600;
+  padding: 2% 0%;
+  padding-bottom: 3%;
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-bottom: 2%;
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ankertag {
+  text-decoration: none;
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ComponentDivision {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 0.1rem solid beige;
+  z-index: 5;
+  height: 30rem;
+  width: var(--landing-page-main-info-width);
+  overflow: hidden;
+  box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ComponentDivision img {
+  width: 28rem;
+  height: 27.5rem;
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ComponentDivision:hover {
+  background-color: var(--light-bg-color);
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ComponentDivision .button {
+  background-color: aqua;
+  width: 100%;
+  padding: 2%;
+  text-decoration: none;
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .descComponentDivision {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 0.1rem solid beige;
+  z-index: 5;
+  height: 30rem;
+  width: var(--landing-page-main-info-width);
+  overflow: hidden;
+  box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .descComponentDivision img {
+  width: 28rem;
+  height: 25rem;
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .descComponentDivision:hover {
+  background-color: var(--light-bg-color);
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .descComponentDivision .button {
+  background-color: aqua;
+  width: 100%;
+  padding: 2%;
+  text-decoration: none;
+}
+.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .descComponentDivision .desc {
+  padding: 1%;
+  background-color: lightcoral;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.gallery-container {
+  padding-top: 9rem;
+  /* Media Query for Mobile View */
+}
+.gallery-container .gallery-section {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.gallery-container .gallery_heading {
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 2%;
+}
+@media (max-width: 900px) {
+  .gallery-container .gallery_heading {
+    font-size: 2.2rem;
+  }
+}
+.gallery-container .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 3rem;
+}
+.gallery-container .gallery-item {
+  transition: transform 0.3s ease; /* Adding transition effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow */
+  border-radius: 8px;
+  overflow: hidden; /* Ensures shadow doesn't overflow */
+}
+.gallery-container .gallery-item:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+.gallery-container .gallery-item img {
+  width: 35rem;
+  height: 28rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* Adding transition effect */
+}
+.gallery-container .desc {
+  padding: 3%;
+  font-size: 2rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .gallery-container .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Each image takes full width */
+  }
+}
 
 .modal-overlay {
   position: fixed;
@@ -1503,6 +1675,61 @@ button {
   aspect-ratio: 16/9;
 }
 .modal-overlay .modal .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding-top: 2%;
+}
+.gallery-modal-overlay .modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  height: 80%;
+}
+.gallery-modal-overlay .modal .modal-close {
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  align-self: flex-end;
+  cursor: pointer;
+  color: white;
+  font-size: 4rem;
+}
+.gallery-modal-overlay .modal .video-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  display: flex;
+}
+.gallery-modal-overlay .modal .video-container img {
+  height: 100%;
+  width: auto;
+}
+.gallery-modal-overlay .modal .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;

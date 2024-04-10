@@ -1,10 +1,9 @@
 import React from 'react'
+import GalleryComponent from '../components/Gallery/GalleryComponent';
 
 export const Gallery = () => {
   return (
-    <div className='gallery-container'>
-    hello
-    </div>
+    <GalleryComponent />
   )
 }
 export default Gallery;
