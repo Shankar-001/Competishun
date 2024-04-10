@@ -6,6 +6,8 @@ import OnlineVsOfflineThumbnail from '../assets/Courses/CourseDetails/OnlineVsOf
 import StagesThumbnail from '../assets/Courses/CourseDetails/StagesOfJeePreparation.jpg';
 
 export const SingleCourseDetails = {
+  // Jee Online Data
+
   PRATHAM: {
     Title: 'PRATHAM (XI) – Target : IIT- JEE (MAIN+ADVANCED) – 2026',
     AboutCourse:
@@ -401,6 +403,8 @@ export const SingleCourseDetails = {
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
   },
 
+  // Short Term Data
+
   'C³': {
     Title: 'The Competishun Crash Course (C³)',
     AboutCourse:
@@ -413,7 +417,7 @@ export const SingleCourseDetails = {
 
     KeyFeature:
       'Expert Faculty |Rigorous Curriculum| Time-Efficient |Doubt Resolution |Digital Study Materials | Motivational Support',
-    ShortCourseFeature: [
+    CourseFeatureWithoutVideo: [
       'Scheduled Recorded lecture',
       'Graded, exhaustive Material (DPPs)',
       'Text and Video Solution. (DPPs)',
@@ -444,7 +448,7 @@ export const SingleCourseDetails = {
 
     KeyFeature:
       'Expert Faculty |Rigorous Curriculum| Time-Efficient |Doubt Resolution |Digital Study Materials | Motivational Support',
-    ShortCourseFeature: [
+    CourseFeatureWithoutVideo: [
       'Scheduled Recorded lecture',
       'Graded, exhaustive Material (DPPs)',
       'Text and Video Solution. (DPPs)',
@@ -455,7 +459,7 @@ export const SingleCourseDetails = {
       'One stop solution for all information, & Authentic Guidance. 24×7 on W.A.',
     ],
     ShortTermRefundPolicy: `REFUND FOR CRASH COURSE / REVISION COURSE IS NOT APPLICABLE FOR THIS BATCH AFTER PURCHASE !! i.e. If any student  wants to take complete course refund it will not be provided.
-    
+
     However, Refund will be provided on the basis of your JEE MAIN Result percentile 2024 / JEE ADVANCED - 2024  Rank as per eligibility Criteria as mentioned in Fee Structure.
     `,
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
@@ -474,7 +478,7 @@ export const SingleCourseDetails = {
 
     KeyFeature:
       'Expert Faculty |Rigorous Curriculum| Time-Efficient |Doubt Resolution |Digital Study Materials | Motivational Support',
-    ShortCourseFeature: [
+    CourseFeatureWithoutVideo: [
       'Scheduled Recorded lecture',
       'Graded, exhaustive Material (DPPs)',
       'Text and Video Solution. (DPPs)',
@@ -502,7 +506,7 @@ export const SingleCourseDetails = {
 
     KeyFeature:
       'Expert Faculty |Rigorous Curriculum| Time-Efficient |Doubt Resolution |Digital Study Materials | Motivational Support',
-    ShortCourseFeature: [
+    CourseFeatureWithoutVideo: [
       'Scheduled Recorded lecture',
       'Graded, exhaustive Material (DPPs)',
       'Text and Video Solution. (DPPs)',
@@ -516,6 +520,8 @@ export const SingleCourseDetails = {
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
   },
 
+  // Neet Online Data
+
   ARJUN: {
     Title: 'ARJUN (XII)',
     AboutCourse: `This Batch is ideal for XI to XII Moving Students who want to study for NEET. This Course is exclusively prepared by Competishun’s Best and Experienced Faculties for NEET (UG).`,
@@ -524,7 +530,7 @@ export const SingleCourseDetails = {
 
     FeeStructure: 'Rs 12,500/-',
 
-    ShortCourseFeature: [
+    CourseFeatureWithoutVideo: [
       'Recorded Scheduled Lectures',
       'Digital Study Material & Physical Study Material',
       'Live Doubt Class Daily',
@@ -544,7 +550,7 @@ export const SingleCourseDetails = {
 
     FeeStructure: 'Rs 14,000/-',
 
-    ShortCourseFeature: [
+    CourseFeatureWithoutVideo: [
       'Recorded Scheduled Lectures',
       'Digital Study Material & Physical Study Material',
       'Live Doubt Class Daily',
@@ -558,13 +564,13 @@ export const SingleCourseDetails = {
 
   AARAMBH: {
     Title: 'AARAMBH (XI) ',
-    AboutCourse: `This Batch is ideal for X to XI Moving Students who want to study for NEET. This Course is exclusively prepared by Competishun’s Best and Experienced Faculties for NEET (UG). `,
+    AboutCourse: `This Batch is ideal for X to XI Moving Students who want to study for NEET. This Course is exclusively prepared by Competishun’s Best and Experienced Faculties for NEET (UG).`,
 
     LectureNumber: '400 Lectures (P.C.B)',
 
-    FeeStructure: 'Rs 11,000/- ',
+    FeeStructure: 'Rs 11,000/-',
 
-    ShortCourseFeature: [
+    CourseFeatureWithoutVideo: [
       'Recorded Scheduled Lectures',
       'Digital Study Material & Physical Study Material',
       'Live Doubt Class Daily',
@@ -572,6 +578,195 @@ export const SingleCourseDetails = {
       'Personal Guidance',
       'Telegram Doubt Support 24×7',
     ],
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  },
+
+  // Neet Short Term Data
+
+  'NEET COMPETISHUN CRASH COURSE': {
+    Title: 'NEET COMPETISHUN CRASH COURSE',
+    AboutCourse: `Neet Crash Course is designed by Competishun’s Experienced Faculties  for those students who want to revise the concept in short period of time. The curriculum of the NEET Crash Course is meticulously structured, focusing on core subjects such as Biology, Chemistry, and Physics, while also incorporating regular mock tests and practice drills to simulate exam conditions and enhance time management skills. Additionally, specialized attention is given to solving previous years' question papers and addressing commonly asked questions, enabling students to familiarize themselves with the exam pattern and gain confidence in tackling diverse question formats.`,
+
+    LectureNumber: 'Approx. 80 Lectures (Each Subject)',
+
+    FeeStructure: 'Rs 999/-',
+
+    CourseFeatureWithoutVideo: [
+      'Recorded Scheduled Lectures',
+      'Digital Study Material',
+      'Live Doubt Class Daily',
+      'Every Sunday NEET Mock Tests',
+      'Personal Guidance',
+      'Telegram Doubt Support 24×7',
+    ],
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  },
+
+  // Jee Offline Data
+
+  'RANKERS OFFLINE': {
+    Title: 'RANKERS OFFLINE',
+    AboutCourse: `This Batch is made for those students who perform well in periodic test and have the ability to boost their rank in jee main and jee advanced. Only Selected Students are added to this batch as per criteria which vary every year.`,
+
+    FeeStructure: 'Only for Internal Students',
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  },
+
+  'CATS OFFLINE': {
+    Title: 'CATS OFFLINE',
+    AboutCourse: `CATS Offline batch is exclusively available in Jaipur for JEE ADVANCED Aspirants. This batch is guided by India’s Best and Experienced  Faculties for IIT-JEE.`,
+
+    OfflineFeeStructure: {
+      'A. Students Enrolled in Praveen, Prakhar, Prakhar Integrated, Praveen(F.L), Probodh, Online & Offline:':
+        {
+          '1.	If your JEE MAIN – Ist Attempt (2024) Percentile is greater than or equal to 99.% then':
+            [
+              'Registration Fee = Rs 0/-',
+              'Tuition Fee = Rs 0/-',
+              'Lodging and Food Fee = Rs 0/-',
+            ],
+          '2.	If your JEE MAIN – Ist Attempt (2024) Percentile is in Between 98 and 99 then':
+            [
+              'Registration Fee = Rs 0/-',
+              'Tuition Fee = Rs 0/-',
+              'Lodging and Food Fee = You have to Pay / Arrange yourself',
+            ],
+        },
+      'B. Students Not Enrolled in Praveen, Prakhar, Prakhar Integrated, Praveen(F.L), Probodh, Online & Offline:':
+        {
+          '1.	If your JEE MAIN – Ist Attempt (2024) Percentile is greater than or equal to 99.5% then':
+            [
+              'Registration Fee = Rs 1100/-',
+              'Tuition Fee = Rs 0/-',
+              'Lodging and Food Fee = Rs 0/-',
+            ],
+          '2.	If your JEE MAIN – Ist Attempt (2024) Percentile is in Between 99 and 99.5 then':
+            [
+              'Registration Fee = Rs 1100/-',
+              'Tuition Fee = Rs 0/-',
+              'Lodging and Food Fee = You have to Pay / Arrange yourself',
+            ],
+          '3.	If your JEE MAIN – Ist Attempt (2024) Percentile is in Between 98 and 99 then':
+            [
+              'Registration Fee = Rs 1100/-',
+              'Tuition Fee = Rs (1 – 0.P) × 30,000 /- ',
+              'Lodging and Food Fee = You have to Pay / Arrange yourself',
+            ],
+        },
+    },
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  },
+
+  'PRAKHAR OFFLINE': {
+    Title: 'PRAKHAR OFFLINE (XII - IIT - JEE)',
+    AboutCourse: `Prakhar, competishun’s full year course for students who are moving from Class XI to XII. This Course covers the entire JEE (Main+Advanced) syllabus of Class – XII from basics . Students who will enroll in this batch will be able to complete syllabus in Systematic manner. This course is taught by India’s best and experienced faculties who makes your way to IIT more easier.`,
+
+    FeeStructure: `AdmissionFee: Rs 25000/-
+      TuitionFee: Rs 84000/-
+      TotalPayableFee: Rs 109000/-
+      FeeOnTime: Rs 99000/-`,
+    InstallmentDetails: [
+      '1st Instalment: Rs 65400/-',
+      '2nd Instalment: Rs 43600/-',
+      'One Time Payment: Rs 99000/-',
+    ],
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  },
+
+  'PRATHAM OFFLINE': {
+    Title: 'PRATHAM OFFLINE (XI - IIT - JEE)',
+    AboutCourse: `Pratham, Competishun’s full year course for students who are Moving from X to XI class. This Course covers the entire JEE (Main+Advanced) syllabus of class XI from basic . Students who will enrol in this batch will be able to complete syllabus in Systematic manner. This course is taught by India’s best and experienced faculties who makes your way to IIT easier.`,
+
+    FeeStructure: `AdmissionFee: Rs 25000/-
+      TuitionFee: Rs 75000/-
+      TotalPayableFee: Rs 100000/-
+      FeeOnTime: Rs 90000/-`,
+    InstallmentDetails: [
+      '1st Instalment: Rs 65400/-',
+      '2nd Instalment: Rs 43600/-',
+      'One Time Payment: Rs 90000/-',
+    ],
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  },
+
+  'PRAVEEN OFFLINE': {
+    Title: 'PRAVEEN OFFLINE (XIII - IIT - JEE)',
+    AboutCourse: `Praveen, Competishun’s full year course for students who are studying in XII or have Passed out . This Course covers the entire JEE (Main+Advanced) syllabus of JEE . Students who will enroll in this batch will be able to complete syllabus in Systematic manner. This course is taught by India’s best and experienced faculties who makes your way to IIT more easier.`,
+
+    FeeStructure: `AdmissionFee: Rs 25000/-
+      TuitionFee: Rs 113000/-
+      TotalPayableFee: Rs 138000/-
+      FeeOnTime: Rs 125000/-`,
+
+    InstallmentDetails: [
+      '1st Instalment: Rs 83000/-',
+      '2nd Instalment: Rs 55000/-',
+      'One Time Payment: Rs125000/-',
+    ],
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  },
+
+  // DLP Data
+
+  'Prakhar DLP': {
+    Title: 'Prakhar (XII) DLP (Distance Learning Program)',
+    AboutCourse: `Dive into success with our integrated Distance Learning Program (DLP) and All India Test Series (AITS) tailored for IIT JEE aspirants targeting 2025 & 2026.`,
+
+    FeeStructure: 'Rs 5000 /-',
+
+    CourseFeatureWithoutVideo: [
+      'Comprehensive DLP Materials: 6 book set covering the full syllabus.',
+      'In-depth AITS: Test series mirroring Main & Advanced patterns.',
+      'Robust Solutions: Text and video for DLP modules, DPPs, & PYQs.',
+      'Special Merchandise: Get an exclusive Competishun branded T-shirt.',
+    ],
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  },
+
+  'Praveen DLP': {
+    Title: 'Praveen (Droppers) DLP (Distance Learning Program)',
+    AboutCourse: `Dive into success with our integrated Distance Learning Program (DLP) and All India Test Series (AITS) tailored for IIT JEE aspirants targeting 2025 & 2026.`,
+
+    FeeStructure: 'Rs 8000 /-',
+
+    CourseFeatureWithoutVideo: [
+      'Comprehensive DLP Materials: 6 book set covering the full syllabus.',
+      'In-depth AITS: Test series mirroring Main & Advanced patterns.',
+      'Robust Solutions: Text and video for DLP modules, DPPs, & PYQs.',
+      'Special Merchandise: Get an exclusive Competishun branded T-shirt.',
+    ],
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  },
+
+  'Pratham DLP': {
+    Title: 'Pratham (XI) DLP (Distance Learning Program)',
+    AboutCourse: `Dive into success with our integrated Distance Learning Program (DLP) and All India Test Series (AITS) tailored for IIT JEE aspirants targeting 2025 & 2026.`,
+
+    FeeStructure: 'Rs 5000 /-',
+
+    CourseFeatureWithoutVideo: [
+      'Comprehensive DLP Materials: 6 book set covering the full syllabus.',
+      'In-depth AITS: Test series mirroring Main & Advanced patterns.',
+      'Robust Solutions: Text and video for DLP modules, DPPs, & PYQs.',
+      'Special Merchandise: Get an exclusive Competishun branded T-shirt.',
+    ],
+
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
   },
