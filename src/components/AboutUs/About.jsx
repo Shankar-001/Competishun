@@ -20,22 +20,23 @@ const About = () => {
           {/* <h2>200+ million views  on our YouTube</h2> */}
           <div className="info-card">
             <div>
-               <h1>250+</h1>
-               <p className="info-txt">Millions View on our<br/>  Youtube Channels</p>
+              <h1>250+</h1>
+              <p className="info-txt">
+                Millions View on our
+                <br /> Youtube Channels
+              </p>
             </div>
             <div>
-            <h1>200000+</h1>
-               <p className="info-txt">App Downloads</p>
-
+              <h1>200000+</h1>
+              <p className="info-txt">App Downloads</p>
             </div>
-
           </div>
         </div>
         <div className="video-content">
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/TURkmiuffNw?si=tqNW3nClNibST0nT"
+            src="https://www.youtube.com/embed/bzoAvwQg4L0?si=nuaDYIFiiqR3NbPa"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -44,7 +45,6 @@ const About = () => {
           ></iframe>
         </div>
       </div>
-
     </div>
   );
 };

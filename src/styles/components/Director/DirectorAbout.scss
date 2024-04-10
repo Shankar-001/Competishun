@@ -1,0 +1,51 @@
+.director-about-component {
+  height: 30rem;
+  @include bodyText;
+  @include flex-cc;
+  margin-bottom: 22.6%;
+  
+
+  .container {
+    margin-top: 22%;
+    width: var(--landing-page-main-info-width);
+    @include flex-ss(column);
+
+    .info-and-video{
+        @include flex-cc;
+        gap:2rem;
+
+        .info{
+          h2{
+            font-size: 4rem;
+            font-weight: bold;
+            color: var(--primary-color);
+          }
+          p{
+            font-size:2rem;
+          }
+        }
+
+        .video{
+          iframe {
+            margin-top: 20px;
+    
+            margin-bottom: 30px;
+    
+            -moz-border-radius: 12px;
+            -webkit-border-radius: 12px;
+            border-radius: 12px;
+            -moz-box-shadow: 4px 4px 14px #000;
+            -webkit-box-shadow: 4px 4px 14px #000;
+            box-shadow: 4px 4px 14px #000;
+            transition: transform 0.3s ease;
+            
+          }
+          iframe:hover {
+            transform: scale(1.05); /* Increase size on hover */
+        }
+        }
+    }
+
+
+  }
+}

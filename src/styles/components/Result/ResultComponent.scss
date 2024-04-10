@@ -1,0 +1,74 @@
+.gallery-container {
+  
+
+  .gallery-section {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .gallery_heading {
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 2%;
+
+    @media (max-width: 900px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 3rem;
+  }
+
+  .gallery-item {
+    transition: transform 0.3s ease; /* Adding transition effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow */
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+    overflow: hidden; /* Ensures shadow doesn't overflow */
+    @include flex-cc;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  .images {
+    position: relative; /* Position relative for absolute positioning of play button */
+  }
+  
+  .result-play-btn {
+    position: absolute; /* Position absolute to overlay play button on the image */
+    top: 75%; /* Align to vertical center */
+    left: 85%; /* Align to horizontal center */
+    transform: translate(-50%, -50%); /* Center the play button */
+    width: 10rem !important;
+    height: 10rem !important;
+    z-index: 50;
+    // opacity: 0; /* Initially hide the play button */
+    // transition: opacity 0.3s ease; /* Add transition for smooth effect */
+  }
+  
+//   .gallery-item:hover .result-play-btn {
+//     opacity: 1; /* Show play button on hover */
+//   }
+  
+
+  .desc {
+    padding: 3%;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  /* Media Query for Mobile View */
+  @media screen and (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(100%, 1fr)
+      ); /* Each image takes full width */
+    }
+  }
+}

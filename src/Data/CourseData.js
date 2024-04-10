@@ -10,6 +10,11 @@ import Champ from '../assets/Courses/Champ.jpg';
 import Cats from '../assets/Courses/Cats.jpg';
 import CatsPlus from '../assets/Courses/CatsPlus.jpg';
 import C3 from '../assets/Courses/C3.jpg';
+
+import PrakharDLP from '../assets/Courses/PrakharDLP.jpg';
+import PrathamDLP from '../assets/Courses/PrathamDLP.jpg';
+import PraveenDLP from '../assets/Courses/PraveenDLP.jpg';
+
 // PRAVEEN FAST LANE (LIMITED EDITION)
 
 import AarambhOnline from '../assets/Courses/AarambhOnline.jpg';
@@ -169,4 +174,22 @@ export const NeetOfflineData2026 = [
   //   src: PraveenOnline,
   //   title: 'NEET CARSH COURSE OFFLINE',
   // },
+];
+
+export const DLPData2025 = [
+  {
+    src: PrakharDLP,
+    title: 'Prakhar DLP',
+  },
+  {
+    src: PraveenDLP,
+    title: 'Praveen DLP',
+  },
+];
+
+export const DLPData2026 = [
+  {
+    src: PrathamDLP,
+    title: 'Pratham DLP',
+  },
 ];
