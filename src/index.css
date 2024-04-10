@@ -1441,6 +1441,17 @@ button {
   margin-top: 1.5%;
   list-style-type: none;
 }
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .CourseEnrollmentType h3 {
+  margin-top: 1.5%;
+  margin-bottom: 1%;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .CourseEnrollmentType .CoursePercentageRange ul {
+  margin-bottom: 2%;
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .CourseEnrollmentType .CoursePercentageRange ul li {
+  margin-top: 1.5%;
+  margin-left: 2%;
+}
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse {
   margin-top: 1.8%;
   align-self: center;
@@ -1633,6 +1644,164 @@ button {
   .gallery-container .gallery {
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Each image takes full width */
   }
+}
+
+.TestDetailsMainContainer .TestCardMainContainer {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer {
+  margin-top: 8%;
+  width: var(--landing-page-main-info-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestTitle {
+  margin-bottom: 2rem;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestTitle h1 {
+  color: var(--primary-color);
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 50rem;
+  width: 100%;
+  box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft {
+  width: 35%;
+  padding: 2rem;
+  border-right: 1px solid red;
+  height: 100%;
+  overflow-y: auto;
+  text-align: justify;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft::-webkit-scrollbar {
+  width: 0.6rem;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft:focus {
+  outline: none;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft .TestMenu h3 {
+  cursor: pointer;
+  padding: 1rem;
+  transition: background-color 250ms ease, color 250ms ease;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft .TestMenu h3:hover {
+  background-color: var(--medium-bg-color);
+  color: #fff;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft .TestMenu h3.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight {
+  width: 65%;
+  padding: 2rem;
+  height: 100%;
+  overflow-y: auto;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight::-webkit-scrollbar {
+  width: 0.6rem;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight h3 span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight .downloadSchedule {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight .downloadSchedule a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--dark-bg-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.6rem;
+  transition: background-color 250ms ease;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight .downloadSchedule a:hover {
+  background-color: var(--darkest-bg-color);
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight .ShortTermRefundPolicy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight .ShortTermRefundPolicy p strong {
+  color: red; /* Set the color to red for all <strong> elements within .refund-policy */
+  font-weight: 900;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight ul li {
+  margin-top: 1.5%;
+  list-style-type: none;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight .HowToEnrollContainer p {
+  margin-top: 1.8%;
+  margin-bottom: 2%;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight .HowToEnrollContainer strong {
+  font-weight: bold;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight .HowToEnrollContainer a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight .HowToEnrollContainer a:hover {
+  text-decoration: underline;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .CommonTest {
+  margin-top: 1.8%;
+  align-self: center;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .CommonTest .TestContact {
+  text-align: center;
+  margin-top: 2%;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .CommonTest .TestContact h2 {
+  margin-bottom: 1%;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestButton {
+  margin-top: 1.4%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestButton a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.6rem;
+  transition: background-color 250ms ease;
+}
+.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestButton a:hover {
+  background-color: #0056b3;
 }
 
 .modal-overlay {

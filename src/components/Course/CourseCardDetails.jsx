@@ -71,6 +71,17 @@ const CourseCardDetails = () => {
                   </h3>
                 )}
 
+                {data.OfflineFeeStructure && (
+                  <h3
+                    onClick={() => setSelectedContent('OfflineFeeStructure')}
+                    className={
+                      selectedContent === 'OfflineFeeStructure' ? 'active' : ''
+                    }
+                  >
+                    Fee Structure
+                  </h3>
+                )}
+
                 {data.InstallmentDetails && (
                   <h3
                     onClick={() => setSelectedContent('InstallmentDetails')}
@@ -102,11 +113,15 @@ const CourseCardDetails = () => {
                   </h3>
                 )}
 
-                {data.ShortCourseFeature && (
+                {data.CourseFeatureWithoutVideo && (
                   <h3
-                    onClick={() => setSelectedContent('ShortCourseFeature')}
+                    onClick={() =>
+                      setSelectedContent('CourseFeatureWithoutVideo')
+                    }
                     className={
-                      selectedContent === 'ShortCourseFeature' ? 'active' : ''
+                      selectedContent === 'CourseFeatureWithoutVideo'
+                        ? 'active'
+                        : ''
                     }
                   >
                     Course Features
@@ -214,7 +229,18 @@ const CourseCardDetails = () => {
                   {selectedContent === 'FeeStructure' && (
                     <>
                       <h3>Fee Structure</h3>
-                      <p>{data.FeeStructure}</p>
+                      <ul>
+                        {data.FeeStructure.split('\n').map((line, index) => (
+                          <li key={index}>{line}</li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
+
+                  {selectedContent === 'OfflineFeeStructure' && (
+                    <>
+                      <h2>Fee Structure</h2>
+                      <FeeStructureComponent data={data} />
                     </>
                   )}
 
@@ -236,12 +262,15 @@ const CourseCardDetails = () => {
                     </div>
                   )}
 
-                  {selectedContent === 'ShortCourseFeature' && (
+                  {selectedContent === 'CourseFeatureWithoutVideo' && (
                     <div>
+                      <h3>Course Features</h3>
                       <ul>
-                        {data.ShortCourseFeature.map((feature, index) => (
-                          <li key={index}>{`${index + 1}. ${feature}`}</li>
-                        ))}
+                        {data.CourseFeatureWithoutVideo.map(
+                          (feature, index) => (
+                            <li key={index}>{`${index + 1}. ${feature}`}</li>
+                          )
+                        )}
                       </ul>
                     </div>
                   )}
@@ -455,3 +484,29 @@ const CourseCardDetails = () => {
   );
 };
 export default CourseCardDetails;
+
+const FeeStructureComponent = ({ data }) => {
+  return (
+    <div>
+      {Object.entries(data.OfflineFeeStructure).map(
+        ([enrollmentType, enrollmentDetails]) => (
+          <div key={enrollmentType} className="CourseEnrollmentType">
+            <h3>{enrollmentType}</h3>
+            {Object.entries(enrollmentDetails).map(
+              ([percentileRange, fees]) => (
+                <div key={percentileRange} className="CoursePercentageRange">
+                  <h4>{percentileRange}</h4>
+                  <ul>
+                    {fees.map((feeDetail, index) => (
+                      <li key={index}>{`${index + 1}. ${feeDetail}`}</li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            )}
+          </div>
+        )
+      )}
+    </div>
+  );
+};
