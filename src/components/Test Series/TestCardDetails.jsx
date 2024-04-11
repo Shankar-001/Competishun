@@ -24,7 +24,7 @@ const TestCardDetails = () => {
             <h1>{data.Title}</h1>
             <p>{data.Announcement}</p>
             </div>
-            <JoinNow data={data} />
+            <JoinNow data={data.JoinNow} />
           </div>
 
           <div className="TestMiddleContent">
@@ -223,7 +223,7 @@ const TestCardDetails = () => {
               <h2>{data.Contact}</h2>
             </div>
 
-            <JoinNow data={data} />
+            <JoinNow data={data.JoinNow} />
           </div>
         </div>
       )}

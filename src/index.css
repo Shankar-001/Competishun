@@ -2486,11 +2486,11 @@ button {
   transform: rotate(180deg);
 }
 
-.CourseButton {
+.JoinNowButton {
   margin-bottom: 2%;
   text-align: center;
 }
-.CourseButton a {
+.JoinNowButton a {
   display: inline-block;
   padding: 1rem 2rem;
   width: 12rem;
@@ -2500,7 +2500,7 @@ button {
   border-radius: 0.6rem;
   transition: background-color 250ms ease;
 }
-.CourseButton a:hover {
+.JoinNowButton a:hover {
   background-color: #0056b3;
 }
 

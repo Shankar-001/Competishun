@@ -28,7 +28,7 @@ const CourseCardDetails = () => {
           <div className="CourseTitle">
             <h1>{data.Title}</h1>
 
-            <JoinNow data={data} />
+            <JoinNow data={data.JoinNow} />
           </div>
 
           <div className="CourseMiddleContent">
@@ -488,7 +488,7 @@ const CourseCardDetails = () => {
               <h2>{data.Contact}</h2>
             </div>
 
-            <JoinNow data={data} />
+            <JoinNow data={data.JoinNow} />
           </div>
         </div>
       )}

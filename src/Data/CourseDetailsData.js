@@ -63,6 +63,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   PRAKHAR: {
@@ -119,6 +120,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   'PRAKHAR INTEGRATED': {
@@ -176,6 +178,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   'PRAKHAR INTEGRATED FAST LANE': {
@@ -233,6 +236,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   PRAVEEN: {
@@ -289,6 +293,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   'PRAVEEN FAST LANE': {
@@ -346,6 +351,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   PRABAL: {
@@ -402,6 +408,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   // Short Term Data
@@ -434,6 +441,7 @@ export const SingleCourseDetails = {
     `,
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   CHAMP: {
@@ -465,6 +473,7 @@ export const SingleCourseDetails = {
     `,
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   CATS: {
@@ -495,6 +504,7 @@ export const SingleCourseDetails = {
     `,
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   'PRAVEEN FAST LANE (LIMITED EDITION)': {
@@ -519,6 +529,7 @@ export const SingleCourseDetails = {
     ],
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   // Neet Online Data
@@ -541,6 +552,7 @@ export const SingleCourseDetails = {
     ],
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   AVIRAL: {
@@ -561,6 +573,7 @@ export const SingleCourseDetails = {
     ],
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   AARAMBH: {
@@ -581,6 +594,7 @@ export const SingleCourseDetails = {
     ],
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   // Neet Short Term Data
@@ -603,6 +617,7 @@ export const SingleCourseDetails = {
     ],
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   // Jee Offline Data
@@ -615,6 +630,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   'CATS OFFLINE': {
@@ -662,6 +678,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   'PRAKHAR OFFLINE': {
@@ -680,6 +697,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   'PRATHAM OFFLINE': {
@@ -698,6 +716,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   'PRAVEEN OFFLINE': {
@@ -717,6 +736,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   // DLP Data
@@ -736,6 +756,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   'Praveen DLP': {
@@ -753,6 +774,7 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 
   'Pratham DLP': {
@@ -770,5 +792,6 @@ export const SingleCourseDetails = {
 
     Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: "https://www.google.com",
   },
 };
