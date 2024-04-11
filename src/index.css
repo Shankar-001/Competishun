@@ -1533,7 +1533,7 @@ button {
   justify-content: space-between;
   width: 90%;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 5rem 2rem;
   margin-bottom: 2%;
 }
 .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseCardComponent .ComponentDivision {
@@ -1544,7 +1544,6 @@ button {
   align-items: center;
   border: 0.1rem solid beige;
   z-index: 5;
-  height: 30rem;
   width: var(--landing-page-main-info-width);
   overflow: hidden;
   box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
@@ -1596,7 +1595,7 @@ button {
   justify-content: space-between;
   width: 90%;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 5rem 2rem;
   margin-bottom: 2%;
 }
 .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestCardComponent .ComponentDivision {
@@ -1607,7 +1606,6 @@ button {
   align-items: center;
   border: 0.1rem solid beige;
   z-index: 5;
-  height: 30rem;
   width: var(--landing-page-main-info-width);
   overflow: hidden;
   box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
@@ -1642,9 +1640,17 @@ button {
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseTitle {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseTitle h1 {
   color: var(--primary-color);
+  font-size: 3.2rem;
+  font-weight: 500;
+  font-family: var(--font-family);
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent {
   display: flex;
@@ -1697,11 +1703,6 @@ button {
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight::-webkit-scrollbar {
   width: 0.6rem;
-}
-.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight h3 span {
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: var(--font-family);
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .refundPolicy {
   width: 100%;
@@ -1773,6 +1774,10 @@ button {
   margin-top: 1.5%;
   list-style-type: none;
 }
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .CourseEnrollmentType h3 {
   margin-top: 1.5%;
   margin-bottom: 1%;
@@ -1793,23 +1798,6 @@ button {
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse .CourseContact h2 {
   margin-bottom: 1%;
-}
-.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseButton {
-  margin-top: 1.4%;
-  margin-bottom: 2%;
-  text-align: center;
-}
-.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseButton a {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: var(--primary-color);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 0.6rem;
-  transition: background-color 250ms ease;
-}
-.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseButton a:hover {
-  background-color: #0056b3;
 }
 
 .Merchandise {
@@ -1998,9 +1986,17 @@ button {
 }
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestTitle {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
 }
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestTitle h1 {
   color: var(--primary-color);
+  font-size: 3.2rem;
+  font-weight: 500;
+  font-family: var(--font-family);
 }
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent {
   display: flex;
@@ -2117,23 +2113,6 @@ button {
 }
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .CommonTest .TestContact h2 {
   margin-bottom: 1%;
-}
-.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestButton {
-  margin-top: 1.4%;
-  margin-bottom: 2%;
-  text-align: center;
-}
-.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestButton a {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: var(--primary-color);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 0.6rem;
-  transition: background-color 250ms ease;
-}
-.TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestButton a:hover {
-  background-color: #0056b3;
 }
 
 .result-main-container {
@@ -2515,6 +2494,24 @@ button {
 }
 .gallery-modal-overlay .modal .image-container .arrow.left-arrow {
   transform: rotate(180deg);
+}
+
+.JoinNowButton {
+  margin-bottom: 2%;
+  text-align: center;
+}
+.JoinNowButton a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 12rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.6rem;
+  transition: background-color 250ms ease;
+}
+.JoinNowButton a:hover {
+  background-color: #0056b3;
 }
 
 /*# sourceMappingURL=index.css.map */

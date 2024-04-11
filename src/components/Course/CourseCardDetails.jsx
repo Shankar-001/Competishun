@@ -3,6 +3,7 @@ import { SingleCourseDetails } from '../../Data/CourseDetailsData';
 import { useEffect, useState } from 'react';
 import playImg from '../../assets/ic-play.svg';
 import Modal from '../../utils/Modal';
+import JoinNow from '../../utils/Button/JoinNow';
 
 const CourseCardDetails = () => {
   const { courseDetails } = useParams();
@@ -26,6 +27,8 @@ const CourseCardDetails = () => {
         <div className="CourseCardSubContainer">
           <div className="CourseTitle">
             <h1>{data.Title}</h1>
+
+            <JoinNow data={data.JoinNow} />
           </div>
 
           <div className="CourseMiddleContent">
@@ -214,9 +217,10 @@ const CourseCardDetails = () => {
                   )}
 
                   {selectedContent === 'CourseDuration' && (
-                    <h3>
-                      Course Duration: <span>{data.CourseDuration}</span>
-                    </h3>
+                    <>
+                      <h3>Course Duration</h3>
+                      <p>{data.CourseDuration}</p>
+                    </>
                   )}
 
                   {selectedContent === 'LectureNumber' && (
@@ -255,9 +259,25 @@ const CourseCardDetails = () => {
                     <div>
                       <h3>Installment Details</h3>
                       <ul>
-                        {data.InstallmentDetails.map((detail, index) => (
-                          <li key={index}>{detail}</li>
-                        ))}
+                        {data.InstallmentDetails.map((detail, index) => {
+                          const [amountDetail, urlPart] = detail.split(' (');
+                          const url = urlPart ? urlPart.slice(0, -1) : null;
+
+                          return (
+                            <li key={index}>
+                              <p>{amountDetail}</p>{' '}
+                              {url && (
+                                <a
+                                  href={url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  Pay Now &gt;&gt;&gt;
+                                </a>
+                              )}
+                            </li>
+                          );
+                        })}
                       </ul>
                     </div>
                   )}
@@ -468,15 +488,7 @@ const CourseCardDetails = () => {
               <h2>{data.Contact}</h2>
             </div>
 
-            <div className="CourseButton">
-              <a
-                href="https://www.google.com"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Join Now
-              </a>
-            </div>
+            <JoinNow data={data.JoinNow} />
           </div>
         </div>
       )}
