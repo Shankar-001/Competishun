@@ -9,9 +9,12 @@
 
     .CourseTitle {
       margin-bottom: 2rem;
+      @include flex-sbs;
+      width: 100%;
 
       h1 {
         color: var(--primary-color);
+        @include h3;
       }
     }
 
@@ -70,12 +73,6 @@
 
         &::-webkit-scrollbar {
           width: 0.6rem;
-        }
-
-        h3 {
-          span {
-            @include font-style(1.6rem);
-          }
         }
 
         .refundPolicy {
@@ -148,6 +145,10 @@
           li {
             margin-top: 1.5%;
             list-style-type: none;
+            a {
+              text-decoration: none;
+              color: var(--primary-color);
+            }
           }
         }
 
@@ -187,25 +188,6 @@
       }
     }
 
-    .CourseButton {
-      margin: {
-        top: 1.4%;
-        bottom: 2%;
-      }
-      text-align: center;
-      a {
-        display: inline-block;
-        padding: 1rem 2rem;
-        background-color: var(--primary-color);
-        color: #fff;
-        text-decoration: none;
-        border-radius: 0.6rem;
-        transition: background-color 250ms ease;
-
-        &:hover {
-          background-color: #0056b3;
-        }
-      }
-    }
+    
   }
 }
