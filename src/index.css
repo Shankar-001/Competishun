@@ -684,6 +684,11 @@ button {
   text-align: justify;
   margin-left: 0.5rem;
 }
+.contact-main .contact-form-container-width .contact-form-container .form-section .starmarks {
+  padding-left: 1rem;
+  padding-top: 3%;
+  font-size: 1.3rem;
+}
 
 .Home {
   display: flex;
@@ -1246,6 +1251,11 @@ button {
   color: #696666;
   text-align: justify;
   margin-left: 0.5rem;
+}
+.Home .contact-form-container-width .contact-form-container .form-section .starmarks {
+  padding-left: 1rem;
+  padding-top: 3%;
+  font-size: 1.3rem;
 }
 .Home .TestimonialsSection {
   display: flex;

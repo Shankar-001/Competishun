@@ -67,18 +67,23 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
+            <NavLink to="/merchandise" className="navlink">
+              Merchandise
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/studyfree" className="navlink">
+              Study Free
+            </NavLink>
+          </li>
+          <li>
             <NavLink to="/result" className="navlink">
               Result
             </NavLink>
           </li>
           <li>
-            <NavLink to="/merchandise" className="navlink">
-             Merchandise
-            </NavLink>
-          </li>
-          <li>
             <NavLink to="/gallery" className="navlink">
-             Gallery
+              Gallery
             </NavLink>
           </li>
           <li>
@@ -86,11 +91,6 @@ const Navbar = () => {
               Contact Us
             </NavLink>
           </li>
-          {/* <div>Home</div>
-            <div>Courses</div>
-            <div>Test Series</div>
-            <div>About</div>
-            <div>Contact Us</div> */}
         </div>
       </div>
     </div>
