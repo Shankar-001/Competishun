@@ -79,7 +79,7 @@ button {
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
   background-color: var(--ip-border-clr);
-  padding-top: 1.8%;
+  padding: 1% 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2326,6 +2326,115 @@ button {
   .result-main-container .gallery-container .gallery {
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Each image takes full width */
   }
+}
+
+.studyfree-main-container {
+  padding-top: 10rem;
+}
+.studyfree-main-container .freeStudy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  padding: 3rem 0;
+  width: 100%;
+  background-color: var(--lightest-bg-color);
+}
+.studyfree-main-container .freeStudy .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: var(--landing-page-main-info-width);
+}
+.studyfree-main-container .freeStudy .container .row {
+  width: 100%;
+  text-align: center;
+}
+.studyfree-main-container .freeStudy .container h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+.studyfree-main-container .freeStudy .container .subhead {
+  font-size: 3.2rem;
+  font-weight: 500;
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--darkest-bg-color);
+  margin: 3rem 0;
+  align-self: flex-start;
+  text-align: left;
+}
+.studyfree-main-container .freeStudy .container .subhead img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.studyfree-main-container .freeStudy .container .material_container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 100%;
+}
+.studyfree-main-container .freeStudy .container .material_container .material_card {
+  width: 30%;
+  padding: 1rem;
+}
+.studyfree-main-container .freeStudy .container .material_container .material_card .single-free-study {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.studyfree-main-container .freeStudy .container .material_container .material_card .single-free-study .image img {
+  width: 30%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+.studyfree-main-container .freeStudy .container .material_container .material_card .single-free-study .content {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.studyfree-main-container .freeStudy .container .material_container .material_card .single-free-study .content h5 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+}
+.studyfree-main-container .freeStudy .container .material_container .material_card .single-free-study .content a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  transition: all 0.2s;
+  text-decoration: none;
+  background-color: var(--light-bg-color);
+  padding: 1rem;
+  border-radius: 2rem;
+  width: fit-content;
+}
+.studyfree-main-container .freeStudy .container .material_container .material_card .single-free-study .content a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+  background-color: var(--medium-bg-color);
+  transition: all 0.2s;
 }
 
 .modal-overlay {

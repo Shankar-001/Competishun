@@ -1,7 +1,10 @@
 import React from 'react'
+import FreeStudy from '../components/Home/FreeStudy'
 
 export const StudyFree = () => {
   return (
-    <div>StudyFree</div>
+    <div  className='studyfree-main-container'>
+      <FreeStudy />
+    </div>
   )
 }
