@@ -74,7 +74,7 @@ export const SingleCourseDetails = {
 
     FeeStructure: 'Rs 28900/- (Inclusive of All Taxes)',
     InstallmentDetails: [
-      '1st Installment: Rs 17400/- (https://rzp.io/l/AKxGbgZ',
+      '1st Installment: Rs 17400/- (https://rzp.io/l/AKxGbgZ)',
       '2nd Installment: Rs 13500/- After 45 days of Batch Commencement but Within 50 Days of Batch Commencement (https://rzp.io/l/TrwSO8D6in)',
     ],
     RefundPolicy: 'https://bit.ly/49LLzYy',
@@ -131,8 +131,8 @@ export const SingleCourseDetails = {
 
     FeeStructure: 'Rs 45000/- (Inclusive of All Taxes)',
     InstallmentDetails: [
-      '1st Installment : Rs 30000/- (https://pages.razorpay.com/pl_FqIphapnIPe7yb/view )',
-      '2nd Installment: Rs 20000/- After 45 days of Batch Commencement but Within 50 Days of Batch Commencement (https://pages.razorpay.com/pl_Evlvr4aJgWc03p/view )',
+      '1st Installment : Rs 30000/- (https://pages.razorpay.com/pl_FqIphapnIPe7yb/view)',
+      '2nd Installment: Rs 20000/- After 45 days of Batch Commencement but Within 50 Days of Batch Commencement (https://pages.razorpay.com/pl_Evlvr4aJgWc03p/view)',
     ],
     RefundPolicy: 'https://bit.ly/49LLzYy',
     CourseFeatures: [

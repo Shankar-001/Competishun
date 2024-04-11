@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import { SingleTestDetails } from '../../Data/TestDetailsData';
 import { useEffect, useState } from 'react';
+import JoinNow from '../../utils/Button/JoinNow';
 
 const TestCardDetails = () => {
   const { testSeriesDetails } = useParams();
@@ -19,8 +20,11 @@ const TestCardDetails = () => {
       {data && (
         <div className="TestCardSubContainer">
           <div className="TestTitle">
+            <div>
             <h1>{data.Title}</h1>
             <p>{data.Announcement}</p>
+            </div>
+            <JoinNow data={data} />
           </div>
 
           <div className="TestMiddleContent">
@@ -219,11 +223,7 @@ const TestCardDetails = () => {
               <h2>{data.Contact}</h2>
             </div>
 
-            <div className="TestButton">
-              <a href={data.JoinNow} target="_blank" rel="noreferrer noopener">
-                Join Now
-              </a>
-            </div>
+            <JoinNow data={data} />
           </div>
         </div>
       )}
