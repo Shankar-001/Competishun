@@ -1,7 +1,7 @@
 .Navbar-main-container {
   @include bodyText;
   background-color: var(--ip-border-clr);
-  padding-top: 1.8%;
+  padding:1% 0;
   @include flex-cc;
   position: fixed;
   z-index: 100;

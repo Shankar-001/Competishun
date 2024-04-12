@@ -7,6 +7,8 @@ import { MdEmail } from 'react-icons/md';
 import { FaPhoneVolume } from 'react-icons/fa6';
 
 const ContactComponent = () => {
+  const [otherClass, setOtherClass] = useState('');
+  const [otherStream, setOtherStream] = useState('');
   const [formData, setFormData] = useState({
     firstName: '',
     phone: '',
@@ -15,6 +17,7 @@ const ContactComponent = () => {
     class: '',
     message: '',
     email: '',
+    stream:'',
   });
 
   const [errors, setErrors] = useState({
@@ -23,6 +26,7 @@ const ContactComponent = () => {
     class: '',
     email: '',
     message: '',
+    stream:'',
   });
 
   const handleChange = (e) => {
@@ -36,6 +40,7 @@ const ContactComponent = () => {
 
     let hasErrors = false;
     const newErrors = {};
+    // let formData=formData;
 
     // Validation for required fields
     if (formData.firstName.trim() === '') {
@@ -58,8 +63,9 @@ const ContactComponent = () => {
       city: formData.city,
       state: formData.state,
       query: formData.message,
-      class: formData.class,
+      class: (formData.class==='others'? otherClass: formData.class),
       email: formData.email,
+      stream:(formData.stream==='others'? otherStream: formData.stream),
     };
 
     console.log('data', data);
@@ -71,6 +77,7 @@ const ContactComponent = () => {
       class: '',
       email: '',
       message: '',
+      stream:'',
     });
 
     setErrors({
@@ -79,6 +86,7 @@ const ContactComponent = () => {
       class: '',
       email: '',
       message: '',
+      stream:'',
     });
 
     Swal.fire({
@@ -100,9 +108,10 @@ const ContactComponent = () => {
         <div className="contact-details-section">
           <p>Contact Our Team</p>
           <p className="contact-details-section-two">
-            <p> Looking for support or counseling ?
-            
-              Fill out your details for personalized support !
+            <p>
+              {' '}
+              Looking for support or counseling ? Fill out your details for
+              personalized support !
             </p>
           </p>
           <div className="contact-details-section-margin">
@@ -113,7 +122,7 @@ const ContactComponent = () => {
               <span className="phone-icon">
                 <FaPhoneVolume />
               </span>
-              <a href="tel:+918888000021" target='blank' className="text">
+              <a href="tel:+918888000021" target="blank" className="text">
                 +91 8888000021
               </a>
             </p>
@@ -121,15 +130,19 @@ const ContactComponent = () => {
               <span className="mail-icon">
                 <MdEmail />
               </span>
-              <a href="mailto:support@competishun.com" target='blank' className="text">
-               support@competishun.com
+              <a
+                href="mailto:support@competishun.com"
+                target="blank"
+                className="text"
+              >
+                support@competishun.com
               </a>
             </p>
             <p className="contact-detail-section-phone">
               <span className="whatsapp-icon">
                 <IoLogoWhatsapp />
               </span>
-              <a href="https://wa.link/xa00yu" target='blank' className="text">
+              <a href="https://wa.link/xa00yu" target="blank" className="text">
                 +91 7410900901
               </a>
             </p>
@@ -148,7 +161,7 @@ const ContactComponent = () => {
                   name="firstName"
                   value={formData.firstName}
                   onChange={handleChange}
-                  placeholder="First Name"
+                  placeholder="Full Name *"
                 />
                 <div className="error">{errors.firstName}</div>
               </div>
@@ -164,7 +177,7 @@ const ContactComponent = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="Phone Number"
+                  placeholder="Phone Number *"
                 />
                 <div className="error">{errors.phone}</div>
               </div>
@@ -218,23 +231,52 @@ const ContactComponent = () => {
                 <option value="11th">Class 12</option>
                 <option value="12th">1st Time Dropper</option>
                 <option value="Dropper">2nd Time Dropper</option>
+                <option value="others">others</option>
               </select>
               <div className="error">{errors.class}</div>
+              {formData.class === 'others' && (
+                <div className="form-group">
+                <div className="form-group-input">
+                  <input
+                    className={`form-section-inputfield`}
+                    type="text"
+                    name="otherClass"
+                    value={otherClass}
+                    onChange={(e)=>setOtherClass(e.target.value)}
+                    placeholder="Please specify your class" 
+                  />
+                </div>
+                </div>
+              )}
             </div>
             <div>
               <p className="form-section-heading">For which stream you are ?</p>
               <select
-                className={`form-section-select ${errors.class && 'error'}`}
-                name="class"
-                value={formData.class}
+                className={`form-section-select ${errors.stream && 'error'}`}
+                name="stream"
+                value={formData.stream}
                 onChange={handleChange}
               >
                 <option value="">Stream</option>
                 <option value="Jee">JEE</option>
                 <option value="Neet">NEET</option>
-                <option value="Others">Others</option>
+                <option value="others">Others</option>
               </select>
-              <div className="error">{errors.class}</div>
+              <div className="error">{errors.stream}</div>
+              {formData.stream === 'others' && (
+                <div className="form-group">
+                <div className="form-group-input">
+                  <input
+                    className={`form-section-inputfield`}
+                    type="text"
+                    name="stream"
+                    value={otherStream}
+                    onChange={(e)=>setOtherStream(e.target.value)}
+                    placeholder="Please specify your Stream" 
+                  />
+                </div>
+                </div>
+              )}
             </div>
 
             <p className="form-section-heading">
@@ -254,6 +296,10 @@ const ContactComponent = () => {
             <button type="submit" className="btn">
               Submit
             </button>
+            <div className="starmarks">
+              {' '}
+              <span>*</span> : indicates field is mandatory to be filled{' '}
+            </div>
           </form>
         </div>
 

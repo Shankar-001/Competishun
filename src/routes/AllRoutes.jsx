@@ -11,6 +11,7 @@ import Gallery from '../pages/Gallery';
 import DirectorInfo from '../pages/Director/DirectorInfo';
 import AboutUs from '../pages/AboutUs/AboutUs';
 import TestSeriesDetails from '../pages/Test Series/TestSeriesDetails';
+import { StudyFree } from '../pages/StudyFree';
 
 const AllRoutes = () => {
   return (
@@ -30,7 +31,7 @@ const AllRoutes = () => {
       />
       <Route path="/merchandise" element={<Merchandise />} />
       <Route path="/gallery" element={<Gallery />} />
-
+      <Route path="/studyfree" element={<StudyFree />} />
       {/* extra routes */}
       <Route path="/about" element={<AboutUs />} />
       <Route path="/director/:name" element={<DirectorInfo />} />
