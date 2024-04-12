@@ -2,6 +2,7 @@
 // import MerchandiseData from '../../Data/Merchandise';
 // import CardComponent from '../CardComponent/CardComponent';
 
+import { useNavigate } from 'react-router-dom';
 import {
   MerchandiseData,
   MerchandiseDataCapsPYQ,
@@ -13,6 +14,10 @@ import DescNewCardComponent from '../CardComponent/DescCardComponent';
 import NewCardComponent from '../CardComponent/NewCardComponent';
 
 const MerchandiseCard = () => {
+  const navigate = useNavigate();
+  const handleCardClick = (item) => {
+    navigate(`/merchandise/${item.title}`);
+  };
   return (
     <div className="MerchandiseCardMainContainer">
       <div className="MerchandiseCardSubContainer">
@@ -24,18 +29,18 @@ const MerchandiseCard = () => {
           </div>
           <div className="MerchandiseCardComponent">
             {MerchandiseData.map((item, index) => (
-              <a className="ankertag" target="blank" href={item.link}>
-                <NewCardComponent key={index} data={item} />
-              </a>
+              <div className="ankertag">
+                <NewCardComponent key={index} data={item} onClick={handleCardClick(item)} />
+              </div>
             ))}
           </div>
           {/* jee mains pyqs */}
           <div className="MerchandiseSubDetails">📚 JEE Main PYQ Individual Books :</div>
           <div className="MerchandiseCardComponent">
             {MerchandiseDataJeeMainPYQ.map((item, index) => (
-              <a className="ankertag" target="blank" href={item.link}>
-                <NewCardComponent key={index} data={item} />
-              </a>
+              <div className="ankertag" >
+                <NewCardComponent key={index} data={item}  onClick={handleCardClick(item)}/>
+              </div>
             ))}
           </div>
           {/* 36 years pyqs */}
@@ -44,9 +49,9 @@ const MerchandiseCard = () => {
           </div>
           <div className="MerchandiseCardComponent">
             {MerchandiseDataNeetPYQ.map((item, index) => (
-              <a className="ankertag" target="blank" href={item.link}>
-                <NewCardComponent key={index} data={item} />
-              </a>
+              <div className="ankertag"  >
+                <NewCardComponent key={index} data={item} onClick={handleCardClick(item)} />
+              </div>
             ))}
           </div>
           <div className="MerchandiseSubDetails">
@@ -54,10 +59,10 @@ const MerchandiseCard = () => {
           </div>
           <div className="MerchandiseCardComponent">
             {MerchandiseDataCapsPYQ.map((item, index) => (
-              <a className="ankertag" target="blank" href={item.link}>
-                <NewCardComponent key={index} data={item} />
+              <div className="ankertag" >
+                <NewCardComponent key={index} data={item} onClick={handleCardClick(item)} />
                 {/* <img src={item.src} alt="" /> */}
-              </a>
+              </div>
             ))}
           </div>
           {/*  Dlp material */}
@@ -66,10 +71,10 @@ const MerchandiseCard = () => {
           </div>
           <div className="MerchandiseCardComponent">
             {MerchandiseDataDlpBooks.map((item, index) => (
-              <a className="ankertag" target="blank" href={item.link}>
-                <DescNewCardComponent key={index} data={item} />
+              <div className="ankertag">
+                <DescNewCardComponent key={index} data={item}  onClick={handleCardClick(item)}/>
                 {/* <img src={item.src} alt="" /> */}
-              </a>
+              </div>
             ))}
           </div>
         </div>
