@@ -42,7 +42,7 @@ const AllRoutes = () => {
       <Route path="/about" element={<AboutUs />} />
       <Route path="/director/:name" element={<DirectorInfo />} />
       <Route path="/admin" element={<Admin />} />
-      {/* <Route path="/*" element={<Navigate to="/" />} /> */}
+      {/* <Route path="/*" element={<Navigate to="/" />} />  */}  
     </Routes>
   );
 };
