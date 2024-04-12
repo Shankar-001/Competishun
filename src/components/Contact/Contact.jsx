@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { MdEmail } from 'react-icons/md';
 import { FaPhoneVolume } from 'react-icons/fa6';
+import { addDoc, collection } from 'firebase/firestore';
+import db from '../../constants/Firebase';
 
 const ContactComponent = () => {
   const [otherClass, setOtherClass] = useState('');
@@ -66,9 +68,10 @@ const ContactComponent = () => {
       class: (formData.class==='others'? otherClass: formData.class),
       email: formData.email,
       stream:(formData.stream==='others'? otherStream: formData.stream),
+      date : Date.now(),
     };
-
-    console.log('data', data);
+    const docRef=await addDoc(collection(db,"SupportQueries"),data);
+  
     setFormData({
       firstName: '',
       phone: '',
@@ -88,6 +91,7 @@ const ContactComponent = () => {
       message: '',
       stream:'',
     });
+
 
     Swal.fire({
       title: 'Thanks for sharing your details!',
