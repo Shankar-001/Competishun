@@ -13,6 +13,7 @@ import AboutUs from '../pages/AboutUs/AboutUs';
 import TestSeriesDetails from '../pages/Test Series/TestSeriesDetails';
 import { StudyFree } from '../pages/StudyFree';
 import MerchandiseDetails from '../pages/Merchandise/MerchandiseDetails';
+import { Admin } from '../pages/Admin/Admin';
 
 const AllRoutes = () => {
   return (
@@ -40,7 +41,7 @@ const AllRoutes = () => {
       {/* extra routes */}
       <Route path="/about" element={<AboutUs />} />
       <Route path="/director/:name" element={<DirectorInfo />} />
-
+      <Route path="/admin" element={<Admin />} />
       {/* <Route path="/*" element={<Navigate to="/" />} /> */}
     </Routes>
   );
