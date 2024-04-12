@@ -21,6 +21,65 @@ const CourseCardDetails = () => {
     }
   }, [navigate, data]);
 
+  const sections = [
+    { key: 'AboutCourse', label: 'About Course', isAvailable: data.AboutCourse },
+    {
+      key: 'CourseDuration',
+      label: 'Course Duration',
+      isAvailable: data.CourseDuration,
+    },
+    {
+      key: 'LectureNumber',
+      label: 'Number of Lectures',
+      isAvailable: data.LectureNumber,
+    },
+    { key: 'FeeStructure', label: 'Fee Structure', isAvailable: data.FeeStructure },
+    {
+      key: 'OfflineFeeStructure',
+      label: 'Fee Structure',
+      isAvailable: data.OfflineFeeStructure,
+    },
+    {
+      key: 'InstallmentDetails',
+      label: 'Installment Details',
+      isAvailable: data.InstallmentDetails,
+    },
+    { key: 'KeyFeature', label: 'Key Feature', isAvailable: data.KeyFeature },
+    {
+      key: 'CourseFeatures',
+      label: 'Course Features',
+      isAvailable: data.CourseFeatures,
+    },
+    {
+      key: 'CourseFeatureWithoutVideo',
+      label: 'Course Features',
+      isAvailable: data.CourseFeatureWithoutVideo,
+    },
+    {
+      key: 'Advantages',
+      label: 'Why Join Us? Competishun Advantage!',
+      isAvailable: data.Advantages,
+    },
+    { key: 'Stages', label: 'Preparation Stages', isAvailable: data.Stages },
+    { key: 'GeneralQNA', label: 'General Question', isAvailable: data.GeneralQNA },
+    {
+      key: 'OnlineVsOffline',
+      label: 'Online Vs Offline',
+      isAvailable: data.OnlineVsOffline,
+    },
+    {
+      key: 'KotaVsJaipurVsHome',
+      label: 'Kota vs Jaipur vs Home',
+      isAvailable: data.KotaVsJaipurVsHome,
+    },
+    { key: 'RefundPolicy', label: 'Refund Policy', isAvailable: data.RefundPolicy },
+    {
+      key: 'ShortTermRefundPolicy',
+      label: 'Refund Policy',
+      isAvailable: data.ShortTermRefundPolicy,
+    },
+  ];
+
   return (
     <div className="CourseCardMainContainer">
       {data && (
@@ -34,174 +93,19 @@ const CourseCardDetails = () => {
           <div className="CourseMiddleContent">
             <div className="CourseDetailsLeft">
               <div className="CourseMenu">
-                <h3
-                  onClick={() => setSelectedContent('AboutCourse')}
-                  className={selectedContent === 'AboutCourse' ? 'active' : ''}
-                >
-                  About Course
-                </h3>
-
-                {data.CourseDuration && (
-                  <h3
-                    onClick={() => setSelectedContent('CourseDuration')}
-                    className={
-                      selectedContent === 'CourseDuration' ? 'active' : ''
-                    }
-                  >
-                    Course Duration
-                  </h3>
-                )}
-
-                {data.LectureNumber && (
-                  <h3
-                    onClick={() => setSelectedContent('LectureNumber')}
-                    className={
-                      selectedContent === 'LectureNumber' ? 'active' : ''
-                    }
-                  >
-                    Number of Lectures
-                  </h3>
-                )}
-
-                {data.FeeStructure && (
-                  <h3
-                    onClick={() => setSelectedContent('FeeStructure')}
-                    className={
-                      selectedContent === 'FeeStructure' ? 'active' : ''
-                    }
-                  >
-                    Fee Structure
-                  </h3>
-                )}
-
-                {data.OfflineFeeStructure && (
-                  <h3
-                    onClick={() => setSelectedContent('OfflineFeeStructure')}
-                    className={
-                      selectedContent === 'OfflineFeeStructure' ? 'active' : ''
-                    }
-                  >
-                    Fee Structure
-                  </h3>
-                )}
-
-                {data.InstallmentDetails && (
-                  <h3
-                    onClick={() => setSelectedContent('InstallmentDetails')}
-                    className={
-                      selectedContent === 'InstallmentDetails' ? 'active' : ''
-                    }
-                  >
-                    Installment Details
-                  </h3>
-                )}
-
-                {data.KeyFeature && (
-                  <h3
-                    onClick={() => setSelectedContent('KeyFeature')}
-                    className={selectedContent === 'KeyFeature' ? 'active' : ''}
-                  >
-                    Key Feature
-                  </h3>
-                )}
-
-                {data.CourseFeatures && (
-                  <h3
-                    onClick={() => setSelectedContent('CourseFeatures')}
-                    className={
-                      selectedContent === 'CourseFeatures' ? 'active' : ''
-                    }
-                  >
-                    Course Features
-                  </h3>
-                )}
-
-                {data.CourseFeatureWithoutVideo && (
-                  <h3
-                    onClick={() =>
-                      setSelectedContent('CourseFeatureWithoutVideo')
-                    }
-                    className={
-                      selectedContent === 'CourseFeatureWithoutVideo'
-                        ? 'active'
-                        : ''
-                    }
-                  >
-                    Course Features
-                  </h3>
-                )}
-
-                {data.Advantages && (
-                  <h3
-                    onClick={() => setSelectedContent('Advantages')}
-                    className={selectedContent === 'Advantages' ? 'active' : ''}
-                  >
-                    Why Join Us? Competishun Advantage!
-                  </h3>
-                )}
-
-                {data.Stages && (
-                  <h3
-                    onClick={() => setSelectedContent('Stages')}
-                    className={selectedContent === 'Stages' ? 'active' : ''}
-                  >
-                    Preparation Stages
-                  </h3>
-                )}
-
-                {data.GeneralQNA && (
-                  <h3
-                    onClick={() => setSelectedContent('GeneralQNA')}
-                    className={selectedContent === 'GeneralQNA' ? 'active' : ''}
-                  >
-                    General Question
-                  </h3>
-                )}
-
-                {data.OnlineVsOffline && (
-                  <h3
-                    onClick={() => setSelectedContent('OnlineVsOffline')}
-                    className={
-                      selectedContent === 'OnlineVsOffline' ? 'active' : ''
-                    }
-                  >
-                    Online Vs Offline
-                  </h3>
-                )}
-
-                {data.KotaVsJaipurVsHome && (
-                  <h3
-                    onClick={() => setSelectedContent('KotaVsJaipurVsHome')}
-                    className={
-                      selectedContent === 'KotaVsJaipurVsHome' ? 'active' : ''
-                    }
-                  >
-                    Kota vs Jaipur vs Home
-                  </h3>
-                )}
-
-                {data.RefundPolicy && (
-                  <h3
-                    onClick={() => setSelectedContent('RefundPolicy')}
-                    className={
-                      selectedContent === 'RefundPolicy' ? 'active' : ''
-                    }
-                  >
-                    Refund Policy
-                  </h3>
-                )}
-
-                {data.ShortTermRefundPolicy && (
-                  <h3
-                    onClick={() => setSelectedContent('ShortTermRefundPolicy')}
-                    className={
-                      selectedContent === 'ShortTermRefundPolicy'
-                        ? 'active'
-                        : ''
-                    }
-                  >
-                    Refund Policy
-                  </h3>
+                {sections.map(
+                  (section) =>
+                    section.isAvailable && (
+                      <h3
+                        key={section.key}
+                        onClick={() => setSelectedContent(section.key)}
+                        className={
+                          selectedContent === section.key ? 'active' : ''
+                        }
+                      >
+                        {section.label}
+                      </h3>
+                    )
                 )}
               </div>
             </div>
