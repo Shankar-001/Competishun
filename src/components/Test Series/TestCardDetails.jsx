@@ -15,14 +15,34 @@ const TestCardDetails = () => {
   //     }
   //   }, [navigate, data]);
 
+  const sections = [
+    { key: 'StartDate', label: 'Start Date', isAvailable: data.StartDate },
+    { key: 'Validity', label: 'Validity', isAvailable: data.Validity },
+    { key: 'Target', label: 'Target', isAvailable: data.Target },
+    { key: 'FeeStructure', label: 'Fee Structure', isAvailable: data.FeeStructure },
+    { key: 'TestNumber', label: 'Number of Tests', isAvailable: data.TestNumber },
+    {
+      key: 'DownloadSchedule',
+      label: 'Download Schedule',
+      isAvailable: data.DownloadSchedule,
+    },
+    { key: 'HowToEnroll', label: 'How To Enroll', isAvailable: data.HowToEnroll },
+    { key: 'KeyFeature', label: 'Key Feature', isAvailable: data.KeyFeature },
+    {
+      key: 'ComplimentaryAccess',
+      label: 'Complimentary Access',
+      isAvailable: data.ComplimentaryAccess,
+    },
+  ];
+
   return (
     <div className="TestCardMainContainer">
       {data && (
         <div className="TestCardSubContainer">
           <div className="TestTitle">
             <div>
-            <h1>{data.Title}</h1>
-            <p>{data.Announcement}</p>
+              <h1>{data.Title}</h1>
+              <p>{data.Announcement}</p>
             </div>
             <JoinNow data={data.JoinNow} />
           </div>
@@ -30,93 +50,19 @@ const TestCardDetails = () => {
           <div className="TestMiddleContent">
             <div className="TestDetailsLeft">
               <div className="TestMenu">
-                {data.StartDate && (
-                  <h3
-                    onClick={() => setSelectedContent('StartDate')}
-                    className={selectedContent === 'StartDate' ? 'active' : ''}
-                  >
-                    Start Date
-                  </h3>
-                )}
-
-                {data.Validity && (
-                  <h3
-                    onClick={() => setSelectedContent('Validity')}
-                    className={selectedContent === 'Validity' ? 'active' : ''}
-                  >
-                    Validity
-                  </h3>
-                )}
-
-                {data.Target && (
-                  <h3
-                    onClick={() => setSelectedContent('Target')}
-                    className={selectedContent === 'Target' ? 'active' : ''}
-                  >
-                    Target
-                  </h3>
-                )}
-
-                {data.FeeStructure && (
-                  <h3
-                    onClick={() => setSelectedContent('FeeStructure')}
-                    className={
-                      selectedContent === 'FeeStructure' ? 'active' : ''
-                    }
-                  >
-                    Fee Structure
-                  </h3>
-                )}
-
-                {data.TestNumber && (
-                  <h3
-                    onClick={() => setSelectedContent('TestNumber')}
-                    className={selectedContent === 'TestNumber' ? 'active' : ''}
-                  >
-                    Number of test
-                  </h3>
-                )}
-
-                {data.DownloadSchedule && (
-                  <h3
-                    onClick={() => setSelectedContent('DownloadSchedule')}
-                    className={
-                      selectedContent === 'DownloadSchedule' ? 'active' : ''
-                    }
-                  >
-                    Download Schedule
-                  </h3>
-                )}
-
-                {data.HowToEnroll && (
-                  <h3
-                    onClick={() => setSelectedContent('HowToEnroll')}
-                    className={
-                      selectedContent === 'HowToEnroll' ? 'active' : ''
-                    }
-                  >
-                    How To Enroll
-                  </h3>
-                )}
-
-                {data.KeyFeature && (
-                  <h3
-                    onClick={() => setSelectedContent('KeyFeature')}
-                    className={selectedContent === 'KeyFeature' ? 'active' : ''}
-                  >
-                    Key Feature
-                  </h3>
-                )}
-
-                {data.ComplimentaryAccess && (
-                  <h3
-                    onClick={() => setSelectedContent('ComplimentaryAccess')}
-                    className={
-                      selectedContent === 'ComplimentaryAccess' ? 'active' : ''
-                    }
-                  >
-                    Complimentary Access
-                  </h3>
+                {sections.map(
+                  (section) =>
+                    section.isAvailable && (
+                      <h3
+                        key={section.key}
+                        onClick={() => setSelectedContent(section.key)}
+                        className={
+                          selectedContent === section.key ? 'active' : ''
+                        }
+                      >
+                        {section.label}
+                      </h3>
+                    )
                 )}
               </div>
             </div>
