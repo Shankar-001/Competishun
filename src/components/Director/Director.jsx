@@ -21,9 +21,8 @@ export const Director = () => {
           <div
             key={index}
             className="inner_card"
-            onClick={() => handleClick(index)}
           >
-            <img src={card.image} alt={card.name} className="image" />
+            <img src={card.image} alt={card.name} className="image" onClick={() => handleClick(index)} />
             <div className="text-content">
               <div className="name">{card.name}</div>
               <div className="description">

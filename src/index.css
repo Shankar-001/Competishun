@@ -657,6 +657,14 @@ button {
   align-items: center;
   background: var(--lightest-bg-color);
   width: 100%;
+  background: linear-gradient(180deg, rgb(240, 243, 255) 10%, rgba(240, 243, 255, 0.8) 60%), url("/src/assets/Gallery/Celebration/celebration23.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  /* z-index: -2; */
+  animation: bgZoom 1s ease-in-out 1 forwards;
+  overflow: hidden;
 }
 .contact-main .contact-form-container-width .contact-form-container {
   width: var(--landing-page-main-info-width);
@@ -858,6 +866,7 @@ button {
 .contact-main .contact-form-container-width .contact-form-container .form-section .form-group {
   display: flex;
   padding: 0.625rem;
+  gap: 1rem;
   justify-content: space-between;
 }
 @media screen and (max-width: 500px) {
@@ -1021,23 +1030,27 @@ button {
 .Home .director-card {
   width: 70%;
   transform: translateY(-40%);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
 }
 .Home .director-card .my_card-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3%;
 }
 .Home .director-card .my_card-container .inner_card {
-  background-color: var(--light-bg-color);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 22.5%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: var(--light-bg-color);
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.05) !important;
-  justify-content: center;
-  align-items: center;
 }
 .Home .director-card .my_card-container .inner_card .text-content {
   padding-top: 5%;
@@ -1046,7 +1059,9 @@ button {
   justify-content: center;
 }
 .Home .director-card .my_card-container .inner_card .text-content .name {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: var(--font-family);
   color: var(--darkest-bg-color);
   padding-bottom: 5px;
   font-weight: 550;
@@ -1225,6 +1240,14 @@ button {
   align-items: center;
   background: var(--lightest-bg-color);
   width: 100%;
+  background: linear-gradient(180deg, rgb(240, 243, 255) 10%, rgba(240, 243, 255, 0.8) 60%), url("/src/assets/Gallery/Celebration/celebration23.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  /* z-index: -2; */
+  animation: bgZoom 1s ease-in-out 1 forwards;
+  overflow: hidden;
 }
 .Home .contact-form-container-width .contact-form-container {
   width: var(--landing-page-main-info-width);
@@ -1426,6 +1449,7 @@ button {
 .Home .contact-form-container-width .contact-form-container .form-section .form-group {
   display: flex;
   padding: 0.625rem;
+  gap: 1rem;
   justify-content: space-between;
 }
 @media screen and (max-width: 500px) {
