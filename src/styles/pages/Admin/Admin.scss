@@ -1,5 +1,6 @@
 .admin-main-container{
     @include flex-cc(column);
+    padding-top: 9rem;
 
     @import '../../components/Admin/LoginComponent.scss';
     @import '../../components/Admin/AdminComponent.scss';

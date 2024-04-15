@@ -17,7 +17,6 @@ function App() {
         // https://firebase.google.com/docs/reference/js/auth.user
         const uid = user.uid;
         const tempUser = user.toJSON();
-        console.log('tempUser', tempUser);
         const currUser = {
           name: tempUser.displayName,
           email: tempUser.email,
@@ -33,8 +32,13 @@ function App() {
           const docSnap = await getDoc(docRef);
         } catch (err) {
           console.log('error getting doc', err);
-          await setDoc(docRef, currUser);
-
+          try {
+            
+            await setDoc(docRef, currUser);
+  
+          } catch (e) {
+            console.log('error setting doc', e);
+          }
           await signOut(auth);
           Swal.fire({
             icon: 'error',
