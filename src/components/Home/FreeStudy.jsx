@@ -18,7 +18,7 @@ const FreeStudy = () => {
 
         <div className="row subhead">
           <FaYoutube fontSize={36} color="red" />
-          <h3>Our Youtube Channels</h3>
+          <h3>Our YouTube Channels</h3>
         </div>
         <div className="row material_container">
           {youtubeChannels.map((item, index) => (

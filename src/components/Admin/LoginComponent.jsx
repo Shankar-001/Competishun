@@ -9,7 +9,22 @@ import weekly from '../../assets/Login/Weekly.svg';
 import side1 from '../../assets/Login/side1.svg';
 import side2 from '../../assets/Login/side2.svg';
 import side3 from '../../assets/Login/side3.svg';
+import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
+import useUser from '../../context/userContext.js';
  const LoginComponent = () => {
+  const { user, setUser } = useUser();
+
+  const handleClick = async () => {
+    try {
+            const auth = getAuth()
+            const provider = new GoogleAuthProvider()
+            const result = await signInWithPopup(auth, provider);
+            console.log('logged in successfully');
+        } catch (error) {
+            console.log('Google authentication failed!')
+            console.log(error)
+        }
+  };
   return (
     <div className="login-main-Container">
     <div className="mainContainer">
@@ -39,7 +54,7 @@ import side3 from '../../assets/Login/side3.svg';
             </div>
             <button
               className="signInButton"
-            //   onClick={handleClick}
+              onClick={handleClick}
             //   disabled={btnDisable}
             >
               <img src={search} alt="" />

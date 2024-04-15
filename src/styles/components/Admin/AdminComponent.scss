@@ -1,0 +1,14 @@
+.Admin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  .signOut {
+    margin-bottom: 20px;
+  }
+
+  .sortSelect {
+    margin-bottom: 20px;
+  }
+}
