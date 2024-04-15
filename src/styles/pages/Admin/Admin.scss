@@ -1,0 +1,6 @@
+.admin-main-container{
+    @include flex-cc(column);
+
+    @import '../../components/Admin/LoginComponent.scss';
+    @import '../../components/Admin/AdminComponent.scss';
+}

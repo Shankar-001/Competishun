@@ -1,5 +1,4 @@
 import React from 'react';
-import Swal from 'sweetalert2';
 import ellipseUpDown from '../../assets/Login/ellips-up-down.svg';
 import ellipseSmall from '../../assets/Login/Ellipse-small.svg';
 import ellipseBiggest from '../../assets/Login/Ellipse-biggest.svg';
@@ -11,46 +10,15 @@ import side1 from '../../assets/Login/side1.svg';
 import side2 from '../../assets/Login/side2.svg';
 import side3 from '../../assets/Login/side3.svg';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
-import { collection, doc, getDoc, getDocs, serverTimestamp, setDoc } from 'firebase/firestore';
-import  db  from '../../constants/Firebase.js';
+import useUser from '../../context/userContext.js';
  const LoginComponent = () => {
+  const { user, setUser } = useUser();
 
   const handleClick = async () => {
     try {
             const auth = getAuth()
             const provider = new GoogleAuthProvider()
-            const result = await signInWithPopup(auth, provider)
-            const tempUser = result.user
-            console.log('tempUser', tempUser);
-
-            const docRef = doc(db, 'users', tempUser.uid)
-            console.log('starting to get doc');
-            try {
-              
-              const docSnap = await getDoc(docRef);
-              
-            } catch (err) {
-              console.log('error getting doc', err);
-              console.log('got doc');
-              const currUser = {
-                name: tempUser.displayName,
-                email: tempUser.email,
-                timestamp: serverTimestamp(),
-                image: tempUser.photoURL,
-                uid: tempUser.uid,
-                role: 'user',
-              };
-              await setDoc(docRef, currUser);
-               Swal.fire({
-                 icon: 'error',
-                 title: 'Unauthorized Access!',
-                 text: 'You do not have access to this dashboard!',
-               });
-              return ;
-            }
-            
-            // localStorage.setItem('user', JSON.stringify(currUser));
-
+            const result = await signInWithPopup(auth, provider);
             console.log('logged in successfully');
         } catch (error) {
             console.log('Google authentication failed!')
