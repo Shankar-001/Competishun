@@ -266,14 +266,16 @@ button {
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
 }
 .footer-mainContainer .develop {
   text-align: center;
   color: var(--lightest-bg-color);
 }
 .footer-mainContainer .footer-containerContent {
-  margin-top: 5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 4%;
+  margin-bottom: 1.5%;
   width: var(--landing-page-main-info-width);
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer {
@@ -284,57 +286,123 @@ button {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 990px) {
+  .footer-mainContainer .footer-containerContent .footer-innerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .socialMedia-logo {
+    padding-top: 5%;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .download-heading {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .ebook {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .appstore {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .footer-mainContainer .footer-containerContent .footer-innerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem;
+    background-color: var(--ip-border-clr);
+    color: var(--lightest-bg-color);
+    gap: 2rem;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-navlink {
+    color: var(--lightest-bg-color);
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer #quick-links {
+    color: var(--lightest-bg-color);
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .socialMedia-logo {
+    padding-top: 5%;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .download-heading {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .ebook {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .appstore {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    gap: 1rem;
+  }
+}
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  margin-top: 0.5%;
+  margin-bottom: 2%;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .footer-companyIcon {
-  width: 10rem;
-  height: 10rem;
-  margin-left: 10rem;
+  width: 22%;
+  height: 22%;
+  margin-left: 30%;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .p {
-  margin-left: 5rem;
+  margin-left: 5%;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .footer-address {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 0.6rem;
+  gap: 1rem;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .footer-address .Icon {
-  margin-top: 0.5rem;
+  margin-top: 2%;
 }
-.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-quickLinks {
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10rem;
+}
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-quickLinks {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
 }
-.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-quickLinks .element .footer-link li {
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-quickLinks .element .footer-link li {
   list-style-type: none;
   text-decoration: none;
   margin-bottom: 0.4rem;
 }
-.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-quickLinks .element .footer-link li .footer-navlink {
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-quickLinks .element .footer-link li .footer-navlink {
   text-decoration: none;
   color: var(--darkest-bg-color);
 }
-.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-support {
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-support {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
 }
-.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-support .footer-support-link .point {
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-support .footer-support-link .point {
   margin-top: 0.4rem;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs .socialMedia-logo {
@@ -342,9 +410,9 @@ button {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 1.1rem;
-  margin-top: 1.2rem;
-  margin-bottom: 0.9rem;
+  gap: 1.4rem;
+  margin-top: 1.2%;
+  margin-bottom: 0.9%;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs p {
   margin-top: 0.2rem;
@@ -3133,6 +3201,32 @@ button {
   .Landing-Page-Main-Container .certificateFaq .faqContainer .faqContent1 .faqSubContent p {
     margin-top: 1.8%;
   }
+}
+.Landing-Page-Main-Container .main-container {
+  width: var(--landing-page-main-info-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.Landing-Page-Main-Container .main-container .benifits {
+  color: var(--primary-color);
+}
+.Landing-Page-Main-Container .main-container .heading-whyCompetishun {
+  color: var(--landing-secondary-color);
+}
+.Landing-Page-Main-Container .main-container .box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  margin-top: 0.2%;
+}
+.Landing-Page-Main-Container .main-container #abc {
+  margin-top: 1%;
 }
 
 .modal-overlay {
