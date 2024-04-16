@@ -27,7 +27,7 @@ function App() {
         };
         const docRef = doc(db, 'users', tempUser.uid);
 
-        console.log('starting to get doc');
+        // console.log('starting to get doc');
         try {
           const docSnap = await getDoc(docRef);
         } catch (err) {
@@ -50,7 +50,7 @@ function App() {
         setUser(currUser);
       } else {
         // User is signed out
-        console.log('user is signed out');
+        // console.log('user is signed out');
         setUser(null);
       }
     });
