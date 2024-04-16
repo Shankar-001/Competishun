@@ -4,6 +4,8 @@
   background-color: var(--ip-border-clr);
   @include flex-cc;
   @include bodyText;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
 
   .develop {
     text-align: center;
@@ -11,76 +13,146 @@
   }
 
   .footer-containerContent {
-    margin-top: 5rem;
-    margin-bottom:1.5rem;
-    width:var(--landing-page-main-info-width);
+    margin-top: 4%;
+    margin-bottom: 1.5%;
+    width: var(--landing-page-main-info-width);
 
     .footer-innerContainer {
       background-color: white;
       border-radius: 1rem;
       @include flex-sec;
 
+      @media screen and (max-width: 990px) {
+        @include flex-cc(column);
+        .socialMedia-logo {
+          padding-top: 5%;
+        }
+        .download-heading {
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+        .ebook {
+          margin-top: 1rem;
+          margin-bottom: 1.5rem;
+        }
+        .appstore {
+          margin-top: 1%;
+          margin-bottom: 1%;
+          gap: 1rem;
+        }
+
+      }
+      @media screen and (max-width: 760px) {
+        @include flex-ss(column);
+        height: auto;
+        padding: 1rem;
+        background-color: var(--ip-border-clr);
+        color: var(--lightest-bg-color);
+        gap: 2rem;
+
+        .footer-navlink {
+          color: var(--lightest-bg-color);
+        }
+        #quick-links {
+          color: var(--lightest-bg-color);
+        }
+        
+
+        .socialMedia-logo {
+          padding-top: 5%;
+        }
+        .download-heading {
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+        .ebook {
+          margin-top: 1rem;
+          margin-bottom: 1.5rem;
+        }
+        .appstore {
+          margin-top: 1%;
+          margin-bottom: 1%;
+          gap: 1rem;
+        }
+      }
       .footer-logo {
-        @include flex-cs(column);
+        @include flex-ss(column);
         gap: 1rem;
-        margin-top: 0.5rem;
-        margin-bottom: 2rem;
+        margin-top: 0.5%;
+        margin-bottom: 2%;
 
         .footer-companyIcon {
-          width: 10rem;
-          height: 10rem;
-          margin-left: 10rem;
+          width: 22%;
+          height: 22%;
+          margin-left: 30%;
         }
         .p {
-          margin-left: 5rem;
+          margin-left: 5%;
         }
 
         .footer-address {
           @include flex-ss;
-          gap: 0.6rem;
+          gap: 1rem;
 
           .Icon {
-            margin-top: 0.5rem;
+            margin-top: 2%;
           }
         }
       }
 
-      .footer-quickLinks {
-        @include flex-ss(column);
-        gap: 2rem;
-        .element {
-          .footer-link {
-            li {
-              list-style-type: none;
-              text-decoration: none;
-              margin-bottom: 0.4rem;
-              .footer-navlink {
+      // @media (max-width: 576px) {
+      //   .footer-quickLinks {
+      //     display: none;
+      //   }
+      // }
+      // @media (max-width: 576px) {
+      //   .footer-support {
+      //     display: none;
+      //   }
+      // }
+
+      .quicklink-support {
+        @include flex-sbs;
+        gap: 10rem;
+        .footer-quickLinks {
+          @include flex-ss(column);
+          gap: 2rem;
+          .element {
+            .footer-link {
+              li {
+                list-style-type: none;
                 text-decoration: none;
-                color: var(--darkest-bg-color);
+                margin-bottom: 0.4rem;
+                .footer-navlink {
+                  text-decoration: none;
+                  color: var(--darkest-bg-color);
+                }
               }
+            }
+          }
+        }
+  
+        .footer-support {
+          @include flex-ss(column);
+  
+          gap: 2rem;
+  
+          .footer-support-link {
+            .point {
+              margin-top: 0.4rem;
             }
           }
         }
       }
 
-      .footer-support {
-        @include flex-ss(column);
-
-        gap: 2rem;
-
-        .footer-support-link {
-          .point {
-            margin-top: 0.4rem;
-          }
-        }
-      }
+     
 
       .footer-joinUs {
         .socialMedia-logo {
           @include flex-ss(row);
-          gap: 1.1rem;
-          margin-top: 1.2rem;
-          margin-bottom: 0.9rem;
+          gap: 1.4rem;
+          margin-top: 1.2%;
+          margin-bottom: 0.9%;
         }
         p {
           margin-top: 0.2rem;
@@ -89,7 +161,7 @@
           @include flex-ss(row);
           gap: 2rem;
           margin-top: 0.3rem;
-          .app{
+          .app {
             width: 12rem;
             height: 6rem;
             border-radius: 1.5rem;
@@ -107,6 +179,145 @@
   //   text-decoration-line: none;
   //   text-decoration-color:none;
   // }
-  
 }
 
+// .footer-mainContainer {
+//   padding-bottom: 1%;
+//   background-color: var(--ip-border-clr);
+//   @include flex-cc;
+//   @include bodyText;
+
+//   .develop {
+//     text-align: center;
+//     color: var(--lightest-bg-color);
+//   }
+
+//   .footer-containerContent {
+//     margin-top: 5rem;
+//     margin-bottom: 1.5rem;
+//     width: 100%; /* Adjusted to full width for responsiveness */
+
+//     .footer-innerContainer {
+//       background-color: white;
+//       border-radius: 1rem;
+//       @include flex-sec;
+//       flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+
+//       .footer-logo {
+//         @include flex-cs(column);
+//         gap: 1rem;
+//         margin-top: 1rem; /* Adjusted for spacing */
+//         margin-bottom: 2rem;
+
+//         .footer-companyIcon {
+//           width: 100%; /* Adjusted to full width for responsiveness */
+//           max-width: 200px; /* Set maximum width for the logo */
+//           height: auto; /* Ensures aspect ratio is maintained */
+//           margin: 0 auto; /* Center align on mobile */
+//         }
+
+//         .footer-address {
+//           @include flex-ss(column);
+//           gap: 0.6rem;
+//           text-align: center; /* Center align text on mobile */
+//         }
+//       }
+// @media (max-width: 576px) {
+//   .footer-quickLinks {
+//     display: none;
+//   }
+// }
+// @media (max-width: 576px) {
+//   .footer-support {
+//     display: none;
+//   }
+// }
+
+//       .footer-quickLinks{
+//         @include flex-ss(column);
+//         gap: 2rem;
+//         .element {
+//           .footer-link {
+//             li {
+//               list-style-type: none;
+//               text-decoration: none;
+//               margin-bottom: 0.4rem;
+//               .footer-navlink {
+//                 text-decoration: none;
+//                 color: var(--darkest-bg-color);
+//               }
+//             }
+//           }
+//         }
+
+//       }
+//       .footer-support{
+//         @include flex-ss(column);
+
+//         gap: 2rem;
+
+//         .footer-support-link {
+//           .point {
+//             margin-top: 0.4rem;
+//           }
+//         }
+
+//       }
+//       .footer-joinUs {
+//         @include flex-ss(column);
+//         gap: 2rem;
+//         width: 100%; /* Adjusted to full width for responsiveness */
+//         text-align: center; /* Center align text on mobile */
+
+//         @media (max-width: 768px) { /* Hide on mobile devices */
+//           display: none;
+//         }
+//       }
+
+//       .element {
+//         .footer-link {
+//           li {
+//             list-style-type: none;
+//             text-decoration: none;
+//             margin-bottom: 0.4rem;
+
+//             .footer-navlink {
+//               text-decoration: none;
+//               color: var(--darkest-bg-color);
+//             }
+//           }
+//         }
+//       }
+
+//       .footer-joinUs {
+//         .socialMedia-logo {
+//           @include flex-ss(row);
+//           gap: 1.1rem;
+//           margin-top: 1.2rem;
+//           margin-bottom: 0.9rem;
+//           justify-content: center; /* Center align social icons on mobile */
+//         }
+//         p {
+//           margin-top: 0.2rem;
+//         }
+//         .appstore {
+//           @include flex-ss(row);
+//           gap: 2rem;
+//           margin-top: 0.3rem;
+//           justify-content: center; /* Center align app icons on mobile */
+
+//           .app {
+//             width: 100%; /* Adjusted to full width for responsiveness */
+//             max-width: 150px; /* Set maximum width for app icons */
+//             height: auto; /* Ensures aspect ratio is maintained */
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .footer-navlink {
+//     text-decoration: none;
+//     color: var(--darkest-bg-color);
+//   }
+// }

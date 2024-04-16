@@ -1,0 +1,25 @@
+.main-container{
+
+    width:var(--landing-page-main-info-width);
+    @include flex-cs(column);
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    .benifits{
+        color: var(--primary-color);
+    }
+
+    .heading-whyCompetishun{
+        // color: var(--landing-dark-bg-color);
+        color: var(--landing-secondary-color);
+    }
+
+    .box1{
+        @include flex-cc;
+        gap:2vh;  
+        margin-top:0.2%;
+    }
+    #abc{
+      margin-top: 1%;
+    }
+}
