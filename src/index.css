@@ -2732,6 +2732,150 @@ button {
   align-items: center;
   padding-top: 10rem;
 }
+.Landing-Page-Main-Container .TestimonialsSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  padding: 3rem 0;
+  width: 100%;
+  background-color: var(--landing-dark-bg-color);
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: var(--landing-page-main-info-width);
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--landing-primary-color);
+  margin-bottom: 1rem;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: var(--landing-medium-bg-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain h3 span {
+  color: var(--landing-secondary-color);
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp {
+  transition: all 0.2s;
+  scroll-behavior: smooth;
+  display: flex;
+  width: 90%;
+  position: relative;
+  z-index: 1;
+  scroll-snap-type: x proximity;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 2rem;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp::-webkit-scrollbar {
+  display: none;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 40rem;
+  min-height: 27.3rem;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content {
+  padding: 0 2rem;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item {
+  text-align: center;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-img-block {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-img-block .testimonial-img {
+  display: inline-block;
+  max-width: 13.6rem;
+  height: 13.6rem;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-img-block .testimonial-play-btn {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(20%, 20%);
+  max-width: 80px;
+  height: 50px;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-desc {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--landing-medium-bg-color);
+  margin-bottom: 1.6rem;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--landing-medium-bg-color);
+  line-height: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--landing-medium-bg-color);
+  line-height: 2.1rem;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-as-a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--golden-color);
+  line-height: 2.1rem;
+  margin-top: 1.6rem;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+  width: 5rem;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .arrow img {
+  width: 100%;
+  height: 10rem;
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .arrow.left-arrow {
+  transform: rotate(180deg) translateX(50%);
+}
+.Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .arrow.right-arrow {
+  transform: translateX(50%);
+}
 
 .modal-overlay {
   position: fixed;
