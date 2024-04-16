@@ -1,15 +1,20 @@
-// import CoursesSection from "../../components/LandingComponent/CoursesSection";
+import LandingFAQ from '../../components/LandingComponent/LandingFAQ';
+import LandingHomeSection from '../../components/LandingComponent/LandingHomeSection';
 
-import ResultSection from "../../components/LandingComponent/ResultSection";
+import LandingTestimonials from '../../components/LandingComponent/LandingTestimonials';
 
-// import { ResultSection } from "../../components/LandingComponent/ResultSection";
+import CoursesSection from '../../components/LandingComponent/CoursesSection';
+
+import ResultSection from '../../components/LandingComponent/ResultSection';
+
 const LandingPage = () => {
   return (
     <div className="Landing-Page-Main-Container">
-   {/* <CoursesSection />
-    */}
-    <ResultSection />
-      </div>
+      <LandingHomeSection />
+      <LandingTestimonials />
+      <LandingFAQ />
+      <CoursesSection />
+      <ResultSection />
+    </div>
   );
 };
-export default LandingPage;

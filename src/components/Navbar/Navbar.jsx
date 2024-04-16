@@ -2,12 +2,14 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import { useEffect, useState } from 'react';
 import { RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri';
+import { FaHamburger } from 'react-icons/fa';
+import { FaCross, FaX } from 'react-icons/fa6';
 
 const Navbar = () => {
   const location = useLocation();
   const [showScrollToTop, setShowScrollToTop] = useState(true);
   const [showCoursesDropdown, setShowCoursesDropdown] = useState(false);
-
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -28,7 +30,12 @@ const Navbar = () => {
   const handleCoursesMouseLeave = () => {
     setShowCoursesDropdown(false);
   };
-
+  const handleCoursesMenuToggle = () => {
+    setShowCoursesDropdown(!showCoursesDropdown);
+  };
+  const toggleMobileMenu = () => {
+    setShowMobileMenu(!showMobileMenu);
+  };
   return (
     <div
       className={`Navbar-main-container ${
@@ -39,7 +46,10 @@ const Navbar = () => {
         <Link to="/" className="image">
           <img src={logo} alt="Competishun-logo" />
         </Link>
-        <div className="navbar-heading">
+        <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+          {showMobileMenu ? <FaX /> : <FaHamburger />}
+        </div>
+        <div className={`navbar-heading ${!showMobileMenu && 'inactive'}`}>
           <li>
             <NavLink to="/" className="navlink">
               Home
@@ -48,6 +58,7 @@ const Navbar = () => {
           <li
             onMouseEnter={handleCoursesMouseEnter}
             onMouseLeave={handleCoursesMouseLeave}
+            onClick={handleCoursesMenuToggle}
           >
             <div className="navbar-course-details">
               <div className="li-navlink">Courses</div>
