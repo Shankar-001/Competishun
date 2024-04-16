@@ -1,3 +1,5 @@
+import CountUpAnimation from "../Functions/CountUpAnimation";
+
 const About = () => {
   return (
     <div className="main-container">
@@ -20,14 +22,14 @@ const About = () => {
           {/* <h2>200+ million views  on our YouTube</h2> */}
           <div className="info-card">
             <div>
-              <h1>250+</h1>
+              <h1><CountUpAnimation initialValue={200}  targetValue={250}  text="+" /></h1>
               <p className="info-txt">
                 Millions View on our
                 <br /> Youtube Channels
               </p>
             </div>
             <div>
-              <h1>200000+</h1>
+              <h1><h1><CountUpAnimation initialValue={199990}  targetValue={200000}  text="+" /></h1></h1>
               <p className="info-txt">App Downloads</p>
             </div>
           </div>
