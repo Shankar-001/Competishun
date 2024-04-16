@@ -17,8 +17,16 @@ html {
   --primary-color: #1DA1F2;
   --secondary-color: #fad776;
   --golden-color:#FFD700;
-  
 
+  // Landing Page Variable
+
+  --landing-medium-bg-color: #A8D0E6;
+  --landing-dark-bg-color: #374785;
+  --landing-darkest-bg-color: #24305E;
+  --landing-primary-color: #F8E9A1;
+  --landing-secondary-color: #F76C6C;
+
+  --landing-bg-liner-grad: linear-gradient(104deg, #24305E 0%, #374785 50%, #A8D0E6 100%);
 
   --hero-bg-liner-grad: linear-gradient(104deg, #0061FF 30.47%, #60EFFF 108.71%);
   --text-liner-grad: linear-gradient(93deg, #0D47A1 49.87%, #2E93CA 85.58%);

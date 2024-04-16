@@ -14,6 +14,7 @@ import TestSeriesDetails from '../pages/Test Series/TestSeriesDetails';
 import { StudyFree } from '../pages/StudyFree';
 import MerchandiseDetails from '../pages/Merchandise/MerchandiseDetails';
 import { Admin } from '../pages/Admin/Admin';
+import LandingPage from '../pages/LandingPage/LandingPage';
 
 const AllRoutes = () => {
   return (
@@ -42,6 +43,7 @@ const AllRoutes = () => {
       <Route path="/about" element={<AboutUs />} />
       <Route path="/director/:name" element={<DirectorInfo />} />
       <Route path="/admin" element={<Admin />} />
+      <Route path="/enroll-now" element={<LandingPage />} />
       {/* <Route path="/*" element={<Navigate to="/" />} />  */}  
     </Routes>
   );
