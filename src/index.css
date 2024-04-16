@@ -84,35 +84,81 @@ button {
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
-  background-color: var(--ip-border-clr);
-  padding: 1% 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: var(--ip-border-clr);
+  width: 100%;
+  height: 8rem;
   position: fixed;
   z-index: 100;
 }
+.Navbar-main-container .image img {
+  width: 20rem;
+}
 .Navbar-main-container .element {
-  width: var(--landing-page-main-info-width);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: var(--landing-page-main-info-width);
+}
+.Navbar-main-container .element .mobile-menu-toggle {
+  display: none;
+}
+@media screen and (max-width: 760px) {
+  .Navbar-main-container .element .mobile-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--lightest-bg-color);
+  }
 }
 .Navbar-main-container .element .navbar-heading {
   line-height: 200%;
   gap: 3rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-weight: 400;
   font-size: 1.7rem;
 }
+@media screen and (max-width: 960px) {
+  .Navbar-main-container .element .navbar-heading {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .Navbar-main-container .element .navbar-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all 0.2s;
+    position: fixed;
+    overflow: hidden;
+    background-color: var(--ip-border-clr);
+    top: 7rem;
+    max-height: "10rem";
+    border-radius: 3rem;
+    width: 90vw;
+    padding: 1rem 6rem 1rem 2rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    gap: 1rem;
+  }
+  .Navbar-main-container .element .navbar-heading.inactive {
+    transition: all 0.2s;
+    display: none;
+  }
+}
 .Navbar-main-container .element .navbar-heading li {
   list-style-type: none;
   text-decoration: none;
+  text-wrap: nowrap;
 }
 .Navbar-main-container .element .navbar-heading li .navlink {
   text-decoration: none;
@@ -143,8 +189,11 @@ button {
   padding: 10px;
   z-index: 100;
 }
-.Navbar-main-container .image {
-  width: 22%;
+@media screen and (max-width: 760px) {
+  .Navbar-main-container .element .navbar-heading li .courses-dropdown {
+    position: relative;
+    width: 80vw;
+  }
 }
 
 .Navbar-main-container.homeroute {
