@@ -1,4 +1,6 @@
-.Landing-Page-Main-Container{
-    @include flex-sc(column);
-    padding-top: 10rem;
+.Landing-Page-Main-Container {
+  @include flex-sc(column);
+  padding-top: 7rem;
+  @import '../../components/LandingComponent/LandingHomeSection.scss';
+  @import '../../components/LandingComponent/LandingFAQ.scss';
 }

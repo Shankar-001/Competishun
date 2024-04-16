@@ -1,0 +1,50 @@
+.certificateFaq {
+  background-color: var(--light-bg-color);
+  width: 100%;
+  @include flex-cc;
+  .faqContainer {
+    width: var(--landing-page-main-info-width);
+    @include bodyText;
+    margin-bottom: 2%;
+    .faqContent {
+      @include h3;
+      margin-top: 3%;
+      margin-bottom: 3%;
+    }
+
+    .faqContent1 {
+      .faqSubContent {
+        border: 0.1rem dashed var(--landing-medium-bg-color);
+        padding: 2rem;
+        h2 {
+          @include h4;
+        }
+        margin-bottom: 2%;
+        @media (max-width: 600px) {
+          margin-bottom: 3.5%;
+        }
+
+        div {
+          @include flex-sbc;
+          cursor: pointer;
+
+          img {
+            height: 2.4rem;
+            width: 2.4rem;
+            margin-left: auto;
+          }
+        }
+
+        p {
+          @include bodyText(#696666, 1.8rem);
+          margin-top: 1%;
+          margin-right: 10%;
+          text-align: justify;
+          @media (max-width: 600px) {
+            margin-top: 1.8%;
+          }
+        }
+      }
+    }
+  }
+}
