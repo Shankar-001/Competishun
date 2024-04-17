@@ -9,7 +9,7 @@ const Layout = () => {
       {/* <NewOffer /> */}
       <Navbar />
       <AllRoutes />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

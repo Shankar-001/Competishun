@@ -17,13 +17,14 @@
   
     .my-component {
       width: 90%;
-      padding: 5%;
+      padding: 3%;
       box-sizing: border-box;
       margin: 0 auto; /* Center the component horizontally */
   
       .heading {
-        @include h2;
-        color: #fff;
+        @include flex-cc;
+        @include h1;
+        color: var(--landing-primary-color);
         font-weight: bold;
         margin-bottom: 5%;
       }

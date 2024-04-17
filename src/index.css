@@ -266,14 +266,16 @@ button {
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
 }
 .footer-mainContainer .develop {
   text-align: center;
   color: var(--lightest-bg-color);
 }
 .footer-mainContainer .footer-containerContent {
-  margin-top: 5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 4%;
+  margin-bottom: 1.5%;
   width: var(--landing-page-main-info-width);
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer {
@@ -284,57 +286,123 @@ button {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 990px) {
+  .footer-mainContainer .footer-containerContent .footer-innerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .socialMedia-logo {
+    padding-top: 5%;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .download-heading {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .ebook {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .appstore {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .footer-mainContainer .footer-containerContent .footer-innerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem;
+    background-color: var(--ip-border-clr);
+    color: var(--lightest-bg-color);
+    gap: 2rem;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-navlink {
+    color: var(--lightest-bg-color);
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer #quick-links {
+    color: var(--lightest-bg-color);
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .socialMedia-logo {
+    padding-top: 5%;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .download-heading {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .ebook {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .appstore {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    gap: 1rem;
+  }
+}
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  margin-top: 0.5%;
+  margin-bottom: 2%;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .footer-companyIcon {
-  width: 10rem;
-  height: 10rem;
-  margin-left: 10rem;
+  width: 22%;
+  height: 22%;
+  margin-left: 30%;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .p {
-  margin-left: 5rem;
+  margin-left: 5%;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .footer-address {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 0.6rem;
+  gap: 1rem;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .footer-address .Icon {
-  margin-top: 0.5rem;
+  margin-top: 2%;
 }
-.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-quickLinks {
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10rem;
+}
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-quickLinks {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
 }
-.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-quickLinks .element .footer-link li {
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-quickLinks .element .footer-link li {
   list-style-type: none;
   text-decoration: none;
   margin-bottom: 0.4rem;
 }
-.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-quickLinks .element .footer-link li .footer-navlink {
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-quickLinks .element .footer-link li .footer-navlink {
   text-decoration: none;
   color: var(--darkest-bg-color);
 }
-.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-support {
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-support {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
 }
-.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-support .footer-support-link .point {
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-support .footer-support-link .point {
   margin-top: 0.4rem;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs .socialMedia-logo {
@@ -342,9 +410,9 @@ button {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 1.1rem;
-  margin-top: 1.2rem;
-  margin-bottom: 0.9rem;
+  gap: 1.4rem;
+  margin-top: 1.2%;
+  margin-bottom: 0.9%;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs p {
   margin-top: 0.2rem;
@@ -2828,7 +2896,7 @@ button {
   gap: 5rem;
   margin-top: 11rem;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 40em) {
   .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer {
     grid-template-columns: 1fr;
     margin-top: 8rem;
@@ -2847,6 +2915,13 @@ button {
   font-weight: 700;
   font-family: var(--font-family);
   color: var(--lightest-bg-color);
+}
+@media (max-width: 40em) {
+  .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-info h1 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+  }
 }
 .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-info h1 .landing-animation-full-screen {
   color: var(--landing-primary-color);
@@ -2875,6 +2950,14 @@ button {
   letter-spacing: 0.1rem;
 }
 @media (max-width: 40em) {
+  .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-info p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 40em) {
   .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-info {
     display: flex;
     flex-direction: column;
@@ -2890,7 +2973,6 @@ button {
 }
 @media (max-width: 40em) {
   .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-img img {
-    width: 100%;
     display: none;
   }
 }
@@ -2948,6 +3030,170 @@ button {
     justify-self: center;
     margin-left: 0;
     margin-top: 2rem;
+  }
+}
+.Landing-Page-Main-Container .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Landing-Page-Main-Container .card-container .card {
+  width: 250px;
+  margin: 20px;
+  padding-bottom: 2%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.Landing-Page-Main-Container .card-container .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.Landing-Page-Main-Container .card-container .card .description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  padding: 15px;
+  color: #555;
+}
+.Landing-Page-Main-Container .card-container .card .read-more {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-left: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .Landing-Page-Main-Container .card-container .card {
+    width: calc(50% - 40px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .Landing-Page-Main-Container .card-container .card {
+    width: calc(100% - 40px);
+  }
+}
+.Landing-Page-Main-Container .result-main-conatiner {
+  background-color: var(--landing-dark-bg-color);
+  width: 100%;
+  background: linear-gradient(180deg, rgb(106, 131, 233) 20%, rgba(91, 91, 161, 0.8) 70%), url("/src/assets/LandingPage/resultimage.png");
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component {
+  width: 90%;
+  padding: 3%;
+  box-sizing: border-box;
+  margin: 0 auto; /* Center the component horizontally */
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--landing-primary-color);
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component {
+  flex: 1;
+  padding-right: 10%;
+  box-sizing: border-box;
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .sub-heading {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  color: #fff;
+  font-size: 4rem;
+}
+@media (max-width: 1048px) {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .sub-heading {
+    font-size: 2.9rem;
+  }
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .description {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: #fff;
+  padding-left: 11%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  padding-left: 9.5%;
+  color: #fff;
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 500;
+}
+@media (max-width: 1048px) {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers {
+    display: flex;
+    gap: 5%;
+  }
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component hr {
+  margin: 3% 0%;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component2 {
+  flex: 1;
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component2 img {
+  width: 100%;
+  margin-left: 10%;
+  margin-top: 16%;
+  border-radius: 10%;
+}
+@media (max-width: 800px) {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component2 {
+    display: none;
+  }
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .join-now-button {
+  padding: 2.5% 4%;
+  background-color: var(--landing-darkest-bg-color);
+  margin-left: 40%;
+  margin-top: 5%;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .join-now-button:hover {
+  background-color: #041143;
+}
+@media (min-width: 768px) {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .my-component .component2 img {
+    display: block;
   }
 }
 .Landing-Page-Main-Container .TestimonialsSection {
@@ -3158,120 +3404,31 @@ button {
     margin-top: 1.8%;
   }
 }
-.Landing-Page-Main-Container .result-main-conatiner {
-  background-color: var(--landing-dark-bg-color);
-  width: 100%;
-  background: linear-gradient(180deg, rgb(106, 131, 233) 20%, rgba(91, 91, 161, 0.8) 70%), url("/src/assets/LandingPage/resultimage.png");
-  background-size: 100%;
-  background-position: center;
-  position: relative;
+.Landing-Page-Main-Container .main-container {
+  width: var(--landing-page-main-info-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
-.Landing-Page-Main-Container .result-main-conatiner .my-component {
-  width: 90%;
-  padding: 5%;
-  box-sizing: border-box;
-  margin: 0 auto; /* Center the component horizontally */
+.Landing-Page-Main-Container .main-container .benifits {
+  color: var(--primary-color);
 }
-.Landing-Page-Main-Container .result-main-conatiner .my-component .heading {
-  font-size: 4.8rem;
-  font-weight: 600;
-  font-family: var(--font-family);
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 5%;
+.Landing-Page-Main-Container .main-container .heading-whyCompetishun {
+  color: var(--landing-secondary-color);
 }
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container {
+.Landing-Page-Main-Container .main-container .box1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component {
-  flex: 1;
-  padding-right: 10%;
-  box-sizing: border-box;
-}
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .sub-heading {
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-  color: var(--darkest-bg-color);
-  color: #fff;
-  font-size: 4rem;
-}
-@media (max-width: 1048px) {
-  .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .sub-heading {
-    font-size: 2.9rem;
-  }
-}
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .description {
-  font-size: 1.8rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-  color: #fff;
-  padding-left: 11%;
-  padding-top: 3%;
-  padding-bottom: 5%;
-}
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 5%;
-  padding-left: 9.5%;
-  color: #fff;
+  gap: 2vh;
+  margin-top: 0.2%;
 }
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers span {
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-  color: var(--darkest-bg-color);
-  font-size: 2rem;
-  color: #fff;
-  font-weight: 500;
-}
-@media (max-width: 1048px) {
-  .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers {
-    display: flex;
-    gap: 5%;
-  }
-}
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component hr {
-  margin: 3% 0%;
-  border: none;
-  border-top: 1px solid #ccc;
-}
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component2 {
-  flex: 1;
-}
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component2 img {
-  width: 100%;
-  margin-left: 10%;
-  margin-top: 16%;
-  border-radius: 10%;
-}
-@media (max-width: 800px) {
-  .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component2 {
-    display: none;
-  }
-}
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .join-now-button {
-  padding: 2.5% 4%;
-  background-color: var(--landing-darkest-bg-color);
-  margin-left: 40%;
-  margin-top: 5%;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .join-now-button:hover {
-  background-color: #041143;
-}
-@media (min-width: 768px) {
-  .Landing-Page-Main-Container .result-main-conatiner .my-component .my-component .component2 img {
-    display: block;
-  }
+.Landing-Page-Main-Container .main-container #abc {
+  margin-top: 1%;
 }
 
 .modal-overlay {
