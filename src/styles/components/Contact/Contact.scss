@@ -12,7 +12,22 @@
   @include flex-cc;
   background: var(--lightest-bg-color);
   width: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(240, 243, 255, 1)
+      10%,
+      rgba(240, 243, 255, 0.8)
+      60%
+    ),
+    url('/src/assets/Gallery/Celebration/celebration23.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  /* z-index: -2; */
 
+  animation: bgZoom 1s ease-in-out 1 forwards;
+  overflow: hidden;
   .contact-form-container {
     // background:yellow;
     width: var(--landing-page-main-info-width);
@@ -50,9 +65,9 @@
         line-height: normal;
         margin-bottom: 2rem;
         margin-top: 1%;
-       .contact-details-section-two-sub-1{
-        padding-top:2%;
-       }
+        .contact-details-section-two-sub-1 {
+          padding-top: 2%;
+        }
         @media (max-width: 600px) {
           text-align: center;
           width: 80%;
@@ -81,24 +96,21 @@
           @include flex-ss;
           gap: 1.5rem;
 
-          
-          .phone-icon{
-          font-size: 2.8rem;
-          color: blue;
-          margin-top: 1.2%;
+          .phone-icon {
+            font-size: 2.8rem;
+            color: blue;
+            margin-top: 1.2%;
           }
-          .mail-icon{
-          font-size: 4rem;
-          color: blue;
+          .mail-icon {
+            font-size: 4rem;
+            color: blue;
           }
-         
         }
-        .whatsapp-icon{
+        .whatsapp-icon {
           font-size: 4.2rem;
           color: green;
-        
         }
-        .text{
+        .text {
           padding-top: 1.2%;
           font-size: 2rem;
           text-decoration: none;
@@ -230,15 +242,16 @@
       .form-group {
         display: flex;
         padding: 0.625rem;
-        // gap: 2rem;
+        gap: 1rem;
         justify-content: space-between;
-
+      
         @media screen and (max-width: 500px) {
           flex-direction: column;
         }
 
         .form-group-input {
           width: 100%;
+          
         }
 
         .form-section-inputfield {
@@ -250,6 +263,7 @@
           gap: 0.625rem;
           margin-bottom: 1rem;
           outline: none;
+         
 
           &.error {
             border-color: red;
@@ -263,7 +277,6 @@
         .error {
           color: red;
           font-size: 1.3rem;
-          
         }
       }
 
@@ -331,9 +344,9 @@
         //  max-width: 90%;
         // max-width: 48.3rem;
       }
-      .starmarks{
+      .starmarks {
         padding-left: 1rem;
-        padding-top:3%;
+        padding-top: 3%;
         font-size: 1.3rem;
       }
     }

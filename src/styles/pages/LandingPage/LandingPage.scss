@@ -2,7 +2,10 @@
   @include flex-sc(column);
   padding-top: 7rem;
   @import '../../components/LandingComponent/LandingHomeSection.scss';
+  @import '../../components/LandingComponent/CoursesSection.scss';
+  @import '../../components/LandingComponent/ResultSection.scss';
   @import '../../components/LandingComponent/LandingTestimonial.scss';
   @import '../../components/LandingComponent/LandingFAQ.scss';
-    @import "../../components/LandingComponent/whyCompethisun.scss";
+  @import '../../components/LandingComponent/whyCompethisun.scss';
+
 }

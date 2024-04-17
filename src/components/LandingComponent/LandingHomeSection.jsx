@@ -154,7 +154,6 @@ const LandingHomeSection = () => {
 
       <div className="landing-home-contact-field">
         <form>
-          <label htmlFor="">Hello</label>
           <input
             type="text"
             name="name"
@@ -182,3 +181,4 @@ const LandingHomeSection = () => {
 };
 
 export default LandingHomeSection;
+
