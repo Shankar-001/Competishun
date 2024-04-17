@@ -56,7 +56,6 @@
         }
         @media (max-width: 40em) {
           @include flex-cc(column);
-          @include flex-cc(column);
         }
       }
 
@@ -97,6 +96,7 @@
     }
 
     @media (max-width: 40em) {
+      width: var(--landing-page-main-info-width);
       align-self: center;
       justify-self: center;
       margin: {
@@ -119,9 +119,6 @@
     font-weight: 600;
     align-self: start;
     justify-self: start;
-    &:hover {
-      background-color: var(--golden-color);
-    }
 
     @media (max-width: 40em) {
       align-self: center;

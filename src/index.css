@@ -3028,9 +3028,6 @@ button {
   align-self: start;
   justify-self: start;
 }
-.Landing-Page-Main-Container .landing-highlight .btn:hover {
-  background-color: var(--golden-color);
-}
 @media (max-width: 40em) {
   .Landing-Page-Main-Container .landing-highlight .btn {
     align-self: center;
