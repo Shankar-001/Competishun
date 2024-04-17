@@ -1,25 +1,75 @@
-.main-container{
+.main-container {
+  width: var(--landing-page-main-info-width);
+  @include flex-cs(column);
+  @include bodyText;
+  margin: 1% 0;
+  @media screen and (max-width: 1200px) {
+    margin: 5% 0;
+  }
 
-    width:var(--landing-page-main-info-width);
-    @include flex-cs(column);
-    margin-top: 1%;
-    margin-bottom: 1%;
+  .inner-container {
+    @include flex-sbc;
+    width: 100%;
 
-    .benifits{
-        color: var(--primary-color);
+    .heading-whyCompetishun {
+      // color: var(--landing-dark-bg-color);
+      color: var(--landing-secondary-color);
+      //   font-size: 6.2rem;
+      margin-bottom: 3%;
+      @include h1;
+      @media screen and (max-width: 1200px) {
+        // @include h2;
+        @include font-style(4rem, 600);
+      }
+      // span{
+      //     color:orange;
+      // }
     }
 
-    .heading-whyCompetishun{
-        // color: var(--landing-dark-bg-color);
-        color: var(--landing-secondary-color);
+    .box1 {
+      @include flex-sc;
+      gap: 2.5rem;
+      margin-top: 0.2%;
+      margin-bottom: 1.5%;
+      align-items: flex-start;
+
+      .check-logo{
+        .check{
+         font-size: 3.6rem;
+
+         @media screen and (max-width: 1100px) {
+           
+            font-size: 2.5rem;
+         }
+
+        }
+      }
+
+      .info {
+        p {
+          font-size: 2.5rem;
+          @media screen and (max-width: 1200px) {
+            font-size: 1.8rem;
+          }
+        }
+      }
     }
 
-    .box1{
-        @include flex-cc;
-        gap:2vh;  
-        margin-top:0.2%;
+    .image {
+      @media screen and (max-width: 1100px) {
+        .student-image {
+          display: none;
+        }
+      }
+      .student-image {
+        position: relative;
+        height: 45rem;
+        width: 45rem;
+        right: 12%;
+      }
     }
-    #abc{
-      margin-top: 1%;
-    }
+  }
+
+  
 }
+

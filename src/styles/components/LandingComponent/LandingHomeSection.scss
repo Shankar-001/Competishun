@@ -72,7 +72,6 @@
   }
 
   .landing-home-contact-field {
-    width: var(--landing-page-main-info-width);
     margin: {
       top: 5rem;
       bottom: 2.5rem;
@@ -97,6 +96,7 @@
     }
 
     @media (max-width: 40em) {
+      width: var(--landing-page-main-info-width);
       align-self: center;
       justify-self: center;
       margin: {
