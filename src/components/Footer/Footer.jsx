@@ -158,26 +158,26 @@ const Footer = () => {
                 href="https://www.facebook.com/mohit.tyagi.775"
                 target="_blank"
               >
-                <FaFacebook fontSize={32} color="#316FF6" />
+                <FaFacebook fontSize={30} color="#316FF6" className='icons' />
               </a>
 
               <a href="https://www.youtube.com/@MohitTyagi" target="_blank">
-                <FaYoutube fontSize={32} color="red" />
+                <FaYoutube fontSize={30} color="red" />
               </a>
               <a href="https://twitter.com/mohittyagi" target="_blank">
                 <FaSquareXTwitter fontSize={32} color="black" />
               </a>
               <a href="https://t.me/competishun_official" target="_blank">
-                <FaTelegram fontSize={32} color="#0088cc" />
+                <FaTelegram fontSize={30} color="#0088cc" />
               </a>
               <a
                 href="https://www.instagram.com/competishun/?hl=en"
                 target="_blank"
               >
-                <FaInstagram fontSize={32} color="#bc1888 " />
+                <FaInstagram fontSize={30} color="#bc1888 " />
               </a>
               <a href="https://wa.link/xa00yu" target="_blank">
-                <IoLogoWhatsapp fontSize={32} color="#25D366" />
+                <IoLogoWhatsapp fontSize={30} color="#25D366" />
               </a>
             </div>
 

@@ -272,6 +272,8 @@ button {
 .footer-mainContainer .develop {
   text-align: center;
   color: var(--lightest-bg-color);
+  font-weight: 300;
+  padding-top: 1%;
 }
 .footer-mainContainer .footer-containerContent {
   margin-top: 4%;
@@ -2977,7 +2979,6 @@ button {
   }
 }
 .Landing-Page-Main-Container .landing-highlight .landing-home-contact-field {
-  width: var(--landing-page-main-info-width);
   margin-top: 5rem;
   margin-bottom: 2.5rem;
   margin-left: 5%;
@@ -2998,6 +2999,7 @@ button {
 }
 @media (max-width: 40em) {
   .Landing-Page-Main-Container .landing-highlight .landing-home-contact-field {
+    width: var(--landing-page-main-info-width);
     align-self: center;
     justify-self: center;
     margin-top: 2rem;
@@ -3411,25 +3413,74 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  margin: 1% 0;
 }
-.Landing-Page-Main-Container .main-container .benifits {
-  color: var(--primary-color);
+@media screen and (max-width: 1200px) {
+  .Landing-Page-Main-Container .main-container {
+    margin: 5% 0;
+  }
 }
-.Landing-Page-Main-Container .main-container .heading-whyCompetishun {
-  color: var(--landing-secondary-color);
-}
-.Landing-Page-Main-Container .main-container .box1 {
+.Landing-Page-Main-Container .main-container .inner-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 2vh;
-  margin-top: 0.2%;
+  width: 100%;
 }
-.Landing-Page-Main-Container .main-container #abc {
-  margin-top: 1%;
+.Landing-Page-Main-Container .main-container .inner-container .heading-whyCompetishun {
+  color: var(--landing-secondary-color);
+  margin-bottom: 3%;
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+}
+@media screen and (max-width: 1200px) {
+  .Landing-Page-Main-Container .main-container .inner-container .heading-whyCompetishun {
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+  }
+}
+.Landing-Page-Main-Container .main-container .inner-container .box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 0.2%;
+  margin-bottom: 1.5%;
+  align-items: flex-start;
+}
+.Landing-Page-Main-Container .main-container .inner-container .box1 .check-logo .check {
+  font-size: 3.6rem;
+}
+@media screen and (max-width: 1100px) {
+  .Landing-Page-Main-Container .main-container .inner-container .box1 .check-logo .check {
+    font-size: 2.5rem;
+  }
+}
+.Landing-Page-Main-Container .main-container .inner-container .box1 .info p {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 1200px) {
+  .Landing-Page-Main-Container .main-container .inner-container .box1 .info p {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .Landing-Page-Main-Container .main-container .inner-container .image .student-image {
+    display: none;
+  }
+}
+.Landing-Page-Main-Container .main-container .inner-container .image .student-image {
+  position: relative;
+  height: 45rem;
+  width: 45rem;
+  right: 12%;
 }
 
 .modal-overlay {
