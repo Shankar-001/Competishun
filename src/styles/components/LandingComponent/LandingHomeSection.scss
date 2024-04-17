@@ -55,7 +55,7 @@
           }
         }
         @media (max-width: 40em) {
-          @include flex-cc(column)
+          @include flex-cc(column);
         }
       }
 
@@ -118,6 +118,9 @@
     font-weight: 600;
     align-self: start;
     justify-self: start;
+    &:hover {
+      background-color: var(--golden-color);
+    }
 
     @media (max-width: 40em) {
       align-self: center;
@@ -177,7 +180,7 @@
           letter-spacing: 0.1rem;
         }
         @media (max-width: 40em) {
-          @include flex-cc(column)
+          @include flex-cc(column);
         }
       }
 
