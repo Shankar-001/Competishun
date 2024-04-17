@@ -3700,6 +3700,29 @@ button {
   width: 45rem;
   right: 12%;
 }
+.Landing-Page-Main-Container .main-container .btn {
+  padding: var(--btn-tb-pad) var(--btn-lr-pad);
+  background: var(--landing-primary-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  color: var(--landing-darkest-bg-color);
+  border-radius: 0.5rem;
+  width: fit-content;
+  padding: 1rem 5rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  align-self: center;
+  justify-self: center;
+}
+@media (max-width: 40em) {
+  .Landing-Page-Main-Container .main-container .btn {
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+  }
+}
 
 .modal-overlay {
   position: fixed;
