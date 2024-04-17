@@ -55,7 +55,7 @@
           }
         }
         @media (max-width: 40em) {
-          @include flex-cc(column)
+          @include flex-cc(column);
         }
       }
 
@@ -72,129 +72,7 @@
   }
 
   .landing-home-contact-field {
-    margin: {
-      top: 5rem;
-      bottom: 2.5rem;
-      left: 5%;
-    }
-    align-self: start;
-    justify-self: start;
-
-    form {
-      input {
-        border: 0.2rem solid var(--landing-medium-bg-color);
-        border-radius: 1rem;
-        margin-bottom: 2rem;
-        height: 4.5rem;
-        width: 100%;
-        padding: 1.4rem;
-        box-shadow: inset 0px 0px 10px 0px rgba(73, 107, 126, 0.75);
-        &.error {
-          border-color: red;
-        }
-      }
-    }
-
-    @media (max-width: 40em) {
-      align-self: center;
-      justify-self: center;
-      margin: {
-        top: 2rem;
-        left: 0;
-        bottom: 2rem;
-      }
-    }
-  }
-
-  .btn {
-    @include btn(var(--landing-primary-color), var(--landing-darkest-bg-color));
-    @include flex-cc;
-    border-radius: 0.5rem;
-    width: fit-content;
-    margin: {
-      bottom: 2.5rem;
-      left: 5%;
-    }
-    font-weight: 600;
-    align-self: start;
-    justify-self: start;
-
-    @media (max-width: 40em) {
-      align-self: center;
-      justify-self: center;
-      margin-left: 0;
-      margin-top: 2rem;
-    }
-  }
-}
-.landing-highlight {
-  @include grid-cc;
-  @include bodyText;
-  background: var(--landing-bg-liner-grad);
-  width: 100%;
-
-  .landing-info-container {
     width: var(--landing-page-main-info-width);
-    opacity: 0.9;
-    // @include grid-cc;
-
-    .landing-info-subcontainer {
-      @include grid-ss;
-      @include grid-n-col((2fr, 1fr));
-      gap: 5rem;
-      margin-top: 11rem;
-      @media (max-width: 40em) {
-        @include grid-n-col((1fr));
-        margin-top: 8rem;
-        gap: 3rem;
-      }
-
-      .landing-info {
-        @include flex-ss(column);
-        width: 100%;
-        h1 {
-          @include h1;
-          color: var(--lightest-bg-color);
-
-          .landing-animation-full-screen {
-            color: var(--landing-primary-color);
-            @media (max-width: 40em) {
-              display: none;
-            }
-          }
-          .landing-animation-media-screen {
-            color: var(--landing-primary-color);
-            display: none;
-            @media (max-width: 40em) {
-              display: block;
-              height: 10rem;
-            }
-          }
-        }
-        p {
-          @include bodyText;
-          color: var(--landing-medium-bg-color);
-          letter-spacing: 0.1rem;
-        }
-        @media (max-width: 40em) {
-          @include flex-cc(column)
-        }
-      }
-
-      .landing-img {
-        @include flex-cc;
-
-        img {
-          @media (max-width: 40em) {
-            width: 100%;
-            display: none;
-          }
-        }
-      }
-    }
-  }
-
-  .landing-home-contact-field {
     margin: {
       top: 5rem;
       bottom: 2.5rem;
