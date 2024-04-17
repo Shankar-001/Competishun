@@ -5,6 +5,7 @@ import LandingTestimonials from "../../components/LandingComponent/LandingTestim
 import LandingWhyCompethisun from "../../components/LandingComponent/LandingWhyCompethisun"
 import ResultSection from "../../components/LandingComponent/ResultSection"
 
+
 const LandingPage = () => {
   return (
     <div className="Landing-Page-Main-Container">
