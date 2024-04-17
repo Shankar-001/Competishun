@@ -16,6 +16,7 @@
 
     .mobile-menu-toggle {
       display: none;
+      font-size: 2.2rem;
       @media screen and (max-width: 760px) {
         @include flex-cc(column);
         cursor: pointer;
