@@ -2,6 +2,7 @@
   @include flex-sc(column);
   padding-top: 7rem;
   @import '../../components/LandingComponent/LandingHomeSection.scss';
+  @import '../../components/LandingComponent/LandingVideo.scss';
   @import '../../components/LandingComponent/LandingDirector.scss';
   @import '../../components/LandingComponent/CoursesSection.scss';
   @import '../../components/LandingComponent/ResultSection.scss';
