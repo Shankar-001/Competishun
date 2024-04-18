@@ -55,7 +55,7 @@ const CoursesSection = () => {
         <p className="main-heading-desc">
           Embark on your journey to success by selecting your desired exam
           category from the comprehensive list of options provided by
-          Competihun.
+          Competishun.
         </p>
       </div>
 

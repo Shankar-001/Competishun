@@ -1,21 +1,22 @@
 .TestimonialsSection {
+  // background: var(--landing-bg-liner-grad);
   @include flex-cc;
   @include bodyText;
   padding: 3rem 0;
   width: 100%;
-  background-color: var(--landing-dark-bg-color);
+  // background-color: var(--landing-dark-bg-color);
   .containerMain {
     @include flex-cc(column);
     width: var(--landing-page-main-info-width);
 
     h1 {
       @include h1;
-      color: var(--landing-primary-color);
+      color: var(--landing-main-head-color);
       margin-bottom: 1rem;
     }
     h3{
       @include h3;
-      color: var(--landing-medium-bg-color);
+      color: var(--landing-sub-head-color);
       margin-bottom: 2rem;
       text-align: center;
       span{
