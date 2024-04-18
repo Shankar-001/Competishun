@@ -18,12 +18,12 @@ export const LandingWhyCompethisun = () => {
               <GiFlowerStar color="orange" className="check" />
             </div>
             <div className="info">
-              <a
+             
+                <p>Course Features <a
                 href="https://youtu.be/l2tLkv_t15k?feature=shared"
                 target="_blank"
-              >
-                <p>Course Features <span>Watch-Now</span></p>
-              </a>
+              ><span>Watch-Now</span> </a></p>
+             
             </div>
             {/* <div className="info">
               <a
@@ -40,12 +40,12 @@ export const LandingWhyCompethisun = () => {
               <GiFlowerStar color="orange" className="check" />
             </div>
             <div className="info">
-              <a
+             
+                <p>Why Join Us? Competishun Advantage!  <a
                 href="https://youtu.be/06dJv3gJX88?feature=shared"
                 target="_blank"
-              >
-                <p>Why Join Us? Competishun Advantage! <span>Watch-Now</span></p>
-              </a>
+              > <span>Watch-Now</span> </a></p>
+             
             </div>
           </div>
 
@@ -54,12 +54,12 @@ export const LandingWhyCompethisun = () => {
               <GiFlowerStar color="orange" className="check" />
             </div>
             <div className="info">
-              <a
+             
+                <p>Preparation Stages  <a
                 href="https://youtu.be/iR5ZCto7Td4?feature=shared"
                 target="_blank"
-              >
-                <p>Preparation Stages <span>Watch-Now</span></p>
-              </a>
+              ><span>Watch-Now</span></a></p>
+              
             </div>
           </div>
 
@@ -68,12 +68,12 @@ export const LandingWhyCompethisun = () => {
               <GiFlowerStar color="orange" className="check" />
             </div>
             <div className="info">
-              <a
+              
+                <p>General Question <a
                 href="https://youtu.be/50hiqJY_8h0?feature=shared"
                 target="_blank"
-              >
-                <p>General Question <span>Watch-Now</span></p>
-              </a>
+              ><span>Watch-Now</span> </a></p>
+             
             </div>
           </div>
 
@@ -82,12 +82,12 @@ export const LandingWhyCompethisun = () => {
               <GiFlowerStar color="orange" className="check" />
             </div>
             <div className="info">
-              <a
+              
+                <p>Online Vs Offline <a
                 href="https://youtu.be/JKg9Ked2aIk?feature=shared"
                 target="_blank"
-              >
-                <p>Online Vs Offline <span>Watch-Now</span></p>
-              </a>
+              ><span>Watch-Now</span></a></p>
+              
             </div>
           </div>
 
@@ -96,12 +96,12 @@ export const LandingWhyCompethisun = () => {
               <GiFlowerStar color="orange" className="check" />
             </div>
             <div className="info">
-              <a
+            
+                <p>Kota vs Jaipur vs Home   <a
                 href="https://youtu.be/qjr3_qtdWFg?feature=shared"
                 target="_blank"
-              >
-                <p>Kota vs Jaipur vs Home <span>Watch-Now</span></p>
-              </a>
+              ><span>Watch-Now</span></a></p>
+              
             </div>
           </div>
         </div>
