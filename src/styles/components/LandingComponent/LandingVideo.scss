@@ -7,6 +7,13 @@
     width: var(--landing-page-main-info-width);
     // border-radius: 50%;
     @include flex-cc(column);
+
+    .header {
+      h1 {
+        @include h1;
+        color: var(--landing-primary-color);
+      }
+    }
     .video-container {
       @include flex-cc;
       width: 100%;

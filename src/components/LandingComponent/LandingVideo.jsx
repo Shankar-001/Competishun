@@ -14,6 +14,9 @@ const LandingVideo = () => {
   return (
     <div className="landing-video-container">
       <div className="width-container">
+        <div className="header">
+            <h1>Watch Our Video</h1>
+        </div>
         <div className="video-container">
           {showVideo ? (
             <iframe
@@ -35,7 +38,7 @@ const LandingVideo = () => {
                 <div class="waves-block">
                   <div class="waves wave-1"></div>
                   <div class="waves wave-2"></div>
-                  <div class="waves wave-3"></div>
+                  {/* <div class="waves wave-3"></div> */}
                 </div>
 
                 {/* <img src={playIcon} className="fa-play" alt="Play Icon" /> */}

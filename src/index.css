@@ -3052,6 +3052,12 @@ button {
   justify-content: center;
   align-items: center;
 }
+.Landing-Page-Main-Container .landing-video-container .width-container .header h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--landing-primary-color);
+}
 .Landing-Page-Main-Container .landing-video-container .width-container .video-container {
   display: flex;
   flex-direction: row;
