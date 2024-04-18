@@ -3052,6 +3052,12 @@ button {
   justify-content: center;
   align-items: center;
 }
+.Landing-Page-Main-Container .landing-video-container .width-container .header h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--landing-primary-color);
+}
 .Landing-Page-Main-Container .landing-video-container .width-container .video-container {
   display: flex;
   flex-direction: row;
@@ -3133,6 +3139,36 @@ button {
   width: 100%;
   aspect-ratio: 16/9;
   border-radius: 4%;
+}
+.Landing-Page-Main-Container .landing-video-container .width-container .btn {
+  padding: var(--btn-tb-pad) var(--btn-lr-pad);
+  background: var(--golden-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  color: var(--landing-darkest-bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: fit-content;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  margin-left: 5%;
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--landing-darkest-bg-color);
+}
+@media (max-width: 40em) {
+  .Landing-Page-Main-Container .landing-video-container .width-container .btn {
+    align-self: center;
+    justify-self: center;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
 }
 @keyframes waves {
   0% {

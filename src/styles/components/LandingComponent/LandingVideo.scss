@@ -7,6 +7,13 @@
     width: var(--landing-page-main-info-width);
     // border-radius: 50%;
     @include flex-cc(column);
+
+    .header {
+      h1 {
+        @include h1;
+        color: var(--landing-primary-color);
+      }
+    }
     .video-container {
       @include flex-cc;
       width: 100%;
@@ -95,6 +102,25 @@
         border-radius: 4%;
       }
     }
+    .btn {
+    @include btn(var(--golden-color), var(--landing-darkest-bg-color));
+    @include flex-cc;
+    border-radius: 0.5rem;
+    width: fit-content;
+    margin: {
+      bottom: 2.5rem;
+      top: 2.5rem;
+      left: 5%;
+    }
+    @include bodyText(var(--landing-darkest-bg-color),2.4rem,700);
+
+    @media (max-width: 40em) {
+      align-self: center;
+      justify-self: center;
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+  }
   }
 }
 
