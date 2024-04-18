@@ -1,6 +1,7 @@
 .Landing-Page-Main-Container {
   @include flex-sc(column);
   padding-top: 7rem;
+  background: var(--landing-bg-liner-grad);
   @import '../../components/LandingComponent/LandingHomeSection.scss';
   @import '../../components/LandingComponent/LandingVideo.scss';
   @import '../../components/LandingComponent/LandingDirector.scss';

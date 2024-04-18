@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import videoThumbnail from '../../assets/Courses/ArjunOffline.jpg';
+import videoThumbnail from '../../assets/LandingPage/Prakhar.jpg';
 
 import playIcon from '../../assets/important/play-button.svg';
 import { FaPlayCircle } from 'react-icons/fa';

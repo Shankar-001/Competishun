@@ -39,12 +39,12 @@
       .testimonial-desc {
         font-size: 1.6rem;
         line-height: 2.4rem;
-        color: var(--landing-medium-bg-color);
+        color: var(--landing-desc-color);
         margin-bottom: 1.6rem;
       }
 
       .testimonial-name {
-        @include bodyText(var(--landing-medium-bg-color),1.8rem,700);
+        @include bodyText(var(--landing-desc-color),1.8rem,700);
         line-height: 2.4rem;
         margin-bottom: 1.6rem;
       }

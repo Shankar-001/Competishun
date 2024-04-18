@@ -12,10 +12,9 @@ const LandingPage = () => {
     <div className="Landing-Page-Main-Container">
       <LandingHomeSection />
       <LandingVideo />
-      <LandingDirector />
       <LandingWhyCompethisun />
-      <ResultSection />
       <LandingTestimonials />
+      <ResultSection />
       <CoursesSection />
       <LandingFAQ />
     </div>

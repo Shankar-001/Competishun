@@ -17,7 +17,12 @@ html {
   --landing-darkest-bg-color: #24305E;
   --landing-primary-color: #F8E9A1;
   --landing-secondary-color: #F76C6C;
-  --landing-bg-liner-grad: linear-gradient(104deg, #24305E 0%, #374785 50%, #A8D0E6 100%);
+  --landing-desc-color: #ced1da;
+  --landing-main-head-color: white;
+  --landing-sub-head-color: #6495ED;
+  --landing-btn-background-color: var(--golden-color);
+  --landing-button-color: #23103A;
+  --landing-bg-liner-grad: linear-gradient(100deg, #24305E 35%, #374785 70%, #A8D0E6 100%);
   --hero-bg-liner-grad: linear-gradient(104deg, #0061FF 30.47%, #60EFFF 108.71%);
   --text-liner-grad: linear-gradient(93deg, #0D47A1 49.87%, #2E93CA 85.58%);
   --ip-border-clr: #243a50;
@@ -267,8 +272,6 @@ button {
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
 }
 .footer-mainContainer .develop {
   text-align: center;
@@ -2875,6 +2878,7 @@ button {
   justify-content: flex-start;
   align-items: center;
   padding-top: 7rem;
+  background: var(--landing-bg-liner-grad);
 }
 .Landing-Page-Main-Container .landing-highlight {
   display: grid;
@@ -2884,7 +2888,6 @@ button {
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
-  background: var(--landing-bg-liner-grad);
   width: 100%;
 }
 .Landing-Page-Main-Container .landing-highlight .landing-info-container {
@@ -2917,7 +2920,7 @@ button {
   font-size: 6rem;
   font-weight: 700;
   font-family: var(--font-family);
-  color: var(--lightest-bg-color);
+  color: var(--landing-main-head-color);
 }
 @media (max-width: 40em) {
   .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-info h1 {
@@ -2945,12 +2948,11 @@ button {
   }
 }
 .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-info p {
-  font-size: 1.6rem;
+  color: var(--landing-desc-color);
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
   font-weight: 400;
   font-family: var(--font-family);
-  color: var(--darkest-bg-color);
-  color: var(--landing-medium-bg-color);
-  letter-spacing: 0.1rem;
 }
 @media (max-width: 40em) {
   .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-info p {
@@ -2990,6 +2992,7 @@ button {
   border: 0.2rem solid var(--landing-medium-bg-color);
   border-radius: 1rem;
   margin-bottom: 2rem;
+  background-color: var(--light-bg-color);
   height: 4.5rem;
   width: 100%;
   padding: 1.4rem;
@@ -3010,21 +3013,23 @@ button {
 }
 .Landing-Page-Main-Container .landing-highlight .btn {
   padding: var(--btn-tb-pad) var(--btn-lr-pad);
-  background: var(--landing-primary-color);
+  background: var(--landing-btn-background-color);
   font-size: 1.6rem;
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
-  color: var(--landing-darkest-bg-color);
+  color: var(--landing-button-color);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
   width: fit-content;
+  padding: 1rem 2rem;
   margin-bottom: 2.5rem;
   margin-left: 5%;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 2.4rem;
   align-self: start;
   justify-self: start;
 }
@@ -3042,7 +3047,6 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #064663;
   padding: 2rem 0;
 }
 .Landing-Page-Main-Container .landing-video-container .width-container {
@@ -3052,11 +3056,14 @@ button {
   justify-content: center;
   align-items: center;
 }
+.Landing-Page-Main-Container .landing-video-container .width-container .header {
+  margin: 2rem 0;
+}
 .Landing-Page-Main-Container .landing-video-container .width-container .header h1 {
   font-size: 6rem;
   font-weight: 700;
   font-family: var(--font-family);
-  color: var(--landing-primary-color);
+  color: var(--landing-main-head-color);
 }
 .Landing-Page-Main-Container .landing-video-container .width-container .video-container {
   display: flex;
@@ -3142,32 +3149,26 @@ button {
 }
 .Landing-Page-Main-Container .landing-video-container .width-container .btn {
   padding: var(--btn-tb-pad) var(--btn-lr-pad);
-  background: var(--golden-color);
+  background: var(--landing-btn-background-color);
   font-size: 1.6rem;
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
-  color: var(--landing-darkest-bg-color);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  color: var(--landing-button-color);
   border-radius: 0.5rem;
   width: fit-content;
+  padding: 1rem 5rem;
   margin-bottom: 2.5rem;
-  margin-top: 2.5rem;
-  margin-left: 5%;
-  font-size: 2.4rem;
+  margin-top: 2rem;
   font-weight: 700;
-  font-family: var(--font-family);
-  color: var(--landing-darkest-bg-color);
+  font-size: 2.4rem;
+  align-self: center;
+  justify-self: center;
 }
 @media (max-width: 40em) {
   .Landing-Page-Main-Container .landing-video-container .width-container .btn {
-    align-self: center;
-    justify-self: center;
     margin-left: 0;
-    margin-top: 2rem;
+    margin-bottom: 1.5rem;
   }
 }
 @keyframes waves {
@@ -3198,11 +3199,6 @@ button {
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
   width: 100%;
-  background: linear-gradient(180deg, rgb(240, 243, 255) 10%, rgba(240, 243, 255, 0.8) 60%), url("/src/assets/Gallery/Celebration/celebration23.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
 }
 .Landing-Page-Main-Container .landing-director-component .width-container {
   width: var(--landing-page-main-info-width);
@@ -3407,12 +3403,11 @@ button {
   text-align: start;
 }
 .Landing-Page-Main-Container .card-main-container {
-  width: var(--landing-page-main-info-width);
+  width: 100%;
   font-size: 6rem;
   font-weight: 700;
   font-family: var(--font-family);
   font-weight: bold;
-  margin-bottom: 1.5%;
 }
 .Landing-Page-Main-Container .card-main-container .card-main-heading {
   display: flex;
@@ -3421,7 +3416,7 @@ button {
   align-items: center;
 }
 .Landing-Page-Main-Container .card-main-container .card-main-heading .main-heading {
-  color: var(--landing-primary-color);
+  color: var(--landing-main-head-color);
   font-size: 6rem;
   font-weight: 700;
   font-family: var(--font-family);
@@ -3442,7 +3437,7 @@ button {
   font-size: 1.8rem;
   font-weight: 400;
   font-family: var(--font-family);
-  color: #555;
+  color: var(--landing-desc-color);
   width: 70%;
   padding-bottom: 1.5%;
 }
@@ -3455,6 +3450,7 @@ button {
   font-size: 0rem;
 }
 .Landing-Page-Main-Container .card-main-container .card-container .card {
+  background-color: white;
   width: 250px;
   margin: 20px;
   padding-bottom: 2%;
@@ -3486,6 +3482,7 @@ button {
   font-size: 2.4rem;
   font-weight: 400;
   font-family: var(--font-family);
+  color: #00aeff;
 }
 .Landing-Page-Main-Container .card-main-container .card-container .card .card-class {
   display: flex;
@@ -3503,7 +3500,6 @@ button {
   border-radius: 8px; /* Adding border radius */
   border: 1px solid rgb(217, 220, 225);
   padding: 3%;
-  color: #555;
 }
 .Landing-Page-Main-Container .card-main-container .card-container .card .explore-button {
   cursor: pointer;
@@ -3522,14 +3518,16 @@ button {
   text-decoration: none;
   border-radius: 5px;
   margin-left: 1rem;
-  color: #555;
 }
 .Landing-Page-Main-Container .card-main-container .card-container .card .explore-button .read-more:hover {
   color: blue;
 }
 .Landing-Page-Main-Container .card-main-container .card-container .card .explore-button .read-more .arrow-icon {
   margin-top: 6px;
-  color: #555;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
 }
 .Landing-Page-Main-Container .card-main-container .card-container .card .explore-button .read-more .arrow-icon:hover {
   color: blue;
@@ -3545,12 +3543,7 @@ button {
   }
 }
 .Landing-Page-Main-Container .result-main-conatiner {
-  background-color: var(--landing-dark-bg-color);
   width: 100%;
-  background: linear-gradient(180deg, rgb(106, 131, 233) 20%, rgba(91, 91, 161, 0.8) 70%), url("/src/assets/LandingPage/resultimage.png");
-  background-size: 100%;
-  background-position: center;
-  position: relative;
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component {
   width: 90%;
@@ -3585,7 +3578,7 @@ button {
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
-  color: #fff;
+  color: var(--landing-sub-head-color);
   font-size: 4rem;
 }
 @media (max-width: 1048px) {
@@ -3597,7 +3590,7 @@ button {
   font-size: 1.8rem;
   font-weight: 400;
   font-family: var(--font-family);
-  color: #fff;
+  color: var(--landing-desc-color);
   padding-left: 11%;
   padding-top: 3%;
   padding-bottom: 5%;
@@ -3709,13 +3702,10 @@ button {
   }
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .join-now-button {
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-  color: var(--darkest-bg-color);
   font-weight: 700;
-  padding: 2.5% 4%;
-  background-color: var(--landing-primary-color);
+  font-size: 2.4rem;
+  padding: 1rem 5rem;
+  background-color: var(--landing-btn-background-color);
   margin-left: 40%;
   margin-top: 5%;
   color: var(--landing-darkest-bg-color);
@@ -3723,6 +3713,11 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+@media (max-width: 40em) {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .join-now-button {
+    margin-left: 30%;
+  }
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .join-now-button:hover {
   background-color: var(--golden-color);
@@ -3743,7 +3738,6 @@ button {
   color: var(--darkest-bg-color);
   padding: 3rem 0;
   width: 100%;
-  background-color: var(--landing-dark-bg-color);
 }
 .Landing-Page-Main-Container .TestimonialsSection .containerMain {
   display: flex;
@@ -3756,14 +3750,14 @@ button {
   font-size: 6rem;
   font-weight: 700;
   font-family: var(--font-family);
-  color: var(--landing-primary-color);
+  color: var(--landing-main-head-color);
   margin-bottom: 1rem;
 }
 .Landing-Page-Main-Container .TestimonialsSection .containerMain h3 {
   font-size: 3.2rem;
   font-weight: 500;
   font-family: var(--font-family);
-  color: var(--landing-medium-bg-color);
+  color: var(--landing-sub-head-color);
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -3831,14 +3825,14 @@ button {
 .Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-desc {
   font-size: 1.6rem;
   line-height: 2.4rem;
-  color: var(--landing-medium-bg-color);
+  color: var(--landing-desc-color);
   margin-bottom: 1.6rem;
 }
 .Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content .testimonial-item .testimonial-name {
   font-size: 1.8rem;
   font-weight: 700;
   font-family: var(--font-family);
-  color: var(--landing-medium-bg-color);
+  color: var(--landing-desc-color);
   line-height: 2.4rem;
   margin-bottom: 1.6rem;
 }
@@ -3877,7 +3871,6 @@ button {
   transform: translateX(50%);
 }
 .Landing-Page-Main-Container .certificateFaq {
-  background-color: var(--light-bg-color);
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -3893,11 +3886,19 @@ button {
   margin-bottom: 2%;
 }
 .Landing-Page-Main-Container .certificateFaq .faqContainer .faqContent {
-  font-size: 3.2rem;
-  font-weight: 500;
+  font-size: 4.8rem;
+  font-weight: 600;
   font-family: var(--font-family);
+  color: var(--landing-main-head-color);
   margin-top: 3%;
   margin-bottom: 3%;
+}
+@media (max-width: 40em) {
+  .Landing-Page-Main-Container .certificateFaq .faqContainer .faqContent {
+    font-size: 3.2rem;
+    font-weight: 500;
+    font-family: var(--font-family);
+  }
 }
 .Landing-Page-Main-Container .certificateFaq .faqContainer .faqContent1 .faqSubContent {
   border: 0.1rem dashed var(--landing-medium-bg-color);
@@ -3905,11 +3906,12 @@ button {
   margin-bottom: 2%;
 }
 .Landing-Page-Main-Container .certificateFaq .faqContainer .faqContent1 .faqSubContent h2 {
+  color: var(--landing-sub-head-color);
   font-size: 2.4rem;
   font-weight: 400;
   font-family: var(--font-family);
 }
-@media (max-width: 600px) {
+@media (max-width: 40em) {
   .Landing-Page-Main-Container .certificateFaq .faqContainer .faqContent1 .faqSubContent {
     margin-bottom: 3.5%;
   }
@@ -3930,7 +3932,7 @@ button {
   font-size: 1.8rem;
   font-weight: 400;
   font-family: var(--font-family);
-  color: #696666;
+  color: var(--landing-desc-color);
   margin-top: 1%;
   margin-right: 10%;
   text-align: justify;
@@ -3942,7 +3944,6 @@ button {
 }
 .Landing-Page-Main-Container .main-container {
   width: 100%;
-  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3960,7 +3961,7 @@ button {
   align-items: center;
 }
 .Landing-Page-Main-Container .main-container .inner-container .heading-whyCompetishun {
-  color: var(--landing-secondary-color);
+  color: var(--landing-main-head-color);
   margin-bottom: 3%;
   font-size: 6rem;
   font-weight: 700;
@@ -3993,6 +3994,7 @@ button {
 }
 .Landing-Page-Main-Container .main-container .inner-container .box1 .info p {
   font-size: 2.5rem;
+  color: var(--landing-desc-color);
 }
 @media screen and (max-width: 1200px) {
   .Landing-Page-Main-Container .main-container .inner-container .box1 .info p {
@@ -4031,18 +4033,19 @@ button {
 }
 .Landing-Page-Main-Container .main-container .btn {
   padding: var(--btn-tb-pad) var(--btn-lr-pad);
-  background: gold;
+  background: var(--landing-btn-background-color);
   font-size: 1.6rem;
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
-  color: var(--landing-darkest-bg-color);
+  color: var(--landing-button-color);
   border-radius: 0.5rem;
   width: fit-content;
   padding: 1rem 5rem;
   margin-bottom: 2.5rem;
   margin-top: 2rem;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 2.4rem;
   align-self: center;
   justify-self: center;
 }
