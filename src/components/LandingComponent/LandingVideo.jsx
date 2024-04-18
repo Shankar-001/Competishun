@@ -15,7 +15,7 @@ const LandingVideo = () => {
     <div className="landing-video-container">
       <div className="width-container">
         <div className="header">
-            <h1>Watch Our Video</h1>
+          <h1>Watch Our Video</h1>
         </div>
         <div className="video-container">
           {showVideo ? (
@@ -34,22 +34,25 @@ const LandingVideo = () => {
                 className="thumbnail"
               />
               <div onClick={handleClick} className="play-button">
-               <div class="video-main">
-                <div class="waves-block">
-                  <div class="waves wave-1"></div>
-                  <div class="waves wave-2"></div>
-                  {/* <div class="waves wave-3"></div> */}
-                </div>
+                <div class="video-main">
+                  <div class="waves-block">
+                    <div class="waves wave-1"></div>
+                    <div class="waves wave-2"></div>
+                    {/* <div class="waves wave-3"></div> */}
+                  </div>
 
-                {/* <img src={playIcon} className="fa-play" alt="Play Icon" /> */}
-                <div className="play-icon">
-                  <FaPlayCircle className="fa-play" />
-                </div>
+                  {/* <img src={playIcon} className="fa-play" alt="Play Icon" /> */}
+                  <div className="play-icon">
+                    <FaPlayCircle className="fa-play" />
+                  </div>
                 </div>
               </div>
             </div>
           )}
         </div>
+        <button className="btn" >
+          Join Now
+        </button>
       </div>
     </div>
   );
