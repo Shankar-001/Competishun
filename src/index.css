@@ -3898,12 +3898,22 @@ button {
   .Landing-Page-Main-Container .main-container .inner-container .box1 .info p {
     font-size: 1.8rem;
   }
+  .Landing-Page-Main-Container .main-container .inner-container .box1 .info p span {
+    text-decoration: underline;
+    color: rgb(15, 188, 240);
+    font-size: 1rem;
+  }
 }
-.Landing-Page-Main-Container .main-container .inner-container .box1 .info p:hover {
+.Landing-Page-Main-Container .main-container .inner-container .box1 .info p span {
+  text-decoration: underline;
+  color: rgb(15, 188, 240);
+  font-size: 2rem;
+}
+.Landing-Page-Main-Container .main-container .inner-container .box1 .info p span:hover {
   color: lightseagreen;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
 }
 @media screen and (max-width: 1040px) {
   .Landing-Page-Main-Container .main-container .inner-container .image .student-image {

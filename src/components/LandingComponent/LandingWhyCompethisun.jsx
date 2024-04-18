@@ -22,7 +22,7 @@ export const LandingWhyCompethisun = () => {
                 href="https://youtu.be/l2tLkv_t15k?feature=shared"
                 target="_blank"
               >
-                <p>Course Features</p>
+                <p>Course Features <span>Watch-Now</span></p>
               </a>
             </div>
             {/* <div className="info">
@@ -44,7 +44,7 @@ export const LandingWhyCompethisun = () => {
                 href="https://youtu.be/06dJv3gJX88?feature=shared"
                 target="_blank"
               >
-                <p>Why Join Us? Competishun Advantage!</p>
+                <p>Why Join Us? Competishun Advantage! <span>Watch-Now</span></p>
               </a>
             </div>
           </div>
@@ -58,7 +58,7 @@ export const LandingWhyCompethisun = () => {
                 href="https://youtu.be/iR5ZCto7Td4?feature=shared"
                 target="_blank"
               >
-                <p>Preparation Stages</p>
+                <p>Preparation Stages <span>Watch-Now</span></p>
               </a>
             </div>
           </div>
@@ -72,7 +72,7 @@ export const LandingWhyCompethisun = () => {
                 href="https://youtu.be/50hiqJY_8h0?feature=shared"
                 target="_blank"
               >
-                <p>General Question</p>
+                <p>General Question <span>Watch-Now</span></p>
               </a>
             </div>
           </div>
@@ -86,7 +86,7 @@ export const LandingWhyCompethisun = () => {
                 href="https://youtu.be/JKg9Ked2aIk?feature=shared"
                 target="_blank"
               >
-                <p>Online Vs Offline</p>
+                <p>Online Vs Offline <span>Watch-Now</span></p>
               </a>
             </div>
           </div>
@@ -100,7 +100,7 @@ export const LandingWhyCompethisun = () => {
                 href="https://youtu.be/qjr3_qtdWFg?feature=shared"
                 target="_blank"
               >
-                <p>Kota vs Jaipur vs Home</p>
+                <p>Kota vs Jaipur vs Home <span>Watch-Now</span></p>
               </a>
             </div>
           </div>

@@ -25,9 +25,7 @@
         // @include h2;
         @include font-style(4rem, 600);
       }
-      // span{
-      //     color:green;
-      // }
+     
     }
 
     .box1 {
@@ -52,16 +50,33 @@
           font-size: 2.5rem;
           @media screen and (max-width: 1200px) {
             font-size: 1.8rem;
+            span{
+              text-decoration: underline;
+              color:rgb(15, 188, 240);
+              font-size: 1rem;
           }
-          
+          }
+          span{
+            text-decoration: underline;
+            color:rgb(15, 188, 240);
+            font-size: 2rem;
         }
-        p:hover {
+        span:hover {
           color: lightseagreen;
           cursor: pointer;
           transition: 0.3s;
           // text-decoration: underline;
-          font-size: 2.6rem;
+          font-size: 2.2rem;
         }
+          
+        }
+        // span:hover {
+        //   color: lightseagreen;
+        //   cursor: pointer;
+        //   transition: 0.3s;
+        //   // text-decoration: underline;
+        //   font-size: 2.6rem;
+        // }
       }
     }
 
