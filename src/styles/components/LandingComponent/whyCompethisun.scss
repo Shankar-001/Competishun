@@ -1,15 +1,19 @@
 .main-container {
-  width: var(--landing-page-main-info-width);
-  @include flex-cs(column);
+  width: 100%;
+  background-color: white;
+  @include flex-cc(column);
   @include bodyText;
-  margin: 1% 0;
-  @media screen and (max-width: 1200px) {
-    margin: 5% 0;
-  }
+  // @media screen and (max-width: 1200px) {
+  //   // margin: 5% 0;
+  // }
+
+
 
   .inner-container {
+    width: var(--landing-page-main-info-width);
+    // background-color: aqua;
+    
     @include flex-sbc;
-    width: 100%;
 
     .heading-whyCompetishun {
       // color: var(--landing-dark-bg-color);
@@ -17,13 +21,11 @@
       //   font-size: 6.2rem;
       margin-bottom: 3%;
       @include h1;
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 900px) {
         // @include h2;
         @include font-style(4rem, 600);
       }
-      // span{
-      //     color:orange;
-      // }
+     
     }
 
     .box1 {
@@ -48,13 +50,38 @@
           font-size: 2.5rem;
           @media screen and (max-width: 1200px) {
             font-size: 1.8rem;
+            span{
+              text-decoration: underline;
+              color:rgb(15, 188, 240);
+              font-size: 1rem;
           }
+          }
+          span{
+            text-decoration: underline;
+            color:rgb(15, 188, 240);
+            font-size: 2rem;
         }
+        span:hover {
+          color: lightseagreen;
+          cursor: pointer;
+          transition: 0.3s;
+          // text-decoration: underline;
+          font-size: 2.2rem;
+        }
+          
+        }
+        // span:hover {
+        //   color: lightseagreen;
+        //   cursor: pointer;
+        //   transition: 0.3s;
+        //   // text-decoration: underline;
+        //   font-size: 2.6rem;
+        // }
       }
     }
 
     .image {
-      @media screen and (max-width: 1100px) {
+      @media screen and (max-width: 1040px) {
         .student-image {
           display: none;
         }
@@ -66,10 +93,14 @@
         right: 12%;
       }
     }
+    a{
+      text-decoration: none;
+    }
   }
 
   .btn {
-    @include btn(var(--landing-primary-color), var(--landing-darkest-bg-color));
+    
+    @include btn(gold, var(--landing-darkest-bg-color));
     border-radius: 0.5rem;
     width: fit-content;
     padding: 1rem 5rem;
