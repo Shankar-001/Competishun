@@ -61,6 +61,9 @@ export const LandingWhyCompethisun = () => {
           <img src={student} alt="student" className="student-image" />
         </div>
       </div>
+      <button className="btn">
+        Join Now
+      </button>
     </div>
   );
 };

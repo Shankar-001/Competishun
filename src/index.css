@@ -3370,48 +3370,141 @@ button {
   font-size: 14px;
   text-align: start;
 }
-.Landing-Page-Main-Container .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.Landing-Page-Main-Container .card-main-container {
+  width: var(--landing-page-main-info-width);
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  font-weight: bold;
+  margin-bottom: 1.5%;
 }
-.Landing-Page-Main-Container .card-container .card {
+.Landing-Page-Main-Container .card-main-container .card-main-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Landing-Page-Main-Container .card-main-container .card-main-heading .main-heading {
+  color: var(--landing-primary-color);
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+@media (max-width: 750px) {
+  .Landing-Page-Main-Container .card-main-container .card-main-heading .main-heading {
+    font-size: 4.8rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+  }
+}
+.Landing-Page-Main-Container .card-main-container .card-main-heading .main-heading-desc {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: #555;
+  width: 70%;
+  padding-bottom: 1.5%;
+}
+.Landing-Page-Main-Container .card-main-container .card-container {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0rem;
+}
+.Landing-Page-Main-Container .card-main-container .card-container .card {
   width: 250px;
   margin: 20px;
   padding-bottom: 2%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(217, 220, 225);
   border-radius: 8px;
   overflow: hidden;
+  transition: border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.Landing-Page-Main-Container .card-container .card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.Landing-Page-Main-Container .card-main-container .card-container .card:hover {
+  border-color: #007bff; /* Change border color on hover */
 }
-.Landing-Page-Main-Container .card-container .card .description {
+.Landing-Page-Main-Container .card-main-container .card-container .card .card-icon {
+  width: 50%; /* Adjust as needed */
+  color: #007bff;
+  padding: 3%;
+  padding-left: 10%;
+}
+@media (max-width: 488px) {
+  .Landing-Page-Main-Container .card-main-container .card-container .card .card-icon {
+    width: 30%;
+  }
+}
+.Landing-Page-Main-Container .card-main-container .card-container .card .card-heading {
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
+.Landing-Page-Main-Container .card-main-container .card-container .card .card-class {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4%;
+  gap: 5%;
+}
+.Landing-Page-Main-Container .card-main-container .card-container .card .card-class .description {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
-  padding: 15px;
+  border-radius: 8px; /* Adding border radius */
+  border: 1px solid rgb(217, 220, 225);
+  padding: 3%;
   color: #555;
 }
-.Landing-Page-Main-Container .card-container .card .read-more {
-  background-color: #007bff;
-  color: #fff;
-  padding: 5px 10px;
+.Landing-Page-Main-Container .card-main-container .card-container .card .explore-button {
+  cursor: pointer;
+}
+.Landing-Page-Main-Container .card-main-container .card-container .card .explore-button .read-more {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5%;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 12px;
   margin-left: 1rem;
+  color: #555;
+}
+.Landing-Page-Main-Container .card-main-container .card-container .card .explore-button .read-more:hover {
+  color: blue;
+}
+.Landing-Page-Main-Container .card-main-container .card-container .card .explore-button .read-more .arrow-icon {
+  margin-top: 6px;
+  color: #555;
+}
+.Landing-Page-Main-Container .card-main-container .card-container .card .explore-button .read-more .arrow-icon:hover {
+  color: blue;
 }
 @media screen and (max-width: 768px) {
-  .Landing-Page-Main-Container .card-container .card {
+  .Landing-Page-Main-Container .card-main-container .card-container .card {
     width: calc(50% - 40px);
   }
 }
 @media screen and (max-width: 480px) {
-  .Landing-Page-Main-Container .card-container .card {
+  .Landing-Page-Main-Container .card-main-container .card-container .card {
     width: calc(100% - 40px);
   }
 }
@@ -3516,18 +3609,23 @@ button {
   }
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .join-now-button {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  font-weight: 700;
   padding: 2.5% 4%;
-  background-color: var(--landing-darkest-bg-color);
+  background-color: var(--landing-primary-color);
   margin-left: 40%;
   margin-top: 5%;
-  color: #fff;
+  color: var(--landing-darkest-bg-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .join-now-button:hover {
-  background-color: #041143;
+  background-color: var(--golden-color);
 }
 @media (min-width: 768px) {
   .Landing-Page-Main-Container .result-main-conatiner .my-component .my-component .component2 img {
@@ -3816,6 +3914,29 @@ button {
   height: 45rem;
   width: 45rem;
   right: 12%;
+}
+.Landing-Page-Main-Container .main-container .btn {
+  padding: var(--btn-tb-pad) var(--btn-lr-pad);
+  background: var(--landing-primary-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  color: var(--landing-darkest-bg-color);
+  border-radius: 0.5rem;
+  width: fit-content;
+  padding: 1rem 5rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  align-self: center;
+  justify-self: center;
+}
+@media (max-width: 40em) {
+  .Landing-Page-Main-Container .main-container .btn {
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .modal-overlay {

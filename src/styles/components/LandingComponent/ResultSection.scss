@@ -105,18 +105,20 @@
         }
   
         .join-now-button {
+          @include bodyText;
+          font-weight: 700;
           padding: 2.5% 4%;
-          background-color:var( --landing-darkest-bg-color);
+          background-color:var( --landing-primary-color);
           margin-left: 40%;
           margin-top: 5%;
-          color: #fff;
+          color:var( --landing-darkest-bg-color);
           border: none;
           border-radius: 5px;
           cursor: pointer;
           transition: background-color 0.3s ease;
   
           &:hover {
-            background-color:#041143;
+            background-color:var( --golden-color);
           }
         }
       }
