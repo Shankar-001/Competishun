@@ -13,8 +13,8 @@ const LandingPage = () => {
       <LandingDirector />
       <LandingWhyCompethisun />
       <ResultSection />
-      <LandingTestimonials />
       <CoursesSection />
+      <LandingTestimonials />
       <LandingFAQ />
     </div>
   );
