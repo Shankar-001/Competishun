@@ -25,7 +25,7 @@ const ResultSection = () => {
   return (
     <div className="result-main-conatiner">
       <div className="my-component">
-        <div className="heading">Results</div>
+        <div className="heading">Competishun Results</div>
         <div className="content-container">
           <div className="component">
             {JeeMainsResult.map((result, index) => (
