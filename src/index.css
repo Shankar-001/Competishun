@@ -1994,6 +1994,7 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer {
   display: flex;
@@ -2098,6 +2099,98 @@ button {
   font-size: 1.7rem;
 }
 
+.Merchandise-about-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 11rem;
+}
+@media (max-width: 900px) {
+  .Merchandise-about-container {
+    width: 100%;
+  }
+}
+.Merchandise-about-container .about-content {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+.Merchandise-about-container .about-content h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  font-size: 3.5rem;
+  margin-bottom: 2%;
+  font-weight: 500;
+}
+@media (max-width: 900px) {
+  .Merchandise-about-container .about-content h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+    font-weight: 700;
+    margin-bottom: 5%;
+  }
+}
+.Merchandise-about-container .about-content p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  text-align: start;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.Merchandise-about-container .about-content p span {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+.Merchandise-about-container .about-content .buy-now-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-left: 35%;
+  margin-right: 45%;
+  text-decoration: none;
+  cursor: pointer;
+}
+.Merchandise-about-container .about-content .buy-now-btn:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 900px) {
+  .Merchandise-about-container .about-content .buy-now-btn {
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 10px;
+  }
+  .about-container .about-content {
+    padding: 10px;
+  }
+  .about-container .about-content p {
+    font-size: 14px;
+  }
+  .about-container .about-content .buy-now-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
 .gallery-container {
   padding-top: 9rem;
   /* Media Query for Mobile View */
@@ -2959,7 +3052,7 @@ button {
   }
 }
 .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-info h1 .landing-animation-full-screen {
-  color: var(--landing-primary-color);
+  color: var(--golden-color);
 }
 @media (max-width: 40em) {
   .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-info h1 .landing-animation-full-screen {
@@ -3066,6 +3159,9 @@ button {
     justify-self: center;
     margin-left: 0;
   }
+}
+.Landing-Page-Main-Container .landing-highlight .btn:hover {
+  background-color: yellow;
 }
 .Landing-Page-Main-Container .landing-video-container {
   width: 100%;
@@ -3532,8 +3628,9 @@ button {
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
+  font-weight: 500;
   border-radius: 8px; /* Adding border radius */
-  border: 1px solid rgb(217, 220, 225);
+  border: 1px solid rgb(32, 32, 33);
   padding: 3%;
 }
 .Landing-Page-Main-Container .card-main-container .card-container .card .explore-button {
@@ -3553,16 +3650,19 @@ button {
   text-decoration: none;
   border-radius: 5px;
   margin-left: 1rem;
+  color: #007bff;
+  text-decoration: underline;
 }
 .Landing-Page-Main-Container .card-main-container .card-container .card .explore-button .read-more:hover {
   color: blue;
 }
 .Landing-Page-Main-Container .card-main-container .card-container .card .explore-button .read-more .arrow-icon {
-  margin-top: 6px;
   font-size: 1.6rem;
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
+  margin-top: 6px;
+  color: #007bff;
 }
 .Landing-Page-Main-Container .card-main-container .card-container .card .explore-button .read-more .arrow-icon:hover {
   color: blue;
@@ -3582,7 +3682,7 @@ button {
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component {
   width: 90%;
-  padding: 3%;
+  padding-right: 2%;
   box-sizing: border-box;
   margin: 0 auto; /* Center the component horizontally */
 }
@@ -3656,7 +3756,7 @@ button {
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers .card img {
   transform: rotateZ(-20deg) translateX(-38%);
-  width: 80%;
+  width: 50%;
   margin: 0 10%;
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers .card .left-img {
@@ -3668,10 +3768,12 @@ button {
   justify-content: center;
   align-items: center;
 }
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers .card .card-body .year-name {
-  font-size: 2.4rem;
+.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers .card .card-body .year {
+  font-size: 1.6rem;
   font-weight: 400;
   font-family: var(--font-family);
+  color: var(--darkest-bg-color);
+  font-size: 1.3rem;
   display: inline-block;
   padding: 0.25rem 0.5rem;
   font-weight: bold;
@@ -3726,7 +3828,8 @@ button {
   }
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component hr {
-  margin: 3% 0%;
+  margin: 3% 0% 3% 7.5%;
+  width: 100%;
   border: none;
   border-top: 1px solid #ccc;
 }
@@ -3751,7 +3854,6 @@ button {
   background-color: var(--landing-btn-background-color);
   margin-left: 40%;
   margin-top: 5%;
-  color: var(--landing-darkest-bg-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -3763,7 +3865,7 @@ button {
   }
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .join-now-button:hover {
-  background-color: var(--golden-color);
+  background-color: yellow;
 }
 @media (min-width: 768px) {
   .Landing-Page-Main-Container .result-main-conatiner .my-component .my-component .component2 img {

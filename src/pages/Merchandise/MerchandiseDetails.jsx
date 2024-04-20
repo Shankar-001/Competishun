@@ -4,7 +4,7 @@ import { MerchandiseCardDetails } from '../../components/Merchandise/Merchandise
 const MerchandiseDetails = () => {
   return (
     <div className="mercendiseDetails-container">
-      <MerchandiseCardDetails />{' '}
+      <MerchandiseCardDetails />
     </div>
   );
 };
