@@ -209,4 +209,8 @@
   &:hover {
     color: var(--primary-color);
   }
+  @media screen and (max-width:760px) {
+    color: white;
+    
+  }
 }
