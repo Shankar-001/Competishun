@@ -1693,19 +1693,25 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8%;
+  margin-top: 11rem;
   width: var(--landing-page-main-info-width);
 }
 .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseDetails {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-weight: 500;
   font-family: var(--font-family);
-  color: var(--darkest-bg-color);
   width: var(--landing-page-main-info-width);
   margin-bottom: 3.2%;
 }
 .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseDetails span {
   color: #e14255;
+}
+@media (max-width: 550px) {
+  .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseDetails {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+  }
 }
 .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseCardComponent {
   display: grid;
@@ -1717,6 +1723,16 @@ button {
   flex-wrap: wrap;
   gap: 5rem 2rem;
   margin-bottom: 2%;
+}
+@media (min-width: 400px) and (max-width: 550px) {
+  .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseCardComponent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 550px) and (max-width: 800px) {
+  .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseCardComponent {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseCardComponent .ComponentDivision {
   border-radius: 2rem;
@@ -1732,7 +1748,6 @@ button {
 }
 .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseCardComponent .ComponentDivision img {
   width: 100%;
-  height: 100%;
 }
 .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseCardComponent .ComponentDivision:hover {
   background-color: var(--light-bg-color);
@@ -1755,19 +1770,25 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8%;
+  margin-top: 11rem;
   width: var(--landing-page-main-info-width);
 }
 .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestDetails {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-weight: 500;
   font-family: var(--font-family);
-  color: var(--darkest-bg-color);
   width: var(--landing-page-main-info-width);
   margin-bottom: 3.2%;
 }
 .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestDetails span {
   color: #e14255;
+}
+@media (max-width: 550px) {
+  .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestDetails {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+  }
 }
 .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestCardComponent {
   display: grid;
@@ -1779,6 +1800,16 @@ button {
   flex-wrap: wrap;
   gap: 5rem 2rem;
   margin-bottom: 2%;
+}
+@media (min-width: 400px) and (max-width: 550px) {
+  .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestCardComponent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 550px) and (max-width: 800px) {
+  .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestCardComponent {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestCardComponent .ComponentDivision {
   border-radius: 2rem;
@@ -1794,7 +1825,6 @@ button {
 }
 .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestCardComponent .ComponentDivision img {
   width: 100%;
-  height: 100%;
 }
 .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestCardComponent .ComponentDivision:hover {
   background-color: var(--light-bg-color);
@@ -1813,7 +1843,7 @@ button {
   align-items: center;
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer {
-  margin-top: 8%;
+  margin-top: 11rem;
   width: var(--landing-page-main-info-width);
   display: flex;
   flex-direction: column;
@@ -1834,6 +1864,13 @@ button {
   font-weight: 500;
   font-family: var(--font-family);
 }
+@media (max-width: 850px) {
+  .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseTitle h1 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+  }
+}
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent {
   display: flex;
   flex-direction: row;
@@ -1845,24 +1882,66 @@ button {
   width: 100%;
   box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
 }
+@media (max-width: 850px) {
+  .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: fit-content;
+  }
+}
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft {
-  width: 35%;
+  width: 35rem;
   padding: 2rem;
   border-right: 1px solid red;
   height: 100%;
   overflow-y: auto;
-  text-align: justify;
+}
+@media (max-width: 850px) {
+  .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    border-right: 0;
+    height: fit-content;
+    padding: 1rem;
+    overflow-x: auto;
+  }
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft::-webkit-scrollbar {
   width: 0.6rem;
 }
+@media (max-width: 850px) {
+  .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft::-webkit-scrollbar {
+    height: 0;
+  }
+}
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft:focus {
   outline: none;
+}
+@media (max-width: 850px) {
+  .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft .CourseMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+  }
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft .CourseMenu h3 {
   cursor: pointer;
   padding: 1rem;
   transition: background-color 250ms ease, color 250ms ease;
+}
+@media (max-width: 850px) {
+  .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft .CourseMenu h3 {
+    background-color: var(--light-bg-color);
+    border-radius: 5rem;
+    margin-right: 1.2rem;
+  }
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsLeft .CourseMenu h3:hover {
   background-color: var(--medium-bg-color);
@@ -1873,15 +1952,19 @@ button {
   color: #fff;
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight {
-  width: 65%;
+  width: 100%;
   padding: 2rem;
   height: 100%;
   overflow-y: auto;
-  text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+@media (max-width: 850px) {
+  .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight {
+    width: 100%;
+  }
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight::-webkit-scrollbar {
   width: 0.6rem;
@@ -1921,12 +2004,27 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
   height: 100%;
+  width: 100%;
   gap: 5rem;
 }
+@media (max-width: 850px) {
+  .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo .CourseContentSpecial {
+  width: 60%;
+}
+@media (max-width: 850px) {
+  .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo .CourseContentSpecial {
+    width: 100%;
+  }
+}
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo .CourseImgBlock {
-  width: 40%;
   position: relative;
   display: inline-block;
   align-self: center;
@@ -1948,9 +2046,6 @@ button {
   position: absolute;
   max-width: 8rem;
   height: 9rem;
-}
-.CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight .courseDetailsVideo .CourseContentSpecial {
-  width: 60%;
 }
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseMiddleContent .CourseDetailsRight ul li {
   margin-top: 1.5%;
@@ -1982,9 +2077,6 @@ button {
   margin-bottom: 1%;
 }
 
-.Merchandise {
-  padding-top: 8rem;
-}
 .Merchandise .MerchandiseCardMainContainer {
   font-size: 1.6rem;
   font-weight: 400;
@@ -2001,6 +2093,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 11rem;
   width: var(--landing-page-main-info-width);
 }
 .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseDetails {
@@ -2012,10 +2105,18 @@ button {
   margin-bottom: 3.2%;
 }
 .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseDetails .MerchandiseSubDetails {
-  font-size: 2.8rem;
-  font-weight: 600;
+  font-size: 3.2rem;
+  font-weight: 500;
+  font-family: var(--font-family);
   padding: 2% 0%;
   padding-bottom: 3%;
+}
+@media (max-width: 550px) {
+  .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseDetails .MerchandiseSubDetails {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+  }
 }
 .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent {
   display: grid;
@@ -2025,28 +2126,41 @@ button {
   justify-content: space-between;
   width: 90%;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 5rem 2rem;
   margin-bottom: 2%;
 }
 .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ankertag {
   text-decoration: none;
 }
+@media (min-width: 400px) and (max-width: 550px) {
+  .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 550px) and (max-width: 920px) {
+  .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ComponentDivision {
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border: 0.1rem solid beige;
   z-index: 5;
-  height: 30rem;
-  width: var(--landing-page-main-info-width);
   overflow: hidden;
   box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
 }
-.Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ComponentDivision img {
-  width: 28rem;
-  height: 27.5rem;
+@media (min-width: 400px) and (max-width: 550px) {
+  .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ComponentDivision img {
+    width: 28rem;
+    height: 27.5rem;
+  }
 }
 .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ComponentDivision:hover {
   background-color: var(--light-bg-color);
@@ -2252,7 +2366,7 @@ button {
   align-items: center;
 }
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer {
-  margin-top: 8%;
+  margin-top: 11rem;
   width: var(--landing-page-main-info-width);
   display: flex;
   flex-direction: column;
@@ -2273,6 +2387,13 @@ button {
   font-weight: 500;
   font-family: var(--font-family);
 }
+@media (max-width: 550px) {
+  .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestTitle h1 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+  }
+}
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent {
   display: flex;
   flex-direction: row;
@@ -2284,24 +2405,66 @@ button {
   width: 100%;
   box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
 }
+@media (max-width: 850px) {
+  .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: fit-content;
+  }
+}
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft {
-  width: 35%;
+  width: 35rem;
   padding: 2rem;
   border-right: 1px solid red;
   height: 100%;
   overflow-y: auto;
-  text-align: justify;
+}
+@media (max-width: 850px) {
+  .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    border-right: 0;
+    height: fit-content;
+    padding: 1rem;
+    overflow-x: auto;
+  }
 }
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft::-webkit-scrollbar {
   width: 0.6rem;
 }
+@media (max-width: 850px) {
+  .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft::-webkit-scrollbar {
+    height: 0;
+  }
+}
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft:focus {
   outline: none;
+}
+@media (max-width: 850px) {
+  .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft .TestMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+  }
 }
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft .TestMenu h3 {
   cursor: pointer;
   padding: 1rem;
   transition: background-color 250ms ease, color 250ms ease;
+}
+@media (max-width: 850px) {
+  .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft .TestMenu h3 {
+    background-color: var(--light-bg-color);
+    border-radius: 5rem;
+    margin-right: 1.2rem;
+  }
 }
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsLeft .TestMenu h3:hover {
   background-color: var(--medium-bg-color);
@@ -2312,15 +2475,19 @@ button {
   color: #fff;
 }
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight {
-  width: 65%;
+  width: 100%;
   padding: 2rem;
   height: 100%;
   overflow-y: auto;
-  text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+@media (max-width: 850px) {
+  .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight {
+    width: 100%;
+  }
 }
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .TestMiddleContent .TestDetailsRight::-webkit-scrollbar {
   width: 0.6rem;
@@ -3071,7 +3238,6 @@ button {
 @media (max-width: 40em) {
   .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer {
     grid-template-columns: 1fr;
-    margin-top: 8rem;
     gap: 3rem;
   }
 }
@@ -3111,6 +3277,7 @@ button {
   .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-info h1 .landing-animation-media-screen {
     display: block;
     height: 10rem;
+    color: var(--golden-color);
   }
 }
 .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-info p {
@@ -3226,15 +3393,15 @@ button {
   margin: 2rem 0;
 }
 .Landing-Page-Main-Container .landing-video-container .width-container .header h1 {
-  font-size: 6rem;
-  font-weight: 700;
+  font-size: 3.2rem;
+  font-weight: 500;
   font-family: var(--font-family);
   color: var(--landing-main-head-color);
 }
 @media (max-width: 900px) {
   .Landing-Page-Main-Container .landing-video-container .width-container .header h1 {
-    font-size: 4.8rem;
-    font-weight: 600;
+    font-size: 2.4rem;
+    font-weight: 400;
     font-family: var(--font-family);
   }
 }

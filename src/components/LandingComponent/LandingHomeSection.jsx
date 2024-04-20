@@ -142,7 +142,7 @@ const LandingHomeSection = () => {
             </h1>
             <p>
               {/* Learn how to attack JEE questions with India's one of the Best Teachers #Competishun */}
-              One of the most trusted online coaching platforms for IIT JEE and NEET preparation
+              One of the most Trusted Institute for IIT JEE and NEET preparation
             </p>
           </div>
           {/* <div className="landing-img">
