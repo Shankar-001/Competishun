@@ -35,11 +35,11 @@ const LandingVideo = () => {
                 className="thumbnail"
               />
               <div className="play-button">
-                <div class="video-main">
-                  <div class="waves-block">
-                    <div class="waves wave-1"></div>
-                    <div class="waves wave-2"></div>
-                    {/* <div class="waves wave-3"></div> */}
+                <div className="video-main">
+                  <div className="waves-block">
+                    <div className="waves wave-1"></div>
+                    <div className="waves wave-2"></div>
+                    {/* <div className="waves wave-3"></div> */}
                   </div>
 
                   {/* <img src={playIcon} className="fa-play" alt="Play Icon" /> */}

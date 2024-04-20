@@ -2862,14 +2862,58 @@ button {
 .admin-main-container .Admin-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+}
+.admin-main-container .Admin-container .width-container {
+  width: var(--landing-page-main-info-width);
+}
+.admin-main-container .Admin-container .width-container .header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+}
+.admin-main-container .Admin-container .width-container .header .tabs-container {
+  display: flex;
+}
+.admin-main-container .Admin-container .width-container .header .tabs-container .tab {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.admin-main-container .Admin-container .width-container .header .tabs-container .tab:hover {
+  background-color: #e0e0e0;
+}
+.admin-main-container .Admin-container .width-container .header .tabs-container .tab.active {
+  background-color: #d3d3d3;
+}
+.admin-main-container .Admin-container .width-container .header .signOut {
+  background-color: var(--dark-bg-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.admin-main-container .Admin-container .width-container .header .signOut:hover {
+  background-color: #d32f2f;
+}
+.admin-main-container .Admin-container .width-container .content-container {
   padding: 20px;
-}
-.admin-main-container .Admin-container .signOut {
-  margin-bottom: 20px;
-}
-.admin-main-container .Admin-container .sortSelect {
-  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 .Landing-Page-Main-Container {
