@@ -164,7 +164,7 @@ const LandingHomeSection = () => {
           <input
             type="tel"
             name="contact"
-            placeholder="Contact Number"
+            placeholder="Mobile Number"
             value={formData.contact}
             onChange={handleInputChange}
             className={`${errors.contact && 'error'}`}
