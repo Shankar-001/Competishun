@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setShowScrollToTop(scrollY == 0);
+      setShowScrollToTop(scrollY === 0);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -30,12 +30,20 @@ const Navbar = () => {
   const handleCoursesMouseLeave = () => {
     setShowCoursesDropdown(false);
   };
+
   const handleCoursesMenuToggle = () => {
     setShowCoursesDropdown(!showCoursesDropdown);
+    closeMobileMenu();
   };
+
   const toggleMobileMenu = () => {
     setShowMobileMenu(!showMobileMenu);
   };
+
+  const closeMobileMenu = () => {
+    setShowMobileMenu(false);
+  };
+
   return (
     <div
       className={`Navbar-main-container ${
@@ -51,7 +59,7 @@ const Navbar = () => {
         </div>
         <div className={`navbar-heading ${!showMobileMenu && 'inactive'}`}>
           <li>
-            <NavLink to="/" className="navlink">
+            <NavLink to="/" className="navlink" onClick={closeMobileMenu}>
               Home
             </NavLink>
           </li>
@@ -73,32 +81,52 @@ const Navbar = () => {
             {showCoursesDropdown && <DropdownMenu />}
           </li>
           <li>
-            <NavLink to="/testSeries" className="navlink">
+            <NavLink
+              to="/testSeries"
+              className="navlink"
+              onClick={closeMobileMenu}
+            >
               Test Series
             </NavLink>
           </li>
           <li>
-            <NavLink to="/merchandise" className="navlink">
+            <NavLink
+              to="/merchandise"
+              className="navlink"
+              onClick={closeMobileMenu}
+            >
               Merchandise
             </NavLink>
           </li>
           <li>
-            <NavLink to="/studyfree" className="navlink">
+            <NavLink
+              to="/studyfree"
+              className="navlink"
+              onClick={closeMobileMenu}
+            >
               Study Free
             </NavLink>
           </li>
           <li>
-            <NavLink to="/result" className="navlink">
+            <NavLink to="/result" className="navlink" onClick={closeMobileMenu}>
               Result
             </NavLink>
           </li>
           <li>
-            <NavLink to="/gallery" className="navlink">
+            <NavLink
+              to="/gallery"
+              className="navlink"
+              onClick={closeMobileMenu}
+            >
               Gallery
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className="navlink">
+            <NavLink
+              to="/contact"
+              className="navlink"
+              onClick={closeMobileMenu}
+            >
               Contact Us
             </NavLink>
           </li>
