@@ -13,7 +13,7 @@
       @include grid-ss;
       @include grid-n-col((2fr, 1fr));
       gap: 5rem;
-      margin-top: 11rem;
+      margin-top: 6rem;
       @media (max-width: 40em) {
         @include grid-n-col((1fr));
         margin-top: 8rem;
@@ -49,6 +49,7 @@
           color: var(--landing-desc-color);
           letter-spacing: 0.1rem;
           @include h5;
+          margin-bottom: 2.5rem;
           @media (max-width: 40em) {
             @include h5;
             letter-spacing: 0;
@@ -72,11 +73,12 @@
   }
 
   .landing-home-contact-field {
-    margin: {
-      top: 5rem;
-      bottom: 2.5rem;
-      left: 5%;
-    }
+    // margin: {
+    //   top: 5rem;
+    //   bottom: 2.5rem;
+    //   left: 5%;
+    // }
+    margin-left: 5%;
     align-self: start;
     justify-self: start;
 
@@ -84,7 +86,7 @@
       input {
         border: 0.2rem solid var(--landing-medium-bg-color);
         border-radius: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
         background-color: var(--light-bg-color);
         height: 4.5rem;
         width: 100%;
@@ -103,7 +105,7 @@
       margin: {
         top: 2rem;
         left: 0;
-        bottom: 2rem;
+        // bottom: 2rem;
       }
     }
   }
@@ -127,7 +129,7 @@
       align-self: center;
       justify-self: center;
       margin-left: 0;
-      margin-top: 2rem;
+      // margin-top: 2rem;
     }
   }
 }

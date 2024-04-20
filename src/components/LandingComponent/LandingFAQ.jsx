@@ -6,7 +6,7 @@ const LandingFAQ = () => {
   return (
     <div className="certificateFaq">
       <div className="faqContainer">
-        <div className="faqContent">Competishun FAQ’s</div>
+        <div className="faqContent">Frequently Asked Questions</div>
         <div className="faqContent1">
           <FaqContent
             text="How can recipients validate their certificates?"
