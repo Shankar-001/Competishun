@@ -17,7 +17,7 @@ const LandingTestimonials = () => {
   return (
     <div className="TestimonialsSection">
       <div className="containerMain">
-        <h1>Testimonials</h1>
+        <h1>HERE’S WHAT OUR STUDENTS HAVE TO SAY...</h1>
         <h3>
           Across the nation, we're the <span>Institute of choice</span> for
           thousands of students and parents

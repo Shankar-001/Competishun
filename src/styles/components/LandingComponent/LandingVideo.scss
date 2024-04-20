@@ -11,10 +11,10 @@
 
     .header {
       h1 {
-        @include h1;
+        @include h3;
         color: var(--landing-main-head-color);
         @media (max-width:900px) {
-           @include h2;
+           @include h4;
         }
       }
       margin: 2rem 0;

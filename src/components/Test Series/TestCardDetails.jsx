@@ -9,29 +9,41 @@ const TestCardDetails = () => {
   const navigate = useNavigate();
   const [selectedContent, setSelectedContent] = useState('StartDate');
 
-  //   useEffect(() => {
-  //     if (!SingleTestDetails[testSeriesDetails]) {
-  //       navigate('/');
-  //     }
-  //   }, [navigate, data]);
+  useEffect(() => {
+    if (!SingleTestDetails[testSeriesDetails]) {
+      navigate('/');
+    }
+  }, [navigate, data]);
 
   const sections = [
-    { key: 'StartDate', label: 'Start Date', isAvailable: data.StartDate },
-    { key: 'Validity', label: 'Validity', isAvailable: data.Validity },
-    { key: 'Target', label: 'Target', isAvailable: data.Target },
-    { key: 'FeeStructure', label: 'Fee Structure', isAvailable: data.FeeStructure },
-    { key: 'TestNumber', label: 'Number of Tests', isAvailable: data.TestNumber },
+    { key: 'StartDate', label: 'Start Date', isAvailable: data?.StartDate },
+    { key: 'Validity', label: 'Validity', isAvailable: data?.Validity },
+    { key: 'Target', label: 'Target', isAvailable: data?.Target },
+    {
+      key: 'FeeStructure',
+      label: 'Fee Structure',
+      isAvailable: data?.FeeStructure,
+    },
+    {
+      key: 'TestNumber',
+      label: 'Number of Tests',
+      isAvailable: data?.TestNumber,
+    },
     {
       key: 'DownloadSchedule',
       label: 'Download Schedule',
-      isAvailable: data.DownloadSchedule,
+      isAvailable: data?.DownloadSchedule,
     },
-    { key: 'HowToEnroll', label: 'How To Enroll', isAvailable: data.HowToEnroll },
-    { key: 'KeyFeature', label: 'Key Feature', isAvailable: data.KeyFeature },
+    {
+      key: 'HowToEnroll',
+      label: 'How To Enroll',
+      isAvailable: data?.HowToEnroll,
+    },
+    { key: 'KeyFeature', label: 'Key Feature', isAvailable: data?.KeyFeature },
     {
       key: 'ComplimentaryAccess',
       label: 'Complimentary Access',
-      isAvailable: data.ComplimentaryAccess,
+      isAvailable: data?.ComplimentaryAccess,
     },
   ];
 

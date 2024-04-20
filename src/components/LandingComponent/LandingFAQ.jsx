@@ -9,24 +9,24 @@ const LandingFAQ = () => {
         <div className="faqContent">Frequently Asked Questions</div>
         <div className="faqContent1">
           <FaqContent
-            text="How can recipients validate their certificates?"
-            content="Recipients can instantly verify their digital certificate by scanning the unique QR code on their digital certificate."
+            text="What are the Features of Online Courses of Competishun ?"
+            content="We have the most extensive online courses for JEE Main, Advanced, NEET which includes Recorded Scheduled Lectures by the best Faculties, Graded Study Material - Sheets and DPPs with their Text and Video Solutions, Fast Doubt Clearing Via Telegram Group and Zoom Live Doubt Counter and Excellent Tests and Analysis for JEE Main, Advanced and NEET pattern."
           />
           <FaqContent
-            text="Who sends the digital certificate?"
-            content="MoneyyApp will email the digital certificate to the respective certificate holder. The organisation can customise email templates."
+            text="Who are the teacher at competishun?"
+            content="Lectures are Recorded by India's Best and Experienced Faculties such as Mohit Tyagi Sir (Maths), Alok Kumar Sir (Chemistry Physical Inorganic), Amit Bijarnia Sir (Physics) and Neeraj Saini Sir (Chemistry Organic). Lectures and Study Material is graded material and is provided as per revised JEE MAIN Syllabus."
           />
           <FaqContent
-            text="What is digital certificate lifecycle management?"
-            content="Digital certificate lifecycle management refers to managing the entire lifespan of digital certificates, from issuance to expiration. It involves various activities and controls to ensure the proper use, renewal, revocation, and management of certificates within an organisation or system."
+            text="Is scholarship available?"
+            content="Yes, Scholarship is available for Offline Admission based on Scholarship Test. Scholarship can be achieved from 10% To 90% based on scholarship test performances."
           />
           <FaqContent
-            text="What happens to the certificates or our account if we don’t continue our subscription?"
-            content="Issued digital credentials remain active (as long as you have not put an expiration date on them). For cancellations part way through a year, please refer to our Cancellation and Refund policy."
+            text="Class will be live or schedule?"
+            content="Online Classes at Competishun will be RECORDED SCHEDULED Class which will be scheduled as per Weekly Time Table At specific Date and Time. Students are provided with Time Table every week."
           />
           <FaqContent
-            text="Can I issue digital certificates in bulk?"
-            content="Yes. Make sure your data is available in spreadsheet format and upload it to our system. The spreadsheet upload creation method can handle 100,000 records with a single spreadsheet in one upload. You can queue five different uploads at a time, and those uploads can be for different departments, and apply to multiple groups. With file uploads, MoneyyApp works in the background so you don't need to stay on the upload page, and provides insightful tooltips and downloadable logs once uploads are complete."
+            text="Is Competishun Online or Offline?"
+            content="Both. Competishun has its offline study center in Jaipur. Address: Bus Stand, K-14, Scheme No 5, near Durgapura, Income Tax Colony, Durgapura, Jaipur, Rajasthan, 302018. If you are interested in our online courses, you can visit our website."
           />
         </div>
       </div>

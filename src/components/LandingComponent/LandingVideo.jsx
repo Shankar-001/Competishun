@@ -15,7 +15,7 @@ const LandingVideo = () => {
     <div className="landing-video-container">
       <div className="width-container">
         <div className="header">
-          <h1>Watch Our Video</h1>
+          <h1>Begin Your IIT Journey: Join the MOST Effective & Personalized Dropper Batch For IIT JEE 2025</h1>
         </div>
         <div className="video-container">
           {showVideo ? (
