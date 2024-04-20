@@ -1,5 +1,4 @@
 .certificateFaq {
-  background-color: var(--light-bg-color);
   width: 100%;
   @include flex-cc;
   .faqContainer {
@@ -7,9 +6,13 @@
     @include bodyText;
     margin-bottom: 2%;
     .faqContent {
-      @include h3;
+      @include h2;
+      color: var(--landing-main-head-color);
       margin-top: 3%;
       margin-bottom: 3%;
+      @media (max-width: 40em) {
+        @include h3;
+      }
     }
 
     .faqContent1 {
@@ -17,10 +20,11 @@
         border: 0.1rem dashed var(--landing-medium-bg-color);
         padding: 2rem;
         h2 {
+          color: var(--landing-sub-head-color);
           @include h4;
         }
         margin-bottom: 2%;
-        @media (max-width: 600px) {
+        @media (max-width: 40em) {
           margin-bottom: 3.5%;
         }
 
@@ -36,7 +40,7 @@
         }
 
         p {
-          @include bodyText(#696666, 1.8rem);
+          @include bodyText(var(--landing-desc-color), 1.8rem);
           margin-top: 1%;
           margin-right: 10%;
           text-align: justify;

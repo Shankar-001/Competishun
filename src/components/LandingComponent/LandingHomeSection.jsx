@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import HighlightImg from '../../assets/eduCompetishun.png';
+import HighlightImg from '../../assets/SirImage.png';
 import { useNavigate } from 'react-router-dom';
 import { addDoc, collection } from 'firebase/firestore';
 import db from '../../constants/Firebase';
@@ -174,7 +174,7 @@ const LandingHomeSection = () => {
       </div>
 
       <button className="btn" onClick={handleStartTrial}>
-        Start Your Free Trial
+        Submit Now
       </button>
     </section>
   );

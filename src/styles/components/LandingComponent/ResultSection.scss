@@ -1,16 +1,17 @@
 .result-main-conatiner {
-  background-color: var(--landing-dark-bg-color);
+  // background-color: var(--landing-dark-bg-color);
   width: 100%;
-  background: linear-gradient(
-      180deg,
-      rgb(106, 131, 233) 20%,
-      rgba(91, 91, 161, 0.8) 70%
-    ),
-    url('/src/assets/LandingPage/resultimage.png');
-  background-size: 100%;
-  //   background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
+  // background: linear-gradient(
+  //     180deg,
+  //     rgb(106, 131, 233) 20%,
+  //     rgba(91, 91, 161, 0.8) 70%
+  //   ),
+  //   url('/src/assets/LandingPage/resultimage.png');
+  // background-size: 100%;
+  // //   background-repeat: no-repeat;
+  // background-position: center;
+  // position: relative;
+  // background: var(--landing-bg-liner-grad);
 
   .my-component {
     width: 90%;
@@ -24,6 +25,11 @@
       color: white;
       font-weight: bold;
       margin-bottom: 5%;
+      @media (max-width:900px) {
+        text-align: center;
+        @include h2;
+     }
+      
     }
 
     .content-container {
@@ -38,7 +44,7 @@
 
         .sub-heading {
           @include bodyText;
-          color: #fff;
+          color: var(--landing-sub-head-color);
           font-size: 4rem;
 
           @media (max-width: 1048px) {
@@ -48,7 +54,7 @@
 
         .description {
           @include h5;
-          color: #fff;
+          color: var(--landing-desc-color);
           padding-left: 11%;
           padding-top: 3%;
           padding-bottom: 5%;
@@ -123,9 +129,7 @@
 
                 span {
                   &.text-danger {
-                    
                     color: #dc3545;
-                    
                   }
 
                   &.fw-bold {
@@ -136,12 +140,12 @@
             }
           }
 
-            span {
-              @include bodyText;
-              font-size: 2rem;
-              color: #fff;
-              font-weight: 500;
-            } 
+          span {
+            @include bodyText;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: 500;
+          }
 
           @media (max-width: 1048px) {
             display: flex;
@@ -150,7 +154,6 @@
         }
 
         hr {
-          
           margin: 3% 0%;
           border: none;
           border-top: 1px solid #ccc;
@@ -177,10 +180,10 @@
       }
 
       .join-now-button {
-        @include bodyText;
         font-weight: 700;
-        padding: 2.5% 4%;
-        background-color: var(--landing-primary-color);
+        font-size: 2.4rem;
+        padding: 1rem 5rem;
+        background-color: var(--landing-btn-background-color);
         margin-left: 40%;
         margin-top: 5%;
         color: var(--landing-darkest-bg-color);
@@ -188,6 +191,9 @@
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s ease;
+        @media (max-width: 40em) {
+          margin-left: 30%;
+        }
 
         &:hover {
           background-color: var(--golden-color);
