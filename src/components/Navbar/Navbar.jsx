@@ -2,7 +2,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import { useEffect, useState } from 'react';
 import { RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri';
-import { FaHamburger } from 'react-icons/fa';
+import { FaBars, FaHamburger } from 'react-icons/fa';
 import { FaCross, FaX } from 'react-icons/fa6';
 
 const Navbar = () => {
@@ -47,7 +47,7 @@ const Navbar = () => {
           <img src={logo} alt="Competishun-logo" />
         </Link>
         <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
-          {showMobileMenu ? <FaX /> : <FaHamburger />}
+          {showMobileMenu ? <FaX /> : <FaBars />}
         </div>
         <div className={`navbar-heading ${!showMobileMenu && 'inactive'}`}>
           <li>

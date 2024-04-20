@@ -24,10 +24,13 @@
 @import './pages/Result.scss';
 @import './pages/StudyFree.scss';
 @import './pages/Admin/Admin.scss';
-@import "./pages/LandingPage/LandingPage.scss";
+@import './pages/LandingPage/LandingPage.scss';
 
 // utils
 @import './utils/Modal.scss';
 @import '../styles/pages/Director/DirectorInfo.scss';
 @import './utils/GalleryModal.scss';
-@import "./utils/Button/JoinNow.scss"
+@import './utils/Button/JoinNow.scss';
+@import './utils/TableWithFilterAndSort/TableWithFilterNSort.scss';
+@import './utils/Loader/loader.scss';
+@import './utils/Pagination/Pagination.scss';
