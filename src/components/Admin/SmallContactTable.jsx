@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, endAt, getDocs, orderBy, query, startAt } from 'firebase/firestore';
 import db from '../../constants/Firebase';
 import TableWithFilterNSort from '../../utils/Table with filter and sort/TableWithFilterNSort';
 import Pagination from '../../utils/Pagination/Pagination'; // Import Pagination component
@@ -11,12 +11,22 @@ const SmallContactTable = () => {
   const [sortBy, setSortBy] = useState('date');
 
   useEffect(() => {
-    fetchContactData();
-  }, []);
+    const startIndex = (page - 1) * rowsPerPage;
+    const endIndex = startIndex + rowsPerPage - 1; // Adjust endIndex to fetch the correct range
+    fetchContactData(startIndex, endIndex);
+  }, [page, rowsPerPage]); // Fetch data whenever page or rowsPerPage changes
 
-  const fetchContactData = async () => {
+  const fetchContactData = async (startIndex, endIndex) => {
+    console.log('startIndex', startIndex, 'endIndex', endIndex);
     try {
-      const contactDataSnap = await getDocs(collection(db, 'FreeTrialStudent'));
+      const contactDataSnap = await getDocs(
+        query(
+          collection(db, 'FreeTrialStudent'),
+          orderBy('date'),
+          startAt(startIndex),
+          endAt(endIndex)
+        )
+      );
       const contactData = contactDataSnap.docs.map((doc) => doc.data());
       console.log('contactData', contactData);
       setContactData(contactData);
@@ -29,15 +39,6 @@ const SmallContactTable = () => {
     setSortBy(event.target.value);
   };
 
-  const handleChangePage = (event, newPage) => {
-    setPage(newPage);
-  };
-
-  const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
-    setPage(1); // Reset page to 1 when changing rows per page
-  };
-
   const sortedData = contactData.sort((a, b) => {
     if (typeof a[sortBy] === 'string' && typeof b[sortBy] === 'string') {
       return a[sortBy].localeCompare(b[sortBy]);
@@ -47,11 +48,6 @@ const SmallContactTable = () => {
       return b[sortBy] - a[sortBy];
     }
   });
-
-  // Pagination calculation
-  const startIndex = (page - 1) * rowsPerPage;
-  const endIndex = startIndex + rowsPerPage;
-  const paginatedData = sortedData.slice(startIndex, endIndex);
 
   return (
     <div>
@@ -64,7 +60,7 @@ const SmallContactTable = () => {
           // Add more headers as needed
         ]}
         loading={false}
-        fetchData={fetchContactData}
+        fetchData={() => {}}
         sort={sortBy}
         setSort={handleSortChange}
         handleScroll={() => {}}
@@ -73,12 +69,8 @@ const SmallContactTable = () => {
         tableStyleExtra={{}}
       >
         {/* Display paginated data using the ContactTableRow component */}
-        {paginatedData.map((contact, index) => (
-          <ContactTableRow
-            key={index}
-            index={startIndex + index + 1}
-            contact={contact}
-          />
+        {sortedData.map((contact, index) => (
+          <ContactTableRow key={index} index={index + 1} contact={contact} />
         ))}
       </TableWithFilterNSort>
       <Pagination
