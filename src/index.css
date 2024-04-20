@@ -3854,7 +3854,6 @@ button {
   background-color: var(--landing-btn-background-color);
   margin-left: 40%;
   margin-top: 5%;
-  color: var(--landing-darkest-bg-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -3866,7 +3865,7 @@ button {
   }
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .join-now-button:hover {
-  background-color: var(--golden-color);
+  background-color: yellow;
 }
 @media (min-width: 768px) {
   .Landing-Page-Main-Container .result-main-conatiner .my-component .my-component .component2 img {

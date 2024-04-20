@@ -191,7 +191,7 @@
         background-color: var(--landing-btn-background-color);
         margin-left: 40%;
         margin-top: 5%;
-        color: var(--landing-darkest-bg-color);
+        // color: var(--landing-darkest-bg-color);
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -201,7 +201,7 @@
         }
 
         &:hover {
-          background-color: var(--golden-color);
+          background-color: yellow;
         }
       }
     }
