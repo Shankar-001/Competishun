@@ -74,8 +74,9 @@
         gap: 5%;
         .description {
           @include bodyText;
+          font-weight: 500;
           border-radius: 8px; /* Adding border radius */
-          border: 1px solid rgb(217, 220, 225);
+          border: 1px solid rgb(32, 32, 33);
           padding: 3%;
           // font-size: 14px;
           // color: var(--landing-desc-color);
@@ -93,15 +94,20 @@
           text-decoration: none;
           border-radius: 5px;
           margin-left: 1rem;
+          color: #007bff;
+          text-decoration: underline;
           // color: var(--landing-desc-color);
           &:hover {
             color: blue;
           }
           .arrow-icon {
+            @include bodyText;
             margin-top: 6px;
+            color: #007bff;
+            // text-decoration: underline;
             // font-size: 2rem;
             // color: var(--landing-desc-color); 
-            @include bodyText;
+     
             // margin-left: 2rem;
             &:hover {
               color: blue;

@@ -5,6 +5,7 @@ import achi3 from '../assets/Gallery/Achievements/dubai.jpg';
 import achi4 from '../assets/Gallery/Achievements/award.jpg';
 //  celebration ------------------------------------------------------------------------------
 
+import celeb2 from '../assets/Gallery/Celebration/celebration2.jpg';
 import celeb7 from '../assets/Gallery/Celebration/celebration7.jpg';
 import celeb11 from '../assets/Gallery/Celebration/celebration11.jpg';
 import celeb13 from '../assets/Gallery/Celebration/celebration13.jpg';

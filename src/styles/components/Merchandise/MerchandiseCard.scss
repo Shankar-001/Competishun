@@ -1,6 +1,8 @@
 .MerchandiseCardMainContainer {
+  // width: var(--landing-page-main-info-width);
     @include bodyText;
     @include flex-cc;
+    flex-wrap: wrap;
     .MerchandiseCardSubContainer {
       @include flex-cc(column);
     //   margin-top: 10rem;

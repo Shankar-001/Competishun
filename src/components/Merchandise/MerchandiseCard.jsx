@@ -30,7 +30,7 @@ const MerchandiseCard = () => {
           <div className="MerchandiseCardComponent">
             {MerchandiseData.map((item, index) => (
               <div className="ankertag">
-                <NewCardComponent key={index} data={item} onClick={handleCardClick(item)} />
+                <NewCardComponent key={index} data={item} onClick={() => handleCardClick(item)} />
               </div>
             ))}
           </div>
@@ -39,8 +39,7 @@ const MerchandiseCard = () => {
           <div className="MerchandiseCardComponent">
             {MerchandiseDataJeeMainPYQ.map((item, index) => (
               <div className="ankertag" >
-                <NewCardComponent key={index} data={item}  onClick={handleCardClick(item)}/>
-              </div>
+                 <NewCardComponent key={index} data={item} onClick={() => handleCardClick(item)} />              </div>
             ))}
           </div>
           {/* 36 years pyqs */}
@@ -50,7 +49,7 @@ const MerchandiseCard = () => {
           <div className="MerchandiseCardComponent">
             {MerchandiseDataNeetPYQ.map((item, index) => (
               <div className="ankertag"  >
-                <NewCardComponent key={index} data={item} onClick={handleCardClick(item)} />
+                  <NewCardComponent key={index} data={item} onClick={() => handleCardClick(item)} />
               </div>
             ))}
           </div>
@@ -60,7 +59,7 @@ const MerchandiseCard = () => {
           <div className="MerchandiseCardComponent">
             {MerchandiseDataCapsPYQ.map((item, index) => (
               <div className="ankertag" >
-                <NewCardComponent key={index} data={item} onClick={handleCardClick(item)} />
+                 <NewCardComponent key={index} data={item} onClick={() => handleCardClick(item)} />
                 {/* <img src={item.src} alt="" /> */}
               </div>
             ))}
@@ -72,7 +71,7 @@ const MerchandiseCard = () => {
           <div className="MerchandiseCardComponent">
             {MerchandiseDataDlpBooks.map((item, index) => (
               <div className="ankertag">
-                <DescNewCardComponent key={index} data={item}  onClick={handleCardClick(item)}/>
+                  <NewCardComponent key={index} data={item} onClick={() => handleCardClick(item)} />
                 {/* <img src={item.src} alt="" /> */}
               </div>
             ))}
@@ -84,7 +83,7 @@ const MerchandiseCard = () => {
         {/* <div className="MerchandiseDetails">Bottle store</div>
         <div className="MerchandiseCardComponent">
           {MerchandiseData.map((item, index) => (
-            <NewCardComponent key={index} data={item} />
+            <NewCardComponent key={index} data={item} onClick={() => handleCardClick(item)} />
           ))}
         </div> */}
       </div>

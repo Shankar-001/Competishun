@@ -30,7 +30,7 @@ const LargeContactTable = () => {
             orderBy('date'),
             startAt(startIndex),
             // endAt(endIndex)
-            limit(rowsPerPage),
+            limit(rowsPerPage)
           )
         );
         const contactData = contactDataSnap.docs.map((doc) => doc.data());

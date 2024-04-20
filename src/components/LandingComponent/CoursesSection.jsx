@@ -11,8 +11,8 @@ const CoursesSection = () => {
     {
       icon: jeeimg,
       cardhead: 'JEE Online',
-      class1: 'class11',
-      class2: 'class12',
+      class1: 'Class11',
+      class2: 'Class12',
       class3: 'Dropper',
       button: 'Explore our courses',
       title: 'jee-online-courses',
@@ -20,26 +20,26 @@ const CoursesSection = () => {
     {
       icon: jeeimg,
       cardhead: 'JEE Offline',
-      class1: 'class11',
-      class2: 'class12',
+      class1: 'Class11',
+      class2: 'Class12',
       class3: 'Dropper',
       button: 'Explore our courses',
       title: 'jee-offline-courses',
     },
     {
       icon: img,
-      cardhead: 'NEET ( UG ) Online',
-      class1: 'class11',  
-      class2: 'class12',
+      cardhead: 'NEET (UG) Online',
+      class1: 'Class11',  
+      class2: 'Class12',
       class3: 'Dropper',
       button: 'Explore our courses',
       title: 'neet-online-courses',
     },
     {
       icon: img,
-      cardhead: 'NEET ( UG ) Offline',
-      class1: 'class11',
-      class2: 'class12',
+      cardhead: 'NEET (UG) Offline',
+      class1: 'Class11',
+      class2: 'Class12',
       class3: 'Dropper',
       button: 'Explore our courses',
       title: 'neet-offline-courses',
@@ -73,7 +73,7 @@ const CoursesSection = () => {
             </div>
             <div className="explore-button" onClick={() => handleCardClick(data)}>
               <div className="read-more" >
-                <p>explore our courses</p>
+                <p>Explore our courses</p>
                 <p className="arrow-icon">
                   <FaLongArrowAltRight size={20} />
                 </p>
