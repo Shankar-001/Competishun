@@ -16,8 +16,27 @@ html {
   --darkest-bg-color: #14171A;
   --primary-color: #1DA1F2;
   --secondary-color: #fad776;
-  
+  --golden-color:#FFD700;
 
+  // Landing Page Variable
+
+  --landing-medium-bg-color: #A8D0E6;
+  --landing-dark-bg-color: #374785;
+  --landing-darkest-bg-color: #24305E;
+  --landing-primary-color: #F8E9A1;
+  --landing-secondary-color: #F76C6C;
+
+  --landing-desc-color: #e5e4e2;
+  --landing-main-head-color: white;
+  // --landing-sub-head-color: rgba(183, 201, 69, 0.844);
+  // --landing-sub-head-color: #6495ED;
+  // --landing-sub-head-color: #ccddff;
+  --landing-sub-head-color: #e5e4e2;
+  --landing-btn-background-color: var(--golden-color);
+  --landing-button-color: #23103A;
+
+  // --landing-bg-liner-grad: linear-gradient(100deg, #24305E 35%, #374785 70%, #A8D0E6 100%);
+  --landing-bg-liner-grad: #092491;
 
   --hero-bg-liner-grad: linear-gradient(104deg, #0061FF 30.47%, #60EFFF 108.71%);
   --text-liner-grad: linear-gradient(93deg, #0D47A1 49.87%, #2E93CA 85.58%);

@@ -1,7 +1,7 @@
 .TestimonialsSection {
   @include flex-cc;
   @include bodyText;
-  padding: 5rem 0;
+  padding: 3rem 0;
   width: 100%;
   background-color: var(--lightest-bg-color);
   .containerMain {
@@ -11,7 +11,15 @@
     h1 {
       @include h1;
       color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+    h3{
+      @include h3;
+      color: var(--darkest-bg-color);
       margin-bottom: 2rem;
+      span{
+        color: orange;
+      }
     }
     .testimonials-container {
       @include flex-cst;
@@ -31,7 +39,7 @@
         &::-webkit-scrollbar {
           display: none;
         }
-        
+
         @import './TestimonialComponent.scss';
       }
 
@@ -39,9 +47,9 @@
         @include flex-cc;
         z-index: 2;
         cursor: pointer;
-        width : 5rem;
+        width: 5rem;
 
-        img{
+        img {
           width: 100%;
           height: 10rem;
         }

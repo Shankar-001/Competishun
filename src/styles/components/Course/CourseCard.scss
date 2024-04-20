@@ -3,17 +3,17 @@
   @include flex-cc;
   .CourseCardSubContainer {
     @include flex-cc(column);
-    margin-top: 10rem;
+    margin-top: 11rem;
     width: var(--landing-page-main-info-width);
     .CourseDetails {
-      @include bodyText(var(--darkest-bg-color), 3.6rem, 500);
+      @include h3;
       width: var(--landing-page-main-info-width);
-      margin: {
-        top: 3%;
-        bottom: 3.2%;
-      }
+      margin-bottom: 3.2%;
       span {
         color: #e14255;
+      }
+      @media (max-width: 550px) {
+        @include h4;
       }
     }
     .CourseCardComponent {
@@ -22,8 +22,16 @@
       justify-content: space-between;
       width: 90%;
       flex-wrap: wrap;
-      gap: 5rem;
+      gap: 5rem 2rem;
       margin-bottom: 2%;
+
+      @media (min-width: 400px) and (max-width: 550px) {
+        @include grid-n-eql-col(1);
+      }
+      @media (min-width: 550px) and (max-width: 800px) {
+        @include grid-n-eql-col(2);
+      }
+
 
       @import '../CardComponent/CardComponent.scss';
     }

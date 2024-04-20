@@ -1,7 +1,7 @@
 .resultSection {
   @include flex-cc;
   @include bodyText;
-  padding: 5rem 0;
+  padding: 3rem 0;
   width: 100%;
   background-color: var(--lightest-bg-color);
 
@@ -22,120 +22,146 @@
   #result {
     width: 100%;
     @include flex-cst(column);
-    gap:2rem;
-  .container {
-    
-    .row {
-      &.mt-6 {
-        margin-top: 6rem;
-      }
-
-      .inner-row {
-        .badge {
-            @include bodyText;
-          display: inline-block;
-          padding: 0.25rem 0.5rem;
-        //   font-size: 0.75rem;
-          font-weight: bold;
-          color: #fff;
-          background-color: #0d6efd;
-          border-radius: 0.375rem;
+    gap: 2rem;
+    .container {
+      .row {
+        &.mt-6 {
+          margin-top: 4rem;
         }
 
-        h2 {
-            @include h2;
-          &.display-3 {
-            // font-size: 2.5rem;
+        .inner-row {
+          .slogan{
+            color:var(--primary-color);
+            font-size: 6.6rem;
+            text-align: center;
+          }
+          .description{
+            color:orange;
+            @include h3;
+            text-align: center;
+          }
+
+          .badge {
+            // @include bodyText;
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            //   font-size: 0.75rem;
             font-weight: bold;
-            margin-bottom: 0;
+            color: #fff;
+            background-color: #0d6efd;
+            border-radius: 0.375rem;
           }
 
-          &.fw-bolder {
-            font-weight: bolder;
+          h2 {
+            @include h3;
+            // &.display-3 {
+            //   // font-size: 2.5rem;
+            //   font-weight: bold;
+            //   margin-bottom: 0;
+            // }
+
+            &.fw-bolder {
+              font-weight: bolder;
+            }
           }
         }
-      }
 
-      .card-group {
+        .card-group {
           @include flex-sac;
-        border-top: 0.3rem solid #0d6efd;
-        padding: 2rem;
-        
-        &.card-border {
-        //   &.card-border-lg {
-        //     border-width: 0.125rem;
-        //   }
+          border-top: 0.3rem solid #0d6efd;
+          padding: 2rem;
+          margin-bottom: 2rem;
 
-          &.border-primary {
-            border-color: #0d6efd;
-          }
+          &.card-border {
+            //   &.card-border-lg {
+            //     border-width: 0.125rem;
+            //   }
 
-          &.shadow-light-lg {
-            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-          }
+            &.border-primary {
+              border-color: #0d6efd;
+            }
 
-          &.lift {
-            transition: transform 0.3s ease;
-          }
+            &.shadow-light-lg {
+              box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+            }
 
-          &.lift-lg {
-            &:hover {
-              transform: translateY(-0.5rem);
+            &.lift {
+              transition: transform 0.3s ease;
+            }
+
+            &.lift-lg {
+              &:hover {
+                transform: translateY(-0.5rem);
+              }
             }
           }
-        }
 
-        .card {
+          .card {
             width: 20%;
-          .card-body {
-            @include flex-cc(column);
-            .year-name{
+            // background-image: url('/src/assets/crownleaf.png');
+            // background-size: 100% 100%;
+            @include flex-cc;
+            img{
+              transform: rotateZ(-20deg)  translateX(-38%) ;
+              width:50%;
+              margin:0 1rem ;
+              // transform: translateX(-38%) translateY(10%);
+              // z-index:  -1;
+            }
+            .left-img{
+              transform: rotateZ(20deg) rotateY(180deg)  translateX(-38%) ;
+              // transform:  rotateY(180deg)  translateX(-38%)  translateY(10%);
+            }
+            .card-body {
+              @include flex-cc(column);
+              .year-name {
                 @include bodyText;
-          display: inline-block;
-          padding: 0.25rem 0.5rem;
-        //   font-size: 0.75rem;
-          font-weight: bold;
-          color: #fff;
-          background-color: #0d6efd;
-          border-radius: 0.375rem;
-            }
-            h2 {
-                @include h2;
-              &.fw-bolder {
+                display: inline-block;
+                padding: 0.25rem 0.5rem;
+                //   font-size: 0.75rem;
                 font-weight: bold;
+                color: #fff;
+                background-color: #0d6efd;
+                border-radius: 0.375rem;
               }
-
-              &.text-center {
-                text-align: center;
-              }
-
-              span {
-                &.text-danger {
-                  color: #dc3545;
-                }
-
-                &.fw-bold {
+              h2 {
+                @include h2;
+                &.fw-bolder {
                   font-weight: bold;
                 }
-              }
-            }
 
-            p {
-              &.text-muted {
-                color: #6c757d;
-              }
-
-              &.text-center {
-                text-align: center;
-              }
-
-              span {
-                &.text-danger {
-                  color: #dc3545;
+                &.text-center {
+                  text-align: center;
                 }
 
-                &.fw-bold {
-                  font-weight: bold;
+                span {
+                  &.text-danger {
+                    color: #dc3545;
+                  }
+
+                  &.fw-bold {
+                    font-weight: bold;
+                  }
+                }
+              }
+
+              p {
+                &.text-muted {
+                  color: #6c757d;
+                }
+
+                &.text-center {
+                  text-align: center;
+                }
+
+                span {
+                  &.text-danger {
+                    color: #dc3545;
+                  }
+
+                  &.fw-bold {
+                    font-weight: bold;
+                  }
                 }
               }
             }
@@ -144,6 +170,4 @@
       }
     }
   }
-}
-
 }

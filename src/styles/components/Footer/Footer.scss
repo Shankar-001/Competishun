@@ -1,92 +1,216 @@
 .footer-mainContainer {
+  // margin-bottom: 1%;
+  padding-bottom: 0.1%;
   background-color: var(--ip-border-clr);
   @include flex-cc;
   @include bodyText;
+ 
 
   .develop {
     text-align: center;
     color: var(--lightest-bg-color);
+    font-weight: 300;
+    padding-top: 1%;
   }
 
   .footer-containerContent {
-    margin-top: 5rem;
+    margin-top: 4%;
+    margin-bottom: 1.5%;
     width: var(--landing-page-main-info-width);
 
     .footer-innerContainer {
       background-color: white;
       border-radius: 1rem;
-      @include flex-sec;
+      padding:2rem;
+      @include flex-ses;
 
+      @media screen and (max-width: 990px) {
+        @include flex-cc(column);
+        .socialMedia-logo {
+          padding-top: 5%;
+        }
+        .download-heading {
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+        .ebook {
+          margin-top: 1rem;
+          margin-bottom: 1.5rem;
+        }
+        .appstore {
+          margin-top: 1%;
+          margin-bottom: 1%;
+          gap: 1rem;
+        }
+
+      }
+      @media screen and (max-width: 760px) {
+        @include flex-ss(column);
+        height: auto;
+        padding: 1rem;
+        background-color: var(--ip-border-clr);
+        color: var(--lightest-bg-color);
+        gap: 2rem;
+
+        .footer-navlink {
+          color: var(--lightest-bg-color);
+        }
+        #quick-links {
+          color: var(--lightest-bg-color);
+        }
+        
+
+        .socialMedia-logo {
+          padding-top: 5%;
+
+        }
+        .download-heading {
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+        .ebook {
+          margin-top: 1rem;
+          margin-bottom: 1.5rem;
+        }
+        .appstore {
+          margin-top: 1%;
+          margin-bottom: 1%;
+          gap: 1rem;
+        }
+      }
       .footer-logo {
-        @include flex-cs(column);
+        @include flex-ss(column);
         gap: 1rem;
-        margin-top: 0.5rem;
-        margin-bottom: 2rem;
+        margin-top: 0.5%;
+        margin-bottom: 2%;
 
         .footer-companyIcon {
-          width: 10rem;
-          height: 10rem;
-          margin-left: 10rem;
+          width: 40%;
+          height: 25%;
         }
         .p {
-          margin-left: 5rem;
+          margin-left: 5%;
         }
 
         .footer-address {
           @include flex-ss;
-          gap: 0.6rem;
+          gap: 1rem;
 
           .Icon {
-            margin-top: 0.5rem;
+            margin-top: 2%;
           }
         }
       }
 
-      .footer-quickLinks {
-        @include flex-ss(column);
-        gap: 2rem;
-        .element {
-          .footer-link {
-            li {
-              list-style-type: none;
-              text-decoration: none;
-              margin-bottom: 0.4rem;
-              .footer-navlink {
+      // @media (max-width: 576px) {
+      //   .footer-quickLinks {
+      //     display: none;
+      //   }
+      // }
+      // @media (max-width: 576px) {
+      //   .footer-support {
+      //     display: none;
+      //   }
+      // }
+
+      .quicklink-support {
+        @include flex-sbs;
+        gap: 10rem;
+        .footer-quickLinks {
+          @include flex-ss(column);
+          gap: 2rem;
+          .element {
+            .footer-link {
+              li {
+                list-style-type: none;
                 text-decoration: none;
-                color: var(--darkest-bg-color);
+                margin-bottom: 0.4rem;
+                .footer-navlink {
+                  text-decoration: none;
+                  color: var(--darkest-bg-color);
+                }
               }
+            }
+          }
+        }
+  
+        .footer-support {
+          @include flex-ss(column);
+  
+          gap: 2rem;
+  
+          .footer-support-link {
+            .point {
+              margin-top: 0.4rem;
             }
           }
         }
       }
 
-      .footer-support {
-        @include flex-ss(column);
-
-        gap: 2rem;
-
-        .footer-support-link {
-          .point {
-            margin-top: 0.4rem;
-          }
-        }
-      }
+     
 
       .footer-joinUs {
         .socialMedia-logo {
           @include flex-ss(row);
-          gap: 1.1rem;
-          margin-top: 1.2rem;
-          margin-bottom: 0.9rem;
+          gap: 1.4rem;
+          margin-top: 1.2%;
+          margin-bottom: 1.2%;
+
+          
+          .icons{
+            transition: transform 0.3s ease;;
+
+          }
+          .icons:hover{
+          transform: scale(1.2);
+          }
+          
         }
         p {
           margin-top: 0.2rem;
         }
         .appstore {
-          @include flex-cc(row);
+          @include flex-ss(row);
           gap: 2rem;
+          margin-top: 0.3rem;
+          
+          .app {
+            width: 12rem;
+            height: 6rem;
+            border-radius: 1.5rem;
+            transition: 0.3s ease;
+          }
+          .app:hover{
+            transform: scale(1.1);
+          }
+        }
+        .ebook{
+          // padding-bottom:0.3rem;
         }
       }
     }
+  }
+  .footer-navlink {
+    text-decoration: none;
+    color: var(--darkest-bg-color);
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+  #quick-links{
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
+.text{
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: var(--primary-color);
+  }
+  @media screen and (max-width:760px) {
+    color: white;
+    
   }
 }

@@ -1,0 +1,188 @@
+.TestCardMainContainer {
+  @include bodyText;
+  @include flex-cc;
+
+  .TestCardSubContainer {
+    margin-top: 11rem;
+    width: var(--landing-page-main-info-width);
+    @include flex-ss(column);
+
+    .TestTitle {
+      margin-bottom: 2rem;
+      @include flex-sbs;
+      width: 100%;
+
+      h1 {
+        color: var(--primary-color);
+        @include h3;
+        @media (max-width: 550px) {
+          @include h4;
+        }
+      }
+    }
+
+    .TestMiddleContent {
+      @include flex-ss;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      height: 50rem;
+      width: 100%;
+      box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+
+      @media (max-width: 850px) {
+        @include flex-ss(column);
+        height: fit-content;
+      }
+
+      .TestDetailsLeft {
+        width: 35rem;
+        padding: 2rem;
+        border-right: 1px solid red;
+        height: 100%;
+        overflow-y: auto;
+        // text-align: justify;
+
+        @media (max-width: 850px) {
+          @include flex-ss;
+          width: 100%;
+          border-right: 0;
+          height: fit-content;
+          padding: 1rem;
+          overflow-x: auto;
+        }
+
+        &::-webkit-scrollbar {
+          width: 0.6rem;
+          @media (max-width: 850px) {
+            height: 0;
+          }
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        .TestMenu {
+          @media (max-width: 850px) {
+            @include flex-cc;
+            text-wrap: nowrap;
+          }
+          h3 {
+            cursor: pointer;
+            padding: 1rem;
+            transition: background-color 250ms ease, color 250ms ease;
+
+            @media (max-width: 850px) {
+              background-color: var(--light-bg-color);
+              border-radius: 5rem;
+              margin-right: 1.2rem;
+            }
+
+            &:hover {
+              background-color: var(--medium-bg-color);
+              color: #fff;
+            }
+
+            &.active {
+              background-color: var(--primary-color);
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .TestDetailsRight {
+        width: 100%;
+        padding: 2rem;
+        // max-height: 34rem;
+        height: 100%;
+        overflow-y: auto;
+        // text-align: justify;
+        @include flex-ss(column);
+
+        @media (max-width: 850px) {
+          width: 100%;
+        }
+
+        &::-webkit-scrollbar {
+          width: 0.6rem;
+        }
+
+        h3 {
+          span {
+            @include font-style(1.6rem);
+          }
+        }
+
+        .downloadSchedule {
+          width: 100%;
+          height: 100%;
+          @include flex-cc;
+
+          a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--dark-bg-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0.6rem;
+            transition: background-color 250ms ease;
+
+            &:hover {
+              background-color: var(--darkest-bg-color);
+            }
+          }
+        }
+
+        .ShortTermRefundPolicy {
+          @include flex-ss(column);
+          p {
+            strong {
+              color: red; /* Set the color to red for all <strong> elements within .refund-policy */
+              font-weight: 900;
+            }
+          }
+        }
+
+        ul {
+          li {
+            margin-top: 1.5%;
+            list-style-type: none;
+          }
+        }
+
+        .HowToEnrollContainer {
+          p {
+            margin: {
+              top: 1.8%;
+              bottom: 2%;
+            }
+          }
+          strong {
+            font-weight: bold;
+          }
+          a {
+            color: #007bff; /* Link color */
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .CommonTest {
+      margin-top: 1.8%;
+      align-self: center;
+      .TestContact {
+        text-align: center;
+        margin-top: 2%;
+        h2 {
+          margin-bottom: 1%;
+        }
+      }
+    }
+  }
+}

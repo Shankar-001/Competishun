@@ -9,13 +9,28 @@
 @import './components/Navbar/Navbar.scss';
 @import './components/NewOffer/NewOffer.scss';
 @import './components//Footer/Footer.scss';
+@import './components/AboutUs/About.scss';
 
 // Pages
-@import './pages/About.scss';
+@import './pages/Contact.scss';
 @import './pages/Home/Home.scss';
 @import './pages/Course/Course.scss';
 @import './pages/Test\ Series/TestSeries.scss';
 @import './pages/Course/CourseDetails.scss';
+@import './pages/Merchandise/Merchandise.scss';
+@import './components/Merchandise/MerchandiseCardDetails.scss';
+@import './pages/Gallery.scss';
+@import './pages/Test\ Series/TestSeriesDetails.scss';
+@import './pages/Result.scss';
+@import './pages/StudyFree.scss';
+@import './pages/Admin/Admin.scss';
+@import './pages/LandingPage/LandingPage.scss';
 
 // utils
 @import './utils/Modal.scss';
+@import '../styles/pages/Director/DirectorInfo.scss';
+@import './utils/GalleryModal.scss';
+@import './utils/Button/JoinNow.scss';
+@import './utils/TableWithFilterAndSort/TableWithFilterNSort.scss';
+@import './utils/Loader/loader.scss';
+@import './utils/Pagination/Pagination.scss';

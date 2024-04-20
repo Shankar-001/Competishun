@@ -2,12 +2,14 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import { useEffect, useState } from 'react';
 import { RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri';
+import { FaBars, FaHamburger } from 'react-icons/fa';
+import { FaCross, FaX } from 'react-icons/fa6';
 
 const Navbar = () => {
   const location = useLocation();
   const [showScrollToTop, setShowScrollToTop] = useState(true);
   const [showCoursesDropdown, setShowCoursesDropdown] = useState(false);
-
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -28,7 +30,12 @@ const Navbar = () => {
   const handleCoursesMouseLeave = () => {
     setShowCoursesDropdown(false);
   };
-
+  const handleCoursesMenuToggle = () => {
+    setShowCoursesDropdown(!showCoursesDropdown);
+  };
+  const toggleMobileMenu = () => {
+    setShowMobileMenu(!showMobileMenu);
+  };
   return (
     <div
       className={`Navbar-main-container ${
@@ -39,7 +46,10 @@ const Navbar = () => {
         <Link to="/" className="image">
           <img src={logo} alt="Competishun-logo" />
         </Link>
-        <div className="navbar-heading">
+        <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+          {showMobileMenu ? <FaX /> : <FaBars />}
+        </div>
+        <div className={`navbar-heading ${!showMobileMenu && 'inactive'}`}>
           <li>
             <NavLink to="/" className="navlink">
               Home
@@ -48,6 +58,7 @@ const Navbar = () => {
           <li
             onMouseEnter={handleCoursesMouseEnter}
             onMouseLeave={handleCoursesMouseLeave}
+            onClick={handleCoursesMenuToggle}
           >
             <div className="navbar-course-details">
               <div className="li-navlink">Courses</div>
@@ -67,13 +78,23 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
+            <NavLink to="/merchandise" className="navlink">
+              Merchandise
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/studyfree" className="navlink">
+              Study Free
+            </NavLink>
+          </li>
+          <li>
             <NavLink to="/result" className="navlink">
               Result
             </NavLink>
           </li>
           <li>
-            <NavLink to="/merchandise" className="navlink">
-             Merchandise
+            <NavLink to="/gallery" className="navlink">
+              Gallery
             </NavLink>
           </li>
           <li>
@@ -81,11 +102,6 @@ const Navbar = () => {
               Contact Us
             </NavLink>
           </li>
-          {/* <div>Home</div>
-            <div>Courses</div>
-            <div>Test Series</div>
-            <div>About</div>
-            <div>Contact Us</div> */}
         </div>
       </div>
     </div>
@@ -97,16 +113,16 @@ const DropdownMenu = () => {
   return (
     <div className="courses-dropdown">
       <NavLink to="/courses/jee-online-courses" className="navlink">
-        Jee Online
+        IIT Jee Online
       </NavLink>
       <NavLink to="/courses/jee-offline-courses" className="navlink">
-        Jee Offline
+        IIT Jee Offline
       </NavLink>
       <NavLink to="/courses/neet-online-courses" className="navlink">
-        Neet Online
+        Neet UG Online
       </NavLink>
       <NavLink to="/courses/neet-offline-courses" className="navlink">
-        Neet Offline
+        Neet UG Offline
       </NavLink>
     </div>
   );

@@ -1,0 +1,14 @@
+.Landing-Page-Main-Container {
+  @include flex-sc(column);
+  padding-top: 7rem;
+  background: var(--landing-bg-liner-grad);
+  @import '../../components/LandingComponent/LandingHomeSection.scss';
+  @import '../../components/LandingComponent/LandingVideo.scss';
+  @import '../../components/LandingComponent/LandingDirector.scss';
+  @import '../../components/LandingComponent/CoursesSection.scss';
+  @import '../../components/LandingComponent/ResultSection.scss';
+  @import '../../components/LandingComponent/LandingTestimonial.scss';
+  @import '../../components/LandingComponent/LandingFAQ.scss';
+  @import '../../components/LandingComponent/whyCompethisun.scss';
+
+}

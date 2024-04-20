@@ -1,0 +1,29 @@
+.ComponentDivision {
+  border-radius: 2rem;
+  @include flex-cc(column);
+  border: 0.1rem solid beige;
+  z-index: 5;
+  // height: 30rem;
+  // width: var(--landing-page-main-info-width);
+  overflow: hidden;
+  box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
+  img {
+    // width: 28rem;
+    // height: 27.5rem;
+    @media (min-width: 400px) and (max-width: 550px) {
+      width: 28rem;
+      height: 27.5rem;
+    }
+  }
+  &:hover {
+    background-color: var(--light-bg-color);
+    transform: scale(1.1);
+    @include transition(0.5s);
+  }
+  .button {
+    background-color: aqua;
+    width: 100%;
+    padding: 2%;
+    text-decoration: none;
+  }
+}

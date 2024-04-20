@@ -1,28 +1,31 @@
 import React from 'react';
 import resultData from '../../Data/ResultData';
+import oneLeaf from "../../assets/oneLeaf.png"
 
 const ResultsSection = () => {
   return (
     <div className="resultSection">
       <div className="containerMain">
-        <h1>Results</h1>
+        {/* <h1>Results</h1> */}
 
         <section id="result">
           {resultData.map((result, index) => (
             <div className="container" key={index}>
               <div className="row">
                 <div className="inner-row">
-                  <h6 className="badge">{result.title}</h6>
-
-                  <h2 className="mb-0 display-3 fw-bolder">{result.heading}</h2>
+                  <h3 className='slogan'>{result.title}</h3>
+                  <h4 className='description'>{result.description}</h4>
+                  <h2 className="badge">{result.heading}</h2>
+                  <h4 className="mb-0 display-3 fw-bolder">{result.subheading}</h4>
                 </div>
               </div>
 
               <div className="row mt-6">
                 <div className="col-12">
                   <div className="card-group card-border card-border-lg border-primary shadow-light-lg lift lift-lg">
-                    {result.data.map((data,ind) => (
+                    {result.data.map((data, ind) => (
                       <div className="card" key={ind}>
+                        <img className='left-img' src={oneLeaf} alt='dslk'/>
                         <div className="card-body">
                           <div className="year-name">{data.year}</div>
 
@@ -33,6 +36,7 @@ const ResultsSection = () => {
                             Selections
                           </p>
                         </div>
+                        <img src={oneLeaf} alt='dslk'/>
                       </div>
                     ))}
                   </div>
@@ -40,7 +44,6 @@ const ResultsSection = () => {
               </div>
             </div>
           ))}
-          
         </section>
       </div>
     </div>

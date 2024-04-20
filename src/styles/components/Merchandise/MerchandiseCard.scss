@@ -1,0 +1,51 @@
+.MerchandiseCardMainContainer {
+  // width: var(--landing-page-main-info-width);
+    @include bodyText;
+    @include flex-cc;
+    flex-wrap: wrap;
+    .MerchandiseCardSubContainer {
+      @include flex-cc(column);
+      margin-top: 11rem;
+      width: var(--landing-page-main-info-width);
+      .MerchandiseDetails{
+        @include bodyText(var(--darkest-bg-color), 4.8rem, 600);
+        margin: {
+          top: 1%;
+          bottom: 3.2%;
+        }
+        .MerchandiseSubDetails{
+          @include h3;
+           padding:2% 0%;
+           padding-bottom: 3%;
+           @media (max-width: 550px) {
+            @include h4;
+          }
+        }
+      }
+      .MerchandiseCardComponent {
+        @include grid-sc;
+        @include grid-n-eql-col(3);
+        justify-content: space-between;
+        width: 90%;
+        flex-wrap: wrap; 
+        gap: 5rem 2rem;
+        margin-bottom: 2%;
+        .ankertag{
+          text-decoration: none;
+        }
+
+        @media (min-width: 400px) and (max-width: 550px) {
+          @include grid-cc;
+          @include grid-n-eql-col(1);
+        }
+  
+        @media (min-width: 550px) and (max-width: 920px) {
+          @include grid-n-eql-col(2);
+        }
+  
+        @import '../CardComponent/NewCardComponent.scss';
+        @import '../CardComponent/DescCardComponent.scss';
+      }
+    }
+  }
+  

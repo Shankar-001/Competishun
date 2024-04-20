@@ -5,7 +5,6 @@ import playImg from '../../assets/ic-play.svg';
 import Modal from '../../utils/Modal';
 
 const TestimonialsSection = () => {
-
   const handleLeftSwipe = () => {
     const testimonialContainer = document.querySelector('.TestimonialComp');
     testimonialContainer.scrollLeft -= 300;
@@ -19,23 +18,17 @@ const TestimonialsSection = () => {
     <div className="TestimonialsSection">
       <div className="containerMain">
         <h1>Testimonials</h1>
+        <h3>
+          Across the nation, we're the <span>institute of choice</span>  for thousands of
+          students and parents
+        </h3>
         <div className="testimonials-container">
           <div className="arrow left-arrow" onClick={handleLeftSwipe}>
             <img src={rArrow} alt="left-arrow" />
           </div>
           <div className="TestimonialComp">
             {testimonialData.map((testimonial) => (
-              <TestimonialComponent
-                key={testimonial.id}
-                name={testimonial.name}
-                exam={testimonial.exam}
-                videoUrl={testimonial.videoUrl}
-                discription={testimonial.discription}
-                title={testimonial.title}
-                college={testimonial.college}
-                email={testimonial.email}
-                thumbnail={testimonial.thumbnail}
-              />
+              <TestimonialComponent key={testimonial.id} data={testimonial} />
             ))}
           </div>
           <div className="arrow right-arrow" onClick={handleRightSwipe}>
@@ -49,16 +42,8 @@ const TestimonialsSection = () => {
 
 export default TestimonialsSection;
 
-const TestimonialComponent = ({
-  name,
-  exam,
-  videoUrl,
-  discription,
-  title,
-  college,
-  email,
-  thumbnail,
-}) => {
+const TestimonialComponent = ({ data }) => {
+  const { name, exam, videoUrl, description, college, thumbnail } = data;
   const [showModal, setShowModal] = useState(false);
 
   const handleShowModal = () => setShowModal(true);
@@ -89,7 +74,7 @@ const TestimonialComponent = ({
               loading="lazy"
             />
           </div>
-          <p className="testimonial-desc">{discription}</p>
+          <p className="testimonial-desc">{description}</p>
           <h4 className="testimonial-name">{name}</h4>
           <p className="testimonial-as-a">
             {college} | {exam}
