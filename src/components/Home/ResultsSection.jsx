@@ -1,5 +1,6 @@
 import React from 'react';
 import resultData from '../../Data/ResultData';
+import oneLeaf from "../../assets/oneLeaf.png"
 
 const ResultsSection = () => {
   return (
@@ -24,7 +25,7 @@ const ResultsSection = () => {
                   <div className="card-group card-border card-border-lg border-primary shadow-light-lg lift lift-lg">
                     {result.data.map((data, ind) => (
                       <div className="card" key={ind}>
-                        <img className='left-img' src='/src/assets/oneLeaf.png' alt='dslk'/>
+                        <img className='left-img' src={oneLeaf} alt='dslk'/>
                         <div className="card-body">
                           <div className="year-name">{data.year}</div>
 
@@ -35,7 +36,7 @@ const ResultsSection = () => {
                             Selections
                           </p>
                         </div>
-                        <img src='/src/assets/oneLeaf.png' alt='dslk'/>
+                        <img src={oneLeaf} alt='dslk'/>
                       </div>
                     ))}
                   </div>
