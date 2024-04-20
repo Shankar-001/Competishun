@@ -23,17 +23,18 @@ const LandingVideo = () => {
               src="https://www.youtube.com/embed/-5gkilxbEUs"
               title="YouTube video player"
               frameBorder="0"
+              autoPlay="1"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           ) : (
-            <div className="thumbnail-container">
+            <div className="thumbnail-container" onClick={handleClick}>
               <img
                 src={videoThumbnail}
                 alt="Video Thumbnail"
                 className="thumbnail"
               />
-              <div onClick={handleClick} className="play-button">
+              <div className="play-button">
                 <div class="video-main">
                   <div class="waves-block">
                     <div class="waves wave-1"></div>
@@ -50,9 +51,7 @@ const LandingVideo = () => {
             </div>
           )}
         </div>
-        <button className="btn" >
-          Join Now
-        </button>
+        <button className="btn">Join Now</button>
       </div>
     </div>
   );
