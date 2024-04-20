@@ -4,7 +4,7 @@ import JeeMini from '../assets/Books/JEE MINI.jpg';
 // jee mains pyqs books ----------------------------------------------------------------
 import JeeMainPhysics from '../assets/Books/JeeMain/JeeMainPhysics.jpg';
 import JeeMainChemistry from '../assets/Books/JeeMain/JeeMainChemistry.jpg';
-import JeeMainmathematics from '../assets/Books/JeeMain/JeeMainMathematics.jpg'; 
+import JeeMainmathematics from '../assets/Books/JeeMain/JeeMainMathematics.jpg';
 // -------->Neet books<---------- ------------------------------------------------------
 import NeetPhysics from '../assets/Books/Neet/Neet-Physics.jpg';
 import NeetChemistry from '../assets/Books/Neet/Neet-Chemistry.jpg';
@@ -20,75 +20,75 @@ import PrathamDlp from '../assets/Books/Dlp/Pratham .png';
 export const MerchandiseData = [
   {
     src: JeeMainPyq,
-    link:'https://amzn.to/41tDML0',
+    title: 'JEEMAINPYQ',
   },
   {
     src: JeeAdvancedPyq,
-    link: 'https://amzn.to/43rcAxv',
+    title: 'JEEADVANCEPYQ',
   },
   {
     src: JeeMini,
-    link:'https://amzn.to/48wBT2n',
+    title: 'JEEMINI',
   },
 ];
-export const MerchandiseDataJeeMainPYQ= [
+export const MerchandiseDataJeeMainPYQ = [
   {
     src: JeeMainPhysics,
-    link:'https://amzn.to/482ojnR',
+    title: 'JEEMAINPHYSICS',
   },
   {
     src: JeeMainChemistry,
-    link:'https://amzn.to/41y376w',
+    title: 'JEEMAINCHEMISTRY',
   },
   {
-    src: JeeMainmathematics ,
-    link:'https://amzn.to/47ZRZls',
+    src: JeeMainmathematics,
+    title: 'JEEMAINMATHEMATICS',
   },
 ];
 
- export const MerchandiseDataNeetPYQ = [
+export const MerchandiseDataNeetPYQ = [
   {
     src: NeetPhysics,
-    link:'https://amzn.in/d/czoOb1H',
+    title: 'NEETPHYSICS',
   },
   {
     src: NeetChemistry,
-    link: 'https://www.amazon.in/dp/9358866667?r',
+    title: 'NEETCHEMISTRY',
   },
   {
     src: NeetBiology,
-    link: 'https://amzn.in/d/1c79rTQ',
+    title: 'NEETBIOLOGY',
   },
 ];
 export const MerchandiseDataCapsPYQ = [
   {
     src: CapsPhysics,
-    link:'https://amzn.to/48nyF0P',
+    title: 'CAPSTONEPHYSICS',
   },
   {
     src: CapsChemistry,
-    link: 'https://amzn.to/3I41DIs',
+
+    title: 'CAPSTONECHEMISTRY',
   },
   {
     src: CapsMathematics,
-    link: 'https://amzn.to/42JayII',
+    title: 'CAPSTONEMATHEMATICS',
   },
 ];
 export const MerchandiseDataDlpBooks = [
   {
     src: PrathamDlp,
-    link: 'https://amzn.to/3VMCrhK',
     desc: 'For 11th grade',
+    title: 'PrathamDlp',
   },
   {
     src: PrakharDlp,
-    link: 'https://amzn.to/3VLVRTX',
     desc: 'For 12th grade',
+    title: 'PrakharDlp',
   },
   {
     src: PraveenDlp,
-    link:'https://amzn.to/3VTy84o',
     desc: 'For 12th pass/Dropper',
+    title: 'PraveenDlp',
   },
 ];
-

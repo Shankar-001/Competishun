@@ -12,6 +12,9 @@ const ResultSection = () => {
       numbers2: '1730',
       numbers3: '1542',
       selction: 'selections',
+      year1: '2021',
+      year2: '2022',
+      year3: '2023',
     },
     {
       title: '🎯 JEE Advanced Results',
@@ -20,6 +23,9 @@ const ResultSection = () => {
       numbers2: '752',
       numbers3: '339',
       selction: 'selections',
+      year1: '2021',
+      year2: '2022',
+      year3: '2023',
     },
   ];
   return (
@@ -45,6 +51,7 @@ const ResultSection = () => {
                         <p className="text-center text-muted mb-0">
                           Selections
                         </p>
+                        <p className='year'>{result.year1}</p>
                       </div>
                       <img src={leaf} alt="dslk" />
                     </div>
@@ -61,6 +68,7 @@ const ResultSection = () => {
                         <p className="text-center text-muted mb-0">
                           Selections
                         </p>
+                        <p className='year'>{result.year2}</p>
                       </div>
                       <img src={leaf} alt="dslk" />
                     </div>
@@ -72,13 +80,10 @@ const ResultSection = () => {
                       <img className="left-img" src={leaf} alt="dslk" />
                       <div className="card-body">
                         <div className="year-name">{result.numbers1}</div>
-
-                        {/* <h2 className="fw-bolder text-center mb-0">
-                          <span>{result.selction}</span>
-                        </h2> */}
                         <p className="text-center text-muted mb-0">
                           Selections
                         </p>
+                        <p className='year'>{result.year3}</p>
                       </div>
                       <img src={leaf} alt="dslk" />
                     </div>
