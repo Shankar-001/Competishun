@@ -45,6 +45,7 @@
       @include flex-cc(column);
 
       &:hover {
+        transform: scale(1.07);
         border-color: #007bff; /* Change border color on hover */
       }
 
@@ -63,7 +64,8 @@
 
       .card-heading {
         @include h4;
-        color: #00aeff;
+        color: black;
+        font-weight: 500;
       }
 
       .card-class {
