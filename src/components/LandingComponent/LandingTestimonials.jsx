@@ -19,7 +19,7 @@ const LandingTestimonials = () => {
       <div className="containerMain">
         <h1>Testimonials</h1>
         <h3>
-          Across the nation, we're the <span>institute of choice</span> for
+          Across the nation, we're the <span>Institute of choice</span> for
           thousands of students and parents
         </h3>
         <div className="testimonials-container">
