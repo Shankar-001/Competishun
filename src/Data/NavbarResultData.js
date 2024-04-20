@@ -22,25 +22,25 @@ import result20 from '../assets/Result/result20.jpg';
 import result21 from '../assets/Result/result21.webp';
 
 export const NavbarResultData = [
-  { src: result1, alt: 'result1', link: 'https://www.youtube.com/embed/P6iRWXNCgBs'},
-  { src: result2, alt: 'result2', link: 'https://www.youtube.com/embed/IOXT6lBIimQ' },
-  { src: result3, alt: 'result3', link: 'https://www.youtube.com/embed/RVxNyPBAtGo' },
-  { src: result4, alt: 'result4', link: 'https://www.youtube.com/embed/ikIRwgniHO0' },
-  { src: result5, alt: 'result5', link: 'https://www.youtube.com/embed/wFe3MdWUkh0' },
-  { src: result6, alt: 'result6', link: 'https://www.youtube.com/embed/r6ryXaYMlHk' },
-  { src: result7, alt: 'result7', link: 'https://www.youtube.com/embed/OaRNTE2PX6g' },
-  { src: result8, alt: 'result8', link: 'https://www.youtube.com/embed/-34G9FgM4iE' },
-  { src: result9, alt: 'result9', link: 'https://www.youtube.com/embed/Rn57IGz7ing' },
-  { src: result10, alt: 'result10', link: 'https://www.youtube.com/embed/mk6wULVrHoM' },
-  { src: result11, alt: 'result11', link: 'https://www.youtube.com/embed/_PxdndJllUI' },
-  { src: result12, alt: 'result12', link: 'https://www.youtube.com/embed/0a6ZzJmFLFo' },
-  { src: result13, alt: 'result13', link: 'https://www.youtube.com/embed/N2a_ZoXNNOE' },
-  { src: result14, alt: 'result14', link: 'https://www.youtube.com/embed/yKxHuNcictU' },
-  { src: result15, alt: 'result15', link: 'https://www.youtube.com/embed/mmdivN7Uxso' },
-  { src: result16, alt: 'result16', link: 'https://www.youtube.com/embed/KYj-36kmgFo' },
-  { src: result17, alt: 'result17', link: 'https://www.youtube.com/embed/-ztO8N4jW-o' },
-  { src: result18, alt: 'result18', link: 'https://www.youtube.com/embed/ytZ-f0xq2xQ' },
-  { src: result19, alt: 'result19', link: 'https://www.youtube.com/embed/xgMoUHXdb3Y' },
-  { src: result20, alt: 'result20', link: 'https://www.youtube.com/embed/iHvxf_Kkh4k' },
-  { src: result21, alt: 'result21', link: 'https://www.youtube.com/embed/UDEv9Z8upcs' },
+  { src: result21, alt: 'result21', link: 'https://www.youtube.com/embed/UDEv9Z8upcs' }, //1
+  { src: result4, alt: 'result4', link: 'https://www.youtube.com/embed/ikIRwgniHO0' }, //31
+  { src: result19, alt: 'result19', link: 'https://www.youtube.com/embed/xgMoUHXdb3Y' }, //33
+  { src: result18, alt: 'result18', link: 'https://www.youtube.com/embed/ytZ-f0xq2xQ' }, //39
+  { src: result14, alt: 'result14', link: 'https://www.youtube.com/embed/yKxHuNcictU' }, //82
+  { src: result20, alt: 'result20', link: 'https://www.youtube.com/embed/iHvxf_Kkh4k' }, //
+  { src: result3, alt: 'result3', link: 'https://www.youtube.com/embed/RVxNyPBAtGo' }, //185
+  { src: result7, alt: 'result7', link: 'https://www.youtube.com/embed/OaRNTE2PX6g' }, //204
+  { src: result11, alt: 'result11', link: 'https://www.youtube.com/embed/_PxdndJllUI' }, //215
+  { src: result13, alt: 'result13', link: 'https://www.youtube.com/embed/N2a_ZoXNNOE' }, //254
+  { src: result15, alt: 'result15', link: 'https://www.youtube.com/embed/mmdivN7Uxso' }, //286
+  { src: result12, alt: 'result12', link: 'https://www.youtube.com/embed/0a6ZzJmFLFo' }, //383
+  { src: result10, alt: 'result10', link: 'https://www.youtube.com/embed/mk6wULVrHoM' }, //495
+  { src: result16, alt: 'result16', link: 'https://www.youtube.com/embed/KYj-36kmgFo' }, //508
+  { src: result9, alt: 'result9', link: 'https://www.youtube.com/embed/Rn57IGz7ing' }, //531
+  { src: result17, alt: 'result17', link: 'https://www.youtube.com/embed/-ztO8N4jW-o' }, //609
+  { src: result6, alt: 'result6', link: 'https://www.youtube.com/embed/r6ryXaYMlHk' }, //749
+  { src: result8, alt: 'result8', link: 'https://www.youtube.com/embed/-34G9FgM4iE' }, //770
+  { src: result2, alt: 'result2', link: 'https://www.youtube.com/embed/IOXT6lBIimQ' }, //811
+  { src: result5, alt: 'result5', link: 'https://www.youtube.com/embed/wFe3MdWUkh0' }, //875
+  { src: result1, alt: 'result1', link: 'https://www.youtube.com/embed/P6iRWXNCgBs'}, //861
 ];

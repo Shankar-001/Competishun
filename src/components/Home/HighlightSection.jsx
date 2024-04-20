@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import highlightVideo from "../../assets/highlight-background.mp4"
 
 const HighlightSection = () => {
   const [i, seti] = useState(0);
@@ -51,7 +52,7 @@ const HighlightSection = () => {
   return (
     <div className="highlight">
       <video autoPlay loop muted>
-        <source src="src/assets/highlight-background.mp4" type="video/mp4" />
+        <source src={highlightVideo} type="video/mp4" />
         {/* <source
           // src="https://firebasestorage.googleapis.com/v0/b/competishun-a1193.appspot.com/o/assets%2Fhighlight-background.mp4?alt=media&token=4f21f9c2-70d2-43d4-9e03-d7ba9d11f1ee"
           src="https://utfs.io/f/71f1eb16-5e48-4aef-acd0-dbb7773a3a0b-w2wmhz.mp4"
