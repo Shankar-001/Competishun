@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import videoThumbnail from '../../assets/LandingPage/Prakhar.jpg';
+import videoThumbnail from '../../assets/LandingPage/thumbnail/PraveenThumbnail.png';
 
 import playIcon from '../../assets/important/play-button.svg';
 import { FaPlayCircle } from 'react-icons/fa';
@@ -20,7 +20,7 @@ const LandingVideo = () => {
         <div className="video-container">
           {showVideo ? (
             <iframe
-              src="https://www.youtube.com/embed/-5gkilxbEUs"
+              src="https://www.youtube.com/embed/7PlZ4dwT56I?&autoplay=1"
               title="YouTube video player"
               frameBorder="0"
               autoPlay="1"
