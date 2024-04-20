@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaGooglePlay, FaYoutube } from 'react-icons/fa6';
 import { playstoreApps, youtubeChannels } from '../../Data/FreeStudy.data';
+import androidSVG from '../../assets/playStore.svg';
 
 const FreeStudy = () => {
- 
   return (
     <div className="freeStudy">
       <div className="container">
@@ -41,7 +41,7 @@ const FreeStudy = () => {
         </div>
 
         <div className="row subhead">
-          <img src="/src/assets/playStore.svg" alt="playstore" />
+          <img src={androidSVG} alt="playstore" />
           <h3>Our Android Apps</h3>
         </div>
         <div className="row material_container">
