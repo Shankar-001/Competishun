@@ -6,7 +6,7 @@ import leaf from '../../assets/oneLeaf.png';
 const ResultSection = () => {
   const JeeMainsResult = [
     {
-      title: '🎯Jee Main Result',
+      title: '🎯JEE Main Results',
       description: 'Best and quality result from Jee Mains Exams',
       numbers1: '1924',
       numbers2: '1730',
@@ -14,7 +14,7 @@ const ResultSection = () => {
       selction: 'selections',
     },
     {
-      title: '🎯 Jee Advanced Result',
+      title: '🎯 JEE Advanced Results',
       description: 'Best and quality result from Jee Mains Exams',
       numbers1: '775',
       numbers2: '752',
