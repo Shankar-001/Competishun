@@ -1,4 +1,4 @@
-import CompanyLogo from '../../assets/loaderLogo.png';
+import CompanyLogo from '../../assets/MainLogo.png';
 import eduCompetishun from '../../assets/eduCompetishun.png';
 import competishunDigital from '../../assets/competishunDigital.png';
 import { FaLocationDot } from 'react-icons/fa6';
@@ -32,25 +32,37 @@ const Footer = () => {
               className="footer-companyIcon"
             />
             <div className="footer-address">
-              <FaLocationDot fontSize={12} color="orange" className="Icon" />
-
+              <FaLocationDot fontSize={16} color="orange" className="Icon" />
+                <a href="https://maps.app.goo.gl/zo94Z6Cf7Aut2JB47" target='_blank' className='text'>
               <p>
                 Competishun Tower-2, Plot number 35, Gopalpura Bypass Rd,
-                <br /> near Riddhi Siddhi Circle, 10 B Scheme, Triveni Nagar,
-                <br /> Gopal Pura Mode, Jaipur, Rajasthan 302020
+                <br />
+                near Riddhi Siddhi Circle, 10 B Scheme, Triveni Nagar,
+                <br />
+                Gopal Pura Mode, Jaipur, Rajasthan 302020
               </p>
+              </a>
             </div>
 
             <div className="footer-address">
-              <FaPhoneAlt fontSize={12} color="orange" className="Icon" />
+              <FaPhoneAlt fontSize={16} color="orange" className="Icon" />
 
-              <p>+91 8888000021</p>
+              <a href="tel:+918888000021" target="_blank" className="text">
+                <p>+91 8888000021</p>
+              </a>
             </div>
 
             <div className="footer-address">
-              <BiLogoGmail fontSize={12} color="orange" className="Icon" />
+              <BiLogoGmail fontSize={16} color="orange" className="Icon" />
 
-              <p>support@competishun.com</p>
+              <a
+                href="mailto:support@competishun.com"
+                target="_blank"
+                className="text"
+              >
+                {' '}
+                <p>support@competishun.com</p>
+              </a>
             </div>
           </div>
 
@@ -158,26 +170,34 @@ const Footer = () => {
                 href="https://www.facebook.com/mohit.tyagi.775"
                 target="_blank"
               >
-                <FaFacebook fontSize={30} color="#316FF6" className='icons' />
+                <FaFacebook fontSize={30} color="#316FF6" className="icons" />
               </a>
 
               <a href="https://www.youtube.com/@MohitTyagi" target="_blank">
-                <FaYoutube fontSize={30} color="red" />
+                <FaYoutube fontSize={30} color="red" className="icons" />
               </a>
               <a href="https://twitter.com/mohittyagi" target="_blank">
-                <FaSquareXTwitter fontSize={32} color="black" />
+                <FaSquareXTwitter
+                  fontSize={30}
+                  color="black"
+                  className="icons"
+                />
               </a>
               <a href="https://t.me/competishun_official" target="_blank">
-                <FaTelegram fontSize={30} color="#0088cc" />
+                <FaTelegram fontSize={30} color="#0088cc" className="icons" />
               </a>
               <a
                 href="https://www.instagram.com/competishun/?hl=en"
                 target="_blank"
               >
-                <FaInstagram fontSize={30} color="#bc1888 " />
+                <FaInstagram fontSize={30} color="#bc1888 " className="icons" />
               </a>
               <a href="https://wa.link/xa00yu" target="_blank">
-                <IoLogoWhatsapp fontSize={30} color="#25D366" />
+                <IoLogoWhatsapp
+                  fontSize={30}
+                  color="#25D366"
+                  className="icons"
+                />
               </a>
             </div>
 

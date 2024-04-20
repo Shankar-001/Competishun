@@ -10,8 +10,9 @@ export const LandingWhyCompethisun = () => {
       <div className="inner-container">
         <div className="content">
           <h1 className="heading-whyCompetishun">
-            Important Links
+            ABOUT THE COURSE: What we focus on
           </h1>
+         
 
           <div className="box1" id="abc">
             <div className="check-logo">
