@@ -61,10 +61,10 @@ const CourseCardDetails = () => {
       isAvailable: data.Advantages,
     },
     { key: 'Stages', label: 'Preparation Stages', isAvailable: data.Stages },
-    { key: 'GeneralQNA', label: 'General Question', isAvailable: data.GeneralQNA },
+    { key: 'GeneralQNA', label: 'General Questions', isAvailable: data.GeneralQNA },
     {
       key: 'OnlineVsOffline',
-      label: 'Online Vs Offline',
+      label: 'Online vs Offline',
       isAvailable: data.OnlineVsOffline,
     },
     {

@@ -2,6 +2,7 @@ import React from 'react';
 import { GiFlowerStar } from 'react-icons/gi';
 import gif from '../../assets/click2.gif';
 import { GiClick } from 'react-icons/gi';
+import { FaCheckCircle } from "react-icons/fa";
 export const LandingWhyCompethisun = () => {
   
   return (
@@ -15,7 +16,7 @@ export const LandingWhyCompethisun = () => {
           <div className="box1" id="abc">
             <div className="check-logo">
               {/* <LuCheckCircle color="orage" className='check' /> */}
-              <GiFlowerStar color="orange" className="check" />
+              <FaCheckCircle color="#25D366" className="check" />
             </div>
             <div className="info">
              
@@ -30,14 +31,14 @@ export const LandingWhyCompethisun = () => {
                 href="https://youtu.be/l2tLkv_t15k?feature=shared"
                 target="_blank"
               >
-                <GiClick color="orange" className="check" />
+                <GiClick color="green" className="check" />
               </a>
             </div> */}
           </div>
 
           <div className="box1">
             <div className="check-logo">
-              <GiFlowerStar color="orange" className="check" />
+              <FaCheckCircle color="#25D366" className="check" />
             </div>
             <div className="info">
              
@@ -51,7 +52,7 @@ export const LandingWhyCompethisun = () => {
 
           <div className="box1">
             <div className="check-logo">
-              <GiFlowerStar color="orange" className="check" />
+              <FaCheckCircle color="#25D366" className="check" />
             </div>
             <div className="info">
              
@@ -65,7 +66,7 @@ export const LandingWhyCompethisun = () => {
 
           <div className="box1">
             <div className="check-logo">
-              <GiFlowerStar color="orange" className="check" />
+              <FaCheckCircle color="#25D366" className="check" />
             </div>
             <div className="info">
               
@@ -79,7 +80,7 @@ export const LandingWhyCompethisun = () => {
 
           <div className="box1">
             <div className="check-logo">
-              <GiFlowerStar color="orange" className="check" />
+              <FaCheckCircle color="#25D366" className="check" />
             </div>
             <div className="info">
               
@@ -93,7 +94,7 @@ export const LandingWhyCompethisun = () => {
 
           <div className="box1">
             <div className="check-logo">
-              <GiFlowerStar color="orange" className="check" />
+              <FaCheckCircle color="#25D366" className="check" />
             </div>
             <div className="info">
             
