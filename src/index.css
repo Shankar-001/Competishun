@@ -262,7 +262,7 @@ button {
 }
 
 .footer-mainContainer {
-  padding-bottom: 1%;
+  padding-bottom: 0.1%;
   background-color: var(--ip-border-clr);
   display: flex;
   flex-direction: row;
@@ -287,10 +287,11 @@ button {
 .footer-mainContainer .footer-containerContent .footer-innerContainer {
   background-color: white;
   border-radius: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 @media screen and (max-width: 990px) {
   .footer-mainContainer .footer-containerContent .footer-innerContainer {
@@ -361,9 +362,8 @@ button {
   margin-bottom: 2%;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .footer-companyIcon {
-  width: 22%;
-  height: 22%;
-  margin-left: 30%;
+  width: 40%;
+  height: 25%;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .p {
   margin-left: 5%;
@@ -418,7 +418,13 @@ button {
   align-items: flex-start;
   gap: 1.4rem;
   margin-top: 1.2%;
-  margin-bottom: 0.9%;
+  margin-bottom: 1.2%;
+}
+.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs .socialMedia-logo .icons {
+  transition: transform 0.3s ease;
+}
+.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs .socialMedia-logo .icons:hover {
+  transform: scale(1.2);
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs p {
   margin-top: 0.2rem;
@@ -435,10 +441,33 @@ button {
   width: 12rem;
   height: 6rem;
   border-radius: 1.5rem;
+  transition: 0.3s ease;
+}
+.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs .appstore .app:hover {
+  transform: scale(1.1);
 }
 .footer-mainContainer .footer-navlink {
   text-decoration: none;
   color: var(--darkest-bg-color);
+}
+.footer-mainContainer .footer-navlink:hover {
+  color: var(--primary-color);
+}
+.footer-mainContainer #quick-links:hover {
+  color: var(--primary-color);
+}
+
+.text {
+  text-decoration: none;
+  color: black;
+}
+.text:hover {
+  color: var(--primary-color);
+}
+@media screen and (max-width: 760px) {
+  .text {
+    color: white;
+  }
 }
 
 .main-container {
@@ -4092,6 +4121,13 @@ button {
     font-family: var(--font-family);
   }
 }
+.Landing-Page-Main-Container .main-container .inner-container .focus {
+  font-size: 4.8rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: var(--landing-desc-color);
+  padding-bottom: 0.3rem;
+}
 .Landing-Page-Main-Container .main-container .inner-container .box1 {
   display: flex;
   flex-direction: row;
@@ -4112,7 +4148,7 @@ button {
 }
 .Landing-Page-Main-Container .main-container .inner-container .box1 .info p {
   font-size: 2.5rem;
-  color: var(--landing-main-head-color);
+  color: var(--landing-desc-color);
 }
 @media screen and (max-width: 1200px) {
   .Landing-Page-Main-Container .main-container .inner-container .box1 .info p {
@@ -4126,11 +4162,10 @@ button {
 }
 .Landing-Page-Main-Container .main-container .inner-container .box1 .info p span {
   text-decoration: underline;
-  color: #FFD700;
+  color: var(--golden-color);
   font-size: 2rem;
 }
 .Landing-Page-Main-Container .main-container .inner-container .box1 .info p span:hover {
-  color: lightseagreen;
   cursor: pointer;
   transition: 0.3s;
   font-size: 2.2rem;
@@ -4161,7 +4196,7 @@ button {
   width: fit-content;
   padding: 1rem 5rem;
   margin-bottom: 2.5rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   font-weight: 700;
   font-size: 2.4rem;
   align-self: center;

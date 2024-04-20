@@ -1,6 +1,6 @@
 .footer-mainContainer {
   // margin-bottom: 1%;
-  padding-bottom: 1%;
+  padding-bottom: 0.1%;
   background-color: var(--ip-border-clr);
   @include flex-cc;
   @include bodyText;
@@ -21,7 +21,8 @@
     .footer-innerContainer {
       background-color: white;
       border-radius: 1rem;
-      @include flex-sec;
+      padding:2rem;
+      @include flex-ses;
 
       @media screen and (max-width: 990px) {
         @include flex-cc(column);
@@ -61,6 +62,7 @@
 
         .socialMedia-logo {
           padding-top: 5%;
+
         }
         .download-heading {
           margin-top: 1.5rem;
@@ -83,9 +85,8 @@
         margin-bottom: 2%;
 
         .footer-companyIcon {
-          width: 22%;
-          height: 22%;
-          margin-left: 30%;
+          width: 40%;
+          height: 25%;
         }
         .p {
           margin-left: 5%;
@@ -153,7 +154,16 @@
           @include flex-ss(row);
           gap: 1.4rem;
           margin-top: 1.2%;
-          margin-bottom: 0.9%;
+          margin-bottom: 1.2%;
+
+          
+          .icons{
+            transition: transform 0.3s ease;;
+
+          }
+          .icons:hover{
+          transform: scale(1.2);
+          }
           
         }
         p {
@@ -163,11 +173,19 @@
           @include flex-ss(row);
           gap: 2rem;
           margin-top: 0.3rem;
+          
           .app {
             width: 12rem;
             height: 6rem;
             border-radius: 1.5rem;
+            transition: 0.3s ease;
           }
+          .app:hover{
+            transform: scale(1.1);
+          }
+        }
+        .ebook{
+          // padding-bottom:0.3rem;
         }
       }
     }
@@ -175,151 +193,24 @@
   .footer-navlink {
     text-decoration: none;
     color: var(--darkest-bg-color);
+    &:hover {
+      color: var(--primary-color);
+    }
   }
-  // a{
-  //   text-decoration: none;
-  //   text-decoration-line: none;
-  //   text-decoration-color:none;
-  // }
+  #quick-links{
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
 }
-
-// .footer-mainContainer {
-//   padding-bottom: 1%;
-//   background-color: var(--ip-border-clr);
-//   @include flex-cc;
-//   @include bodyText;
-
-//   .develop {
-//     text-align: center;
-//     color: var(--lightest-bg-color);
-//   }
-
-//   .footer-containerContent {
-//     margin-top: 5rem;
-//     margin-bottom: 1.5rem;
-//     width: 100%; /* Adjusted to full width for responsiveness */
-
-//     .footer-innerContainer {
-//       background-color: white;
-//       border-radius: 1rem;
-//       @include flex-sec;
-//       flex-wrap: wrap; /* Allow content to wrap on smaller screens */
-
-//       .footer-logo {
-//         @include flex-cs(column);
-//         gap: 1rem;
-//         margin-top: 1rem; /* Adjusted for spacing */
-//         margin-bottom: 2rem;
-
-//         .footer-companyIcon {
-//           width: 100%; /* Adjusted to full width for responsiveness */
-//           max-width: 200px; /* Set maximum width for the logo */
-//           height: auto; /* Ensures aspect ratio is maintained */
-//           margin: 0 auto; /* Center align on mobile */
-//         }
-
-//         .footer-address {
-//           @include flex-ss(column);
-//           gap: 0.6rem;
-//           text-align: center; /* Center align text on mobile */
-//         }
-//       }
-// @media (max-width: 576px) {
-//   .footer-quickLinks {
-//     display: none;
-//   }
-// }
-// @media (max-width: 576px) {
-//   .footer-support {
-//     display: none;
-//   }
-// }
-
-//       .footer-quickLinks{
-//         @include flex-ss(column);
-//         gap: 2rem;
-//         .element {
-//           .footer-link {
-//             li {
-//               list-style-type: none;
-//               text-decoration: none;
-//               margin-bottom: 0.4rem;
-//               .footer-navlink {
-//                 text-decoration: none;
-//                 color: var(--darkest-bg-color);
-//               }
-//             }
-//           }
-//         }
-
-//       }
-//       .footer-support{
-//         @include flex-ss(column);
-
-//         gap: 2rem;
-
-//         .footer-support-link {
-//           .point {
-//             margin-top: 0.4rem;
-//           }
-//         }
-
-//       }
-//       .footer-joinUs {
-//         @include flex-ss(column);
-//         gap: 2rem;
-//         width: 100%; /* Adjusted to full width for responsiveness */
-//         text-align: center; /* Center align text on mobile */
-
-//         @media (max-width: 768px) { /* Hide on mobile devices */
-//           display: none;
-//         }
-//       }
-
-//       .element {
-//         .footer-link {
-//           li {
-//             list-style-type: none;
-//             text-decoration: none;
-//             margin-bottom: 0.4rem;
-
-//             .footer-navlink {
-//               text-decoration: none;
-//               color: var(--darkest-bg-color);
-//             }
-//           }
-//         }
-//       }
-
-//       .footer-joinUs {
-//         .socialMedia-logo {
-//           @include flex-ss(row);
-//           gap: 1.1rem;
-//           margin-top: 1.2rem;
-//           margin-bottom: 0.9rem;
-//           justify-content: center; /* Center align social icons on mobile */
-//         }
-//         p {
-//           margin-top: 0.2rem;
-//         }
-//         .appstore {
-//           @include flex-ss(row);
-//           gap: 2rem;
-//           margin-top: 0.3rem;
-//           justify-content: center; /* Center align app icons on mobile */
-
-//           .app {
-//             width: 100%; /* Adjusted to full width for responsiveness */
-//             max-width: 150px; /* Set maximum width for app icons */
-//             height: auto; /* Ensures aspect ratio is maintained */
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   .footer-navlink {
-//     text-decoration: none;
-//     color: var(--darkest-bg-color);
-//   }
-// }
+.text{
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: var(--primary-color);
+  }
+  @media screen and (max-width:760px) {
+    color: white;
+    
+  }
+}
