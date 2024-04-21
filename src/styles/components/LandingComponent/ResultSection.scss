@@ -87,24 +87,26 @@
           }
         }
 
-        .description {
-          @include h5;
-          color: var(--landing-desc-color);
-          padding-left: 11%;
-          padding-top: 3%;
-          padding-bottom: 5%;
-        }
+        // .description {
+        //   @include h5;
+        //   color: var(--landing-desc-color);
+        //   padding-left: 11%;
+        //   padding-top: 3%;
+        //   padding-bottom: 5%;
+        // }
 
         .numbers {
           display: flex;
           align-items: center;
           justify-content: space-around;
           margin-bottom: 5%;
+          margin-top: 2%;
           padding-left: 9.5%;
           gap: 10%;
           color: #fff;
           @media (max-width:900px) {
             justify-content: center;
+            margin-top: 5%;
           }
 
           .card {

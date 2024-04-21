@@ -44,7 +44,7 @@ const ResultSection = () => {
             {JeeMainsResult.map((result, index) => (
               <div key={index} className="component1data">
                 <div className="sub-heading">{result.title}</div>
-                <div className="description">{result.description}</div>
+                {/* <div className="description">{result.description}</div> */}
                 <div className="numbers">
                   <span>
                     <div className="card">

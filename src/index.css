@@ -4116,20 +4116,12 @@ button {
     font-size: 2.9rem;
   }
 }
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .description {
-  font-size: 1.8rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-  color: var(--landing-desc-color);
-  padding-left: 11%;
-  padding-top: 3%;
-  padding-bottom: 5%;
-}
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 5%;
+  margin-top: 2%;
   padding-left: 9.5%;
   gap: 10%;
   color: #fff;
@@ -4137,6 +4129,7 @@ button {
 @media (max-width: 900px) {
   .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers {
     justify-content: center;
+    margin-top: 5%;
   }
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers .card {
