@@ -2,30 +2,47 @@
   height: 30rem;
   @include bodyText;
   @include flex-cc;
-  margin-bottom: 22.6%;
+  margin-bottom: 21%;
   
-  @media (max-width:720px) {
-    margin-bottom: 55rem;
+  @media (max-width:1100px) {
+    margin-bottom: 45rem;
     align-self: center;
   }
-
+  
   .container {
-    margin-top: 22%;
+    margin-top: 32rem;
+
+    @media (max-width:1100px) {
+      margin-top:0; 
+    }
     width: var(--landing-page-main-info-width);
-    @include flex-ss(column);
+    @include flex-cc(column);
 
     .info-and-video{
         @include flex-cc;
         gap:2rem;
 
-        @media screen and (max-width:720px) {
-          display: flex;
-          flex-direction: column-reverse;
-          justify-content: center;
-          align-items: center;
+        @media screen and (max-width:1100px) {
+        @include flex-cc(column);
         }
 
         .info{
+          @media (max-width:1100px) {
+            margin-top: 55rem;
+        
+          }
+
+         .name{
+          @media (max-width:1100px) {
+            text-align: center;
+        
+          }
+
+         }
+          
+        
+
+
           h2{
             font-size: 4rem;
             font-weight: bold;
@@ -52,7 +69,7 @@
             @media screen and (max-width:720px) {
               width: 50rem;
               height: 30rem; 
-              margin-top: 50rem;
+          
             }
           }
           iframe:hover {
