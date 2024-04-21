@@ -7,7 +7,7 @@ const ResultSection = () => {
   const JeeMainsResult = [
     {
       title: '🎯JEE Main Results',
-      description: 'Best and quality result from Jee Mains Exams',
+      description: 'Best and quality results from Jee Mains Exam',
       numbers1: '1924',
       numbers2: '1730',
       numbers3: '1542',
@@ -18,7 +18,7 @@ const ResultSection = () => {
     },
     {
       title: '🎯 JEE Advanced Results',
-      description: 'Best and quality result from Jee Mains Exams',
+      description: 'Best and quality results from Jee Advanced Exam',
       numbers1: '775',
       numbers2: '752',
       numbers3: '339',
