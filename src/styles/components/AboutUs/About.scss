@@ -4,7 +4,7 @@
   .width-container {
     width: var(--landing-page-main-info-width);
     @include flex-cc;
-    margin-top: 8%;
+    margin-top: 9%;
     margin-bottom: 6.7%;
 
     @media screen and (max-width:1000px) {
@@ -21,7 +21,9 @@
         font-size: 5rem;
 
         @media (max-width:415px) {
-          font-size: 4.5rem;
+          font-size: 4.2rem;
+          padding-top: 1rem;
+
         }
         
       }
@@ -62,8 +64,8 @@
         width:53rem;
         height:30rem;
         @media screen and (max-width:1000px) {
-          width: 44rem;
-          height: 28rem; 
+          width: 40rem;
+          height: 24rem; 
       
         }
       }
