@@ -52,7 +52,7 @@
       // margin-left: 10rem;
       @media (max-width: 600px) {
         text-align: center;
-        width: 80%;
+        width: 100%;
       }
 
       .contact-details-section-two {
@@ -120,6 +120,7 @@
     }
 
     .contact-details-section-margin-2 {
+      // @include bodyText;
       padding-bottom: 5rem;
       display: none;
       width: 80%;
@@ -127,7 +128,7 @@
       // @include font-style(1.4rem, 400, Poppins);
       @include bodyText;
       line-height: normal;
-      // margin-top: 4rem;
+      // margin-top: 4%;
 
       @media (max-width: 600px) {
         display: flex;
@@ -140,10 +141,27 @@
       .contact-detail-section-phone {
         margin-top: 1rem;
         padding-left: 0.5rem;
-
-        .svg-margin {
-          margin-left: 1rem;
+        @include flex-ss;
+        gap:1.5rem;
+        .phone-icon {
+          font-size: 2.8rem;
+          color: blue;
+          margin-top: 1.2%;
         }
+        .mail-icon {
+          font-size: 4rem;
+          color: blue;
+        }
+      }
+      .whatsapp-icon {
+        font-size: 4.2rem;
+        color: green;
+      }
+      .text {
+        padding-top: 1.2%;
+        font-size: 2rem;
+        text-decoration: none;
+        color: var(--darkest-bg-color);
       }
     }
 

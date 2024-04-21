@@ -29,7 +29,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <h1><h1><CountUpAnimation initialValue={199990}  targetValue={200000}  text="+" /></h1></h1>
+              <h1><CountUpAnimation initialValue={199990}  targetValue={200000}  text="+" /></h1>
               <p className="info-txt">App Downloads</p>
             </div>
           </div>

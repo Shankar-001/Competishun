@@ -24,8 +24,11 @@
         width: 100%;
         h1 {
           @include h1;
-          @media (max-width: 40em) {
+          @media (min-width: 25em) and (max-width: 40em) {
             @include h2;
+          }
+          @media (min-width: 18.75em) and (max-width: 25em) {
+            @include h3;
           }
           color: var(--landing-main-head-color);
 
@@ -111,7 +114,10 @@
   }
 
   .btn {
-    @include btn(var(--landing-btn-background-color), var(--landing-button-color));
+    @include btn(
+      var(--landing-btn-background-color),
+      var(--landing-button-color)
+    );
     @include flex-cc;
     border-radius: 0.5rem;
     width: fit-content;
