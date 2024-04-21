@@ -30,6 +30,9 @@
         }
 
         .inner-row {
+          @media (max-width:720px) {
+            @include flex-cc(column);
+          }
           .slogan{
             color:var(--primary-color);
             font-size: 6.6rem;
@@ -43,13 +46,16 @@
 
           .badge {
             // @include bodyText;
+            margin-top: 1rem;
             display: inline-block;
             padding: 0.25rem 0.5rem;
             //   font-size: 0.75rem;
             font-weight: bold;
             color: #fff;
-            background-color: #0d6efd;
+            background: var(--hero-bg-liner-grad2);
             border-radius: 0.375rem;
+
+            
           }
 
           h2 {
@@ -121,7 +127,7 @@
                 //   font-size: 0.75rem;
                 font-weight: bold;
                 color: #fff;
-                background-color: #0d6efd;
+                background: var(--hero-bg-liner-grad2);
                 border-radius: 0.375rem;
               }
               h2 {

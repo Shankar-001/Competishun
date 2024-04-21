@@ -4,7 +4,6 @@
   background-color: var(--ip-border-clr);
   @include flex-cc;
   @include bodyText;
- 
 
   .develop {
     text-align: center;
@@ -19,9 +18,9 @@
     width: var(--landing-page-main-info-width);
 
     .footer-innerContainer {
-      background-color: white;
+      background-color: var(--ip-border-clr);
       border-radius: 1rem;
-      padding:2rem;
+      padding: 2rem;
       @include flex-ses;
 
       @media screen and (max-width: 990px) {
@@ -42,7 +41,6 @@
           margin-bottom: 1%;
           gap: 1rem;
         }
-
       }
       @media screen and (max-width: 760px) {
         @include flex-ss(column);
@@ -58,19 +56,20 @@
         #quick-links {
           color: var(--lightest-bg-color);
         }
-        
 
         .socialMedia-logo {
           padding-top: 5%;
-
         }
         .download-heading {
           margin-top: 1.5rem;
           margin-bottom: 1.5rem;
+          color: white;
         }
         .ebook {
           margin-top: 1rem;
           margin-bottom: 1.5rem;
+          color: white;
+
         }
         .appstore {
           margin-top: 1%;
@@ -85,8 +84,12 @@
         margin-bottom: 2%;
 
         .footer-companyIcon {
-          width: 40%;
-          height: 25%;
+          width: 20rem;
+          @media (max-width: 720px) {
+            align-self: center;
+            width: 50%;
+            height: 30%;
+          }
         }
         .p {
           margin-left: 5%;
@@ -102,19 +105,11 @@
         }
       }
 
-      // @media (max-width: 576px) {
-      //   .footer-quickLinks {
-      //     display: none;
-      //   }
-      // }
-      // @media (max-width: 576px) {
-      //   .footer-support {
-      //     display: none;
-      //   }
-      // }
+    
 
       .quicklink-support {
         @include flex-sbs;
+        color:white;
         gap: 10rem;
         .footer-quickLinks {
           @include flex-ss(column);
@@ -133,12 +128,12 @@
             }
           }
         }
-  
+
         .footer-support {
           @include flex-ss(column);
-  
+
           gap: 2rem;
-  
+
           .footer-support-link {
             .point {
               margin-top: 0.4rem;
@@ -147,24 +142,20 @@
         }
       }
 
-     
-
       .footer-joinUs {
+        color: white;
         .socialMedia-logo {
           @include flex-ss(row);
           gap: 1.4rem;
           margin-top: 1.2%;
           margin-bottom: 1.2%;
 
-          
-          .icons{
-            transition: transform 0.3s ease;;
-
+          .icons {
+            transition: transform 0.3s ease;
           }
-          .icons:hover{
-          transform: scale(1.2);
+          .icons:hover {
+            transform: scale(1.2);
           }
-          
         }
         p {
           margin-top: 0.2rem;
@@ -173,44 +164,42 @@
           @include flex-ss(row);
           gap: 2rem;
           margin-top: 0.3rem;
-          
+
           .app {
             width: 12rem;
             height: 6rem;
             border-radius: 1.5rem;
             transition: 0.3s ease;
           }
-          .app:hover{
+          .app:hover {
             transform: scale(1.1);
           }
         }
-        .ebook{
-          // padding-bottom:0.3rem;
-        }
+        
       }
     }
   }
   .footer-navlink {
     text-decoration: none;
-    color: var(--darkest-bg-color);
+    color: white;
     &:hover {
       color: var(--primary-color);
     }
   }
-  #quick-links{
+  #quick-links {
+    color: white;
     &:hover {
       color: var(--primary-color);
     }
   }
 }
-.text{
+.text {
   text-decoration: none;
-  color: black;
+  color: white;
   &:hover {
     color: var(--primary-color);
   }
-  @media screen and (max-width:760px) {
-    color: white;
-    
-  }
+ .heading-and-subheading{
+  color: white;
+ }
 }

@@ -24,6 +24,7 @@ html {
   --landing-button-color: #23103A;
   --landing-bg-liner-grad: #092491;
   --hero-bg-liner-grad: linear-gradient(104deg, #0061FF 30.47%, #60EFFF 108.71%);
+  --hero-bg-liner-grad2: linear-gradient(180deg, #1DA1F2 30.47%, #60EFFF 108.71%);
   --text-liner-grad: linear-gradient(93deg, #0D47A1 49.87%, #2E93CA 85.58%);
   --ip-border-clr: #243a50;
   --ip-placeHolder-txt-clr: #657786;
@@ -285,7 +286,7 @@ button {
   width: var(--landing-page-main-info-width);
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer {
-  background-color: white;
+  background-color: var(--ip-border-clr);
   border-radius: 1rem;
   padding: 2rem;
   display: flex;
@@ -341,10 +342,12 @@ button {
   .footer-mainContainer .footer-containerContent .footer-innerContainer .download-heading {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    color: white;
   }
   .footer-mainContainer .footer-containerContent .footer-innerContainer .ebook {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+    color: white;
   }
   .footer-mainContainer .footer-containerContent .footer-innerContainer .appstore {
     margin-top: 1%;
@@ -362,8 +365,14 @@ button {
   margin-bottom: 2%;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .footer-companyIcon {
-  width: 40%;
-  height: 25%;
+  width: 20rem;
+}
+@media (max-width: 720px) {
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .footer-companyIcon {
+    align-self: center;
+    width: 50%;
+    height: 30%;
+  }
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .p {
   margin-left: 5%;
@@ -383,6 +392,7 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  color: white;
   gap: 10rem;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-quickLinks {
@@ -410,6 +420,9 @@ button {
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-support .footer-support-link .point {
   margin-top: 0.4rem;
+}
+.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs {
+  color: white;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs .socialMedia-logo {
   display: flex;
@@ -448,10 +461,13 @@ button {
 }
 .footer-mainContainer .footer-navlink {
   text-decoration: none;
-  color: var(--darkest-bg-color);
+  color: white;
 }
 .footer-mainContainer .footer-navlink:hover {
   color: var(--primary-color);
+}
+.footer-mainContainer #quick-links {
+  color: white;
 }
 .footer-mainContainer #quick-links:hover {
   color: var(--primary-color);
@@ -459,15 +475,13 @@ button {
 
 .text {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .text:hover {
   color: var(--primary-color);
 }
-@media screen and (max-width: 760px) {
-  .text {
-    color: white;
-  }
+.text .heading-and-subheading {
+  color: white;
 }
 
 .main-container {
@@ -885,6 +899,7 @@ button {
 @media (max-width: 720px) {
   .Home .highlight video {
     height: 50rem;
+    display: none;
   }
 }
 .Home .highlight .overlay {
@@ -1040,6 +1055,14 @@ button {
 .Home .resultSection #result .container .row.mt-6 {
   margin-top: 4rem;
 }
+@media (max-width: 720px) {
+  .Home .resultSection #result .container .row .inner-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .Home .resultSection #result .container .row .inner-row .slogan {
   color: var(--primary-color);
   font-size: 6.6rem;
@@ -1053,11 +1076,12 @@ button {
   text-align: center;
 }
 .Home .resultSection #result .container .row .inner-row .badge {
+  margin-top: 1rem;
   display: inline-block;
   padding: 0.25rem 0.5rem;
   font-weight: bold;
   color: #fff;
-  background-color: #0d6efd;
+  background: var(--hero-bg-liner-grad2);
   border-radius: 0.375rem;
 }
 .Home .resultSection #result .container .row .inner-row h2 {
@@ -1119,7 +1143,7 @@ button {
   padding: 0.25rem 0.5rem;
   font-weight: bold;
   color: #fff;
-  background-color: #0d6efd;
+  background: var(--hero-bg-liner-grad2);
   border-radius: 0.375rem;
 }
 .Home .resultSection #result .container .row .card-group .card .card-body h2 {
@@ -1506,6 +1530,7 @@ button {
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
   margin-bottom: 2rem;
+  text-align: center;
 }
 .Home .TestimonialsSection .containerMain h3 span {
   color: orange;
@@ -1637,6 +1662,11 @@ button {
   color: var(--primary-color);
   margin-bottom: 2rem;
 }
+.Home .freeStudy .container .section-title p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
 .Home .freeStudy .container .subhead {
   font-size: 3.2rem;
   font-weight: 500;
@@ -1663,9 +1693,20 @@ button {
   width: 70%;
   height: 100%;
 }
+@media (max-width: 720px) {
+  .Home .freeStudy .container .material_container {
+    width: 90%;
+    gap: 1.5rem;
+  }
+}
 .Home .freeStudy .container .material_container .material_card {
   width: 30%;
   padding: 1rem;
+}
+@media (max-width: 720px) {
+  .Home .freeStudy .container .material_container .material_card {
+    width: 15rem;
+  }
 }
 .Home .freeStudy .container .material_container .material_card .single-free-study {
   display: flex;
@@ -2633,6 +2674,14 @@ button {
 .result-main-container .resultSection #result .container .row.mt-6 {
   margin-top: 4rem;
 }
+@media (max-width: 720px) {
+  .result-main-container .resultSection #result .container .row .inner-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .result-main-container .resultSection #result .container .row .inner-row .slogan {
   color: var(--primary-color);
   font-size: 6.6rem;
@@ -2646,11 +2695,12 @@ button {
   text-align: center;
 }
 .result-main-container .resultSection #result .container .row .inner-row .badge {
+  margin-top: 1rem;
   display: inline-block;
   padding: 0.25rem 0.5rem;
   font-weight: bold;
   color: #fff;
-  background-color: #0d6efd;
+  background: var(--hero-bg-liner-grad2);
   border-radius: 0.375rem;
 }
 .result-main-container .resultSection #result .container .row .inner-row h2 {
@@ -2712,7 +2762,7 @@ button {
   padding: 0.25rem 0.5rem;
   font-weight: bold;
   color: #fff;
-  background-color: #0d6efd;
+  background: var(--hero-bg-liner-grad2);
   border-radius: 0.375rem;
 }
 .result-main-container .resultSection #result .container .row .card-group .card .card-body h2 {
@@ -2838,6 +2888,11 @@ button {
   color: var(--primary-color);
   margin-bottom: 2rem;
 }
+.studyfree-main-container .freeStudy .container .section-title p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
 .studyfree-main-container .freeStudy .container .subhead {
   font-size: 3.2rem;
   font-weight: 500;
@@ -2864,9 +2919,20 @@ button {
   width: 70%;
   height: 100%;
 }
+@media (max-width: 720px) {
+  .studyfree-main-container .freeStudy .container .material_container {
+    width: 90%;
+    gap: 1.5rem;
+  }
+}
 .studyfree-main-container .freeStudy .container .material_container .material_card {
   width: 30%;
   padding: 1rem;
+}
+@media (max-width: 720px) {
+  .studyfree-main-container .freeStudy .container .material_container .material_card {
+    width: 15rem;
+  }
 }
 .studyfree-main-container .freeStudy .container .material_container .material_card .single-free-study {
   display: flex;
@@ -4512,6 +4578,12 @@ button {
   align-items: center;
   margin-bottom: 22.6%;
 }
+@media (max-width: 720px) {
+  .director-info-Main-page .director-about-component {
+    margin-bottom: 55rem;
+    align-self: center;
+  }
+}
 .director-info-Main-page .director-about-component .container {
   margin-top: 22%;
   width: var(--landing-page-main-info-width);
@@ -4526,6 +4598,14 @@ button {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+@media screen and (max-width: 720px) {
+  .director-info-Main-page .director-about-component .container .info-and-video {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .director-info-Main-page .director-about-component .container .info-and-video .info h2 {
   font-size: 4rem;
@@ -4545,6 +4625,15 @@ button {
   -webkit-box-shadow: 4px 4px 14px #000;
   box-shadow: 4px 4px 14px #000;
   transition: transform 0.3s ease;
+  width: 53rem;
+  height: 30rem;
+}
+@media screen and (max-width: 720px) {
+  .director-info-Main-page .director-about-component .container .info-and-video .video iframe {
+    width: 50rem;
+    height: 30rem;
+    margin-top: 50rem;
+  }
 }
 .director-info-Main-page .director-about-component .container .info-and-video .video iframe:hover {
   transform: scale(1.05); /* Increase size on hover */
