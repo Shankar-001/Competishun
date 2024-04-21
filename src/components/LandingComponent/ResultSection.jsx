@@ -2,6 +2,8 @@ import React from 'react';
 // import './MyComponent.scss';
 import img from '../../assets/Gallery/Celebration/celebration21.jpg';
 import leaf from '../../assets/oneLeaf.png';
+// import { GiTrophy } from "react-icons/gi";
+import resultimg from '../../assets/LandingPage/result-image.png';
 
 const ResultSection = () => {
   const JeeMainsResult = [
@@ -31,7 +33,12 @@ const ResultSection = () => {
   return (
     <div className="result-main-conatiner">
       <div className="my-component">
-        <div className="heading">Competishun Results</div>
+        <div className='heading-container'>
+          <div className="heading">Competishun Results </div>
+          <span className="result-img">
+            <img src={resultimg} alt=""/>
+          </span>
+        </div>
         <div className="content-container">
           <div className="component">
             {JeeMainsResult.map((result, index) => (
@@ -51,39 +58,39 @@ const ResultSection = () => {
                         <p className="text-center text-muted mb-0">
                           Selections
                         </p>
-                        <p className='year'>{result.year1}</p>
+                        <p className="year">{result.year1}</p>
                       </div>
                       <img src={leaf} alt="dslk" />
                     </div>
                   </span>
                   <span>|</span>
                   <span>
-                  <div className="card">
+                    <div className="card">
                       <img className="left-img" src={leaf} alt="dslk" />
                       <div className="card-body">
-                        <div className="year-name">{result.numbers1}</div>
+                        <div className="year-name">{result.numbers2}</div>
                         {/* <h2 className="fw-bolder text-center mb-0">
                           <span>{result.selction}</span>
                         </h2> */}
                         <p className="text-center text-muted mb-0">
                           Selections
                         </p>
-                        <p className='year'>{result.year2}</p>
+                        <p className="year">{result.year2}</p>
                       </div>
                       <img src={leaf} alt="dslk" />
                     </div>
                   </span>{' '}
                   {/* Fixed typo here */}
-                  <span className=''>|</span>
+                  <span className="">|</span>
                   <span>
-                  <div className="card">
+                    <div className="card">
                       <img className="left-img" src={leaf} alt="dslk" />
                       <div className="card-body">
-                        <div className="year-name">{result.numbers1}</div>
+                        <div className="year-name">{result.numbers3}</div>
                         <p className="text-center text-muted mb-0">
                           Selections
                         </p>
-                        <p className='year'>{result.year3}</p>
+                        <p className="year">{result.year3}</p>
                       </div>
                       <img src={leaf} alt="dslk" />
                     </div>
