@@ -2,17 +2,13 @@ import React from 'react';
 import { GiFlowerStar } from 'react-icons/gi';
 import gif from '../../assets/click2.gif';
 import { GiClick } from 'react-icons/gi';
-import { FaCheckCircle } from "react-icons/fa";
+import { FaCheckCircle } from 'react-icons/fa';
 export const LandingWhyCompethisun = () => {
-  
   return (
     <div className="main-container">
       <div className="inner-container">
         <div className="content">
-          <h1 className="heading-whyCompetishun">
-            ABOUT THE COURSE
-          </h1>
-         
+          <h1 className="heading-whyCompetishun">ABOUT THE COURSE</h1>
 
           <div className="box1" id="abc">
             <div className="check-logo">
@@ -20,12 +16,16 @@ export const LandingWhyCompethisun = () => {
               <FaCheckCircle color="#25D366" className="check" />
             </div>
             <div className="info">
-             
-                <p>Course Features <a
-                href="https://youtu.be/l2tLkv_t15k?feature=shared"
-                target="_blank"
-              ><span>Watch-Now</span> </a></p>
-             
+              <p>
+                {' '}
+                Competishun Course Features
+                <a
+                  href="https://youtu.be/l2tLkv_t15k?feature=shared"
+                  target="_blank"
+                >
+                  {' '} <span>Watch-Now</span>{' '}
+                </a>
+              </p>
             </div>
             {/* <div className="info">
               <a
@@ -42,12 +42,16 @@ export const LandingWhyCompethisun = () => {
               <FaCheckCircle color="#25D366" className="check" />
             </div>
             <div className="info">
-             
-                <p>Why Join Us? Competishun Advantage!  <a
-                href="https://youtu.be/06dJv3gJX88?feature=shared"
-                target="_blank"
-              > <span>Watch-Now</span> </a></p>
-             
+              <p>
+                Why Join Us? Competishun Advantage!{' '}
+                <a
+                  href="https://youtu.be/06dJv3gJX88?feature=shared"
+                  target="_blank"
+                >
+                  {' '}
+                  <span>Watch-Now</span>{' '}
+                </a>
+              </p>
             </div>
           </div>
 
@@ -56,12 +60,15 @@ export const LandingWhyCompethisun = () => {
               <FaCheckCircle color="#25D366" className="check" />
             </div>
             <div className="info">
-             
-                <p>Preparation Stages  <a
-                href="https://youtu.be/iR5ZCto7Td4?feature=shared"
-                target="_blank"
-              ><span>Watch-Now</span></a></p>
-              
+              <p>
+                Stages of JEE Prepration
+                <a
+                  href="https://youtu.be/iR5ZCto7Td4?feature=shared"
+                  target="_blank"
+                >
+                  {' '} <span>Watch-Now</span>
+                </a>
+              </p>
             </div>
           </div>
 
@@ -70,12 +77,15 @@ export const LandingWhyCompethisun = () => {
               <FaCheckCircle color="#25D366" className="check" />
             </div>
             <div className="info">
-              
-                <p>General Question <a
-                href="https://youtu.be/50hiqJY_8h0?feature=shared"
-                target="_blank"
-              ><span>Watch-Now</span> </a></p>
-             
+              <p>
+                Generic: QnA 
+                <a
+                  href="https://youtu.be/50hiqJY_8h0?feature=shared"
+                  target="_blank"
+                >
+                 {' '}  <span> Watch-Now</span>{' '}
+                </a>
+              </p>
             </div>
           </div>
 
@@ -84,12 +94,15 @@ export const LandingWhyCompethisun = () => {
               <FaCheckCircle color="#25D366" className="check" />
             </div>
             <div className="info">
-              
-                <p>Online Vs Offline <a
-                href="https://youtu.be/JKg9Ked2aIk?feature=shared"
-                target="_blank"
-              ><span>Watch-Now</span></a></p>
-              
+              <p>
+                Online Vs Offline : Which is more effective{' '}
+                <a
+                  href="https://youtu.be/JKg9Ked2aIk?feature=shared"
+                  target="_blank"
+                >
+                 {' '}  <span>Watch-Now</span>
+                </a>
+              </p>
             </div>
           </div>
 
@@ -98,12 +111,15 @@ export const LandingWhyCompethisun = () => {
               <FaCheckCircle color="#25D366" className="check" />
             </div>
             <div className="info">
-            
-                <p>Kota vs Jaipur vs Home   <a
-                href="https://youtu.be/qjr3_qtdWFg?feature=shared"
-                target="_blank"
-              ><span>Watch-Now</span></a></p>
-              
+              <p>
+              Choosing Where to Study: Kota, Jaipur, or Home ?{' '}
+                <a
+                  href="https://youtu.be/qjr3_qtdWFg?feature=shared"
+                  target="_blank"
+                >
+                  {' '} <span>Watch-Now</span>
+                </a>
+              </p>
             </div>
           </div>
         </div>

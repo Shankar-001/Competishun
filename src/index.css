@@ -24,6 +24,7 @@ html {
   --landing-button-color: #23103A;
   --landing-bg-liner-grad: #092491;
   --hero-bg-liner-grad: linear-gradient(104deg, #0061FF 30.47%, #60EFFF 108.71%);
+  --hero-bg-liner-grad2: linear-gradient(180deg, #1DA1F2 30.47%, #60EFFF 108.71%);
   --text-liner-grad: linear-gradient(93deg, #0D47A1 49.87%, #2E93CA 85.58%);
   --ip-border-clr: #243a50;
   --ip-placeHolder-txt-clr: #657786;
@@ -285,7 +286,7 @@ button {
   width: var(--landing-page-main-info-width);
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer {
-  background-color: white;
+  background-color: var(--ip-border-clr);
   border-radius: 1rem;
   padding: 2rem;
   display: flex;
@@ -341,10 +342,12 @@ button {
   .footer-mainContainer .footer-containerContent .footer-innerContainer .download-heading {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    color: white;
   }
   .footer-mainContainer .footer-containerContent .footer-innerContainer .ebook {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+    color: white;
   }
   .footer-mainContainer .footer-containerContent .footer-innerContainer .appstore {
     margin-top: 1%;
@@ -362,8 +365,14 @@ button {
   margin-bottom: 2%;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .footer-companyIcon {
-  width: 40%;
-  height: 25%;
+  width: 20rem;
+}
+@media (max-width: 720px) {
+  .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .footer-companyIcon {
+    align-self: center;
+    width: 50%;
+    height: 30%;
+  }
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-logo .p {
   margin-left: 5%;
@@ -383,6 +392,7 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  color: white;
   gap: 10rem;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-quickLinks {
@@ -411,6 +421,9 @@ button {
 .footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-support .footer-support-link .point {
   margin-top: 0.4rem;
 }
+.footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs {
+  color: white;
+}
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs .socialMedia-logo {
   display: flex;
   flex-direction: row;
@@ -427,7 +440,7 @@ button {
   transform: scale(1.2);
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs p {
-  margin-top: 0.2rem;
+  margin-top: 0.5rem;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs .appstore {
   display: flex;
@@ -435,7 +448,7 @@ button {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
-  margin-top: 0.3rem;
+  margin-top: 1rem;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs .appstore .app {
   width: 12rem;
@@ -448,10 +461,13 @@ button {
 }
 .footer-mainContainer .footer-navlink {
   text-decoration: none;
-  color: var(--darkest-bg-color);
+  color: white;
 }
 .footer-mainContainer .footer-navlink:hover {
   color: var(--primary-color);
+}
+.footer-mainContainer #quick-links {
+  color: white;
 }
 .footer-mainContainer #quick-links:hover {
   color: var(--primary-color);
@@ -459,15 +475,13 @@ button {
 
 .text {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .text:hover {
   color: var(--primary-color);
 }
-@media screen and (max-width: 760px) {
-  .text {
-    color: white;
-  }
+.text .heading-and-subheading {
+  color: white;
 }
 
 .main-container {
@@ -489,6 +503,15 @@ button {
   margin-top: 8%;
   margin-bottom: 6.7%;
 }
+@media screen and (max-width: 1000px) {
+  .main-container .width-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+  }
+}
 .main-container .width-container .about-content {
   text-align: justify;
   padding-right: 3%;
@@ -496,6 +519,11 @@ button {
 .main-container .width-container .about-content h1 {
   color: var(--primary-color);
   font-size: 5rem;
+}
+@media (max-width: 415px) {
+  .main-container .width-container .about-content h1 {
+    font-size: 4.5rem;
+  }
 }
 .main-container .width-container .about-content .content {
   font-size: 2rem;
@@ -526,6 +554,14 @@ button {
   -webkit-box-shadow: 4px 4px 14px #000;
   box-shadow: 4px 4px 14px #000;
   transition: transform 0.3s ease;
+  width: 53rem;
+  height: 30rem;
+}
+@media screen and (max-width: 1000px) {
+  .main-container .width-container .video-content iframe {
+    width: 44rem;
+    height: 28rem;
+  }
 }
 .main-container .width-container .video-content iframe:hover {
   transform: scale(1.05); /* Increase size on hover */
@@ -592,7 +628,7 @@ button {
 @media (max-width: 600px) {
   .contact-main .contact-form-container-width .contact-form-container .contact-details-section {
     text-align: center;
-    width: 80%;
+    width: 100%;
   }
 }
 .contact-main .contact-form-container-width .contact-form-container .contact-details-section .contact-details-section-two {
@@ -683,9 +719,30 @@ button {
 .contact-main .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone {
   margin-top: 1rem;
   padding-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
-.contact-main .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone .svg-margin {
-  margin-left: 1rem;
+.contact-main .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone .phone-icon {
+  font-size: 2.8rem;
+  color: blue;
+  margin-top: 1.2%;
+}
+.contact-main .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone .mail-icon {
+  font-size: 4rem;
+  color: blue;
+}
+.contact-main .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .whatsapp-icon {
+  font-size: 4.2rem;
+  color: green;
+}
+.contact-main .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .text {
+  padding-top: 1.2%;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--darkest-bg-color);
 }
 .contact-main .contact-form-container-width .contact-form-container .form-section {
   margin-top: 5rem;
@@ -885,6 +942,7 @@ button {
 @media (max-width: 720px) {
   .Home .highlight video {
     height: 50rem;
+    display: none;
   }
 }
 .Home .highlight .overlay {
@@ -903,14 +961,41 @@ button {
   width: var(--landing-page-main-info-width);
   margin-top: 14rem;
 }
+@media (max-width: 720px) {
+  .Home .highlight .overlay .content {
+    margin-top: 10rem;
+  }
+}
 .Home .highlight .overlay .content h1 {
   font-size: 6rem;
   font-weight: 700;
   font-family: var(--font-family);
   color: var(--lightest-bg-color);
+  height: 9rem;
 }
 .Home .highlight .overlay .content h1 span {
   color: var(--secondary-color);
+}
+@media (min-width: 960px) {
+  .Home .highlight .overlay .content h1 {
+    height: 5rem;
+  }
+  .Home .highlight .overlay .content h1 br {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .Home .highlight .overlay .content h1 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+    height: 7rem;
+  }
+}
+@media screen and (max-width: 392px) {
+  .Home .highlight .overlay .content h1 {
+    height: 10rem;
+  }
 }
 .Home .highlight .overlay .content p {
   font-size: 1.6rem;
@@ -1040,6 +1125,14 @@ button {
 .Home .resultSection #result .container .row.mt-6 {
   margin-top: 4rem;
 }
+@media (max-width: 720px) {
+  .Home .resultSection #result .container .row .inner-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .Home .resultSection #result .container .row .inner-row .slogan {
   color: var(--primary-color);
   font-size: 6.6rem;
@@ -1053,11 +1146,12 @@ button {
   text-align: center;
 }
 .Home .resultSection #result .container .row .inner-row .badge {
+  margin-top: 1rem;
   display: inline-block;
   padding: 0.25rem 0.5rem;
   font-weight: bold;
   color: #fff;
-  background-color: #0d6efd;
+  background: var(--hero-bg-liner-grad2);
   border-radius: 0.375rem;
 }
 .Home .resultSection #result .container .row .inner-row h2 {
@@ -1119,13 +1213,20 @@ button {
   padding: 0.25rem 0.5rem;
   font-weight: bold;
   color: #fff;
-  background-color: #0d6efd;
+  background: var(--hero-bg-liner-grad2);
   border-radius: 0.375rem;
 }
 .Home .resultSection #result .container .row .card-group .card .card-body h2 {
   font-size: 4.8rem;
   font-weight: 600;
   font-family: var(--font-family);
+}
+@media (max-width: 720px) {
+  .Home .resultSection #result .container .row .card-group .card .card-body h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    font-family: var(--font-family);
+  }
 }
 .Home .resultSection #result .container .row .card-group .card .card-body h2.fw-bolder {
   font-weight: bold;
@@ -1209,7 +1310,7 @@ button {
 @media (max-width: 600px) {
   .Home .contact-form-container-width .contact-form-container .contact-details-section {
     text-align: center;
-    width: 80%;
+    width: 100%;
   }
 }
 .Home .contact-form-container-width .contact-form-container .contact-details-section .contact-details-section-two {
@@ -1300,9 +1401,30 @@ button {
 .Home .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone {
   margin-top: 1rem;
   padding-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
-.Home .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone .svg-margin {
-  margin-left: 1rem;
+.Home .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone .phone-icon {
+  font-size: 2.8rem;
+  color: blue;
+  margin-top: 1.2%;
+}
+.Home .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone .mail-icon {
+  font-size: 4rem;
+  color: blue;
+}
+.Home .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .whatsapp-icon {
+  font-size: 4.2rem;
+  color: green;
+}
+.Home .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .text {
+  padding-top: 1.2%;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--darkest-bg-color);
 }
 .Home .contact-form-container-width .contact-form-container .form-section {
   margin-top: 5rem;
@@ -1506,6 +1628,7 @@ button {
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
   margin-bottom: 2rem;
+  text-align: center;
 }
 .Home .TestimonialsSection .containerMain h3 span {
   color: orange;
@@ -1637,6 +1760,11 @@ button {
   color: var(--primary-color);
   margin-bottom: 2rem;
 }
+.Home .freeStudy .container .section-title p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
 .Home .freeStudy .container .subhead {
   font-size: 3.2rem;
   font-weight: 500;
@@ -1663,9 +1791,20 @@ button {
   width: 70%;
   height: 100%;
 }
+@media (max-width: 720px) {
+  .Home .freeStudy .container .material_container {
+    width: 90%;
+    gap: 1.5rem;
+  }
+}
 .Home .freeStudy .container .material_container .material_card {
   width: 30%;
   padding: 1rem;
+}
+@media (max-width: 720px) {
+  .Home .freeStudy .container .material_container .material_card {
+    width: 15rem;
+  }
 }
 .Home .freeStudy .container .material_container .material_card .single-free-study {
   display: flex;
@@ -2633,6 +2772,14 @@ button {
 .result-main-container .resultSection #result .container .row.mt-6 {
   margin-top: 4rem;
 }
+@media (max-width: 720px) {
+  .result-main-container .resultSection #result .container .row .inner-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .result-main-container .resultSection #result .container .row .inner-row .slogan {
   color: var(--primary-color);
   font-size: 6.6rem;
@@ -2646,11 +2793,12 @@ button {
   text-align: center;
 }
 .result-main-container .resultSection #result .container .row .inner-row .badge {
+  margin-top: 1rem;
   display: inline-block;
   padding: 0.25rem 0.5rem;
   font-weight: bold;
   color: #fff;
-  background-color: #0d6efd;
+  background: var(--hero-bg-liner-grad2);
   border-radius: 0.375rem;
 }
 .result-main-container .resultSection #result .container .row .inner-row h2 {
@@ -2712,13 +2860,20 @@ button {
   padding: 0.25rem 0.5rem;
   font-weight: bold;
   color: #fff;
-  background-color: #0d6efd;
+  background: var(--hero-bg-liner-grad2);
   border-radius: 0.375rem;
 }
 .result-main-container .resultSection #result .container .row .card-group .card .card-body h2 {
   font-size: 4.8rem;
   font-weight: 600;
   font-family: var(--font-family);
+}
+@media (max-width: 720px) {
+  .result-main-container .resultSection #result .container .row .card-group .card .card-body h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    font-family: var(--font-family);
+  }
 }
 .result-main-container .resultSection #result .container .row .card-group .card .card-body h2.fw-bolder {
   font-weight: bold;
@@ -2838,6 +2993,11 @@ button {
   color: var(--primary-color);
   margin-bottom: 2rem;
 }
+.studyfree-main-container .freeStudy .container .section-title p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
 .studyfree-main-container .freeStudy .container .subhead {
   font-size: 3.2rem;
   font-weight: 500;
@@ -2864,9 +3024,20 @@ button {
   width: 70%;
   height: 100%;
 }
+@media (max-width: 720px) {
+  .studyfree-main-container .freeStudy .container .material_container {
+    width: 90%;
+    gap: 1.5rem;
+  }
+}
 .studyfree-main-container .freeStudy .container .material_container .material_card {
   width: 30%;
   padding: 1rem;
+}
+@media (max-width: 720px) {
+  .studyfree-main-container .freeStudy .container .material_container .material_card {
+    width: 15rem;
+  }
 }
 .studyfree-main-container .freeStudy .container .material_container .material_card .single-free-study {
   display: flex;
@@ -3288,10 +3459,17 @@ button {
   font-family: var(--font-family);
   color: var(--landing-main-head-color);
 }
-@media (max-width: 40em) {
+@media (min-width: 25em) and (max-width: 40em) {
   .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-info h1 {
     font-size: 4.8rem;
     font-weight: 600;
+    font-family: var(--font-family);
+  }
+}
+@media (min-width: 18.75em) and (max-width: 25em) {
+  .Landing-Page-Main-Container .landing-highlight .landing-info-container .landing-info-subcontainer .landing-info h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
     font-family: var(--font-family);
   }
 }
@@ -3931,11 +4109,13 @@ button {
   box-sizing: border-box;
   margin: 0 auto; /* Center the component horizontally */
 }
-.Landing-Page-Main-Container .result-main-conatiner .my-component .heading {
+.Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .heading {
   font-size: 6rem;
   font-weight: 700;
   font-family: var(--font-family);
@@ -3944,12 +4124,38 @@ button {
   margin-bottom: 5%;
 }
 @media (max-width: 900px) {
-  .Landing-Page-Main-Container .result-main-conatiner .my-component .heading {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .heading {
     text-align: center;
     font-size: 4.8rem;
     font-weight: 600;
     font-family: var(--font-family);
   }
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .result-img {
+  padding-left: 1%;
+}
+@media (max-width: 900px) {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .result-img {
+    padding: 0rem;
+    align-self: flex-start;
+    align-items: start;
+    justify-content: start;
+  }
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .result-img img {
+  height: 1rem;
+  width: 2rem;
+}
+@media (max-width: 900px) {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .result-img {
+    align-self: flex-start;
+    align-items: start;
+    justify-content: start;
+  }
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .result-img img {
+  height: 90px;
+  width: 100%;
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container {
   display: flex;
@@ -3966,31 +4172,35 @@ button {
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
-  color: var(--landing-sub-head-color);
+  color: var(--golden-color);
   font-size: 4rem;
+}
+@media (max-width: 900px) {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .sub-heading {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (max-width: 1048px) {
   .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .sub-heading {
     font-size: 2.9rem;
   }
 }
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .description {
-  font-size: 1.8rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-  color: var(--landing-desc-color);
-  padding-left: 11%;
-  padding-top: 3%;
-  padding-bottom: 5%;
-}
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 5%;
+  margin-top: 2%;
   padding-left: 9.5%;
   gap: 10%;
   color: #fff;
+}
+@media (max-width: 900px) {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers {
+    justify-content: center;
+    margin-top: 5%;
+  }
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers .card {
   width: 100%;
@@ -4020,6 +4230,7 @@ button {
   color: var(--darkest-bg-color);
   font-size: 1.3rem;
   display: inline-block;
+  background-color: brown;
   padding: 0.25rem 0.5rem;
   font-weight: bold;
   color: #fff;
@@ -4137,11 +4348,19 @@ button {
   width: var(--landing-page-main-info-width);
 }
 .Landing-Page-Main-Container .TestimonialsSection .containerMain h1 {
-  font-size: 6rem;
-  font-weight: 700;
+  font-size: 4.8rem;
+  font-weight: 600;
   font-family: var(--font-family);
   color: var(--landing-main-head-color);
   margin-bottom: 1rem;
+}
+@media (max-width: 900px) {
+  .Landing-Page-Main-Container .TestimonialsSection .containerMain h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    font-family: var(--font-family);
+    text-align: center;
+  }
 }
 .Landing-Page-Main-Container .TestimonialsSection .containerMain h3 {
   font-size: 3.2rem;
@@ -4153,6 +4372,14 @@ button {
 }
 .Landing-Page-Main-Container .TestimonialsSection .containerMain h3 span {
   color: var(--golden-color);
+}
+@media (max-width: 900px) {
+  .Landing-Page-Main-Container .TestimonialsSection .containerMain h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+    text-align: center;
+  }
 }
 .Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container {
   display: flex;
@@ -4181,6 +4408,7 @@ button {
   scroll-snap-align: start;
   width: 40rem;
   min-height: 27.3rem;
+  margin-left: -2rem;
 }
 .Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container .TestimonialComp .card-item .item-content {
   padding: 0 2rem;
@@ -4297,7 +4525,7 @@ button {
   margin-bottom: 1%;
 }
 .Landing-Page-Main-Container .certificateFaq .faqContainer .faqContent1 .faqSubContent h2 {
-  color: var(--landing-sub-head-color);
+  color: yellow;
   font-size: 2.4rem;
   font-weight: 400;
   font-family: var(--font-family);
@@ -4510,15 +4738,26 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 22.6%;
+  margin-bottom: 21%;
+}
+@media (max-width: 1100px) {
+  .director-info-Main-page .director-about-component {
+    margin-bottom: 55rem;
+    align-self: center;
+  }
 }
 .director-info-Main-page .director-about-component .container {
-  margin-top: 22%;
+  margin-top: 32rem;
   width: var(--landing-page-main-info-width);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .director-info-Main-page .director-about-component .container {
+    margin-top: 10rem;
+  }
 }
 .director-info-Main-page .director-about-component .container .info-and-video {
   display: flex;
@@ -4526,6 +4765,24 @@ button {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+@media screen and (max-width: 1100px) {
+  .director-info-Main-page .director-about-component .container .info-and-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1100px) {
+  .director-info-Main-page .director-about-component .container .info-and-video .info {
+    margin-top: 55rem;
+  }
+}
+@media (max-width: 1100px) {
+  .director-info-Main-page .director-about-component .container .info-and-video .info .name {
+    text-align: center;
+  }
 }
 .director-info-Main-page .director-about-component .container .info-and-video .info h2 {
   font-size: 4rem;
@@ -4545,6 +4802,14 @@ button {
   -webkit-box-shadow: 4px 4px 14px #000;
   box-shadow: 4px 4px 14px #000;
   transition: transform 0.3s ease;
+  width: 53rem;
+  height: 30rem;
+}
+@media screen and (max-width: 720px) {
+  .director-info-Main-page .director-about-component .container .info-and-video .video iframe {
+    width: 48rem;
+    height: 28rem;
+  }
 }
 .director-info-Main-page .director-about-component .container .info-and-video .video iframe:hover {
   transform: scale(1.05); /* Increase size on hover */

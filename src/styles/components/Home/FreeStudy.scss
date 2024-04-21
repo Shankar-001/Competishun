@@ -20,33 +20,44 @@
       color: var(--primary-color);
       margin-bottom: 2rem;
     }
-    .subhead{
-        @include h3;
-        @include flex-cc;
-        gap:1rem;
-        color: var(--darkest-bg-color);
-        margin:3rem 0;
-        align-self: flex-start;
-        text-align: left;
+    .section-title p{
+      @include h4;
+    }
+    .subhead {
+      @include h3;
+      @include flex-cc;
+      gap: 1rem;
+      color: var(--darkest-bg-color);
+      margin: 3rem 0;
+      align-self: flex-start;
+      text-align: left;
 
-        img{
-            width: 3.5rem;
-            height: 3.5rem;
-        }
+      img {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
     }
 
     .material_container {
-    //   @include flex-sest;
-    display: flex;
-    align-items: stretch;
-    justify-content:center;
-    // @include
-    flex-wrap: wrap;
-        width: 70%;
-        height: 100%;
+      //   @include flex-sest;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      // @include
+      flex-wrap: wrap;
+      width: 70%;
+      height: 100%;
+      @media (max-width:720px) {
+        width:90%;
+        gap:1.5rem;
+      }
       .material_card {
         width: 30%;
         padding: 1rem;
+
+        @media (max-width:720px) {
+          width:15rem;
+        }
         // height: 100%;
         .single-free-study {
           @include flex-sbc(column);
@@ -68,14 +79,14 @@
               @include font-style(2rem, 600);
             }
             a {
-                // make it like a button
+              // make it like a button
               @include bodyText;
               @include transition;
               text-decoration: none;
               background-color: var(--light-bg-color);
-                padding: 1rem ;
-                border-radius: 2rem;
-                width: fit-content;
+              padding: 1rem;
+              border-radius: 2rem;
+              width: fit-content;
               &:hover {
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
                 transform: scale(1.1);
@@ -85,7 +96,6 @@
             }
           }
         }
-        
       }
     }
   }

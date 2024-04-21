@@ -19,7 +19,7 @@ export const DirectorAbout = () => {
         <div className="info-and-video">
           {data && (
             <div className="info">
-              <h2>{data.name}</h2>
+              <h2 className='name'>{data.name}</h2>
               <br />
               <p>{data.about}</p>
             </div>
@@ -29,8 +29,8 @@ export const DirectorAbout = () => {
         
             {data && (
               <iframe
-                width="560"
-                height="315"
+                // width="560"
+                // height="315"
                 src={data.videoUrl}
                 title="YouTube video player"
                 frameborder="0"

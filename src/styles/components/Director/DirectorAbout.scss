@@ -2,19 +2,47 @@
   height: 30rem;
   @include bodyText;
   @include flex-cc;
-  margin-bottom: 22.6%;
+  margin-bottom: 21%;
   
-
+  @media (max-width:1100px) {
+    margin-bottom: 55rem;
+    align-self: center;
+  }
+  
   .container {
-    margin-top: 22%;
+    margin-top: 32rem;
+
+    @media (max-width:1100px) {
+      margin-top:10rem; 
+    }
     width: var(--landing-page-main-info-width);
-    @include flex-ss(column);
+    @include flex-cc(column);
 
     .info-and-video{
         @include flex-cc;
         gap:2rem;
 
+        @media screen and (max-width:1100px) {
+        @include flex-cc(column);
+        }
+
         .info{
+          @media (max-width:1100px) {
+            margin-top: 55rem;
+        
+          }
+
+         .name{
+          @media (max-width:1100px) {
+            text-align: center;
+        
+          }
+
+         }
+          
+        
+
+
           h2{
             font-size: 4rem;
             font-weight: bold;
@@ -28,9 +56,7 @@
         .video{
           iframe {
             margin-top: 20px;
-    
             margin-bottom: 30px;
-    
             -moz-border-radius: 12px;
             -webkit-border-radius: 12px;
             border-radius: 12px;
@@ -38,7 +64,13 @@
             -webkit-box-shadow: 4px 4px 14px #000;
             box-shadow: 4px 4px 14px #000;
             transition: transform 0.3s ease;
-            
+            width:53rem;
+            height:30rem;
+            @media screen and (max-width:720px) {
+              width: 48rem;
+              height: 28rem; 
+          
+            }
           }
           iframe:hover {
             transform: scale(1.05); /* Increase size on hover */

@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { MdEmail } from 'react-icons/md';
 import { FaPhoneVolume } from 'react-icons/fa6';
-import { addDoc, collection } from 'firebase/firestore';
+import { addDoc, collection, doc, getDoc, getFirestore, increment, setDoc } from 'firebase/firestore';
 import db from '../../constants/Firebase';
 
 const ContactComponent = () => {
@@ -37,41 +37,58 @@ const ContactComponent = () => {
     setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    let hasErrors = false;
-    const newErrors = {};
-    // let formData=formData;
+  let hasErrors = false;
+  const newErrors = {};
 
-    // Validation for required fields
-    if (formData.firstName.trim() === '') {
-      newErrors.firstName = 'This field is required';
-      hasErrors = true;
+  // Validation for required fields
+  if (formData.firstName.trim() === '') {
+    newErrors.firstName = 'This field is required';
+    hasErrors = true;
+  }
+  if (formData.phone.trim() === '') {
+    newErrors.phone = 'This field is required';
+    hasErrors = true;
+  }
+
+  if (hasErrors) {
+    setErrors(newErrors);
+    return;
+  }
+
+  try {
+    // Get the current index value
+    const indexDocRef = doc(db, 'index', 'SupportQueriesIndex');
+    const indexDocSnap = await getDoc(indexDocRef);
+    let currentIndex = 1; // Default value if index document doesn't exist
+
+    if (indexDocSnap.exists()) {
+      currentIndex = indexDocSnap.data().val;
     }
-    if (formData.phone.trim() === '') {
-      newErrors.phone = 'This field is required';
-      hasErrors = true;
-    }
 
-    if (hasErrors) {
-      setErrors(newErrors);
-      return;
-    }
-
+    // Prepare data to be added to the SupportQueries collection
     const data = {
       name: formData.firstName.trim(),
       phoneNumber: formData.phone,
       city: formData.city,
       state: formData.state,
       query: formData.message,
-      class: (formData.class==='others'? otherClass: formData.class),
+      class: formData.class === 'others' ? otherClass : formData.class,
       email: formData.email,
-      stream:(formData.stream==='others'? otherStream: formData.stream),
-      date : Date.now(),
+      stream: formData.stream === 'others' ? otherStream : formData.stream,
+      date: Date.now(),
+      index: currentIndex, // Set the index field
     };
-    const docRef=await addDoc(collection(db,"SupportQueries"),data);
-  
+
+    // Add document to the SupportQueries collection
+    const docRef = await addDoc(collection(db, 'SupportQueries'), data);
+
+    // Update the index for the next document
+    await setDoc(indexDocRef, { val: increment(1) }, { merge: true });
+
+    // Reset form data and errors
     setFormData({
       firstName: '',
       phone: '',
@@ -80,7 +97,7 @@ const ContactComponent = () => {
       class: '',
       email: '',
       message: '',
-      stream:'',
+      stream: '',
     });
 
     setErrors({
@@ -89,10 +106,10 @@ const ContactComponent = () => {
       class: '',
       email: '',
       message: '',
-      stream:'',
+      stream: '',
     });
 
-
+    // Show success message
     Swal.fire({
       title: 'Thanks for sharing your details!',
       html: "<div id='custom-text'>Our team member will reach out to you soon.</div>",
@@ -104,7 +121,11 @@ const ContactComponent = () => {
         confirmButton: 'your-custom-confirm-button-class',
       },
     });
-  };
+  } catch (error) {
+    console.error('Error adding document: ', error);
+  }
+};
+
 
   return (
     <div className="contact-form-container-width" id="contact_us">
@@ -312,16 +333,35 @@ const ContactComponent = () => {
             You can also contact us at:
           </p>
           <p className="contact-detail-section-phone">
-            <a>
-              <span>+91 8888000021 </span>
-            </a>
-          </p>
-          <p className="contact-detail-section-phone">
-            <a>
-              <span>support@competishun.com</span>
-            </a>
-          </p>
+              <span className="phone-icon">
+                <FaPhoneVolume />
+              </span>
+              <a href="tel:+918888000021" target="blank" className="text">
+                +91 8888000021
+              </a>
+            </p>
+            <p className="contact-detail-section-phone">
+              <span className="mail-icon">
+                <MdEmail />
+              </span>
+              <a
+                href="mailto:support@competishun.com"
+                target="blank"
+                className="text"
+              >
+                support@competishun.com
+              </a>
+            </p>
+            <p className="contact-detail-section-phone">
+              <span className="whatsapp-icon">
+                <IoLogoWhatsapp />
+              </span>
+              <a href="https://wa.link/xa00yu" target="blank" className="text">
+                +91 7410900901
+              </a>
+            </p>
         </div>
+        
       </div>
     </div>
   );

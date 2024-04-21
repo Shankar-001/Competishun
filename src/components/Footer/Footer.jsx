@@ -1,4 +1,4 @@
-import CompanyLogo from '../../assets/MainLogo.png';
+import CompanyLogo from '../../assets/logo.png';
 import eduCompetishun from '../../assets/eduCompetishun.png';
 import competishunDigital from '../../assets/competishunDigital.png';
 import { FaLocationDot } from 'react-icons/fa6';
@@ -69,7 +69,7 @@ const Footer = () => {
           {/*  box2 */}
           <div className="quicklink-support">
             <div className="footer-quickLinks">
-              <h3>QUICK LINKS</h3>
+              <h3 className='heading-and-subheading'>QUICK LINKS</h3>
               {/* <br /> */}
               <div className="element">
                 <div className="footer-link">
@@ -122,7 +122,7 @@ const Footer = () => {
 
             {/*  box3 */}
             <div className="footer-support">
-              <h3>SUPPORT</h3>
+              <h3  className='heading-and-subheading'>SUPPORT</h3>
               <div className="footer-support-link">
                 <div className="point">
                   <a
@@ -170,7 +170,7 @@ const Footer = () => {
                 href="https://www.facebook.com/mohit.tyagi.775"
                 target="_blank"
               >
-                <FaFacebook fontSize={30} color="#316FF6" className="icons" />
+                <FaFacebook fontSize={30} color="#316FF6" className="icons"/>
               </a>
 
               <a href="https://www.youtube.com/@MohitTyagi" target="_blank">
