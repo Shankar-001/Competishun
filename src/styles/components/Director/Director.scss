@@ -3,20 +3,35 @@
   transform: translateY(-40%);
   @include bodyText;
   // background-color: var(--lightest-bg-color);
+  @media (max-width:990px) {
+    width:90%;
+    // transform: translate(0);
+  }
+  @media (max-width:720px) {
+    width:90%;
+    transform: translate(0);
+  }
   .my_card-container {
     @include flex-cst;
     // height: 20rem;
     gap: 3%;
+    @media (max-width:720px) {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }   
     .inner_card {
       @include flex-ss(column);
       background-color: var(--light-bg-color);
       // height: 40rem;
-      // width: 22.5%;
+      width: 22.5%;
       padding: 1rem;
       border-radius: 1rem;
       // box-shadow: 1rem 0.8rem 0.5rem var(--light-bg-color);
       box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.05) !important;  
       // transform :.25s ease;
+      @media (max-width:720px) {
+        width: 20rem;
+      }
 
       .text-content {
         padding-top: 5%;

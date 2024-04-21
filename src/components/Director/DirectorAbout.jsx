@@ -29,8 +29,8 @@ export const DirectorAbout = () => {
         
             {data && (
               <iframe
-                width="560"
-                height="315"
+                // width="560"
+                // height="315"
                 src={data.videoUrl}
                 title="YouTube video player"
                 frameborder="0"
