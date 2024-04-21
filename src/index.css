@@ -606,7 +606,7 @@ button {
 @media (max-width: 600px) {
   .contact-main .contact-form-container-width .contact-form-container .contact-details-section {
     text-align: center;
-    width: 80%;
+    width: 100%;
   }
 }
 .contact-main .contact-form-container-width .contact-form-container .contact-details-section .contact-details-section-two {
@@ -697,9 +697,30 @@ button {
 .contact-main .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone {
   margin-top: 1rem;
   padding-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
-.contact-main .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone .svg-margin {
-  margin-left: 1rem;
+.contact-main .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone .phone-icon {
+  font-size: 2.8rem;
+  color: blue;
+  margin-top: 1.2%;
+}
+.contact-main .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone .mail-icon {
+  font-size: 4rem;
+  color: blue;
+}
+.contact-main .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .whatsapp-icon {
+  font-size: 4.2rem;
+  color: green;
+}
+.contact-main .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .text {
+  padding-top: 1.2%;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--darkest-bg-color);
 }
 .contact-main .contact-form-container-width .contact-form-container .form-section {
   margin-top: 5rem;
@@ -1233,7 +1254,7 @@ button {
 @media (max-width: 600px) {
   .Home .contact-form-container-width .contact-form-container .contact-details-section {
     text-align: center;
-    width: 80%;
+    width: 100%;
   }
 }
 .Home .contact-form-container-width .contact-form-container .contact-details-section .contact-details-section-two {
@@ -1324,9 +1345,30 @@ button {
 .Home .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone {
   margin-top: 1rem;
   padding-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
-.Home .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone .svg-margin {
-  margin-left: 1rem;
+.Home .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone .phone-icon {
+  font-size: 2.8rem;
+  color: blue;
+  margin-top: 1.2%;
+}
+.Home .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .contact-detail-section-phone .mail-icon {
+  font-size: 4rem;
+  color: blue;
+}
+.Home .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .whatsapp-icon {
+  font-size: 4.2rem;
+  color: green;
+}
+.Home .contact-form-container-width .contact-form-container .contact-details-section-margin-2 .text {
+  padding-top: 1.2%;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--darkest-bg-color);
 }
 .Home .contact-form-container-width .contact-form-container .form-section {
   margin-top: 5rem;
@@ -3997,11 +4039,13 @@ button {
   box-sizing: border-box;
   margin: 0 auto; /* Center the component horizontally */
 }
-.Landing-Page-Main-Container .result-main-conatiner .my-component .heading {
+.Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .heading {
   font-size: 6rem;
   font-weight: 700;
   font-family: var(--font-family);
@@ -4010,12 +4054,38 @@ button {
   margin-bottom: 5%;
 }
 @media (max-width: 900px) {
-  .Landing-Page-Main-Container .result-main-conatiner .my-component .heading {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .heading {
     text-align: center;
     font-size: 4.8rem;
     font-weight: 600;
     font-family: var(--font-family);
   }
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .result-img {
+  padding-left: 1%;
+}
+@media (max-width: 900px) {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .result-img {
+    padding: 0rem;
+    align-self: flex-start;
+    align-items: start;
+    justify-content: start;
+  }
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .result-img img {
+  height: 1rem;
+  width: 2rem;
+}
+@media (max-width: 900px) {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .result-img {
+    align-self: flex-start;
+    align-items: start;
+    justify-content: start;
+  }
+}
+.Landing-Page-Main-Container .result-main-conatiner .my-component .heading-container .result-img img {
+  height: 90px;
+  width: 100%;
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container {
   display: flex;
@@ -4032,31 +4102,35 @@ button {
   font-weight: 400;
   font-family: var(--font-family);
   color: var(--darkest-bg-color);
-  color: var(--landing-sub-head-color);
+  color: var(--golden-color);
   font-size: 4rem;
+}
+@media (max-width: 900px) {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .sub-heading {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (max-width: 1048px) {
   .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .sub-heading {
     font-size: 2.9rem;
   }
 }
-.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .description {
-  font-size: 1.8rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-  color: var(--landing-desc-color);
-  padding-left: 11%;
-  padding-top: 3%;
-  padding-bottom: 5%;
-}
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 5%;
+  margin-top: 2%;
   padding-left: 9.5%;
   gap: 10%;
   color: #fff;
+}
+@media (max-width: 900px) {
+  .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers {
+    justify-content: center;
+    margin-top: 5%;
+  }
 }
 .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .component .numbers .card {
   width: 100%;
@@ -4086,6 +4160,7 @@ button {
   color: var(--darkest-bg-color);
   font-size: 1.3rem;
   display: inline-block;
+  background-color: brown;
   padding: 0.25rem 0.5rem;
   font-weight: bold;
   color: #fff;
@@ -4203,11 +4278,19 @@ button {
   width: var(--landing-page-main-info-width);
 }
 .Landing-Page-Main-Container .TestimonialsSection .containerMain h1 {
-  font-size: 6rem;
-  font-weight: 700;
+  font-size: 4.8rem;
+  font-weight: 600;
   font-family: var(--font-family);
   color: var(--landing-main-head-color);
   margin-bottom: 1rem;
+}
+@media (max-width: 900px) {
+  .Landing-Page-Main-Container .TestimonialsSection .containerMain h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    font-family: var(--font-family);
+    text-align: center;
+  }
 }
 .Landing-Page-Main-Container .TestimonialsSection .containerMain h3 {
   font-size: 3.2rem;
@@ -4219,6 +4302,14 @@ button {
 }
 .Landing-Page-Main-Container .TestimonialsSection .containerMain h3 span {
   color: var(--golden-color);
+}
+@media (max-width: 900px) {
+  .Landing-Page-Main-Container .TestimonialsSection .containerMain h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+    text-align: center;
+  }
 }
 .Landing-Page-Main-Container .TestimonialsSection .containerMain .testimonials-container {
   display: flex;
@@ -4363,7 +4454,7 @@ button {
   margin-bottom: 1%;
 }
 .Landing-Page-Main-Container .certificateFaq .faqContainer .faqContent1 .faqSubContent h2 {
-  color: var(--landing-sub-head-color);
+  color: yellow;
   font-size: 2.4rem;
   font-weight: 400;
   font-family: var(--font-family);

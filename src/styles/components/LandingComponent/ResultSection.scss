@@ -18,20 +18,51 @@
     padding-right: 2%;
     box-sizing: border-box;
     margin: 0 auto; /* Center the component horizontally */
+    .heading-container {
+      @include flex-cs;
+      .heading {
+        // @include flex-cc;
+        @include h1;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 5%;
+        @media (max-width: 900px) {
+          text-align: center;
+          @include h2;
+        }
+      }
+      .result-img {
+        padding-left: 1%;
 
-    .heading {
-      @include flex-cc;
-      @include h1;
-      color: white;
-      font-weight: bold;
-      margin-bottom: 5%;
-      @media (max-width:900px) {
-        text-align: center;
-        @include h2;
-     }
-      
+        // height:10px;
+        @media (max-width: 900px) {
+          padding: 0rem;
+          align-self: flex-start;
+          align-items: start;
+          justify-content: start;
+        }
+        img {
+          height: 1rem;
+          width: 2rem;
+        }
+      }
+
+      .result-img {
+        // padding-left: 1%;
+
+        // height:10px;
+        @media (max-width: 900px) {
+          // padding: 0rem;
+          align-self: flex-start;
+          align-items: start;
+          justify-content: start;
+        }
+        img {
+          height: 90px;
+          width: 100%;
+        }
+      }
     }
-
     .content-container {
       display: flex;
       flex-direction: row;
@@ -44,35 +75,42 @@
 
         .sub-heading {
           @include bodyText;
-          color: var(--landing-sub-head-color);
+          color: var(--golden-color);
           font-size: 4rem;
+          @media (max-width:900px) {
+            display: flex;
+            justify-content: center;
+          }
 
           @media (max-width: 1048px) {
             font-size: 2.9rem;
           }
         }
 
-        .description {
-          @include h5;
-          color: var(--landing-desc-color);
-          padding-left: 11%;
-          padding-top: 3%;
-          padding-bottom: 5%;
-        }
+        // .description {
+        //   @include h5;
+        //   color: var(--landing-desc-color);
+        //   padding-left: 11%;
+        //   padding-top: 3%;
+        //   padding-bottom: 5%;
+        // }
 
         .numbers {
           display: flex;
           align-items: center;
           justify-content: space-around;
           margin-bottom: 5%;
+          margin-top: 2%;
           padding-left: 9.5%;
           gap: 10%;
           color: #fff;
+          @media (max-width:900px) {
+            justify-content: center;
+            margin-top: 5%;
+          }
 
           .card {
             width: 100%;
-            // background-image: url('/src/assets/crownleaf.png');
-            // background-size: 100% 100%;
             @include flex-cc;
             img {
               transform: rotateZ(-20deg) translateX(-38%);
@@ -87,17 +125,15 @@
             }
             .card-body {
               @include flex-cc(column);
-              .year{
-              @include bodyText;
-              font-size: 1.3rem;
+              .year {
+                @include bodyText;
+                font-size: 1.3rem;
                 display: inline-block;
+                background-color:brown;
                 padding: 0.25rem 0.5rem;
-                //   font-size: 0.75rem;
                 font-weight: bold;
                 color: #fff;
-                // background-color: #0d6efd;
                 border-radius: 0.375rem;
-                
               }
               h2 {
                 @include h5;
@@ -128,7 +164,6 @@
                 &.text-center {
                   text-align: center;
                 }
-                
 
                 span {
                   &.text-danger {
@@ -139,7 +174,6 @@
                     font-weight: bold;
                   }
                 }
-
               }
             }
           }
@@ -167,11 +201,6 @@
 
       .component2 {
         flex: 1;
-        //   background-image: url('path/to/your/image.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
-        //   background-size: cover;
-        //   background-position: center;
-        //   background-repeat: no-repeat;
-
         img {
           width: 100%;
           margin-left: 10%;
