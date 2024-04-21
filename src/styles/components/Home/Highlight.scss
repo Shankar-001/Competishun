@@ -39,12 +39,31 @@
       width: var(--landing-page-main-info-width);
       margin-top: 14rem;
 
+      @media (max-width:720px) {
+        margin-top: 10rem;
+      }
+
       h1 {
         @include h1;
         color: var(--lightest-bg-color);
+        height: 9rem;
 
         span {
           color: var(--secondary-color);
+        }
+        @media  (min-width: 960px){
+          height: 5rem;
+          br{
+            display: none;
+          }
+        }
+
+        @media (max-width:720px) {
+          @include h2;
+          height:7rem;
+        }
+        @media screen and (max-width: 392px) {
+          height: 10rem;
         }
       }
       p {

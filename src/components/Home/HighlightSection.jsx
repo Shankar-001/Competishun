@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import highlightVideo from "../../assets/highlight-background.mp4"
+import { useNavigate } from 'react-router-dom';
 
 const HighlightSection = () => {
+  const navigate = useNavigate();
   const [i, seti] = useState(0);
   const [j, setj] = useState(0);
   const txt = ['केवल पढ़ाई', 'Selections'];
@@ -64,13 +66,17 @@ const HighlightSection = () => {
         <div className="content">
           <h1>
             {/* Competishun Means <span>केवल पढाई</span> */}
-            Competishun Means <span>{txt[i].substring(0, j)}</span>
+            Competishun Means <br /> <span>{txt[i].substring(0, j)}</span>
           </h1>
           <h1>{/* Competishun Means <span>Selection</span> */}</h1>
           <p>
-          One of the most Trusted Institute for IIT JEE and NEET preparation
+            One of the most Trusted Institute for IIT JEE and NEET preparation
           </p>
-          <button className="btn">Explore our courses</button>
+          <button className="btn" onClick={()=>{
+            navigate('/courses/jee-online-courses');
+          }}>
+           Explore our courses
+          </button>
         </div>
       </div>
     </div>
