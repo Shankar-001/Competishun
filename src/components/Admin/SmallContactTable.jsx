@@ -1,5 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { collection, endAt, getDocs, orderBy, query, startAt } from 'firebase/firestore';
+import {
+  collection,
+  getDocs,
+  query,
+  orderBy,
+  startAfter,
+  limit,
+  doc,
+  getDoc,
+} from 'firebase/firestore';
 import db from '../../constants/Firebase';
 import TableWithFilterNSort from '../../utils/Table with filter and sort/TableWithFilterNSort';
 import Pagination from '../../utils/Pagination/Pagination'; // Import Pagination component
@@ -9,31 +18,52 @@ const SmallContactTable = () => {
   const [page, setPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(5);
   const [sortBy, setSortBy] = useState('date');
+  const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
     const startIndex = (page - 1) * rowsPerPage;
-    const endIndex = startIndex + rowsPerPage - 1; // Adjust endIndex to fetch the correct range
+    const endIndex = startIndex + rowsPerPage - 1;
     fetchContactData(startIndex, endIndex);
   }, [page, rowsPerPage]); // Fetch data whenever page or rowsPerPage changes
 
   const fetchContactData = async (startIndex, endIndex) => {
-    console.log('startIndex', startIndex, 'endIndex', endIndex);
     try {
       const contactDataSnap = await getDocs(
         query(
           collection(db, 'FreeTrialStudent'),
-          orderBy('date'),
-          startAt(startIndex),
-          endAt(endIndex)
+          orderBy('index'),
+          startAfter(startIndex > 0 ? startIndex : 0),
+          limit(rowsPerPage)
         )
       );
       const contactData = contactDataSnap.docs.map((doc) => doc.data());
-      console.log('contactData', contactData);
       setContactData(contactData);
+      // console.log('contactData', contactData);
     } catch (error) {
       console.log('error fetching data', error);
     }
   };
+
+  useEffect(() => {
+    const fetchTotalPages = async () => {
+      try {
+        const indexDocRef = doc(db, 'index', 'FreeTrialStudentIndex');
+        const indexDocSnap = await getDoc(indexDocRef);
+        let currentIndex = 1; // Default value if index document doesn't exist
+
+        if (indexDocSnap.exists()) {
+          currentIndex = indexDocSnap.data().val - 1;
+        }
+        const totalDocsCount = currentIndex;
+        const calculatedTotalPages = Math.ceil(totalDocsCount / rowsPerPage);
+        setTotalPages(calculatedTotalPages);
+      } catch (error) {
+        console.log('error fetching total pages', error);
+      }
+    };
+
+    fetchTotalPages();
+  }, [rowsPerPage]);
 
   const handleSortChange = (event) => {
     setSortBy(event.target.value);
@@ -57,6 +87,7 @@ const SmallContactTable = () => {
           { title: 'Date' },
           { title: 'Name' },
           { title: 'Phone Number' },
+          { title: 'Email' },
           // Add more headers as needed
         ]}
         loading={false}
@@ -70,13 +101,17 @@ const SmallContactTable = () => {
       >
         {/* Display paginated data using the ContactTableRow component */}
         {sortedData.map((contact, index) => (
-          <ContactTableRow key={index} index={index + 1} contact={contact} />
+          <ContactTableRow
+            key={index}
+            index={(page - 1) * rowsPerPage + index + 1}
+            contact={contact}
+          />
         ))}
       </TableWithFilterNSort>
       <Pagination
         page={page}
         setPage={setPage}
-        totalPage={Math.ceil(sortedData.length / rowsPerPage)}
+        totalPage={totalPages}
         limit={rowsPerPage}
         setLimit={setRowsPerPage}
       />
@@ -87,7 +122,7 @@ const SmallContactTable = () => {
 export default SmallContactTable;
 
 const ContactTableRow = ({ index, contact }) => {
-  const { date, name, phoneNumber } = contact;
+  const { date, name, phoneNumber,email } = contact;
 
   return (
     <tr key={index}>
@@ -95,6 +130,7 @@ const ContactTableRow = ({ index, contact }) => {
       <td>{new Date(date).toLocaleDateString()}</td>
       <td>{name}</td>
       <td>{phoneNumber}</td>
+      <td>{email}</td>
       {/* Add more data fields as needed */}
     </tr>
   );

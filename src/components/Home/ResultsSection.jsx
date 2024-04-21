@@ -22,7 +22,7 @@ const ResultsSection = () => {
 
               <div className="row mt-6">
                 <div className="col-12">
-                  <div className="card-group card-border card-border-lg border-primary shadow-light-lg lift lift-lg">
+                  <div className="card-group card-border  border-primary shadow-light-lg lift lift-lg">
                     {result.data.map((data, ind) => (
                       <div className="card" key={ind}>
                         <img className='left-img' src={oneLeaf} alt='dslk'/>
