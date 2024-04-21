@@ -34,7 +34,7 @@ const resultData = [
       // },
       {
         year: '2023',
-        selection: '775',
+        selection: '2055',
       },
       {
         year: '2022',
