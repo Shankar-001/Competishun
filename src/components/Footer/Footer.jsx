@@ -170,7 +170,7 @@ const Footer = () => {
                 href="https://www.facebook.com/mohit.tyagi.775"
                 target="_blank"
               >
-                <FaFacebook fontSize={30} color="#316FF6" className="icons"/>
+                <FaFacebook fontSize={30} color="#316FF6" className="icons" />
               </a>
 
               <a href="https://www.youtube.com/@MohitTyagi" target="_blank">

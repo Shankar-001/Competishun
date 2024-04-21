@@ -2,10 +2,10 @@
   height: 30rem;
   @include bodyText;
   @include flex-cc;
-  margin-bottom: 21%;
+  margin-bottom: 22%;
   
   @media (max-width:1100px) {
-    margin-bottom: 55rem;
+    margin-bottom: 60rem;
     align-self: center;
   }
   
@@ -28,7 +28,7 @@
 
         .info{
           @media (max-width:1100px) {
-            margin-top: 55rem;
+            margin-top: 58rem;
         
           }
 
@@ -67,8 +67,8 @@
             width:53rem;
             height:30rem;
             @media screen and (max-width:720px) {
-              width: 48rem;
-              height: 28rem; 
+              width: 42rem;
+              height: 25rem; 
           
             }
           }
