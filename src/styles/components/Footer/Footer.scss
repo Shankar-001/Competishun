@@ -70,6 +70,7 @@
           margin-bottom: 1.5rem;
           color: white;
 
+
         }
         .appstore {
           margin-top: 1%;
@@ -158,12 +159,12 @@
           }
         }
         p {
-          margin-top: 0.2rem;
+          margin-top: 0.5rem;
         }
         .appstore {
           @include flex-ss(row);
           gap: 2rem;
-          margin-top: 0.3rem;
+          margin-top: 1rem;
 
           .app {
             width: 12rem;

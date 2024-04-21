@@ -8,11 +8,12 @@
   .containerMain {
     @include flex-cc(column);
     width: var(--landing-page-main-info-width);
-
+  
     h1 {
       @include h1;
       color: var(--landing-main-head-color);
       margin-bottom: 1rem;
+      
     }
     h3{
       @include h3;
