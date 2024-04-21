@@ -205,7 +205,7 @@ const LandingHomeSection = () => {
   }, [i, j]);
 
   return (
-    <section className="landing-highlight">
+    <section className="landing-highlight" id='contact_us'>
       <div className="landing-info-container">
         <div className="landing-info-subcontainer">
           <div className="landing-info">
@@ -260,7 +260,7 @@ const LandingHomeSection = () => {
         </form>
       </div>
 
-      <button className="btn" onClick={handleStartTrial}>
+      <button  className="btn" onClick={handleStartTrial}>
         Submit Now
       </button>
     </section>
