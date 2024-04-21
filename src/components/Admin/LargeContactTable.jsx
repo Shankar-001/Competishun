@@ -7,6 +7,9 @@ import {
   startAt,
   endAt,
   limit,
+  startAfter,
+  doc,
+  getDoc,
 } from 'firebase/firestore';
 import db from '../../constants/Firebase';
 import TableWithFilterNSort from '../../utils/Table with filter and sort/TableWithFilterNSort';
@@ -27,14 +30,13 @@ const LargeContactTable = () => {
         const contactDataSnap = await getDocs(
           query(
             collection(db, 'SupportQueries'),
-            orderBy('date'),
-            startAt(startIndex),
-            // endAt(endIndex)
+            orderBy('index'),
+            startAfter(startIndex > 0 ? startIndex  : 0),
             limit(rowsPerPage)
           )
         );
         const contactData = contactDataSnap.docs.map((doc) => doc.data());
-        console.log('contactData', contactData);
+        // console.log('contactData', contactData);
         setContactData(contactData);
       } catch (error) {
         console.log('error fetching data', error);
@@ -44,13 +46,18 @@ const LargeContactTable = () => {
     fetchContactData();
   }, [page, rowsPerPage]);
 
+
   useEffect(() => {
     const fetchTotalPages = async () => {
       try {
-        const totalDocsSnapshot = await getDocs(
-          collection(db, 'SupportQueries')
-        );
-        const totalDocsCount = totalDocsSnapshot.size;
+        const indexDocRef = doc(db, 'index', 'SupportQueriesIndex');
+        const indexDocSnap = await getDoc(indexDocRef);
+        let currentIndex = 1; // Default value if index document doesn't exist
+
+        if (indexDocSnap.exists()) {
+          currentIndex = indexDocSnap.data().val-1;
+        }
+        const totalDocsCount = currentIndex;
         const calculatedTotalPages = Math.ceil(totalDocsCount / rowsPerPage);
         setTotalPages(calculatedTotalPages);
       } catch (error) {
@@ -65,14 +72,7 @@ const LargeContactTable = () => {
     setSortBy(event.target.value);
   };
 
-  const handleChangePage = (event, newPage) => {
-    setPage(newPage);
-  };
 
-  const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
-    setPage(1);
-  };
 
   return (
     <div>
@@ -98,7 +98,7 @@ const LargeContactTable = () => {
         tableStyleExtra={{}}
       >
         {contactData.map((contact, index) => (
-          <ContactTableRow key={index} index={index + 1} contact={contact} />
+          <ContactTableRow key={index} index={((page-1)*rowsPerPage) + index + 1} contact={contact} />
         ))}
       </TableWithFilterNSort>
       <Pagination
@@ -106,7 +106,7 @@ const LargeContactTable = () => {
         setPage={setPage}
         totalPage={totalPages}
         limit={rowsPerPage}
-        setLimit={handleChangeRowsPerPage}
+        setLimit={setRowsPerPage}
       />
     </div>
   );
