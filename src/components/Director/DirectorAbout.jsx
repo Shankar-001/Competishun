@@ -19,7 +19,7 @@ export const DirectorAbout = () => {
         <div className="info-and-video">
           {data && (
             <div className="info">
-              <h2>{data.name}</h2>
+              <h2 className='name'>{data.name}</h2>
               <br />
               <p>{data.about}</p>
             </div>

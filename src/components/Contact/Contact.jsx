@@ -333,16 +333,35 @@ const handleSubmit = async (e) => {
             You can also contact us at:
           </p>
           <p className="contact-detail-section-phone">
-            <a>
-              <span>+91 8888000021 </span>
-            </a>
-          </p>
-          <p className="contact-detail-section-phone">
-            <a>
-              <span>support@competishun.com</span>
-            </a>
-          </p>
+              <span className="phone-icon">
+                <FaPhoneVolume />
+              </span>
+              <a href="tel:+918888000021" target="blank" className="text">
+                +91 8888000021
+              </a>
+            </p>
+            <p className="contact-detail-section-phone">
+              <span className="mail-icon">
+                <MdEmail />
+              </span>
+              <a
+                href="mailto:support@competishun.com"
+                target="blank"
+                className="text"
+              >
+                support@competishun.com
+              </a>
+            </p>
+            <p className="contact-detail-section-phone">
+              <span className="whatsapp-icon">
+                <IoLogoWhatsapp />
+              </span>
+              <a href="https://wa.link/xa00yu" target="blank" className="text">
+                +91 7410900901
+              </a>
+            </p>
         </div>
+        
       </div>
     </div>
   );

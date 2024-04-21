@@ -29,15 +29,15 @@ const About = () => {
               </p>
             </div>
             <div>
-              <h1><h1><CountUpAnimation initialValue={199990}  targetValue={200000}  text="+" /></h1></h1>
+              <h1><CountUpAnimation initialValue={199990}  targetValue={200000}  text="+" /></h1>
               <p className="info-txt">App Downloads</p>
             </div>
           </div>
         </div>
         <div className="video-content">
           <iframe
-            width="560"
-            height="315"
+            // width="560"
+            // height="315"
             src="https://www.youtube.com/embed/bzoAvwQg4L0?si=nuaDYIFiiqR3NbPa"
             title="YouTube video player"
             frameborder="0"

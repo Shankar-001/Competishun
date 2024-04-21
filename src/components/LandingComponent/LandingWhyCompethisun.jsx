@@ -112,7 +112,7 @@ export const LandingWhyCompethisun = () => {
             </div>
             <div className="info">
               <p>
-                Kota vs Jaipur vs Home{' '}
+              Choosing Where to Study: Kota, Jaipur, or Home ?{' '}
                 <a
                   href="https://youtu.be/qjr3_qtdWFg?feature=shared"
                   target="_blank"
