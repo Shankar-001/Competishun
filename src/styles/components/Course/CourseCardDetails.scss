@@ -224,6 +224,9 @@
         margin-top: 2%;
         h2 {
           margin-bottom: 1%;
+          @media (max-width: 750px) {
+            @include bodyText;
+          }
         }
       }
     }

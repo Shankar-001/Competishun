@@ -2250,6 +2250,14 @@ button {
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse .CourseContact h2 {
   margin-bottom: 1%;
 }
+@media (max-width: 750px) {
+  .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse .CourseContact h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: var(--darkest-bg-color);
+  }
+}
 
 .Merchandise .MerchandiseCardMainContainer {
   font-size: 1.6rem;
@@ -2729,6 +2737,14 @@ button {
 }
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .CommonTest .TestContact h2 {
   margin-bottom: 1%;
+}
+@media (max-width: 750px) {
+  .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .CommonTest .TestContact h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: var(--darkest-bg-color);
+  }
 }
 
 .result-main-container {
