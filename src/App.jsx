@@ -5,10 +5,18 @@ import { UserProvider } from './context/userContext';
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
 import { doc, getDoc, serverTimestamp, setDoc } from 'firebase/firestore';
 import db from './constants/Firebase';
+import { useLocation } from 'react-router-dom';
 
 function App() {
   const [user, setUser] = useState(null);
 
+  const { hash, key } = useLocation();
+  useEffect(() => {
+    if (hash) {
+      const targetElement = document.getElementById(hash.substring(1));
+      targetElement?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [key, hash]);
   useEffect(() => {
     const auth = getAuth();
     onAuthStateChanged(auth, async (user) => {
@@ -33,9 +41,7 @@ function App() {
         } catch (err) {
           console.log('error getting doc', err);
           try {
-            
             await setDoc(docRef, currUser);
-  
           } catch (e) {
             console.log('error setting doc', e);
           }

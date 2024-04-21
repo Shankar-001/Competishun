@@ -54,7 +54,7 @@ const LandingVideo = () => {
             </div>
           )}
         </div>
-        <button className="btn">Join Now</button>
+        <a className="btn" href='#contact_us'>Join Now</a>
       </div>
     </div>
   );
