@@ -68,9 +68,7 @@ const HighlightSection = () => {
           </h1>
           <h1>{/* Competishun Means <span>Selection</span> */}</h1>
           <p>
-            Learn how to attack JEE questions with India's one of the Best
-            <br />
-            Teachers #Competishun
+          One of the most Trusted Institute for IIT JEE and NEET preparation
           </p>
           <button className="btn">Explore our courses</button>
         </div>
