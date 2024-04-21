@@ -1,19 +1,29 @@
 .highlight {
-  height: 90vh;
+  // height: 90vh;
+  height:63rem;
   width: 100%;
+  overflow: hidden;
   // background-image: url('src/assets/highlight-background.mp4');
 
   // border-bottom-left-radius: 50% 20%;
   // border-bottom-right-radius: 50% 20%;
-
+  @media (max-width:720px) {
+    height:50rem;
+  }
   video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 90vh;
+    // height: 90vh;
+    height: 63rem;
     object-fit: cover;
     z-index: -1;
+    @media (max-width:720px) {
+      height:50rem;
+      // width: auto;
+      // transform: scale(1.5);
+    }
   }
   .overlay {
     @include flex-sc(column);
