@@ -794,4 +794,19 @@ export const SingleCourseDetails = {
     Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
     JoinNow: 'https://online.competishun.com',
   },
+
+  'ARJUN OFFLINE': {
+    Title: 'ARJUN OFFLINE',
+    AboutCourse: "Will be Announced Soon"
+  },
+
+  'AVIRAL OFFLINE': {
+    Title: 'AVIRAL OFFLINE',
+    AboutCourse: "Will be Announced Soon"
+  },
+
+  'AARAMBH OFFLINE': {
+    Title: 'AARAMBH OFFLINE',
+    AboutCourse: "Will be Announced Soon"
+  },
 };
