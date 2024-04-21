@@ -440,7 +440,7 @@ button {
   transform: scale(1.2);
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs p {
-  margin-top: 0.2rem;
+  margin-top: 0.5rem;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs .appstore {
   display: flex;
@@ -448,7 +448,7 @@ button {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
-  margin-top: 0.3rem;
+  margin-top: 1rem;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs .appstore .app {
   width: 12rem;
@@ -503,6 +503,15 @@ button {
   margin-top: 8%;
   margin-bottom: 6.7%;
 }
+@media screen and (max-width: 1000px) {
+  .main-container .width-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+  }
+}
 .main-container .width-container .about-content {
   text-align: justify;
   padding-right: 3%;
@@ -510,6 +519,11 @@ button {
 .main-container .width-container .about-content h1 {
   color: var(--primary-color);
   font-size: 5rem;
+}
+@media (max-width: 415px) {
+  .main-container .width-container .about-content h1 {
+    font-size: 4.5rem;
+  }
 }
 .main-container .width-container .about-content .content {
   font-size: 2rem;
@@ -540,6 +554,14 @@ button {
   -webkit-box-shadow: 4px 4px 14px #000;
   box-shadow: 4px 4px 14px #000;
   transition: transform 0.3s ease;
+  width: 53rem;
+  height: 30rem;
+}
+@media screen and (max-width: 1000px) {
+  .main-container .width-container .video-content iframe {
+    width: 44rem;
+    height: 28rem;
+  }
 }
 .main-container .width-container .video-content iframe:hover {
   transform: scale(1.05); /* Increase size on hover */

@@ -36,8 +36,8 @@ const About = () => {
         </div>
         <div className="video-content">
           <iframe
-            width="560"
-            height="315"
+            // width="560"
+            // height="315"
             src="https://www.youtube.com/embed/bzoAvwQg4L0?si=nuaDYIFiiqR3NbPa"
             title="YouTube video player"
             frameborder="0"
