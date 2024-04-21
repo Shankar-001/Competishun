@@ -129,7 +129,7 @@ export const LandingWhyCompethisun = () => {
           {/* <video src={video} alt="student" className="student-image" autoPlay poster={pic}/> */}
         </div>
       </div>
-      <button className="btn">Join Now</button>
+      <a className="btn" href='#contact_us'>Join Now</a>
     </div>
   );
 };
