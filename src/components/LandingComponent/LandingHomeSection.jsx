@@ -273,7 +273,7 @@ const LandingHomeSection = () => {
         </form>
       </div>
 
-      <button className={`btn ${isloading && 'inactive'}`}   onClick={handleStartTrial}>
+      <button disabled={isloading} className={`btn ${isloading && 'inactive'}`}   onClick={handleStartTrial}>
         Submit Now
       </button>
     </section>

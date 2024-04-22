@@ -341,7 +341,7 @@ const ContactComponent = () => {
               <div className="error">{errors.message}</div>
             </div>
 
-            <button type="submit" className={`btn ${isloading && 'inactive'}`} >
+            <button type="submit" disabled={isloading} className={`btn ${isloading && 'inactive'}`} >
               Submit
             </button>
             <div className="starmarks">
