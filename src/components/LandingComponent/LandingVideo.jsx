@@ -4,7 +4,7 @@ import videoThumbnail from '../../assets/LandingPage/thumbnail/PraveenThumbnail.
 import playIcon from '../../assets/important/play-button.svg';
 import { FaPlayCircle } from 'react-icons/fa';
 
-const LandingVideo = () => {
+const LandingVideo = ({data}) => {
   const [showVideo, setShowVideo] = useState(false);
 
   const handleClick = () => {
@@ -23,7 +23,7 @@ const LandingVideo = () => {
         <div className="video-container">
           {showVideo ? (
             <iframe
-              src="https://www.youtube.com/embed/7PlZ4dwT56I?&autoplay=1"
+              src={data.videoUrl}
               title="YouTube video player"
               frameBorder="0"
               autoPlay="1"
@@ -33,7 +33,7 @@ const LandingVideo = () => {
           ) : (
             <div className="thumbnail-container" onClick={handleClick}>
               <img
-                src={videoThumbnail}
+                src={data.thumbnail}
                 alt="Video Thumbnail"
                 className="thumbnail"
               />
