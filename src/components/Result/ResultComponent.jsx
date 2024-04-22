@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+  import React, { useState } from 'react';
 import { NavbarResultData } from '../../Data/NavbarResultData';
 // import GalleryModal from '../../utils/GalleryModal';
 import playImg from '../../assets/ic-play.svg';
