@@ -4,7 +4,8 @@ import achi2 from '../assets/Gallery/Achievements/shark tankkk.jpg';
 import achi3 from '../assets/Gallery/Achievements/dubai.jpg';
 import achi4 from '../assets/Gallery/Achievements/award.jpg';
 //  celebration ------------------------------------------------------------------------------
-
+// import celeb24 from '../assets/Gallery/Celebration/celeb24.J';
+import celeb24 from '../assets/Gallery/Celebration/celebration24.jpg';
 import celeb2 from '../assets/Gallery/Celebration/celebration2.jpg';
 import celeb7 from '../assets/Gallery/Celebration/celebration7.jpg';
 import celeb11 from '../assets/Gallery/Celebration/celebration11.jpg';
@@ -26,6 +27,7 @@ export const GalleryDataCelebration = [
   { src: celeb7, desc: 'Inaugurating JAIGHOSH 2023 cerimony by MT sir, ABJ sir , ALK sir , NS sir' },
   { src: celeb11, desc: 'Group photograph of Competishun students selected in JEE ADVANCED 2023' },
   { src: celeb13, desc: "Teacher's Day celebration at Competishun Online Campus" },
+  { src: celeb23, desc: 'Foundation Day (23 May 2022) celebration at SHAKUN HOTEL' },
+  { src: celeb24, desc: 'Foundation Day (23 May 2023) celebration at HILTON HOTEL' },
   { src: celeb17, desc: 'राम मंदिर प्राण प्रतिष्ठा Celebration at Competishun Offline Campus' },
-  { src: celeb23, desc: 'Foundation Day (23 May) celebration at SHAKUN HOTEL' },
 ];
