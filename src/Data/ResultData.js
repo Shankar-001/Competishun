@@ -1,7 +1,7 @@
 const resultData = [
   {
     title: 'Our Results',
-    description:'The Toppers Ultimate Choice',
+    description: 'The Toppers Ultimate Choice',
     heading: 'JEE Main Results ',
     subheading: '(all ranks are under 25,000 AIR only)',
     data: [
@@ -43,7 +43,6 @@ const resultData = [
       {
         year: '2021',
         selection: '339',
-        
       },
     ],
   },

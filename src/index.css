@@ -904,6 +904,10 @@ button {
   color: #fff;
   margin-left: 0.5rem;
 }
+.contact-main .contact-form-container-width .contact-form-container .form-section .btn.inactive {
+  background-color: var(--dark-bg-color);
+  cursor: not-allowed;
+}
 .contact-main .contact-form-container-width .contact-form-container .form-section .hints {
   margin-top: 2rem;
   color: #696666;
@@ -1586,6 +1590,10 @@ button {
   color: #fff;
   margin-left: 0.5rem;
 }
+.Home .contact-form-container-width .contact-form-container .form-section .btn.inactive {
+  background-color: var(--dark-bg-color);
+  cursor: not-allowed;
+}
 .Home .contact-form-container-width .contact-form-container .form-section .hints {
   margin-top: 2rem;
   color: #696666;
@@ -1899,7 +1907,7 @@ button {
   gap: 5rem 2rem;
   margin-bottom: 2%;
 }
-@media (min-width: 400px) and (max-width: 550px) {
+@media (max-width: 550px) {
   .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseCardComponent {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1976,7 +1984,7 @@ button {
   gap: 5rem 2rem;
   margin-bottom: 2%;
 }
-@media (min-width: 400px) and (max-width: 550px) {
+@media (max-width: 550px) {
   .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestCardComponent {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -2251,6 +2259,14 @@ button {
 .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse .CourseContact h2 {
   margin-bottom: 1%;
 }
+@media (max-width: 750px) {
+  .CourseDetailsMainContainer .CourseCardMainContainer .CourseCardSubContainer .CommonCourse .CourseContact h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: var(--darkest-bg-color);
+  }
+}
 
 .Merchandise .MerchandiseCardMainContainer {
   font-size: 1.6rem;
@@ -2307,7 +2323,7 @@ button {
 .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ankertag {
   text-decoration: none;
 }
-@media (min-width: 400px) and (max-width: 550px) {
+@media (max-width: 550px) {
   .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent {
     display: grid;
     justify-items: center;
@@ -2730,6 +2746,14 @@ button {
 }
 .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .CommonTest .TestContact h2 {
   margin-bottom: 1%;
+}
+@media (max-width: 750px) {
+  .TestDetailsMainContainer .TestCardMainContainer .TestCardSubContainer .CommonTest .TestContact h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: var(--darkest-bg-color);
+  }
 }
 
 .result-main-container {
@@ -3587,6 +3611,10 @@ button {
 }
 .Landing-Page-Main-Container .landing-highlight .btn:hover {
   background-color: yellow;
+}
+.Landing-Page-Main-Container .landing-highlight .btn.inactive {
+  background-color: #a69c63;
+  cursor: not-allowed;
 }
 .Landing-Page-Main-Container .landing-video-container {
   width: 100%;

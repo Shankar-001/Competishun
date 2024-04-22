@@ -33,7 +33,6 @@ const Navbar = () => {
 
   const handleCoursesMenuToggle = () => {
     setShowCoursesDropdown(!showCoursesDropdown);
-    closeMobileMenu();
   };
 
   const toggleMobileMenu = () => {
@@ -78,7 +77,9 @@ const Navbar = () => {
                 )}
               </div>
             </div>
-            {showCoursesDropdown && <DropdownMenu />}
+            {showCoursesDropdown && (
+              <DropdownMenu closeMobileMenu={closeMobileMenu} />
+            )}
           </li>
           <li>
             <NavLink
@@ -137,19 +138,35 @@ const Navbar = () => {
 };
 export default Navbar;
 
-const DropdownMenu = () => {
+const DropdownMenu = ({ closeMobileMenu }) => {
   return (
     <div className="courses-dropdown">
-      <NavLink to="/courses/jee-online-courses" className="navlink">
+      <NavLink
+        to="/courses/jee-online-courses"
+        className="navlink"
+        onClick={closeMobileMenu}
+      >
         IIT Jee Online
       </NavLink>
-      <NavLink to="/courses/jee-offline-courses" className="navlink">
+      <NavLink
+        to="/courses/jee-offline-courses"
+        className="navlink"
+        onClick={closeMobileMenu}
+      >
         IIT Jee Offline
       </NavLink>
-      <NavLink to="/courses/neet-online-courses" className="navlink">
+      <NavLink
+        to="/courses/neet-online-courses"
+        className="navlink"
+        onClick={closeMobileMenu}
+      >
         Neet UG Online
       </NavLink>
-      <NavLink to="/courses/neet-offline-courses" className="navlink">
+      <NavLink
+        to="/courses/neet-offline-courses"
+        className="navlink"
+        onClick={closeMobileMenu}
+      >
         Neet UG Offline
       </NavLink>
     </div>

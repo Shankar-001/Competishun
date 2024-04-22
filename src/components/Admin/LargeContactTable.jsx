@@ -18,7 +18,7 @@ import Pagination from '../../utils/Pagination/Pagination';
 const LargeContactTable = () => {
   const [contactData, setContactData] = useState([]);
   const [page, setPage] = useState(1);
-  const [rowsPerPage, setRowsPerPage] = useState(5);
+  const [rowsPerPage, setRowsPerPage] = useState(20);
   const [sortBy, setSortBy] = useState('date');
   const [totalPages, setTotalPages] = useState(1);
 

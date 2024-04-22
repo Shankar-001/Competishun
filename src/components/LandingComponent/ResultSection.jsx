@@ -4,6 +4,7 @@ import img from '../../assets/Gallery/Celebration/celebration21.jpg';
 import leaf from '../../assets/oneLeaf.png';
 // import { GiTrophy } from "react-icons/gi";
 import resultimg from '../../assets/LandingPage/result-image.png';
+import CountUpAnimation from '../Functions/CountUpAnimation';
 
 const ResultSection = () => {
   const JeeMainsResult = [
@@ -14,9 +15,9 @@ const ResultSection = () => {
       numbers2: '1730',
       numbers3: '1542',
       selction: 'selections',
-      year1: '2021',
+      year1: '2023',
       year2: '2022',
-      year3: '2023',
+      year3: '2021',
     },
     {
       title: '🎯 JEE Advanced Results',
@@ -25,9 +26,9 @@ const ResultSection = () => {
       numbers2: '752',
       numbers3: '339',
       selction: 'selections',
-      year1: '2021',
+      year1: '2023',
       year2: '2022',
-      year3: '2023',
+      year3: '2021',
     },
   ];
   return (
@@ -50,7 +51,7 @@ const ResultSection = () => {
                     <div className="card">
                       <img className="left-img" src={leaf} alt="dslk" />
                       <div className="card-body">
-                        <div className="year-name">{result.numbers1}</div>
+                        <div className="year-name"> <CountUpAnimation initialValue={result.numbers1-40} targetValue={result.numbers1} text="" /></div>
 
                         {/* <h2 className="fw-bolder text-center mb-0">
                           <span>{result.selction}</span>
@@ -68,7 +69,7 @@ const ResultSection = () => {
                     <div className="card">
                       <img className="left-img" src={leaf} alt="dslk" />
                       <div className="card-body">
-                        <div className="year-name">{result.numbers2}</div>
+                        <div className="year-name"><CountUpAnimation initialValue={result.numbers2-40} targetValue={result.numbers2} text="" /></div>
                         {/* <h2 className="fw-bolder text-center mb-0">
                           <span>{result.selction}</span>
                         </h2> */}
@@ -86,7 +87,7 @@ const ResultSection = () => {
                     <div className="card">
                       <img className="left-img" src={leaf} alt="dslk" />
                       <div className="card-body">
-                        <div className="year-name">{result.numbers3}</div>
+                        <div className="year-name"><CountUpAnimation initialValue={result.numbers3-40} targetValue={result.numbers3} text="" /></div>
                         <p className="text-center text-muted mb-0">
                           Selections
                         </p>
@@ -100,7 +101,7 @@ const ResultSection = () => {
                 <hr />
               </div>
             ))}
-            <button className="join-now-button">Join Now</button>
+            <button className="join-now-button" ><a href='#contact_us'>Join Now</a></button>
           </div>
           <div className="component2">
             <img src={img} alt="Image" />

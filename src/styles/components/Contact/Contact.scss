@@ -348,7 +348,12 @@
         width: 9.3rem;
         color: #fff;
         margin-left: 0.5rem;
+        &.inactive{
+          background-color: var(--dark-bg-color);
+          cursor: not-allowed;
+        }
       }
+      
 
       .hints {
         margin-top: 2rem;
