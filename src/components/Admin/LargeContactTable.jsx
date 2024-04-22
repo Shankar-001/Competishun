@@ -4,8 +4,6 @@ import {
   getDocs,
   query,
   orderBy,
-  startAt,
-  endAt,
   limit,
   startAfter,
   doc,
@@ -14,6 +12,7 @@ import {
 import db from '../../constants/Firebase';
 import TableWithFilterNSort from '../../utils/Table with filter and sort/TableWithFilterNSort';
 import Pagination from '../../utils/Pagination/Pagination';
+import DownloadButton from '../../utils/Button/DownloadButton';
 
 const LargeContactTable = () => {
   const [contactData, setContactData] = useState([]);
@@ -31,7 +30,7 @@ const LargeContactTable = () => {
           query(
             collection(db, 'SupportQueries'),
             orderBy('index'),
-            startAfter(startIndex > 0 ? startIndex  : 0),
+            startAfter(startIndex > 0 ? startIndex : 0),
             limit(rowsPerPage)
           )
         );
@@ -46,7 +45,6 @@ const LargeContactTable = () => {
     fetchContactData();
   }, [page, rowsPerPage]);
 
-
   useEffect(() => {
     const fetchTotalPages = async () => {
       try {
@@ -55,7 +53,7 @@ const LargeContactTable = () => {
         let currentIndex = 1; // Default value if index document doesn't exist
 
         if (indexDocSnap.exists()) {
-          currentIndex = indexDocSnap.data().val-1;
+          currentIndex = indexDocSnap.data().val - 1;
         }
         const totalDocsCount = currentIndex;
         const calculatedTotalPages = Math.ceil(totalDocsCount / rowsPerPage);
@@ -72,10 +70,9 @@ const LargeContactTable = () => {
     setSortBy(event.target.value);
   };
 
-
-
   return (
     <div>
+      <DownloadButton />
       <TableWithFilterNSort
         heading={[
           { title: 'Sr.No' },
@@ -96,9 +93,14 @@ const LargeContactTable = () => {
         tableFilter=""
         setTableFilter={() => {}}
         tableStyleExtra={{}}
+        id="table-to-xls"
       >
         {contactData.map((contact, index) => (
-          <ContactTableRow key={index} index={((page-1)*rowsPerPage) + index + 1} contact={contact} />
+          <ContactTableRow
+            key={index}
+            index={(page - 1) * rowsPerPage + index + 1}
+            contact={contact}
+          />
         ))}
       </TableWithFilterNSort>
       <Pagination
