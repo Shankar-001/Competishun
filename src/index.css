@@ -903,6 +903,10 @@ button {
   color: #fff;
   margin-left: 0.5rem;
 }
+.contact-main .contact-form-container-width .contact-form-container .form-section .btn.inactive {
+  background-color: var(--dark-bg-color);
+  cursor: not-allowed;
+}
 .contact-main .contact-form-container-width .contact-form-container .form-section .hints {
   margin-top: 2rem;
   color: #696666;
@@ -1584,6 +1588,10 @@ button {
   width: 9.3rem;
   color: #fff;
   margin-left: 0.5rem;
+}
+.Home .contact-form-container-width .contact-form-container .form-section .btn.inactive {
+  background-color: var(--dark-bg-color);
+  cursor: not-allowed;
 }
 .Home .contact-form-container-width .contact-form-container .form-section .hints {
   margin-top: 2rem;
@@ -3602,6 +3610,10 @@ button {
 }
 .Landing-Page-Main-Container .landing-highlight .btn:hover {
   background-color: yellow;
+}
+.Landing-Page-Main-Container .landing-highlight .btn.inactive {
+  background-color: #a69c63;
+  cursor: not-allowed;
 }
 .Landing-Page-Main-Container .landing-video-container {
   width: 100%;

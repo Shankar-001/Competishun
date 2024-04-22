@@ -22,7 +22,7 @@ const ResultSection = () => {
     {
       title: '🎯 JEE Advanced Results',
       description: 'Best and quality results from Jee Advanced Exam',
-      numbers1: '2055',
+      numbers1: '775',
       numbers2: '752',
       numbers3: '339',
       selction: 'selections',

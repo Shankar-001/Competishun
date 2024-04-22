@@ -1,7 +1,7 @@
 const resultData = [
   {
     title: 'Our Results',
-    description:'The Toppers Ultimate Choice',
+    description: 'The Toppers Ultimate Choice',
     heading: 'JEE Main Results ',
     subheading: '(all ranks are under 25,000 AIR only)',
     data: [
@@ -34,7 +34,7 @@ const resultData = [
       // },
       {
         year: '2023',
-        selection: '2055',
+        selection: '775',
       },
       {
         year: '2022',
@@ -43,7 +43,6 @@ const resultData = [
       {
         year: '2021',
         selection: '339',
-        
       },
     ],
   },
