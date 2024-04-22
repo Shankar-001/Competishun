@@ -12,7 +12,7 @@ import {
 import db from '../../constants/Firebase';
 import Swal from 'sweetalert2';
 
-const LandingHomeSection = () => {
+const LandingHomeSection = ({ CourseData }) => {
   const [i, seti] = useState(0);
   const [j, setj] = useState(0);
   const [isloading, setIsLoading] = useState(false);
@@ -174,6 +174,7 @@ const LandingHomeSection = () => {
           phoneNumber: formData.contact,
           email: formData.email,
           date: Date.now(),
+          pageName: CourseData.name,
           index: currentIndex, // Set the index field
         };
 
@@ -273,7 +274,11 @@ const LandingHomeSection = () => {
         </form>
       </div>
 
-      <button disabled={isloading} className={`btn ${isloading && 'inactive'}`}   onClick={handleStartTrial}>
+      <button
+        disabled={isloading}
+        className={`btn ${isloading && 'inactive'}`}
+        onClick={handleStartTrial}
+      >
         Submit Now
       </button>
     </section>

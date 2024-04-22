@@ -52,7 +52,7 @@ const LandingPage = () => {
     <div className="Landing-Page-Main-Container">
       {selectedData && (
         <>
-          <LandingHomeSection />
+          <LandingHomeSection CourseData={selectedData} />
           <LandingVideo data={selectedData} />
           <LandingWhyCompethisun />
           <LandingTestimonials />
