@@ -153,10 +153,12 @@
 
           .icons {
             transition: transform 0.3s ease;
+            color:white;
             
           }
           .icons:hover {
             transform: scale(1.2);
+            // color:var(--primary-color);
           }
         }
         p {

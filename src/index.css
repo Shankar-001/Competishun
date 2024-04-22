@@ -435,6 +435,7 @@ button {
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs .socialMedia-logo .icons {
   transition: transform 0.3s ease;
+  color: white;
 }
 .footer-mainContainer .footer-containerContent .footer-innerContainer .footer-joinUs .socialMedia-logo .icons:hover {
   transform: scale(1.2);
@@ -3711,6 +3712,7 @@ button {
   border-radius: 0.5rem;
   width: fit-content;
   padding: 1rem 5rem;
+  text-decoration: none;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   font-weight: 700;
@@ -4316,6 +4318,10 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .join-now-button a {
+  color: var(--landing-button-color);
+  text-decoration: none;
+}
 @media (max-width: 40em) {
   .Landing-Page-Main-Container .result-main-conatiner .my-component .content-container .join-now-button {
     margin-left: 30%;
@@ -4668,6 +4674,7 @@ button {
   border-radius: 0.5rem;
   width: fit-content;
   padding: 1rem 5rem;
+  text-decoration: none;
   margin-bottom: 2.5rem;
   margin-top: 2rem;
   font-weight: 700;
