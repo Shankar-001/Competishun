@@ -16,8 +16,7 @@ const LandingVideo = ({data}) => {
       <div className="width-container">
         <div className="header">
           <h1>
-            🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized
-            Dropper Batch For IIT JEE 2025
+            {data.videoTitle}
           </h1>
         </div>
         <div className="video-container">
@@ -34,7 +33,7 @@ const LandingVideo = ({data}) => {
             <div className="thumbnail-container" onClick={handleClick}>
               <img
                 src={data.thumbnail}
-                alt="Video Thumbnail"
+                alt={`${data.name} Thumbnail`}
                 className="thumbnail"
               />
               <div className="play-button">
