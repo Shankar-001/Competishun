@@ -1906,7 +1906,7 @@ button {
   gap: 5rem 2rem;
   margin-bottom: 2%;
 }
-@media (min-width: 400px) and (max-width: 550px) {
+@media (max-width: 550px) {
   .CourseMainContainer .CourseCardMainContainer .CourseCardSubContainer .CourseCardComponent {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1983,7 +1983,7 @@ button {
   gap: 5rem 2rem;
   margin-bottom: 2%;
 }
-@media (min-width: 400px) and (max-width: 550px) {
+@media (max-width: 550px) {
   .TestMainContainer .TestCardMainContainer .TestCardSubContainer .TestCardComponent {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -2322,7 +2322,7 @@ button {
 .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent .ankertag {
   text-decoration: none;
 }
-@media (min-width: 400px) and (max-width: 550px) {
+@media (max-width: 550px) {
   .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseCardComponent {
     display: grid;
     justify-items: center;
