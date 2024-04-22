@@ -158,7 +158,7 @@ const ContactComponent = () => {
           <p className="contact-details-section-two">
             <p>
               {' '}
-              Looking for support or counseling ? Fill out your details for
+              Looking for support or counselling ? Fill out your details for
               personalized support !
             </p>
           </p>
