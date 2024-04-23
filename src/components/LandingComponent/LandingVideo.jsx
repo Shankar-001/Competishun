@@ -4,7 +4,7 @@ import videoThumbnail from '../../assets/LandingPage/thumbnail/PraveenThumbnail.
 import playIcon from '../../assets/important/play-button.svg';
 import { FaPlayCircle } from 'react-icons/fa';
 
-const LandingVideo = () => {
+const LandingVideo = ({data}) => {
   const [showVideo, setShowVideo] = useState(false);
 
   const handleClick = () => {
@@ -16,14 +16,13 @@ const LandingVideo = () => {
       <div className="width-container">
         <div className="header">
           <h1>
-            🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized
-            Dropper Batch For IIT JEE 2025
+            {data.videoTitle}
           </h1>
         </div>
         <div className="video-container">
           {showVideo ? (
             <iframe
-              src="https://www.youtube.com/embed/7PlZ4dwT56I?&autoplay=1"
+              src={data.videoUrl}
               title="YouTube video player"
               frameBorder="0"
               autoPlay="1"
@@ -33,8 +32,8 @@ const LandingVideo = () => {
           ) : (
             <div className="thumbnail-container" onClick={handleClick}>
               <img
-                src={videoThumbnail}
-                alt="Video Thumbnail"
+                src={data.thumbnail}
+                alt={`${data.name} Thumbnail`}
                 className="thumbnail"
               />
               <div className="play-button">

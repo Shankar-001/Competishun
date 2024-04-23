@@ -12,6 +12,7 @@ import {
 import db from '../../constants/Firebase';
 import TableWithFilterNSort from '../../utils/Table with filter and sort/TableWithFilterNSort';
 import Pagination from '../../utils/Pagination/Pagination'; // Import Pagination component
+import DownloadButton from '../../utils/Button/DownloadButton';
 
 const SmallContactTable = () => {
   const [contactData, setContactData] = useState([]);
@@ -69,18 +70,19 @@ const SmallContactTable = () => {
     setSortBy(event.target.value);
   };
 
-  const sortedData = contactData.sort((a, b) => {
-    if (typeof a[sortBy] === 'string' && typeof b[sortBy] === 'string') {
-      return a[sortBy].localeCompare(b[sortBy]);
-    } else {
-      // Handle other types of data comparison
-      // For example, if they're numbers, you can use a simple comparison
-      return b[sortBy] - a[sortBy];
-    }
-  });
+  // const sortedData = contactData.sort((a, b) => {
+  //   if (typeof a[sortBy] === 'string' && typeof b[sortBy] === 'string') {
+  //     return a[sortBy].localeCompare(b[sortBy]);
+  //   } else {
+  //     // Handle other types of data comparison
+  //     // For example, if they're numbers, you can use a simple comparison
+  //     return b[sortBy] - a[sortBy];
+  //   }
+  // });
 
   return (
     <div>
+      <DownloadButton />
       <TableWithFilterNSort
         heading={[
           { title: 'Sr.No' },
@@ -88,6 +90,7 @@ const SmallContactTable = () => {
           { title: 'Name' },
           { title: 'Phone Number' },
           { title: 'Email' },
+          { title: 'BatchName' },
           // Add more headers as needed
         ]}
         loading={false}
@@ -98,9 +101,10 @@ const SmallContactTable = () => {
         tableFilter=""
         setTableFilter={() => {}}
         tableStyleExtra={{}}
+        id="table-to-xls"
       >
         {/* Display paginated data using the ContactTableRow component */}
-        {sortedData.map((contact, index) => (
+        {contactData.map((contact, index) => (
           <ContactTableRow
             key={index}
             index={(page - 1) * rowsPerPage + index + 1}
@@ -122,7 +126,7 @@ const SmallContactTable = () => {
 export default SmallContactTable;
 
 const ContactTableRow = ({ index, contact }) => {
-  const { date, name, phoneNumber,email } = contact;
+  const { date, name, phoneNumber, email, pageName } = contact;
 
   return (
     <tr key={index}>
@@ -131,6 +135,7 @@ const ContactTableRow = ({ index, contact }) => {
       <td>{name}</td>
       <td>{phoneNumber}</td>
       <td>{email}</td>
+      <td>{pageName}</td>
       {/* Add more data fields as needed */}
     </tr>
   );
