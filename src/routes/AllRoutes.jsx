@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 // import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Result from '../pages/Result';
@@ -43,9 +43,10 @@ const AllRoutes = () => {
       <Route path="/about" element={<AboutUs />} />
       <Route path="/director/:name" element={<DirectorInfo />} />
       <Route path="/admin" element={<Admin />} />
+
       {/* <Route path="/enroll-now/praveen" element={<LandingPage />} /> */}
       <Route path="/enroll-now/:courseName" element={<LandingPage />} />
-      {/* <Route path="/*" element={<Navigate to="/" />} />  */}  
+      <Route path="/*" element={<Navigate to="/" />} />   
     </Routes>
   );
 };
