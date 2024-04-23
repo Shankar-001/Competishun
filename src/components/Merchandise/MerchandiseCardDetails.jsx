@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MerchandiseSingleCardDetails } from '../../Data/MerchandiseSingleCardDetails';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { SlPencil } from 'react-icons/sl';
 
 export const MerchandiseCardDetails = () => {
+  const navigate = useNavigate();
   const { merchandiseDetails } = useParams();
   const data = MerchandiseSingleCardDetails[merchandiseDetails];
+
+  useEffect(() => {
+    if (!MerchandiseSingleCardDetails[merchandiseDetails]) {
+      navigate('/');
+    }
+  }, [navigate, data]);
 
   return (
     <div className="Merchandise-about-container">

@@ -1201,6 +1201,11 @@ button {
   width: 50%;
   margin: 0 1rem;
 }
+@media (max-width: 400px) {
+  .Home .resultSection #result .container .row .card-group .card img {
+    width: 35%;
+  }
+}
 .Home .resultSection #result .container .row .card-group .card .left-img {
   transform: rotateZ(20deg) rotateY(180deg) translateX(-38%);
 }
@@ -2866,6 +2871,11 @@ button {
   transform: rotateZ(-20deg) translateX(-38%);
   width: 50%;
   margin: 0 1rem;
+}
+@media (max-width: 400px) {
+  .result-main-container .resultSection #result .container .row .card-group .card img {
+    width: 35%;
+  }
 }
 .result-main-container .resultSection #result .container .row .card-group .card .left-img {
   transform: rotateZ(20deg) rotateY(180deg) translateX(-38%);
