@@ -1725,7 +1725,6 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  z-index: 2;
   cursor: pointer;
   width: 5rem;
 }
@@ -4739,10 +4738,17 @@ button {
   border-radius: 5px;
   width: 80%;
   height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+  .modal-overlay .modal {
+    width: 100%;
+  }
 }
 .modal-overlay .modal .modal-close {
-  top: 10px;
-  right: 10px;
   background: none;
   border: none;
   align-self: flex-end;
@@ -4756,12 +4762,18 @@ button {
   width: 80%;
   aspect-ratio: 16/9;
 }
+@media screen and (max-width: 768px) {
+  .modal-overlay .modal .video-container {
+    width: 100%;
+  }
+}
 .modal-overlay .modal .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2000;
 }
 
 .director-info-Main-page .director-about-component {
@@ -4873,10 +4885,17 @@ button {
   border-radius: 5px;
   width: 80%;
   height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+  .gallery-modal-overlay .modal {
+    width: 100%;
+  }
 }
 .gallery-modal-overlay .modal .modal-close {
-  top: 10px;
-  right: 10px;
   background: none;
   border: none;
   align-self: flex-end;
@@ -4904,6 +4923,16 @@ button {
 .gallery-modal-overlay .modal .image-container .video-container img {
   height: 100%;
   width: auto;
+}
+@media screen and (max-width: 768px) {
+  .gallery-modal-overlay .modal .image-container .video-container {
+    width: 100%;
+    height: auto;
+  }
+  .gallery-modal-overlay .modal .image-container .video-container img {
+    width: 100%;
+    height: auto;
+  }
 }
 .gallery-modal-overlay .modal .image-container .arrow {
   display: flex;
