@@ -18,12 +18,20 @@
     border-radius: 5px;
     width: 80%;
     height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 768px){
+      width: 100%;
+    }
 
 
     .modal-close {
       // position: absolute;
-      top: 10px;
-      right: 10px;
+      // top: 10px;
+      // right: 10px;
       background: none;
       border: none;
       align-self: flex-end;
@@ -37,6 +45,9 @@
       overflow: hidden;
       width: 80%;
       aspect-ratio: 16/9;
+      @media screen and (max-width: 768px){
+        width: 100%;
+      }
       // height: 100%;
       iframe {
         position: absolute;
@@ -44,7 +55,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        // z-index: 2000;
+        z-index: 2000;
       }
     }
   }
