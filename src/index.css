@@ -202,6 +202,15 @@ button {
     width: 80vw;
   }
 }
+@media screen and (max-width: 760px) {
+  .Navbar-main-container .element .navbar-heading li {
+    width: 100%;
+  }
+  .Navbar-main-container .element .navbar-heading li a {
+    width: 100%;
+    display: block;
+  }
+}
 
 .Navbar-main-container.homeroute {
   background-color: transparent; /* Set background to transparent if 'homeroute' class is present */
