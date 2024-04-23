@@ -46,7 +46,7 @@
 
       .arrow {
         @include flex-cc;
-        z-index: 2;
+        // z-index: 2;
         cursor: pointer;
         width: 5rem;
 
