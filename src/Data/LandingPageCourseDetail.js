@@ -1,12 +1,29 @@
 import praveenThumbnail from '../assets/LandingPage/thumbnail/PraveenThumbnail.png';
 import prakharThumbnail from '../assets/LandingPage/thumbnail/PrakharThumbnail.png';
 import prathamThumbnail from '../assets/LandingPage/thumbnail/PrathamThumbnail.png';
+import praveenOfflineThumbnail from '../assets/LandingPage/thumbnail/PraveenOfflineThumbnail.png';
 const LandingPageData = [
   {
     title: 'praveen',
     name: 'Praveen',
     videoUrl: 'https://www.youtube.com/embed/7PlZ4dwT56I?&autoplay=1',
     thumbnail: praveenThumbnail,
+    videoTitle:
+      '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Dropper Batch For IIT JEE 2025',
+    aboutCourse: [
+      'Competishun Course Features (#https://youtu.be/l2tLkv_t15k?feature=shared)',
+      'WHY JOIN US? Competishun Advantages (#https://youtu.be/06dJv3gJX88?feature=shared)',
+      'Stages of JEE Prepration (#https://youtu.be/iR5ZCto7Td4?feature=shared)',
+      'Generic: QnA (#https://youtu.be/50hiqJY_8h0?feature=shared)',
+      'Online v/ s offline study: Which is more effective? (#https://youtu.be/JKg9Ked2aIk?feature=shared)',
+      'Choosing Where to Study?: Kota, Jaipur, or Home: (#https://youtu.be/qjr3_qtdWFg?feature=shared)',
+    ],
+  },
+  {
+    title: 'praveen-offline',
+    name: 'Praveen Offline',
+    videoUrl: 'https://www.youtube.com/embed/cd5uEWIn1tw?&autoplay=1',
+    thumbnail: praveenOfflineThumbnail,
     videoTitle:
       '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Dropper Batch For IIT JEE 2025',
     aboutCourse: [
