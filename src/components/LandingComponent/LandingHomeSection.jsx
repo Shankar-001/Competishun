@@ -278,6 +278,7 @@ const LandingHomeSection = ({ CourseData }) => {
         disabled={isloading}
         className={`btn ${isloading && 'inactive'}`}
         onClick={handleStartTrial}
+        id="LeadFormSubmitButton"
       >
         Submit Now
       </button>
