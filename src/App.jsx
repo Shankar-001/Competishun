@@ -6,11 +6,23 @@ import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
 import { doc, getDoc, serverTimestamp, setDoc } from 'firebase/firestore';
 import db from './constants/Firebase';
 import { useLocation } from 'react-router-dom';
+import TagManager from 'react-gtm-module';
 
 function App() {
+  const gtmId = import.meta.env.VITE_PUBLIC_GTM_ID;
   const [user, setUser] = useState(null);
 
   const { hash, key } = useLocation();
+
+  useEffect(() => {
+    if (gtmId) {
+      // const script = document.createElement('script');
+      // script.src = `https://www.googletagmanager.com/gtm.js?id=${gtmId}`;
+      // script.async = true;
+      // document.head.appendChild(script);
+      TagManager.initialize({ gtmId });
+    }
+  }, [gtmId]);
   useEffect(() => {
     if (hash) {
       const targetElement = document.getElementById(hash.substring(1));
