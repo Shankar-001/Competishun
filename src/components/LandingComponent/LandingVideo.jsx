@@ -4,7 +4,7 @@ import videoThumbnail from '../../assets/LandingPage/thumbnail/PraveenThumbnail.
 import playIcon from '../../assets/important/play-button.svg';
 import { FaPlayCircle } from 'react-icons/fa';
 
-const LandingVideo = ({data}) => {
+const LandingVideo = ({ data }) => {
   const [showVideo, setShowVideo] = useState(false);
 
   const handleClick = () => {
@@ -15,9 +15,8 @@ const LandingVideo = ({data}) => {
     <div className="landing-video-container">
       <div className="width-container">
         <div className="header">
-          <h1>
-            {data.videoTitle}
-          </h1>
+          <h1>{data.videoTitle}</h1>
+          {data.videoSubTitle && <p> {data.videoSubTitle} </p>}
         </div>
         <div className="video-container">
           {showVideo ? (
@@ -53,7 +52,9 @@ const LandingVideo = ({data}) => {
             </div>
           )}
         </div>
-        <a className="btn" href='#contact_us'>Join Now</a>
+        <a className="btn" href="#contact_us">
+          Join Now
+        </a>
       </div>
     </div>
   );
