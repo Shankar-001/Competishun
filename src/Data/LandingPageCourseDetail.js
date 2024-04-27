@@ -10,6 +10,7 @@ const LandingPageData = [
     thumbnail: praveenThumbnail,
     videoTitle:
       '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Dropper Batch For IIT JEE 2025',
+    videoSubTitle: 'New batches is starting from 25th April & 2nd May, 2024',
     aboutCourse: [
       'Competishun Course Features (#https://youtu.be/l2tLkv_t15k?feature=shared)',
       'WHY JOIN US? Competishun Advantages (#https://youtu.be/06dJv3gJX88?feature=shared)',
