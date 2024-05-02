@@ -125,6 +125,14 @@
                   text-decoration: none;
                   color: var(--darkest-bg-color);
                 }
+                .footer-navlink1 {
+                  text-decoration: none;
+                  color: white;
+                  &:hover {
+                    color: var(--primary-color);
+                  }
+                }
+                
               }
             }
           }
