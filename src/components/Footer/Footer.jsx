@@ -136,7 +136,7 @@ const Footer = () => {
                 </div>
 
                 <div className="point">
-                  <a href={termsAndConditons} download className='footer-navlink' >Terms and Conditions</a>
+                  <a href={termsAndConditons} target='_blank' className='footer-navlink' >Terms and Conditions</a>
 
                   {/* <NavLink to="/contact" className="footer-navlink">
                     Contact Us
