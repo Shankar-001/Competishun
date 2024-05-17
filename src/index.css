@@ -420,6 +420,13 @@ button {
   text-decoration: none;
   color: var(--darkest-bg-color);
 }
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-quickLinks .element .footer-link li .footer-navlink1 {
+  text-decoration: none;
+  color: white;
+}
+.footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-quickLinks .element .footer-link li .footer-navlink1:hover {
+  color: var(--primary-color);
+}
 .footer-mainContainer .footer-containerContent .footer-innerContainer .quicklink-support .footer-support {
   display: flex;
   flex-direction: column;
@@ -3663,6 +3670,21 @@ button {
     font-size: 2.4rem;
     font-weight: 400;
     font-family: var(--font-family);
+  }
+}
+.Landing-Page-Main-Container .landing-video-container .width-container .header p {
+  color: var(--landing-btn-background-color);
+  margin-top: 2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
+@media (max-width: 900px) {
+  .Landing-Page-Main-Container .landing-video-container .width-container .header p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+    margin-top: 1rem;
   }
 }
 .Landing-Page-Main-Container .landing-video-container .width-container .video-container {

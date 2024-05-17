@@ -13,6 +13,7 @@ import { FaSquareXTwitter } from 'react-icons/fa6';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import termsAndConditons from '../../assets/TermsAndConditions/TermsAndCondition.pdf';
 
 const Footer = () => {
   const location = useLocation();
@@ -97,11 +98,11 @@ const Footer = () => {
               About
             </NavLink>
           </li> */}
-                  {/* <li>
-            <NavLink to="/contact" className="navlink">
+                  <li>
+            <NavLink to="/contact" className="footer-navlink1">
               Contact Us
             </NavLink>
-          </li> */}
+          </li>
                   <li>
                     <NavLink
                       to="/result"
@@ -135,11 +136,11 @@ const Footer = () => {
                 </div>
 
                 <div className="point">
-                  {/* <a>Contact Us</a> */}
+                  <a href={termsAndConditons} target='_blank' className='footer-navlink' >Terms and Conditions</a>
 
-                  <NavLink to="/contact" className="footer-navlink">
+                  {/* <NavLink to="/contact" className="footer-navlink">
                     Contact Us
-                  </NavLink>
+                  </NavLink> */}
                 </div>
 
                 <div className="point">
