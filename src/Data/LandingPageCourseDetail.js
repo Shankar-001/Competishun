@@ -10,7 +10,8 @@ const LandingPageData = [
     thumbnail: praveenThumbnail,
     videoTitle:
       '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Dropper Batch For IIT JEE 2025',
-    videoSubTitle: 'New batches is starting from 25th April, 2nd May and 13th May 2024',
+    videoSubTitle:
+      'New batches is starting from 25th April, 2nd May and 13th May 2024',
     courseId: 5, // This course Id for the extraedge api to send leads
     aboutCourse: [
       'Competishun Course Features (#https://youtu.be/l2tLkv_t15k?feature=shared)',
@@ -67,7 +68,9 @@ const LandingPageData = [
     thumbnail: prathamThumbnail,
     videoTitle:
       '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Batch For IIT JEE 2026',
-    courseId: 3,// This course Id for the extraedge api to send leads
+    videoSubTitle:
+      'New batches is starting from 23rd May 2024',
+    courseId: 3, // This course Id for the extraedge api to send leads
     aboutCourse: [
       'Tailored courses to meet your needs.',
       'Access to recorded scheduled lectures.',

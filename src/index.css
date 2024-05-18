@@ -3657,6 +3657,7 @@ button {
   align-items: center;
 }
 .Landing-Page-Main-Container .landing-video-container .width-container .header {
+  width: 100%;
   margin: 2rem 0;
 }
 .Landing-Page-Main-Container .landing-video-container .width-container .header h1 {
