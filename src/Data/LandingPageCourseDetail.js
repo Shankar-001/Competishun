@@ -11,7 +11,7 @@ const LandingPageData = [
     videoTitle:
       '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Dropper Batch For IIT JEE 2025',
     videoSubTitle:
-      'New batches is starting from 25th April, 2nd May and 13th May 2024',
+      'The new batch Praveen-VIII is commencing on 23rd May, 2024.',
     courseId: 5, // This course Id for the extraedge api to send leads
     aboutCourse: [
       'Competishun Course Features (#https://youtu.be/l2tLkv_t15k?feature=shared)',
@@ -28,7 +28,9 @@ const LandingPageData = [
     videoUrl: 'https://www.youtube.com/embed/cd5uEWIn1tw?&autoplay=1',
     thumbnail: praveenOfflineThumbnail,
     videoTitle:
-      '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Dropper offline Batch For IIT JEE 2025 (Starting from 29th April)',
+      '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Dropper offline Batch For IIT JEE 2025',
+      videoSubTitle:
+      'The new batch Praveen-offline is commencing on 23rd May, 2024.',
     courseId: 15, // This course Id for the extraedge api to send leads
     aboutCourse: [
       'Experienced and knowledgeable faculty members',
@@ -69,7 +71,7 @@ const LandingPageData = [
     videoTitle:
       '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Batch For IIT JEE 2026',
     videoSubTitle:
-      'New batches is starting from 23rd May 2024',
+      'The new batch Pratham-VI is commencing on 23rd May, 2024.',
     courseId: 3, // This course Id for the extraedge api to send leads
     aboutCourse: [
       'Tailored courses to meet your needs.',
