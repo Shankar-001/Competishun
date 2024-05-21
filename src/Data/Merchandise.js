@@ -17,6 +17,41 @@ import CapsPhysics from '../assets/Books/Caps/Caps-Physics.jpg';
 import PraveenDlp from '../assets/Books/Dlp/Praveen.png';
 import PrakharDlp from '../assets/Books/Dlp/Prakhar .png';
 import PrathamDlp from '../assets/Books/Dlp/Pratham .png';
+import DLPNEET from '../assets/Books/DLP NEET/DLPNEETALLBOOKS.jpeg';
+import Chemistry from '../assets/Books/DLP NEET/CHEMISTRY.jpeg';
+import Physics from '../assets/Books/DLP NEET/PHYSICS.jpeg';
+import Botany from '../assets/Books/DLP NEET/BOTANY.jpeg';
+import Zology from '../assets/Books/DLP NEET/ZOOLOGY.jpeg';
+
+// new arrivals..........................................................
+export const MerchandiseNewArrivals = [
+  {
+    src: DLPNEET,
+    // title: 'DLPNEET',
+    link: 'https://fcldn.courses.store/501058',
+  },
+  {
+    src: Chemistry,
+    // title: 'NEETCHEMISTRY',
+    link: 'https://fcldn.courses.store/501058',
+  },
+  {
+    src: Physics,
+    // title: 'NEETPHYSICS',
+    link: 'https://fcldn.courses.store/501058',
+  },
+  {
+    src: Botany,
+    // title: 'NEETBOTANY',
+    link: 'https://fcldn.courses.store/501058',
+  },
+  {
+    src: Zology,
+    // title: 'NEETZOLOGY',
+    link: 'https://fcldn.courses.store/501058',
+  },
+];
+
 export const MerchandiseData = [
   {
     src: JeeMainPyq,
