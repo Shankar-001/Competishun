@@ -7,13 +7,14 @@ import { logEvent } from 'firebase/analytics';
 import { analytics } from './constants/Firebase';
 
 const Layout = () => {
+  
   useEffect(() => {
-    if(window.location.hostname === 'competishun.com'){
-      logEvent(analytics, 'page_view');
-    }
-    else {
-      logEvent(analytics, 'local_Page_view');
-    }
+    // if(window.location.hostname === 'competishun.com'){
+    //   logEvent(analytics, 'page_view');
+    // }
+    // else {
+    //   logEvent(analytics, 'local_Page_view');
+    // }
   }, []);
   return (
     <div>

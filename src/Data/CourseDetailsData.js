@@ -359,12 +359,12 @@ export const SingleCourseDetails = {
     AboutCourse:
       'PRABAL Competishun’s full year course for 12th passed students. This Course covers the entire JEE MAIN syllabus of JEE . Students who will enroll in this batch will be able to complete syllabus in Systematic manner. This course is taught by Team Competishun experienced faculties who makes your way to TOP NITs more easier.',
 
-    CourseDuration: '1-Full yearlong Course till JEE Advanced 2025',
+    CourseDuration: '1-Full yearlong Course till JEE Advanced 2025 (Starting Date Will be Announce Soon).',
 
     FeeStructure: 'Rs 18000/- ',
     InstallmentDetails: [
-      '1st Installment: Rs 12000/- Before Batch commencement (https://rzp.io/l/uWhV6a6)',
-      '2nd Installment: Rs 8000/-  After 45 days of Batch Commencement but Within 50 Days of Batch Commencement (https://rzp.io/l/rpRv1g1XN)',
+      '1st Installment: Rs 12000/- Before Batch commencement',
+      '2nd Installment: Rs 8000/-  After 45 days of Batch Commencement but Within 50 Days of Batch Commencement',
     ],
     RefundPolicy: 'https://bit.ly/49LLzYy',
     CourseFeatures: [

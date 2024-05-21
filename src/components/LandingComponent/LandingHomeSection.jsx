@@ -89,47 +89,44 @@ const LandingHomeSection = ({ CourseData }) => {
     setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
   };
 
-  // const handleStartTrial = async (e) => {
-  //   e.preventDefault();
+  const sendDataToAPI = async (data) => {
+    const apiData = {
+      FirstName: data.name,
+      Email: data.email,
+      MobileNumber: data.phoneNumber,
+      AuthToken: 'COMPETISHUN-19-12-2023',
+      Source: 'competishun',
+      Course: CourseData.courseId, // You can modify this based on your actual course value
+      LeadChannel: 8, // You can modify this based on your actual lead channel value
+      LeadSource: 36, // You can modify this based on your actual lead source value
+      leadCampaign: 2, // You can modify this based on your actual lead campaign value
+    };
 
-  //   let hasErrors = false;
-  //   const newErrors = {};
+    console.log('apiData:', apiData);
+    try {
+      const response = await fetch(
+        'https://thirdpartyapi.extraaedge.com/api/SaveRequest',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(apiData),
+        }
+      );
 
-  //   if (formData.name.trim() === '') {
-  //     newErrors.name = 'This field is required';
-  //     hasErrors = true;
-  //   }
+      if (!response.ok) {
+        throw new Error('Failed to send data to API');
+      }
 
-  //   if (formData.contact.trim() === '') {
-  //     newErrors.contact = 'This field is required';
-  //     hasErrors = true;
-  //   } else if (formData.contact.length !== 10) {
-  //     newErrors.contact = 'Contact number must be exactly 10 digits';
-  //     hasErrors = true;
-  //   }
+      const responseData = await response.text();
+      console.log('API Response:', responseData);
+    } catch (error) {
+      console.error('Error sending data to API:', error);
+      throw error;
+    }
+  };
 
-  //   if (hasErrors) {
-  //     setErrors(newErrors);
-  //     return;
-  //   }
-
-  //   const data = {
-  //     name: formData.name.trim(),
-  //     phoneNumber: formData.contact,
-  //     date: Date.now(),
-  //   };
-
-  //   const docRef = await addDoc(collection(db, 'FreeTrialStudent'), data);
-
-  //   console.log('Submitted Data:', formData);
-
-  //   setFormData({
-  //     name: '',
-  //     contact: '',
-  //   });
-
-  //   navigate('/');
-  // };
   const handleStartTrial = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -155,8 +152,6 @@ const LandingHomeSection = ({ CourseData }) => {
         setIsLoading(false);
         return;
       }
-
-      // const db = getFirestore(); // Assuming db is your Firestore instance
 
       try {
         // Get the current index value
@@ -184,7 +179,8 @@ const LandingHomeSection = ({ CourseData }) => {
         // Update the index for the next document
         await setDoc(indexDocRef, { val: increment(1) }, { merge: true });
 
-        // console.log('Submitted Data:', formData);
+        // Send data to the external API
+        await sendDataToAPI(data);
 
         Swal.fire({
           title: 'Thanks for sharing your details!',
@@ -278,6 +274,7 @@ const LandingHomeSection = ({ CourseData }) => {
         disabled={isloading}
         className={`btn ${isloading && 'inactive'}`}
         onClick={handleStartTrial}
+        id="LeadFormSubmitButton"
       >
         Submit Now
       </button>

@@ -10,6 +10,9 @@ const LandingPageData = [
     thumbnail: praveenThumbnail,
     videoTitle:
       '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Dropper Batch For IIT JEE 2025',
+    videoSubTitle:
+      'The new batch Praveen-VIII is commencing on 23rd May, 2024.',
+    courseId: 5, // This course Id for the extraedge api to send leads
     aboutCourse: [
       'Competishun Course Features (#https://youtu.be/l2tLkv_t15k?feature=shared)',
       'WHY JOIN US? Competishun Advantages (#https://youtu.be/06dJv3gJX88?feature=shared)',
@@ -25,14 +28,20 @@ const LandingPageData = [
     videoUrl: 'https://www.youtube.com/embed/cd5uEWIn1tw?&autoplay=1',
     thumbnail: praveenOfflineThumbnail,
     videoTitle:
-      '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Dropper Batch For IIT JEE 2025',
+      '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Dropper offline Batch For IIT JEE 2025',
+      videoSubTitle:
+      'The new batch Praveen-offline is commencing on 23rd May, 2024.',
+    courseId: 15, // This course Id for the extraedge api to send leads
     aboutCourse: [
-      'Competishun Course Features (#https://youtu.be/l2tLkv_t15k?feature=shared)',
-      'WHY JOIN US? Competishun Advantages (#https://youtu.be/06dJv3gJX88?feature=shared)',
-      'Stages of JEE Prepration (#https://youtu.be/iR5ZCto7Td4?feature=shared)',
-      'Generic: QnA (#https://youtu.be/50hiqJY_8h0?feature=shared)',
-      'Online v/ s offline study: Which is more effective? (#https://youtu.be/JKg9Ked2aIk?feature=shared)',
-      'Choosing Where to Study?: Kota, Jaipur, or Home: (#https://youtu.be/qjr3_qtdWFg?feature=shared)',
+      'Experienced and knowledgeable faculty members',
+      'A well-designed curriculum for JEE preparation',
+      'Dedicated sessions for clarify their doubts with faculty members',
+      'Access to a wide range of study materials',
+      'Small batch sizes to ensure personalized attention',
+      'In House Digital Lab.',
+      'Fee options: Rs 1,38,000 total, payable in two installments (Rs 83,000 + Rs 55,000) or',
+      'One-time payment of Rs 1,25,000',
+      'To know more about the course call our support team at 8888-0000-21',
     ],
   },
   {
@@ -42,6 +51,7 @@ const LandingPageData = [
     thumbnail: prakharThumbnail,
     videoTitle:
       '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Batch For IIT JEE 2025',
+    courseId: 4, // This course Id for the extraedge api to send leads
     aboutCourse: [
       'Tailored courses to meet your needs.',
       'Access to recorded scheduled lectures.',
@@ -60,6 +70,9 @@ const LandingPageData = [
     thumbnail: prathamThumbnail,
     videoTitle:
       '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Batch For IIT JEE 2026',
+    videoSubTitle:
+      'The new batch Pratham-VI is commencing on 23rd May, 2024.',
+    courseId: 3, // This course Id for the extraedge api to send leads
     aboutCourse: [
       'Tailored courses to meet your needs.',
       'Access to recorded scheduled lectures.',

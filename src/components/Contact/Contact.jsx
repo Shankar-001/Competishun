@@ -54,6 +54,44 @@ const ContactComponent = () => {
     setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
   };
 
+  const sendDataToAPI = async (data) => {
+    const apiData = {
+      FirstName: data.name,
+      Email: data.email,
+      MobileNumber: data.phoneNumber,
+      AuthToken: 'COMPETISHUN-19-12-2023',
+      Source: 'competishun',
+      Course: 32, // You can modify this based on your actual course value
+      LeadChannel: 8, // You can modify this based on your actual lead channel value
+      LeadSource: 36, // You can modify this based on your actual lead source value
+      leadCampaign: 2, // You can modify this based on your actual lead campaign value
+    };
+
+    console.log('apiData:', apiData);
+    try {
+      const response = await fetch(
+        'https://thirdpartyapi.extraaedge.com/api/SaveRequest',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(apiData),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error('Failed to send data to API');
+      }
+
+      const responseData = await response.text();
+      console.log('API Response:', responseData);
+    } catch (error) {
+      console.error('Error sending data to API:', error);
+      throw error;
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -108,6 +146,9 @@ const ContactComponent = () => {
 
         // Update the index for the next document
         await setDoc(indexDocRef, { val: increment(1) }, { merge: true });
+
+        // Send data to the external API
+        await sendDataToAPI(data);
 
         // Reset form data and errors
         setFormData({
@@ -341,7 +382,12 @@ const ContactComponent = () => {
               <div className="error">{errors.message}</div>
             </div>
 
-            <button type="submit" disabled={isloading} className={`btn ${isloading && 'inactive'}`} >
+            <button
+              type="submit"
+              disabled={isloading}
+              id="contactUsFormSubmitButton"
+              className={`btn ${isloading && 'inactive'}`}
+            >
               Submit
             </button>
             <div className="starmarks">

@@ -10,12 +10,22 @@
     @include flex-cc(column);
 
     .header {
+      width: 100%;
       h1 {
         @include h3;
         color: var(--landing-main-head-color);
         @media (max-width:900px) {
            @include h4;
         }
+      }
+      p {
+        color: var(--landing-btn-background-color);
+        margin-top: 2rem;
+        @include h4;
+        @media (max-width:900px) {
+          @include h5;
+          margin-top: 1rem;
+       }
       }
       margin: 2rem 0;
     }
