@@ -2297,7 +2297,6 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer {
   display: flex;
@@ -2308,6 +2307,7 @@ button {
   width: var(--landing-page-main-info-width);
 }
 .Merchandise .MerchandiseCardMainContainer .MerchandiseCardSubContainer .MerchandiseDetails {
+  width: var(--landing-page-main-info-width);
   font-size: 4.8rem;
   font-weight: 600;
   font-family: var(--font-family);
@@ -2335,7 +2335,6 @@ button {
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
-  width: 90%;
   flex-wrap: wrap;
   gap: 5rem 2rem;
   margin-bottom: 2%;

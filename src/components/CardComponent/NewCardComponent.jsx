@@ -1,4 +1,4 @@
-const NewCardComponent = ({ data, onClick }) => {
+const NewCardComponent = ({ data, onClick=()=>{} }) => {
     return (
       <div className="ComponentDivision" onClick={onClick}>
         <img src={data.src} alt="Course"  className="img"/>

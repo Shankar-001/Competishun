@@ -9,6 +9,7 @@ import {
   MerchandiseDataDlpBooks,
   MerchandiseDataJeeMainPYQ,
   MerchandiseDataNeetPYQ,
+  MerchandiseNewArrivals,
 } from '../../Data/Merchandise';
 import DescNewCardComponent from '../CardComponent/DescCardComponent';
 import NewCardComponent from '../CardComponent/NewCardComponent';
@@ -18,11 +19,25 @@ const MerchandiseCard = () => {
   const handleCardClick = (item) => {
     navigate(`/merchandise/${item.title}`);
   };
+  const handleNewCardClick=()=>{
+   
+  };
   return (
     <div className="MerchandiseCardMainContainer">
       <div className="MerchandiseCardSubContainer">
         <div className="MerchandiseDetails">
           Book store
+      {/* new arrivals */}
+          <div className="MerchandiseSubDetails">
+          📚 DLP Books for NEET(UG) :
+          </div>
+          <div className="MerchandiseCardComponent">
+            {MerchandiseNewArrivals.map((item, index) => (
+              <a href={item.link}  target='blank' className="ankertag">
+                <NewCardComponent key={index} data={item} />
+              </a>
+            ))}
+          </div>
           {/* jee main and advanced pyqs */}
           <div className="MerchandiseSubDetails">
             📚 JEE Main and Advanced PCM PYQ Books and Short Notes :
