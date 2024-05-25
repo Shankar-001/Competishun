@@ -71,7 +71,7 @@ const LandingPageData = [
     videoTitle:
       '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Batch For IIT JEE 2026',
     videoSubTitle:
-      'The new batch Pratham-VI is commencing on 23rd May, 2024.',
+      'The new batch Pratham-VII is commencing on 3rd June, 2024.',
     courseId: 3, // This course Id for the extraedge api to send leads
     aboutCourse: [
       'Tailored courses to meet your needs.',
