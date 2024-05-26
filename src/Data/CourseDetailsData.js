@@ -507,30 +507,30 @@ export const SingleCourseDetails = {
     JoinNow: 'https://online.competishun.com',
   },
 
-  'PRAVEEN FAST LANE (LIMITED EDITION)': {
-    Title: 'Praveen Fastlane Limited Edition',
-    AboutCourse: `This Batch is exclusively designed for those students you want to boost their preparation After their 1st attempt of JEE MAIN. Students will get the access of Praveen Fastlane Lectures in Unscheduled way and complimentary access of C³, Champ, CATS. Access to the batch will be available till JEE ADVANCED`,
+  // 'PRAVEEN FAST LANE (LIMITED EDITION)': {
+  //   Title: 'Praveen Fastlane Limited Edition',
+  //   AboutCourse: `This Batch is exclusively designed for those students you want to boost their preparation After their 1st attempt of JEE MAIN. Students will get the access of Praveen Fastlane Lectures in Unscheduled way and complimentary access of C³, Champ, CATS. Access to the batch will be available till JEE ADVANCED`,
 
-    LectureNumber: '406 Lectures (PCM)',
+  //   LectureNumber: '406 Lectures (PCM)',
 
-    FeeStructure: 'Rs 9000/-',
+  //   FeeStructure: 'Rs 9000/-',
 
-    KeyFeature:
-      'Expert Faculty |Rigorous Curriculum| Time-Efficient |Doubt Resolution |Digital Study Materials | Motivational Support',
-    CourseFeatureWithoutVideo: [
-      'Scheduled Recorded lecture',
-      'Graded, exhaustive Material (DPPs)',
-      'Text and Video Solution. (DPPs)',
-      'Doubt Solving : 24×7 (Telegram Group) & Daily Live Doubt Counter (Zoom)',
-      'Regular, Relevant Counter (Zoom) Analysis',
-      'Guidance Session (Weakly) with Directors and Senior faculties (line)',
-      'Board Support, other Exam Support (BITSAT, WBJEE and UGEE Etc.)',
-      'One stop solution for all information, & Authentic Guidance. 24×7 on W.A.',
-    ],
-    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
-    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
-    JoinNow: 'https://online.competishun.com',
-  },
+  //   KeyFeature:
+  //     'Expert Faculty |Rigorous Curriculum| Time-Efficient |Doubt Resolution |Digital Study Materials | Motivational Support',
+  //   CourseFeatureWithoutVideo: [
+  //     'Scheduled Recorded lecture',
+  //     'Graded, exhaustive Material (DPPs)',
+  //     'Text and Video Solution. (DPPs)',
+  //     'Doubt Solving : 24×7 (Telegram Group) & Daily Live Doubt Counter (Zoom)',
+  //     'Regular, Relevant Counter (Zoom) Analysis',
+  //     'Guidance Session (Weakly) with Directors and Senior faculties (line)',
+  //     'Board Support, other Exam Support (BITSAT, WBJEE and UGEE Etc.)',
+  //     'One stop solution for all information, & Authentic Guidance. 24×7 on W.A.',
+  //   ],
+  //   Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+  //   Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+  //   JoinNow: 'https://online.competishun.com',
+  // },
 
   // Neet Online Data
 
