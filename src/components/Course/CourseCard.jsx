@@ -62,11 +62,11 @@ const CourseCard = () => {
           year: '2025',
           data: JeeShortTermAdvData,
         },
-        {
-          title: 'Short Term Online Course Target JEE (MAIN+ADV)',
-          year: '2025',
-          data: JeeShortTermMainAndAdvData,
-        },
+        // {
+        //   title: 'Short Term Online Course Target JEE (MAIN+ADV)',
+        //   year: '2025',
+        //   data: JeeShortTermMainAndAdvData,
+        // },
         {
           title: '1 Year DLP(Distance Learning Program) Courses Target JEE (Main+Adv)',
           year: '2025',
