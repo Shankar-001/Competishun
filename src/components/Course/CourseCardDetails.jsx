@@ -22,61 +22,61 @@ const CourseCardDetails = () => {
   }, [navigate, data]);
 
   const sections = [
-    { key: 'AboutCourse', label: 'About Course', isAvailable: data.AboutCourse },
+    { key: 'AboutCourse', label: 'About Course', isAvailable: data?.AboutCourse },
     {
       key: 'CourseDuration',
       label: 'Course Duration',
-      isAvailable: data.CourseDuration,
+      isAvailable: data?.CourseDuration,
     },
     {
       key: 'LectureNumber',
       label: 'Number of Lectures',
-      isAvailable: data.LectureNumber,
+      isAvailable: data?.LectureNumber,
     },
-    { key: 'FeeStructure', label: 'Fee Structure', isAvailable: data.FeeStructure },
+    { key: 'FeeStructure', label: 'Fee Structure', isAvailable: data?.FeeStructure },
     {
       key: 'OfflineFeeStructure',
       label: 'Fee Structure',
-      isAvailable: data.OfflineFeeStructure,
+      isAvailable: data?.OfflineFeeStructure,
     },
     {
       key: 'InstallmentDetails',
       label: 'Installment Details',
-      isAvailable: data.InstallmentDetails,
+      isAvailable: data?.InstallmentDetails,
     },
-    { key: 'KeyFeature', label: 'Key Feature', isAvailable: data.KeyFeature },
+    { key: 'KeyFeature', label: 'Key Feature', isAvailable: data?.KeyFeature },
     {
       key: 'CourseFeatures',
       label: 'Course Features',
-      isAvailable: data.CourseFeatures,
+      isAvailable: data?.CourseFeatures,
     },
     {
       key: 'CourseFeatureWithoutVideo',
       label: 'Course Features',
-      isAvailable: data.CourseFeatureWithoutVideo,
+      isAvailable: data?.CourseFeatureWithoutVideo,
     },
     {
       key: 'Advantages',
       label: 'Why Join Us? Competishun Advantage!',
-      isAvailable: data.Advantages,
+      isAvailable: data?.Advantages,
     },
-    { key: 'Stages', label: 'Preparation Stages', isAvailable: data.Stages },
-    { key: 'GeneralQNA', label: 'General Questions', isAvailable: data.GeneralQNA },
+    { key: 'Stages', label: 'Preparation Stages', isAvailable: data?.Stages },
+    { key: 'GeneralQNA', label: 'General Questions', isAvailable: data?.GeneralQNA },
     {
       key: 'OnlineVsOffline',
       label: 'Online vs Offline',
-      isAvailable: data.OnlineVsOffline,
+      isAvailable: data?.OnlineVsOffline,
     },
     {
       key: 'KotaVsJaipurVsHome',
       label: 'Kota vs Jaipur vs Home',
-      isAvailable: data.KotaVsJaipurVsHome,
+      isAvailable: data?.KotaVsJaipurVsHome,
     },
-    { key: 'RefundPolicy', label: 'Refund Policy', isAvailable: data.RefundPolicy },
+    { key: 'RefundPolicy', label: 'Refund Policy', isAvailable: data?.RefundPolicy },
     {
       key: 'ShortTermRefundPolicy',
       label: 'Refund Policy',
-      isAvailable: data.ShortTermRefundPolicy,
+      isAvailable: data?.ShortTermRefundPolicy,
     },
   ];
 
