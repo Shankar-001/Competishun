@@ -1,4 +1,5 @@
 .studyfree-main-container{
     padding-top: 10rem;
+    @import '../components/Freestudy/FreeStudy.scss';
     @import '../components/Home/FreeStudy.scss';
 }
