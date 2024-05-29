@@ -33,9 +33,9 @@ const MerchandiseCard = () => {
           </div>
           <div className="MerchandiseCardComponent">
             {MerchandiseNewArrivals.map((item, index) => (
-              <a href={item.link}  target='blank' className="ankertag">
-                <NewCardComponent key={index} data={item} />
-              </a>
+              <div href={item.link}  target='blank' className="ankertag">
+                <NewCardComponent key={index} data={item} onClick={() => handleCardClick(item)} />
+              </div>
             ))}
           </div>
           {/* jee main and advanced pyqs */}

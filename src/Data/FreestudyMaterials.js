@@ -15,7 +15,7 @@ export const subjects = [
     video: 'https://www.youtube.com/watch?v=physics-video',
     solutionsPaper1: p1_physics,
     solutionsPaper2: p2_phsyics,
-    solutionsVideo: 'https://www.youtube.com/watch?v=physics-solutions-video',
+    solutionsVideo: 'https://www.youtube.com/watch?v=AqUE0iJtkS8',
   },
   {
     name: 'Chemistry',
@@ -24,7 +24,7 @@ export const subjects = [
     video: 'https://www.youtube.com/watch?v=chemistry-video',
     solutionsPaper1: p1_chemistry,
     solutionsPaper2: p2_chemistry,
-    solutionsVideo: 'https://www.youtube.com/watch?v=chemistry-solutions-video',
+    solutionsVideo: 'https://www.youtube.com/watch?v=p7aZfWz7qEQ&t=3s',
   },
   {
     name: 'Maths',
@@ -33,6 +33,6 @@ export const subjects = [
     video: 'https://www.youtube.com/watch?v=maths-video',
     solutionsPaper1: p1_maths,
     solutionsPaper2: p2_maths,
-    solutionsVideo: 'https://www.youtube.com/watch?v=maths-solutions-video',
+    solutionsVideo: 'https://www.youtube.com/watch?v=vtPC33GJCgY',
   },
 ];

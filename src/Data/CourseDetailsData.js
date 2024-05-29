@@ -359,7 +359,8 @@ export const SingleCourseDetails = {
     AboutCourse:
       'PRABAL Competishun’s full year course for 12th passed students. This Course covers the entire JEE MAIN syllabus of JEE . Students who will enroll in this batch will be able to complete syllabus in Systematic manner. This course is taught by Team Competishun experienced faculties who makes your way to TOP NITs more easier.',
 
-    CourseDuration: '1-Full yearlong Course till JEE Advanced 2025 (Starting Date Will be Announce Soon).',
+    CourseDuration:
+      '1-Full yearlong Course till JEE Advanced 2025 (Starting Date Will be Announce Soon).',
 
     FeeStructure: 'Rs 18000/- ',
     InstallmentDetails: [
@@ -795,18 +796,75 @@ export const SingleCourseDetails = {
     JoinNow: 'https://online.competishun.com',
   },
 
+  'Arjun DLP': {
+    Title: 'Arjun (XII) DLP (Distance Learning Program)',
+    AboutCourse: `4 Book Sets. Crafted exclusively for students transitioning from Class XI to XII with target year NEET (UG) - 2025, this comprehensive bundle is designed to provide thorough coverage of the NEET syllabus. Each book is meticulously prepared by Competishun's esteemed faculty, ensuring clarity and depth of content. With two books dedicated to Physics and Chemistry, and one each for Botany and Zoology, students gain a holistic understanding of key concepts essential for the exam.
+    These books offer the perfect balance of readability and portability, allowing students to study comfortably anytime, anywhere. Additionally, the set includes a bonus test series, enabling students to gauge their progress and familiarize themselves with the exam format.`,
+
+    FeeStructure: 'Rs 2690 /-',
+
+    CourseFeatureWithoutVideo: [
+      'Full coverage of subjects with latest NTA Syllabus',
+      'A4 size for ease of study: Conveniently sized at 21 x 29.7 cm, perfect for comfortable reading and note-taking.',
+      'Test series included as per latest syllabus introduced by NTA: Assess your progress with included test series, designed to simulate the NEET exam experience.',
+      'Text Solutions of the Modules available at Educompetishun App / Website',
+    ],
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: 'https://online.competishun.com',
+  },
+
+  'Aviral DLP': {
+    Title: 'Aviral (XIII) DLP (Distance Learning Program)',
+    AboutCourse: ` Book Sets. Crafted exclusively for 12th Studying students & Passed Students with target year NEET (UG) - 2025, this comprehensive bundle is designed to provide thorough coverage of the NEET syllabus. Each book is meticulously prepared by Competishun's esteemed faculty, ensuring clarity and depth of content. With two books dedicated to Physics and Chemistry, and one each for Botany and Zoology, students gain a holistic understanding of key concepts essential for the exam.
+    These books offer the perfect balance of readability and portability, allowing students to study comfortably anytime, anywhere. Additionally, the set includes a bonus test series, enabling students to gauge their progress and familiarize themselves with the exam format.`,
+
+    FeeStructure: 'Rs 2590 /-',
+
+    CourseFeatureWithoutVideo: [
+      'Full coverage of subjects with latest NTA Syllabus',
+      'A4 size for ease of study: Conveniently sized at 21 x 29.7 cm, perfect for comfortable reading and note-taking.',
+      'Test series included as per latest syllabus introduced by NTA: Assess your progress with included test series, designed to simulate the NEET exam experience.',
+      'Text Solutions of the Modules available at Educompetishun App / Website',
+    ],
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: 'https://online.competishun.com',
+  },
+
+  'Aarambh DLP': {
+    Title: 'Aarambh (XI) DLP (Distance Learning Program)',
+    AboutCourse: `Prepare effectively for the NEET (UG) examination with the Competishun Neet (UG) AARAMBH (XI) Preparation Set. Designed specifically for students transitioning from classes 10 to 12, this comprehensive study material covers Physics, Chemistry, Botany, and Zoology across 4 books. Dive deep into each subject with detailed explanations and examples, ensuring a thorough understanding of essential concepts. Additionally, the set includes a test series to gauge your comprehension and readiness for the exam. Presented in A4 size format, the material is easy to read and convenient for study sessions. Equip yourself with the necessary tools for success in the NEET (UG) examination with this all-inclusive preparation set.`,
+
+    FeeStructure: 'Rs 2799 /-',
+
+    CourseFeatureWithoutVideo: [
+      'Comprehensive NEET (UG) preparation set tailored for students transitioning from classes 10 to 12.',
+      'Includes study material for Physics, Chemistry, Botany, and Zoology, covering all key topics and concepts.',
+      'Each subject is covered in-depth across 4 books, ensuring thorough understanding and retention.',
+      'Features a test series to assess understanding and facilitate effective exam preparation.',
+      'A4 size format for easy readability and study convenience.',
+    ],
+
+    Choose: 'Choose Competishun - Where Excellence Meets Innovation!',
+    Contact: 'For more queries, Contact us at: 8888000021, 7410900901',
+    JoinNow: 'https://online.competishun.com',
+  },
+
   'ARJUN OFFLINE': {
     Title: 'ARJUN OFFLINE',
-    AboutCourse: "Will be Announced Soon"
+    AboutCourse: 'Will be Announced Soon',
   },
 
   'AVIRAL OFFLINE': {
     Title: 'AVIRAL OFFLINE',
-    AboutCourse: "Will be Announced Soon"
+    AboutCourse: 'Will be Announced Soon',
   },
 
   'AARAMBH OFFLINE': {
     Title: 'AARAMBH OFFLINE',
-    AboutCourse: "Will be Announced Soon"
+    AboutCourse: 'Will be Announced Soon',
   },
 };
