@@ -121,7 +121,7 @@ const JeeAdvanced2024Solutions = () => {
               <td>2 Paragraph (Numerical Value up to 2 Decimal Value)</td>
               <td>4</td>
               <td>3</td>
-              <td>-1</td>
+              <td>0</td>
             </tr>
           </tbody>
         </table>

@@ -7,6 +7,7 @@ import { doc, getDoc, serverTimestamp, setDoc } from 'firebase/firestore';
 import db from './constants/Firebase';
 import { useLocation } from 'react-router-dom';
 import TagManager from 'react-gtm-module';
+import MetaPixel from './styles/utils/meta/metaPixel';
 
 function App() {
   const gtmId = import.meta.env.VITE_PUBLIC_GTM_ID;
@@ -23,6 +24,7 @@ function App() {
       TagManager.initialize({ gtmId });
     }
   }, [gtmId]);
+
   useEffect(() => {
     if (hash) {
       const targetElement = document.getElementById(hash.substring(1));
@@ -77,6 +79,7 @@ function App() {
     <div className="App">
       <UserProvider value={{ user, setUser }}>
         <MainPage />
+        <MetaPixel />
       </UserProvider>
     </div>
   );
