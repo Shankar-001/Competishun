@@ -7,6 +7,7 @@ import { doc, getDoc, serverTimestamp, setDoc } from 'firebase/firestore';
 import db from './constants/Firebase';
 import { useLocation } from 'react-router-dom';
 import TagManager from 'react-gtm-module';
+import MetaPixel from './styles/utils/meta/metaPixel';
 
 function App() {
   const gtmId = import.meta.env.VITE_PUBLIC_GTM_ID;
@@ -23,35 +24,6 @@ function App() {
       TagManager.initialize({ gtmId });
     }
   }, [gtmId]);
-
-  useEffect(() => {
-    //meta pixel code
-    !(function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod
-          ? n.callMethod.apply(n, arguments)
-          : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    })(
-      window,
-      document,
-      'script',
-      'https://connect.facebook.net/en_US/fbevents.js'
-    );
-    fbq('init', '821660793207359');
-    fbq('track', 'PageView');
-  }, []);
 
   useEffect(() => {
     if (hash) {
@@ -107,6 +79,7 @@ function App() {
     <div className="App">
       <UserProvider value={{ user, setUser }}>
         <MainPage />
+        <MetaPixel />
       </UserProvider>
     </div>
   );
