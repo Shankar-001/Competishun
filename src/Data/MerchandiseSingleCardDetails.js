@@ -1,4 +1,68 @@
 export const MerchandiseSingleCardDetails = {
+  AarambhNeetDlp: {
+    title:
+      'Competishun Neet (UG) AARAMBH (XI) Prepration Set | Comprehensive Study Material for 10 to 12 Moving Students | Total Pages 1911 | Physics+Botany+Chemistry+Zoology | Includes Test Series - 4 Books Set Perfect Paperback',
+    about: {
+      bullet1:
+        'Comprehensive preparation set specifically designed for NEET (UG) aspirants transitioning from classes 10 to 12.',
+      bullet2:
+        'In-depth coverage of all essential topics and key concepts in each subject.',
+      bullet3:
+        'Detailed explanations and examples provided to ensure thorough understanding.',
+      bullet4: 'Incorporates a test series to assess comprehension and readiness for the NEET (UG) exam.',
+      bullet5: 'Tailored to help students build a strong foundation and retain critical information.',
+      bullet6:
+        'A4 size format ensures easy readability and convenience during study sessions.',
+      bullet7:
+        "Helps students gauge their progress and identify areas needing improvement through practice",
+      bullet8:
+        'Trusted resource by successful NEET candidates for exam preparation.',
+    },
+    link: 'https://www.amazon.in/dp/B0D5DHX3NR?ref=myi_title_dp',
+  },
+  AviralDlp: {
+    title:
+      'Competishun DLP AVIRAL (13) | Exclusively for 12th Passed Students with target year NEET (UG) - 2025 | 2 Physics, 2 Chemistry, 1 Zoology, & 1 Botany 6 Books Set | Study Material with Bonus Test Series',
+    about: {
+      bullet1:
+        'Comprehensive study material for NEET (UG) 2025, tailored exclusively for 12th-grade students and recent graduates.',
+      bullet2:
+        'Includes 6 meticulously crafted books: 2 each for Physics and Chemistry, and 1 each for Zoology and Botany.',
+      bullet3:
+        'Authored by seasoned educators and subject matter experts to ensure accurate, relevant, and up-to-date content aligned with the latest NEET syllabus.        ',
+      bullet4: 'Detailed explanations and illustrative examples provided to make complex concepts easier to understand and remember.',
+      bullet5: 'Bonus test series included to simulate the NEET exam environment, aiding effective practice and preparation assessment.',
+      bullet6:
+        'Structured learning approach to help students build a strong foundation in all essential subjects.',
+      bullet7:
+        "Provides a clear path to success with focused and comprehensive coverage of all key topics.",
+      bullet8:
+        'Trusted resource by successful JEE Main candidates for exam preparation.',
+    },
+    link: 'https://www.amazon.in/dp/B0D5DTHFVP?ref=myi_title_dp',
+  },
+  ArjunDlp: {
+    title:
+      'Competishun ARJUN (XII) DLP For XI to XII Moving Students For Neet (UG) Year 2025 | Preparation Set: Physics+Chemistry+ Zoology+Botany | Pages 1782 | Study Material with Bonus Test Series - 4 Book Set',
+    about: {
+      bullet1:
+        'Comprehensive NEET (UG) preparation set designed for students transitioning from class XI to XII.',
+      bullet2:
+        'Includes detailed study material for Physics, Chemistry, Zoology, and Botany.',
+      bullet3:
+        'Total of 1782 pages covering all essential topics and concepts thoroughly.',
+      bullet4: 'Crafted to help students grasp and retain key concepts effectively.',
+      bullet5: 'Comes with a bonus test series to assess understanding and enhance exam readiness.',
+      bullet6:
+        '4 book set designed to provide a robust and efficient preparation strategy for NEET (UG) aspirants.',
+      bullet7:
+        "Ensures thorough exploration of each subject, aiding in-depth learning.",
+      bullet8:
+        'Essential study material to boost your chances of success in the competitive NEET (UG) examination.',
+    },
+    link: 'https://www.amazon.in/dp/B0D5DRLBMK?ref=myi_title_dp',
+  },
+
   JEEMAINPYQ: {
     title:
       'Competishun JEE Mains PYQ | Includes JANUARY 2024 Attempt Ques. | As per NEW JEE MAIN 2024 SYLLABUS | Comprehensive Physics, Chemistry, and Mathematics Handbook | Chapterwise Solved Papers | Must Do PYQs (2024-2018) Perfect Paperback – 1 March 2024',
@@ -42,7 +106,8 @@ export const MerchandiseSingleCardDetails = {
     link: 'https://amzn.to/43rcAxv',
   },
   JEEMINI: {
-    title: 'JEE MINI | Short Notes | Analytical skills and conceptual clarity in Physics | Chemistry | Mathematics | Mohit Tyagi Sir | Neeraj Saini | Amit Bijarnia | Alok Sir Paperback – 12 January 2024',
+    title:
+      'JEE MINI | Short Notes | Analytical skills and conceptual clarity in Physics | Chemistry | Mathematics | Mohit Tyagi Sir | Neeraj Saini | Amit Bijarnia | Alok Sir Paperback – 12 January 2024',
     about: {
       bullet1:
         'JEE Mini (Short Notes) for quick revision of concepts and formulae.',

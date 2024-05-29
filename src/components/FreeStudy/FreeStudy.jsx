@@ -30,7 +30,7 @@ const JeeAdvanced2024Solutions = () => {
                   <a href={subject.solutionsPaper2} target='_blank'>Download PDF</a>
                 )}
               </td>
-              <td>Coming soon</td>
+              <td><a href={subject.solutionsVideo} target='blank'>Watch Video</a></td>
             </tr>
           ))}
         </tbody>
