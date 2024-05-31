@@ -15,6 +15,8 @@ import {
   JeeShortTermMainAndAdvData,
   DLPData2025,
   DLPData2026,
+  NeetDLPData2025,
+  NeetDLPData2026,
 } from '../../Data/CourseData';
 import CardComponent from '../CardComponent/CardComponent';
 import { useEffect } from 'react';
@@ -62,18 +64,20 @@ const CourseCard = () => {
           year: '2025',
           data: JeeShortTermAdvData,
         },
+        // {
+        //   title: 'Short Term Online Course Target JEE (MAIN+ADV)',
+        //   year: '2025',
+        //   data: JeeShortTermMainAndAdvData,
+        // },
         {
-          title: 'Short Term Online Course Target JEE (MAIN+ADV)',
-          year: '2025',
-          data: JeeShortTermMainAndAdvData,
-        },
-        {
-          title: '1 Year DLP(Distance Learning Program) Courses Target JEE (Main+Adv)',
+          title:
+            '1 Year DLP(Distance Learning Program) Courses Target JEE (Main+Adv)',
           year: '2025',
           data: DLPData2025,
         },
         {
-          title: '1 Year DLP(Distance Learning Program) Course Target JEE (Main+Adv)',
+          title:
+            '1 Year DLP(Distance Learning Program) Course Target JEE (Main+Adv)',
           year: '2026',
           data: DLPData2026,
         },
@@ -109,6 +113,17 @@ const CourseCard = () => {
           title: 'Short Term Online Course Target NEET (UG)',
           year: '2025',
           data: NeetShortTermData,
+        },
+        {
+          title:
+            '1 Year DLP(Distance Learning Program) Courses Target NEET(UG)',
+          year: '2025',
+          data: NeetDLPData2025,
+        },
+        {
+          title: '1 Year DLP(Distance Learning Program) Course Target NEET(UG)',
+          year: '2026',
+          data: NeetDLPData2026,
         },
       ],
     },

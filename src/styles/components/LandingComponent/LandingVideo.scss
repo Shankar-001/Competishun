@@ -10,6 +10,7 @@
     @include flex-cc(column);
 
     .header {
+      width: 100%;
       h1 {
         @include h3;
         color: var(--landing-main-head-color);

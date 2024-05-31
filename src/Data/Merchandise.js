@@ -17,6 +17,25 @@ import CapsPhysics from '../assets/Books/Caps/Caps-Physics.jpg';
 import PraveenDlp from '../assets/Books/Dlp/Praveen.png';
 import PrakharDlp from '../assets/Books/Dlp/Prakhar .png';
 import PrathamDlp from '../assets/Books/Dlp/Pratham .png';
+import AarambhNeetDlp from '../assets/Books/Dlp/AarambhDlp.jpg';
+import AviralDlp from '../assets/Books/Dlp/AviralDLP.jpg';
+import ArjunDlp from '../assets/Books/Dlp/ArjunDlp.jpg';
+// new arrivals..........................................................
+export const MerchandiseNewArrivals = [
+  {
+    src: AarambhNeetDlp,
+    title: 'AarambhNeetDlp',
+  },
+  {
+    src: AviralDlp,
+    title: 'AviralDlp',
+  },
+  {
+    src: ArjunDlp,
+    title: 'ArjunDlp',
+  },
+];
+
 export const MerchandiseData = [
   {
     src: JeeMainPyq,

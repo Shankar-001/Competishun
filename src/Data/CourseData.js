@@ -193,3 +193,21 @@ export const DLPData2026 = [
     title: 'Pratham DLP',
   },
 ];
+
+export const NeetDLPData2025 = [
+  {
+    src: ArjunOnline,
+    title: 'Arjun DLP',
+  },
+  {
+    src: AviralOnline,
+    title: 'Aviral DLP',
+  },
+];
+
+export const NeetDLPData2026 = [
+  {
+    src: AarambhOnline,
+    title: 'Aarambh DLP',
+  },
+];
