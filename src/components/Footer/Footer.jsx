@@ -1,4 +1,4 @@
-import CompanyLogo from '../../assets/logo.png';
+import CompanyLogo from '../../assets/logo2.png';
 import eduCompetishun from '../../assets/eduCompetishun.png';
 import competishunDigital from '../../assets/competishunDigital.png';
 import { FaLocationDot } from 'react-icons/fa6';
