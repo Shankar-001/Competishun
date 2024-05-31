@@ -234,4 +234,4 @@ const Footer = () => {
     </div>
   );
 };
-export default Footer;
+export d
