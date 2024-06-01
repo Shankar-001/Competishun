@@ -36,6 +36,6 @@ export const GalleryDataCelebration = [
   { src: celeb17, desc: 'राम मंदिर प्राण प्रतिष्ठा Celebration at Competishun Offline Campus' },
   { src:celeb25 , desc: 'Revealing our new logo'},
   { src:celeb26 , desc: '4th foundation day cake cutting celebration'},
-  { src:celeb27 , desc: 'new face of competition'},
+  { src:celeb27 , desc: 'new face of competishun'},
   { src:celeb28 , desc: 'Social media share group photo'},
 ];
