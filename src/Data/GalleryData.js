@@ -12,7 +12,11 @@ import celeb11 from '../assets/Gallery/Celebration/celebration11.jpg';
 import celeb13 from '../assets/Gallery/Celebration/celebration13.jpg';
 import celeb17 from '../assets/Gallery/Celebration/celebration17.jpg';
 import celeb23 from '../assets/Gallery/Celebration/celebration23.jpg';
-
+// import celeb24 from '../assets/Gallery/Celebration/celebration24.jpg';
+import celeb25 from '../assets/Gallery/Celebration/celebration25.jpg';
+import celeb26 from '../assets/Gallery/Celebration/celebration26.jpg';
+import celeb27 from '../assets/Gallery/Celebration/celebration27.png';
+import celeb28 from '../assets/Gallery/Celebration/celebration28.png';
 
 
 export const GalleryDataAchiev = [
@@ -30,4 +34,8 @@ export const GalleryDataCelebration = [
   { src: celeb23, desc: 'Foundation Day (23 May 2022) celebration at SHAKUN HOTEL' },
   { src: celeb24, desc: 'Foundation Day (23 May 2023) celebration at HILTON HOTEL' },
   { src: celeb17, desc: 'राम मंदिर प्राण प्रतिष्ठा Celebration at Competishun Offline Campus' },
+  { src:celeb25 , desc: 'Revealing our new logo'},
+  { src:celeb26 , desc: '4th foundation day cake cutting celebration'},
+  { src:celeb27 , desc: 'new face of competishun'},
+  { src:celeb28 , desc: 'Social media share group photo'},
 ];
