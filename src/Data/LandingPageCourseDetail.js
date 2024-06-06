@@ -6,12 +6,12 @@ const LandingPageData = [
   {
     title: 'praveen',
     name: 'Praveen',
-    videoUrl: 'https://www.youtube.com/embed/7PlZ4dwT56I?&autoplay=1',
+    videoUrl: 'https://www.youtube.com/embed/BXFuJsp9w5s?&autoplay=1',
     thumbnail: praveenThumbnail,
     videoTitle:
       '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Dropper Batch For IIT JEE 2025',
     videoSubTitle:
-      'The new batch Praveen-VIII is commencing on 23rd May, 2024.',
+      'The new batch Praveen X (Hybrid Lane) is commencing on 10th June, 2024.',
     courseId: 5, // This course Id for the extraedge api to send leads
     aboutCourse: [
       'Competishun Course Features (#https://youtu.be/l2tLkv_t15k?feature=shared)',
@@ -71,7 +71,7 @@ const LandingPageData = [
     videoTitle:
       '🔥 Begin Your IIT Journey: Join the MOST Effective & Personalized Batch For IIT JEE 2026',
     videoSubTitle:
-      'The new batch Pratham-VII is commencing on 3rd June, 2024.',
+      'The new batch Pratham-VII is commencing on 20th June, 2024.',
     courseId: 3, // This course Id for the extraedge api to send leads
     aboutCourse: [
       'Tailored courses to meet your needs.',
