@@ -5,10 +5,10 @@ const resultData = [
     heading: 'JEE Main Results ',
     subheading: '(all ranks are under 25,000 AIR only)',
     data: [
-      // {
-      //   year: '2024',
-      //   selection: '',
-      // },
+      {
+        year: '2024',
+        selection: '1935',
+      },
       {
         year: '2023',
         selection: '1924',
