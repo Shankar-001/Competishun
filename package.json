@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@grpc/grpc-js": "^1.9.15",
     "firebase": "^10.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -31,6 +32,6 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "npm-run-all": "^4.1.5",
     "sass": "^1.71.1",
-    "vite": "^5.1.6"
+    "vite": "^5.1.7"
   }
 }
